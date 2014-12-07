@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xmap-content xmlns="urn:xmind:xmap:xmlns:content:2.0" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" version="2.0">
+  <sheet id="7e64rt73qclcq8lvbm1eoqe4l7">
+    <topic id="4v39ijr78ruc6qb5qv4o49o5ot" structure-class="org.xmind.ui.map.clockwise">
+      <title>mapy sem</title>
+      <children>
+        <topics type="attached">
+          <topic id="6rbdi9p28us8ol7r6f81fspurs">
+            <title>specyfikacja</title>
+            <children>
+              <topics type="attached">
+                <topic id="4cv6tb33h0h0uaq9rtflapgf99" style-id="4aoh8sifoeem793ve7updhjj20">
+                  <title>daty na wiki</title>
+                </topic>
+                <topic id="7991369b39t0vhajbrjau5p42f">
+                  <title>pierwszy milestone</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="1tj417ec11ale5kql6piv1a08o" style-id="4aoh8sifoeem793ve7updhjj20">
+                        <title>PRZEKOPAĆ INTERNETY</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="44u5ufij2djtqmbnivf6kvdelj">
+                              <title>czy czegoś takiego nie ma?</title>
+                            </topic>
+                            <topic id="52pff6eal3v4sg245ufe6d95rf">
+                              <title>dostosować do potrzzeb (mikrolokalizacja)</title>
+                            </topic>
+                            <topic id="24t80ppaj1moeee73m0jsa74vh">
+                              <title>jeśli znajdziemy, to zaliczone</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="25he2cef6aofovhi9qi6u2mmp4">
+                        <title>ops semantyczny dla przestrzeni mikrolokalizacji</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="2md3qgbdha4apmarcgh4jcgh9r">
+                              <title>pozycja</title>
+                            </topic>
+                            <topic id="26rkeb5sbbfa9i88k4lunlovj6">
+                              <title>beacon</title>
+                            </topic>
+                            <topic id="61e81gd5d7eqcbidk6c27ni9bq">
+                              <title>obiekt przeszkoda</title>
+                            </topic>
+                            <topic id="7s130bvjl5jfugkcrcad8m65l6">
+                              <title>pomieszczenie</title>
+                            </topic>
+                            <topic id="7ors1tcerq0lt4bp5i0vlflp6p">
+                              <title>relacje między nimi</title>
+                            </topic>
+                            <topic id="07c0k78b3s3h301grqm86p6ieh">
+                              <title>pozycja może mieć współrżędnie</title>
+                            </topic>
+                            <topic id="4fcopae38eklsq25r2tuukdp51">
+                              <title>pomieszczenia mogą sąsiadować</title>
+                            </topic>
+                            <topic id="0d3crm4778ntcvv05i5shqbhif">
+                              <title>etc.</title>
+                            </topic>
+                            <topic id="759484ap8jb1fvoi4sgkb5kgjg">
+                              <title>Bobek: co jesszcze? wypisać</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="0j8sbrfofqukkvv7i86q6vuakv">
+                        <title>koncepcyjna rozmowa / myślówa</title>
+                      </topic>
+                      <topic id="4oceu34thgsv6aqasa8j0lbaq0">
+                        <title>notacja</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="0jvm21b6g1ouvtt17ppojuggk0">
+                              <title>KKutt preferuje OWL</title>
+                            </topic>
+                            <topic id="70e2tqe5kmj6j0fdkethfjfu70">
+                              <title>Protégé</title>
+                            </topic>
+                            <topic id="1f03olt3ls7tc9nniicibvcva6">
+                              <title>bobek: na wiki słowne spisanie tego</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="380pc4t25bc9ljgvjfu288f30n">
+                                    <title svg:width="500">na początek prosta liniowa lista, bez żadnych relacji, tylko wypisać</title>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                            <topic id="3hj3hg10ak3iqekhjkcdml7g51">
+                              <title>KKutt nawet przyjmie na początku na kartce narysowane ładnie</title>
+                            </topic>
+                            <topic id="0rdvvn5gdosnv7vqo4se0ieslc">
+                              <title>z kartki KKutt zgłosi uwagi</title>
+                            </topic>
+                            <topic id="592ls7o7utvrtchmkbi12iugok">
+                              <title>dopiero wtedy w Protege</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="2si35aoomqisikjgcdc6gsdiul">
+                  <title>drugi milestone</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="1nmrg1jnppqnl2dt8vrkj1vd2e">
+                        <title>ontologia dla przypadku</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="7sbo6ga1rdnpjht6crvn2a2upl">
+                              <title>mamy dwa</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="5ibmc7urabe0pje09675vgjdkb">
+                                    <title>1. muzemu</title>
+                                  </topic>
+                                  <topic id="2d02jolfi421qe69h18hj5m9ll">
+                                    <title>2. sklep np. albo inteligentna sala laboratoryjna</title>
+                                  </topic>
+                                  <topic id="1gd86fhs42gmp1jsd95fkfb0vd">
+                                    <title>jedna osoba tym, druga tym</title>
+                                  </topic>
+                                  <topic id="7ii9j99ejrcmlc2mng2pfs3c79">
+                                    <title>nie bedą mega super, ale POC, bo nie zdążymy</title>
+                                  </topic>
+                                  <topic id="34tl2pmhl5if7586s1t7olbied">
+                                    <title>użyć pojęć stąd, dobudować coś konkretnego</title>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="21resulrnpu610tqqrs089lo3p">
+                        <title>koncepcyjna rozmowa / myślówa</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="6jv9sra922rcbc7dfeiuc2lcce">
+                  <title>trzeci milestone</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="499puj50jookppg4e21pv22iml">
+                        <title>integracja z formatem DML?</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="2sqqiuun790hsfqirnmm5se0at">
+                              <title>nie narzuca sposobu integracji</title>
+                            </topic>
+                            <topic id="63e283slcosmkou09265o8etkb">
+                              <title svg:width="500">identyfikatory obiektów mają swoje odniesienie w tym opisie ontologicznym</title>
+                            </topic>
+                            <topic id="29bf9tt1btq1p9omtekqkdk7h7">
+                              <title>integracja z dżawą</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="56i3bmhnvb6lj41op3c5jka454">
+                                    <title svg:width="500">da się wziąć do wyrysywanej mapy podpiąc ontologię i ew. z dżawy coś odpytać</title>
+                                  </topic>
+                                  <topic id="4u79vdtl9tteq6vntno0jtjk23">
+                                    <title>wyświetlić jakieś informacje o obiekcie</title>
+                                  </topic>
+                                  <topic id="7ceju0e36u8c2mv24p1vjkotc1">
+                                    <title>bardziej POMYSŁ jak spiąć te formaty</title>
+                                  </topic>
+                                  <topic id="1ddsqqvjpvd6iigp7602osm88c">
+                                    <title>być może bęðą jakieś zasadzki</title>
+                                    <children>
+                                      <topics type="attached">
+                                        <topic id="0m1tfvmu8r6054q1p62p3slgm6">
+                                          <title>np. czegoś się nie da łatwo zrobić</title>
+                                        </topic>
+                                        <topic id="07nspfnjehe7ehvc9sm5ekgajq">
+                                          <title>albo będzie uciażliwe w projektowaniu</title>
+                                        </topic>
+                                      </topics>
+                                    </children>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="0t1ppl5uue7f0aboshudb92klg">
+                        <title>trochę łatwiejsze od 1 i 2</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="6suoqhoqhmmnb3coeru93cr1dg">
+                  <title>każdy milestone po 30%</title>
+                </topic>
+              </topics>
+            </children>
+          </topic>
+        </topics>
+      </children>
+    </topic>
+    <title>Sheet 1</title>
+  </sheet>
+</xmap-content>
