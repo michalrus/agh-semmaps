@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <xmap-content xmlns="urn:xmind:xmap:xmlns:content:2.0" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" version="2.0">
-  <sheet id="7e64rt73qclcq8lvbm1eoqe4l7">
-    <topic id="4v39ijr78ruc6qb5qv4o49o5ot" structure-class="org.xmind.ui.map.clockwise">
-      <title>mapy sem</title>
+  <sheet id="7e64rt73qclcq8lvbm1eoqe4l7" theme="xminddefaultthemeid2014">
+    <topic id="4v39ijr78ruc6qb5qv4o49o5ot" structure-class="org.xmind.ui.map.unbalanced">
+      <title>Konsultacje</title>
       <children>
         <topics type="attached">
           <topic id="6rbdi9p28us8ol7r6f81fspurs">
@@ -284,7 +284,14 @@
           </topic>
         </topics>
       </children>
+      <extensions>
+        <extension provider="org.xmind.ui.map.unbalanced">
+          <content>
+            <right-number>1</right-number>
+          </content>
+        </extension>
+      </extensions>
     </topic>
-    <title>Sheet 1</title>
+    <title>Konsultacje</title>
   </sheet>
 </xmap-content>
