@@ -6,7 +6,7 @@
       <children>
         <topics type="attached">
           <topic id="6rbdi9p28us8ol7r6f81fspurs">
-            <title>specyfikacja</title>
+            <title>organizacyjne</title>
             <children>
               <topics type="attached">
                 <topic id="4cv6tb33h0h0uaq9rtflapgf99" style-id="4aoh8sifoeem793ve7updhjj20">
@@ -197,6 +197,87 @@
                 </topic>
                 <topic id="6suoqhoqhmmnb3coeru93cr1dg">
                   <title>każdy milestone po 30%</title>
+                </topic>
+              </topics>
+            </children>
+          </topic>
+          <topic id="0l9e9ec9cigf1ablhserma1oet">
+            <title>milestone 0</title>
+            <children>
+              <topics type="attached">
+                <topic id="00pehrplodd8n7jjr0nccb2ntq">
+                  <title>„trochę krótkie”</title>
+                </topic>
+                <topic id="17ga5fkg6ij95lovhsvg77rs51">
+                  <title svg:width="500">żeby połączyć kilka properties w jedno dla danego obiektu, w OWL można utworzyć sztuczny node, tak samo jak w RDF</title>
+                </topic>
+                <topic id="75f19qalnvfnt6smmd1pb0mrsu">
+                  <title>Bobek określa pozycję (X,Y) osobnika z beaconów</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="5hggv7sm2bh751t86jmh25gofu">
+                        <title>a potem dopiero resztę dopasowujemy już z tej pozycji</title>
+                      </topic>
+                      <topic id="102sjg3kpvmhp3ortqvi89bakk">
+                        <title>beacon NIE jest przypisany do konkretnego obiektu</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="006njac6ep2nb5mt79nc604lm2">
+                  <title>rozszerzyć o pomysł na opis rzeczy które są w pomieszczeniu</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="0nb1k1ds8v1sbsjrsbgchfacpk">
+                        <title>biurka</title>
+                      </topic>
+                      <topic id="4fsun7gnc21419ehotpq32qm2q">
+                        <title>krzesła</title>
+                      </topic>
+                      <topic id="29actugi61pv4uahbu7iuv37bg">
+                        <title>że np. coś jest w gablocie — co jest w czym</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="1d1ulet5tqrm4ts4smn9artmeu">
+                              <title>za szzcegółówo nie, bez pozycji względnej</title>
+                            </topic>
+                            <topic id="76kpbj373d6kda68aoh0evtrfu">
+                              <title>„buirko i ma dwa komputre” tylko lista</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="3ctq8eqs7g1f4rhv2g6ckds2lk">
+                  <title>drzwi</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="6nclh5bvnn3sn4da296dspdfk0">
+                        <title>portal (bez ograniczeń na punkty) jest ok</title>
+                      </topic>
+                      <topic id="3o7ua8r4kvk7g9ujils6b59do1">
+                        <title>to też OBIEKT!</title>
+                      </topic>
+                      <topic id="5jhkpoovosc41pldu273m5rs80">
+                        <title>też mają REGION, a nie dwa punkty</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="49dguikpce8c0psp7ksk0tthsj">
+                  <title>region</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="7cp2rcmtevlruk80tjqrdgq5e7">
+                        <title>lista punktów</title>
+                      </topic>
+                      <topic id="6m5r2tpjh29aoi5nb7t63h2q1v">
+                        <title>w Protégé: składa się z {1,kilku} {some,only} Position</title>
+                      </topic>
+                    </topics>
+                  </children>
                 </topic>
               </topics>
             </children>
