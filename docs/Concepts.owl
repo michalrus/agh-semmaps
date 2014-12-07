@@ -16,11 +16,15 @@
      -->
   <!-- http://www.semanticweb.org/agh/wshop/semanticmaps/Concepts#connects -->
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/agh/wshop/semanticmaps/Concepts#connects">
+    <rdf:type rdf:resource="&owl;FunctionalProperty"/>
     <rdfs:domain rdf:resource="http://www.semanticweb.org/agh/wshop/semanticmaps/Concepts#Door"/>
     <rdfs:range rdf:resource="http://www.semanticweb.org/agh/wshop/semanticmaps/Concepts#Room"/>
   </owl:ObjectProperty>
   <!-- http://www.semanticweb.org/agh/wshop/semanticmaps/Concepts#includes -->
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/agh/wshop/semanticmaps/Concepts#includes">
+    <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+    <rdf:type rdf:resource="&owl;TransitiveProperty"/>
     <rdfs:range rdf:resource="http://www.semanticweb.org/agh/wshop/semanticmaps/Concepts#POI"/>
     <rdfs:domain>
       <owl:Class>
@@ -38,8 +42,8 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-  <!-- http://www.semanticweb.org/agh/wshop/semanticmaps/Concepts#Location -->
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/agh/wshop/semanticmaps/Concepts#Location">
+  <!-- http://www.semanticweb.org/agh/wshop/semanticmaps/Concepts#location -->
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/agh/wshop/semanticmaps/Concepts#location">
     <rdf:type rdf:resource="&owl;FunctionalProperty"/>
     <rdfs:domain rdf:resource="http://www.semanticweb.org/agh/wshop/semanticmaps/Concepts#Object"/>
     <rdfs:range rdf:resource="&xsd;anyURI"/>
