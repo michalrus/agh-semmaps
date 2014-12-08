@@ -48,6 +48,18 @@
     <rdfs:domain rdf:resource="http://www.semanticweb.org/agh/wshop/semanticmaps/Concepts#Object"/>
     <rdfs:range rdf:resource="&xsd;anyURI"/>
   </owl:DatatypeProperty>
+  <!-- http://www.semanticweb.org/agh/wshop/semanticmaps/Concepts#transparent -->
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/agh/wshop/semanticmaps/Concepts#transparent">
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.semanticweb.org/agh/wshop/semanticmaps/Concepts#Door"/>
+          <rdf:Description rdf:about="http://www.semanticweb.org/agh/wshop/semanticmaps/Concepts#Obstacle"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:DatatypeProperty>
   <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
