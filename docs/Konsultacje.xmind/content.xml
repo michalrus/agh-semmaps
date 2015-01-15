@@ -593,6 +593,29 @@ kilkanaście predykatów</title>
                     </topics>
                   </children>
                 </topic>
+                <topic id="608v73kck3usp7led7u2vlmh10">
+                  <title>14 Jan 2015</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="1in0f47csle1793ndsflmskcr9">
+                        <title>&lt;sbobek&gt; hierarchia POI (np. komputerów w pomieszczeniu)</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="79tgq1tqoh51ccts3va431dvf3">
+                              <title>model</title>
+                            </topic>
+                            <topic id="3u61h5kob94urqhvelenqon34l">
+                              <title>rodzaj</title>
+                            </topic>
+                            <topic id="2os87u8m8tvamh7c0c0golq72c">
+                              <title>kolor</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
               </topics>
             </children>
           </topic>
