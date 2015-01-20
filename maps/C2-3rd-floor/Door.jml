@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<JCSDataFile xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" >
+<JCSGMLInputTemplate>
+<CollectionElement>featureCollection</CollectionElement> 
+<FeatureElement>feature</FeatureElement>
+<GeometryElement>geometry</GeometryElement>
+<ColumnDefinitions>
+</ColumnDefinitions>
+</JCSGMLInputTemplate>
+
+<featureCollection>
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>653.0,384.3 
+                    653.0,385.3 
+                    653.0,384.3 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>653.0,381.0 
+                    653.0,382.0 
+                    653.0,381.0 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>653.0,374.15 
+                    653.0,375.15 
+                    653.0,374.15 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>653.0,370.75 
+                    653.0,371.75 
+                    653.0,370.75 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>653.0,360.85 
+                    653.0,361.85 
+                    653.0,360.85 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>653.0,357.5 
+                    653.0,358.5 
+                    653.0,357.5 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>654.67,357.5 
+                    654.67,358.5 
+                    654.67,357.5 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>650.0,360.85 
+                    650.0,361.85 
+                    650.0,360.85 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>650.0,364.3 
+                    650.0,365.3 
+                    650.0,364.3 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>650.0,370.75 
+                    650.0,371.75 
+                    650.0,370.75 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>650.0,367.6 
+                    650.0,368.6 
+                    650.0,367.6 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>650.0,374.15 
+                    650.0,375.15 
+                    650.0,374.15 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>650.0,381.0 
+                    650.0,382.0 
+                    650.0,381.0 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>649.3,379.7 
+                    648.3,379.7 
+                    649.3,379.7 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>649.3,376.4 
+                    648.3,376.4 
+                    649.3,376.4 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>649.3,373.0 
+                    648.3,373.0 
+                    649.3,373.0 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     </featureCollection>
+</JCSDataFile>
