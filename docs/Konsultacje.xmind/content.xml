@@ -876,6 +876,25 @@ kilkanaście predykatów</title>
                   <marker-refs>
                     <marker-ref marker-id="priority-1"/>
                   </marker-refs>
+                  <children>
+                    <topics type="attached">
+                      <topic id="64hap61mak5435rafo8r5puec6">
+                        <title svg:width="500">można by podzielić przestrzeń w której da się stać w pokoju na kilka sekcji</title>
+                      </topic>
+                      <topic id="2k1ub0i2joi1ssj8pmd9n3ko1s">
+                        <title>i dla każdej sekcji zbudować decision tree</title>
+                      </topic>
+                      <topic id="4javesen54fhocbika4m9gs6r5">
+                        <title>ale to słabe</title>
+                      </topic>
+                      <topic id="7aafl09e3pk82i8lme62s5c2nq">
+                        <title svg:width="500">bo co jak osoba będzie w sekcji, ale patrzyła w innym kierunku? zmienia się „po lewej/prawej”</title>
+                      </topic>
+                      <topic id="4inckcad2ov8vacatp6ubsukci">
+                        <title>więc chyba najlepszy prolog…</title>
+                      </topic>
+                    </topics>
+                  </children>
                 </topic>
                 <topic id="29fdgahcd7n115nrfccfos0b5h">
                   <title>Prolog byłby OK, ale nie ma go w Androidzie</title>
