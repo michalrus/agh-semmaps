@@ -1,8 +1,365 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <xmap-content xmlns="urn:xmind:xmap:xmlns:content:2.0" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" version="2.0">
+  <sheet id="59o657rpi32q3n0i9m0cvsrunp" theme="xminddefaultthemeid2014">
+    <topic id="18e8mpbp1gfh7vg25gf47tbkll" structure-class="org.xmind.ui.map.clockwise">
+      <title>Konsultacje</title>
+      <children>
+        <topics type="attached">
+          <topic id="1ujp672ph2j1t76tupm1a1qop1">
+            <title>zaczynamy od tego co na WSHOP</title>
+            <children>
+              <topics type="attached">
+                <topic id="3iqdfbako55kn3crsjbodl3mtm">
+                  <title svg:width="500">&lt;sbk&gt; dlatego lepiej, że M zrobił robotę koncepcyjną, a K pomógł narzędziowo</title>
+                </topic>
+              </topics>
+            </children>
+          </topic>
+          <topic id="45h4t9c18ajqaio3ikv8r4c0em">
+            <title>kroki</title>
+            <children>
+              <topics type="attached">
+                <topic id="5jkllaufd0h6frad3hid8to6d2">
+                  <title>zamodelować plany dwóch pięter C-2</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="1pdoorcltugf9cl3ipfh3jj66c">
+                        <title>Bobek prześle JPG</title>
+                      </topic>
+                      <topic id="0nmb4anfn7q3r692vi46ovd4rs">
+                        <title>ściągnąć http://www.openjump.org/</title>
+                      </topic>
+                      <topic id="0n54bf98d64r5htpmj73019v19">
+                        <title>zamodelować</title>
+                      </topic>
+                      <topic id="0da3ri7pjchk4hh9rvn96cd1as">
+                        <title>ciężka robota bo edytor nie jest wspaniały</title>
+                      </topic>
+                      <topic id="2v8ms54nogpeh1vf9vekm6lcqm">
+                        <title>nie wymaga myślenia</title>
+                      </topic>
+                      <topic id="67d5uu2eqmfisgl5i0233kagfe">
+                        <title svg:width="500">+ sale do których mamy wstęp też zamodelować już z real-life</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="2np6fqjfi1eummcm8irnlt82h2">
+                              <title>oznaczyć miejsca które są niedostępne</title>
+                            </topic>
+                            <topic id="5ti1s48d0qeu5lba9g0res4l3b">
+                              <title>oznaczyć biurka, tablice etc.</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="6828c188islqvr43eb56oe155i">
+                  <title svg:width="500">w jakiś sposób podpiąć te mapki GML do ontologii</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="1a48kh3fo9tat7ir864vdap4h7">
+                        <title>czy trzeba to robić na tym etapie</title>
+                      </topic>
+                      <topic id="3voc4lv8gemn26cekicg240k67">
+                        <title>czy później na etapie wnioskowania</title>
+                      </topic>
+                      <topic id="4efcnc1etak7gdmcniisgb7l7g">
+                        <title>żeby prowadzły linki z ontologii do mapy</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="6dnlqjl1oop8a0dnk7lv055rhp">
+                  <title svg:width="500">ostatecznie mamy dostawać informacje, że znajdujemy się tu-albo-tu-albo-tu</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="1a7til2vv2v29449jluij3753v">
+                        <title svg:width="500">bazując na tym zadajemy użytkowniowi pytania, które pozwolą uściślić gdzie on jest</title>
+                        <children>
+                          <topics type="attached">
+                            
+                            
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="0866hvnkcrvg3rtd93cubvpss7">
+                        <title>część pytań można zadać z map; mamy na niej</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="47l2cuqkngm5e5puei8tqfjc8v">
+                              <title>nazwy pokoi</title>
+                            </topic>
+                            <topic id="08mp98rchvh9mtnra8aq5cnbj5">
+                              <title>nazwy obiektów</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="7fu1vjfs1n0g3je6v0kok4m1sa">
+                        <title>inne pytania:</title>
+                        <children>
+                          <topics type="attached">
+                                  
+                                  
+                                  
+                                  
+                                </topics>
+                        </children>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+              </topics>
+            </children>
+          </topic>
+          <topic id="5afe4c6413tvh4uonfl5omse03">
+            <title>współrzędne</title>
+            <children>
+              <topics type="attached">
+                <topic id="7ioei0g2usl1tch01eodq4j6l0">
+                  <title>&lt;bobek&gt; absolutne</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="2hgevqg1sv260j2rs49dsnm0lp">
+                        <title>względem całej mapy w GML</title>
+                      </topic>
+                      <topic id="73od3nni18u1l6fveq5qepr3r0">
+                        <title>później lokalizacja względem beaconów</title>
+                      </topic>
+                      <topic id="30tmbo4pep6fsjmkb59egod926">
+                        <title>nie wiadomo do końca, B sprawdzi</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="2p3p98sfme56al2arttrv7ecv6">
+                              <title>chyba dopiero w piątek</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="61al93ob97ik34k5gl1su8hplb">
+                        <title>raczej wszystko jest w jednym OXY</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="5f63dm9uvat6eibp7rci1ttcug">
+                  <title>&lt;gjn&gt; ALE rozbicie na pomieszczenia dobre…</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="3182l9q59vtk6e478g15p96gf9">
+                        <title>ściany mogą wpływać na dostępność sygnału</title>
+                      </topic>
+                      <topic id="437jmhsvn6uhu6gia8jcn4mplc">
+                        <title>wygodniej dla tworzącego</title>
+                      </topic>
+                      <topic id="5hingj81ps5fbqgaavravdok52">
+                        <title>wiemy jakie beacony znajdują się w obszarze</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+              </topics>
+            </children>
+          </topic>
+          <topic id="1q5hu8rfgrrjrg2na1cib9lcib">
+            <title>ontologia</title>
+            <children>
+              <topics type="attached">
+                <topic id="175s7i78rf4amudvabs1oh1rdh">
+                  <title svg:width="500">dr Nalepa jest za opcją, żeby rozdzielić na mapę+ontologię z linkami</title>
+                </topic>
+                <topic id="3rcv08v8ajinhbqaa2sdhklv8v">
+                  <title>co to jest pomieszczenie itd.</title>
+                </topic>
+                <topic id="5rec10lf041th0l4mpb8nfjqps">
+                  <title>jednocześnie to co jest w pomieszczeniach</title>
+                </topic>
+                <topic id="5gmtjrp1gfiuucouoshb9geatl">
+                  <title>znaleźć granicę z mapami</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="3a0h737lrh3i8ifkf1h9m7dfll">
+                        <title>na mapach np. tylko, że przeszkody</title>
+                      </topic>
+                      <topic id="487h71bf538f444ac2n4sot5rb">
+                        <title>a w ontologii opisać czym są te konkretne przeszkody</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="5nf15qhbtravs75qnqc3rs4pkg">
+                              <title>że POI</title>
+                            </topic>
+                            <topic id="3oe2oug212lnkpfqguplsdb6bd">
+                              <title>że przeszkoda</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="155cl5ncs7mv2sccc6j1o0n08r">
+                  <title>dwie ontologie możliwe</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="1l7k7qu8okvho2hgv4ga691rt6">
+                        <title>1 — encyklopedyczna</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="5u2ldr31nu4eqi344acj458m0g">
+                              <title>że to sala wykładowa</title>
+                            </topic>
+                            <topic id="1r40hqieg60dqb7uacbc0vpa9l">
+                              <title>że to jest buirko</title>
+                            </topic>
+                            <topic id="4fnrlrevrul08ib11s4r4r4gfh">
+                              <title>że to jest szafa</title>
+                            </topic>
+                            <topic id="29bupjqr71p20tv84foptfotb5">
+                              <title>żę przez szybę widać</title>
+                            </topic>
+                            <topic id="196ih0k9ou743phcilvu6stdpq">
+                              <title>że biurko jest meblem</title>
+                            </topic>
+                            <topic id="739gg9mk0m2h5b5bojm4m8qme7" style-id="259lpiq260hu7omg1g8bn1jg50">
+                              <title svg:width="500">ALE NIE trzymalibyśmy w ontologii, że biurko jest na lewo itd.</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="123bmftffumkqu81kueg2brs60">
+                        <title>2 — ???</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="6fjjjuor4n8151jakp8tg7sg31">
+                              <title>piętro z pomieszczeń i korytarza</title>
+                            </topic>
+                            <topic id="4ionpf7dbe2ogpeoq8ntpibq2g">
+                              <title>w pomieszczeniu 318 znajdują się</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="4op26ojft3tanm7mf2j7q87si1">
+                                    <title>4 buirka</title>
+                                  </topic>
+                                  <topic id="4nd5jc2d6ssnmu9og4rrobe5uh">
+                                    <title>3 szafy</title>
+                                  </topic>
+                                  <topic id="0egiftie3171ksc56n33dp6j7v">
+                                    <title>itd.</title>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="6haf91t5knfja239vau3jv6ltb">
+                        <title>jeszcze raz o różnicy…</title>
+                        <marker-refs>
+                          <marker-ref marker-id="priority-1"/>
+                        </marker-refs>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+              </topics>
+            </children>
+          </topic>
+          <topic id="6486ulof27pj4ti6bbpec99lu5">
+            <title>mapa</title>
+            <children>
+              <topics type="attached">
+                <topic id="767268bqb5jrc4eesrtmc3t8pu">
+                  <title>GML</title>
+                </topic>
+                <topic id="4hovh1q92pl911gte9ff3lm5la">
+                  <title>co można wywnioskować z samych map?</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="7vi287urv3d2f7b0q18eb4jdbk">
+                        <title svg:width="500">być może przynalezności obiektów do pomieszczeń nie trzeba wsadzać do ontologii</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+              </topics>
+            </children>
+          </topic>
+          <topic id="0gqde1pf1gj9l69ujv1iavo96t">
+            <title>prolog</title>
+            <children>
+              <topics type="attached">
+                <topic id="290jf8q85mnek6qfaej14sjg2s">
+                  <title svg:width="500">&lt;gjn&gt; bo da się wpakować w ontologię, ale to sztuka dla sztuki</title>
+                </topic>
+                <topic id="10pofanhmopvto1jdjjd1md0pv">
+                  <title>prosta warstwa pośrednia w ~prologu
+kilkanaście predykatów</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="3mssgt29cggjk1c48kcpmnndep">
+                        <title>co to jest na prawo</title>
+                      </topic>
+                      <topic id="34idl8otbnslt9bukt32j549ce">
+                        <title>na lewo</title>
+                      </topic>
+                      <topic id="1pp33meng2j53vgc55r28nrk07">
+                        <title>itd</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="638bu9nsm8dvpav7mieml8888f">
+                  <title>http://www.cs.toronto.edu/~hector/PublicTCSlides.pdf</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="6e16v09n8u132s72kk0ecv6s7q">
+                        <title>rozdział „understnding visual scenes”</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+              </topics>
+            </children>
+          </topic>
+          <topic id="794km2tmr9mu6jr80km755d6hk">
+            <title>14 Jan 2015</title>
+            <children>
+              <topics type="attached">
+                <topic id="3fi60pkqfb1n6ch1rs5ouvsqmo">
+                  <title>&lt;sbobek&gt; hierarchia POI (np. komputerów w pomieszczeniu)</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="65kisedfvhc3i9bttnfud9je95">
+                        <title>model</title>
+                      </topic>
+                      <topic id="70g911dv532al7snbdmq402kpa">
+                        <title>rodzaj</title>
+                      </topic>
+                      <topic id="0998lat8ut1ls6r1ukhgvc5mbu">
+                        <title>kolor</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+              </topics>
+            </children>
+          </topic>
+        </topics>
+      </children>
+      <extensions>
+        <extension provider="org.xmind.ui.map.unbalanced">
+          <content>
+            <right-number>2</right-number>
+          </content>
+        </extension>
+      </extensions>
+    </topic>
+    <title>Konsultacje</title>
+  </sheet>
   <sheet id="7e64rt73qclcq8lvbm1eoqe4l7" theme="xminddefaultthemeid2014">
     <topic id="4v39ijr78ruc6qb5qv4o49o5ot" structure-class="org.xmind.ui.map.clockwise">
-      <title>Konsultacje</title>
+      <title>Workshop</title>
       <children>
         <topics type="attached">
           <topic id="6rbdi9p28us8ol7r6f81fspurs">
@@ -282,343 +639,6 @@
               </topics>
             </children>
           </topic>
-          <topic id="6ttsokerprthapi4dgv9bplr7l">
-            <title>konsultacje mgr Michała</title>
-            <children>
-              <topics type="attached">
-                <topic id="51g4g4m8ltujq23t4ja32g6ae8">
-                  <title>kroki</title>
-                  <children>
-                    <topics type="attached">
-                      <topic id="0qfr7dfahlprutashnvr1e1g5l">
-                        <title>zamodelować plany dwóch pięter C-2</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="5loh6j4htqmjmp2espijuisqfm">
-                              <title>Bobek prześle JPG</title>
-                            </topic>
-                            <topic id="0d2parmd4s8o1avqtll4ohkoaa">
-                              <title>ściągnąć http://www.openjump.org/</title>
-                            </topic>
-                            <topic id="44072bhf47m70oj6fitvbrvulc">
-                              <title>zamodelować</title>
-                            </topic>
-                            <topic id="21klil1rmtq4phhfntfjvg2u1f">
-                              <title>ciężka robota bo edytor nie jest wspaniały</title>
-                            </topic>
-                            <topic id="3stb85143lg5jdt552b5hj6o9s">
-                              <title>nie wymaga myślenia</title>
-                            </topic>
-                            <topic id="7oo5crckvnbg30a5kouqsv148p">
-                              <title svg:width="500">+ sale do których mamy wstęp też zamodelować już z real-life</title>
-                              <children>
-                                <topics type="attached">
-                                  <topic id="6h4gtsei290r3chri2et4bmadm">
-                                    <title>oznaczyć miejsca które są niedostępne</title>
-                                  </topic>
-                                  <topic id="3nrlcsd4ltbl1h477kq2v2gkvu">
-                                    <title>oznaczyć biurka, tablice etc.</title>
-                                  </topic>
-                                </topics>
-                              </children>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="7qbhu86nfoi8lm82t4t50bpb8q">
-                        <title svg:width="500">w jakiś sposób podpiąć te mapki GML do ontologii</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="4743aek3m1h7bvmpe4mr0roks9">
-                              <title>czy trzeba to robić na tym etapie</title>
-                            </topic>
-                            <topic id="1iddslhepi3osj3qm0p6b9odmk">
-                              <title>czy później na etapie wnioskowania</title>
-                            </topic>
-                            <topic id="7lat11fnfviol27tr99p5cc8ch">
-                              <title>żeby prowadzły linki z ontologii do mapy</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="7ogtl92h5t9dlp7bg9mqnu4n1c">
-                        <title svg:width="500">ostatecznie mamy dostawać informacje, że znajdujemy się tu-albo-tu-albo-tu</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="0iu485aij8e1l11kcen8qupovc">
-                              <title svg:width="500">bazując na tym zadajemy użytkowniowi pytania, które pozwolą uściślić gdzie on jest</title>
-                              <children>
-                                <topics type="attached">
-                            
-                            
-                          </topics>
-                              </children>
-                            </topic>
-                            <topic id="4fi3iukissaq159e261pva7f39">
-                              <title>część pytań można zadać z map; mamy na niej</title>
-                              <children>
-                                <topics type="attached">
-                                  <topic id="1j0qsm4l1bh0reo4qii0ojiln0">
-                                    <title>nazwy pokoi</title>
-                                  </topic>
-                                  <topic id="3ubcu786ge4oehsj4mo86k2m9d">
-                                    <title>nazwy obiektów</title>
-                                  </topic>
-                                </topics>
-                              </children>
-                            </topic>
-                            <topic id="1ifdfr4b6v651gdbt75l0k46sh">
-                              <title>inne pytania:</title>
-                              <children>
-                                <topics type="attached">
-                                  
-                                  
-                                  
-                                  
-                                </topics>
-                              </children>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                    </topics>
-                  </children>
-                </topic>
-                <topic id="0i3mguir2l2tpg5j26d3tngijo">
-                  <title>współrzędne</title>
-                  <children>
-                    <topics type="attached">
-                      <topic id="7b565qrerh5rg4v8ed9gvpr6st">
-                        <title>&lt;bobek&gt; absolutne</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="6nrf1f7sqj8pgf8vsf3nss533r">
-                              <title>względem całej mapy w GML</title>
-                            </topic>
-                            <topic id="603r2866nbqf4dtifoldaafrfq">
-                              <title>później lokalizacja względem beaconów</title>
-                            </topic>
-                            <topic id="13un9trkvkbrjkprj94d6fu3nl">
-                              <title>nie wiadomo do końca, B sprawdzi</title>
-                              <children>
-                                <topics type="attached">
-                                  <topic id="0mskmv45o0fd3moi4rka19mvtk">
-                                    <title>chyba dopiero w piątek</title>
-                                  </topic>
-                                </topics>
-                              </children>
-                            </topic>
-                            <topic id="4bm4mbu9b787hkdh0dvd77alr6">
-                              <title>raczej wszystko jest w jednym OXY</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="6msdn65drk3i0tirf6gsdfiv85">
-                        <title>&lt;gjn&gt; ALE rozbicie na pomieszczenia dobre…</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="3ct7tsit980fh86jmh8bmi2mn2">
-                              <title>ściany mogą wpływać na dostępność sygnału</title>
-                            </topic>
-                            <topic id="7dp5r7fbie92oqaf3as133kc49">
-                              <title>wygodniej dla tworzącego</title>
-                            </topic>
-                            <topic id="33n6rmohev2o58d0bgggllcmk9">
-                              <title>wiemy jakie beacony znajdują się w obszarze</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                    </topics>
-                  </children>
-                </topic>
-                <topic id="6c1br9tqens0sngufkca0dlhfc">
-                  <title>ontologia</title>
-                  <children>
-                    <topics type="attached">
-                      <topic id="6l8p03h205klsjh4nskieabs8a">
-                        <title svg:width="500">dr Nalepa jest za opcją, żeby rozdzielić na mapę+ontologię z linkami</title>
-                      </topic>
-                      <topic id="78dac8c1bh8empkioh0scqqjd2">
-                        <title>co to jest pomieszczenie itd.</title>
-                      </topic>
-                      <topic id="38ijj0g9r3bv3ma7nmljli95lf">
-                        <title>jednocześnie to co jest w pomieszczeniach</title>
-                      </topic>
-                      <topic id="1rjha69l9jp5i7mreff6po7kch">
-                        <title>znaleźć granicę z mapami</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="48cr4s902ob4ljrpaj5lavgebs">
-                              <title>na mapach np. tylko, że przeszkody</title>
-                            </topic>
-                            <topic id="61t9hdjnr5p742rrd9gv3i9k5a">
-                              <title>a w ontologii opisać czym są te konkretne przeszkody</title>
-                              <children>
-                                <topics type="attached">
-                                  <topic id="736st1tonolpet83rojgm35nnr">
-                                    <title>że POI</title>
-                                  </topic>
-                                  <topic id="7sv2mdfntqgsleav5p8gg953s5">
-                                    <title>że przeszkoda</title>
-                                  </topic>
-                                </topics>
-                              </children>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="7d7ke2q4nl0hka22amkhag2cos">
-                        <title>dwie ontologie możliwe</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="3hhj45ih37n3pnqksfvpf9u0fp">
-                              <title>1 — encyklopedyczna</title>
-                              <children>
-                                <topics type="attached">
-                                  <topic id="2tflnlti2l5dv07qaag75iv7qj">
-                                    <title>że to sala wykładowa</title>
-                                  </topic>
-                                  <topic id="19db7urbg2gjtfb72r9lqtgd57">
-                                    <title>że to jest buirko</title>
-                                  </topic>
-                                  <topic id="5etpsiqco6dlorepra7sdf2i7o">
-                                    <title>że to jest szafa</title>
-                                  </topic>
-                                  <topic id="1h8ej0mthq6nuesui1tglrh2o7">
-                                    <title>żę przez szybę widać</title>
-                                  </topic>
-                                  <topic id="4vm905cs9eapsm6qq2rbi01ui8">
-                                    <title>że biurko jest meblem</title>
-                                  </topic>
-                                  <topic id="0qm62eu9ikvadir5fqbaeisd33" style-id="259lpiq260hu7omg1g8bn1jg50">
-                                    <title svg:width="500">ALE NIE trzymalibyśmy w ontologii, że biurko jest na lewo itd.</title>
-                                  </topic>
-                                </topics>
-                              </children>
-                            </topic>
-                            <topic id="5kap1ra62uvfdgu7in05g13u99">
-                              <title>2 — ???</title>
-                              <children>
-                                <topics type="attached">
-                                  <topic id="3p8b83jv3vcj31sehclmt7f6cd">
-                                    <title>piętro z pomieszczeń i korytarza</title>
-                                  </topic>
-                                  <topic id="5i56lt9c461drqf5mph7b8icg1">
-                                    <title>w pomieszczeniu 318 znajdują się</title>
-                                    <children>
-                                      <topics type="attached">
-                                        <topic id="38iueear7rho2ku3ogar3k3imv">
-                                          <title>4 buirka</title>
-                                        </topic>
-                                        <topic id="17k1g3mdu66p57k4arcgi9aije">
-                                          <title>3 szafy</title>
-                                        </topic>
-                                        <topic id="03hph3v6o330iv0kai67ci6393">
-                                          <title>itd.</title>
-                                        </topic>
-                                      </topics>
-                                    </children>
-                                  </topic>
-                                </topics>
-                              </children>
-                            </topic>
-                            <topic id="6vp2set6o1mjlbte3u8cu80smk">
-                              <title>jeszcze raz o różnicy…</title>
-                              <marker-refs>
-                                <marker-ref marker-id="priority-1"/>
-                              </marker-refs>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                    </topics>
-                  </children>
-                </topic>
-                <topic id="7cfr06bpcnam05l9q7ghf687d4">
-                  <title>mapa</title>
-                  <children>
-                    <topics type="attached">
-                      <topic id="3gq6m3mgqftsr0jvfbvqhmg6ud">
-                        <title>GML</title>
-                      </topic>
-                      <topic id="68h5aocloce1s8aves6iagvikt">
-                        <title>co można wywnioskować z samych map?</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="5gjb6sh1phlesdiv834jq3lo53">
-                              <title svg:width="500">być może przynalezności obiektów do pomieszczeń nie trzeba wsadzać do ontologii</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                    </topics>
-                  </children>
-                </topic>
-                <topic id="60u44nidbc9jdp1uuvvk8ltsc6">
-                  <title>prolog</title>
-                  <children>
-                    <topics type="attached">
-                      <topic id="1pbliicct13rhgt0go2hdg2gfd">
-                        <title svg:width="500">&lt;gjn&gt; bo da się wpakować w ontologię, ale to sztuka dla sztuki</title>
-                      </topic>
-                      <topic id="01h9b98tlce1rjp0kcv8t6m4kl">
-                        <title>prosta warstwa pośrednia w ~prologu
-kilkanaście predykatów</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="7cblsos278r70mm01hgodo4293">
-                              <title>co to jest na prawo</title>
-                            </topic>
-                            <topic id="1s69epagte9eq73f3ffn5jnrvh">
-                              <title>na lewo</title>
-                            </topic>
-                            <topic id="3bmaekkeqbfiu1ge4e8042svfi">
-                              <title>itd</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="17cfi3sv0hhf4rifokp5ah9udn">
-                        <title>http://www.cs.toronto.edu/~hector/PublicTCSlides.pdf</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="4t2n6k3tc5gj527mbvcg75v8kh">
-                              <title>rozdział „understnding visual scenes”</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                    </topics>
-                  </children>
-                </topic>
-                <topic id="608v73kck3usp7led7u2vlmh10">
-                  <title>14 Jan 2015</title>
-                  <children>
-                    <topics type="attached">
-                      <topic id="1in0f47csle1793ndsflmskcr9">
-                        <title>&lt;sbobek&gt; hierarchia POI (np. komputerów w pomieszczeniu)</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="79tgq1tqoh51ccts3va431dvf3">
-                              <title>model</title>
-                            </topic>
-                            <topic id="3u61h5kob94urqhvelenqon34l">
-                              <title>rodzaj</title>
-                            </topic>
-                            <topic id="2os87u8m8tvamh7c0c0golq72c">
-                              <title>kolor</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                    </topics>
-                  </children>
-                </topic>
-              </topics>
-            </children>
-          </topic>
         </topics>
       </children>
       <extensions>
@@ -629,6 +649,6 @@ kilkanaście predykatów</title>
         </extension>
       </extensions>
     </topic>
-    <title>Konsultacje</title>
+    <title>Workshop</title>
   </sheet>
 </xmap-content>
