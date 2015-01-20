@@ -651,4 +651,34 @@ kilkanaście predykatów</title>
     </topic>
     <title>Workshop</title>
   </sheet>
+  <sheet id="6g2tggme8f4v4vomb66opk4r7k" theme="xminddefaultthemeid2014">
+    <topic id="26mdggdiq9bcs8p8ve6f46fnon" structure-class="org.xmind.ui.map.unbalanced">
+      <title>Problemy</title>
+      <extensions>
+        <extension provider="org.xmind.ui.map.unbalanced">
+          <content>
+            <right-number>1</right-number>
+          </content>
+        </extension>
+      </extensions>
+      <children>
+        <topics type="attached">
+          <topic id="6m7lhrmgt3u4gm479ldif7d0aj">
+            <title>niewidoczne POI (w szafie?)</title>
+            <children>
+              <topics type="attached">
+                <topic id="7t658ekrh4rjsekmb86d374qr6">
+                  <title svg:width="500">00:15:59 &lt; kjanosz&gt; michalrus: taki problem, prosta rzecz, której chyba nie rozpatrywaliśmy - zarówno do mapek (ale tu mały problem bo to przyblizenie) i do onto - poi schowane w szafie</title>
+                </topic>
+                <topic id="5drojaktfmtp3cqrtv3rgkdia3">
+                  <title svg:width="500">00:16:33 &lt; kjanosz&gt; tak mi się nasunęło przy oglądaniu zdjęć 316 i przypomnieniu sobie że tam laptopy i mysze są schowane </title>
+                </topic>
+              </topics>
+            </children>
+          </topic>
+        </topics>
+      </children>
+    </topic>
+    <title>Problemy</title>
+  </sheet>
 </xmap-content>
