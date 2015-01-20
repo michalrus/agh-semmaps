@@ -6,13 +6,13 @@
       <value class="java.lang.String">/home/trickster/Development/semmaps/maps/C2-3rd-floor.jmp</value>
     </mapping>
   </properties>
-  <windowLocation X="5" Y="5" />
-  <windowSize width="1518" height="620" />
-  <windowZoom left="617.6927995686727" right="710.4303641572222" bottom="346.14152893401575" top="384.0979777206209" />
+  <windowLocation X="5" Y="0" />
+  <windowSize width="1518" height="580" />
+  <windowZoom left="639.6509662414421" right="672.6146019210739" bottom="351.269927742788" top="364.4027550200869" />
   <maximized>true</maximized>
   <layers>
     <category name="Working">
-      <layer class="com.vividsolutions.jump.workbench.model.Layer" name="Door" visible="true" editable="false" selectable="false" read-only="false" drawnLast="false" synchronizedLineColor="true">
+      <layer class="com.vividsolutions.jump.workbench.model.Layer" name="Door" visible="true" editable="true" selectable="true" read-only="false" drawnLast="false" synchronizedLineColor="true">
         <scaleDependentRendering enabled="false">
           <minScale null="true" />
           <maxScale null="true" />
@@ -37,6 +37,10 @@
                     <key class="java.lang.String">FID</key>
                     <value class="java.lang.Integer">36</value>
                   </mapping>
+                  <mapping>
+                    <key class="java.lang.String" />
+                    <value class="java.lang.Integer">16</value>
+                  </mapping>
                 </value>
               </mapping>
               <mapping>
@@ -59,7 +63,6 @@
                 <color>134, 134, 134, 255</color>
               </line>
               <alpha>255</alpha>
-              <vertex-style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
             </default-style>
             <attribute-value-to-style-map class="java.util.HashMap" />
             <attribute-value-to-label-map class="java.util.HashMap" />
@@ -132,6 +135,19 @@
               <mapping>
                 <key class="java.lang.String">File</key>
                 <value class="java.lang.String">/home/trickster/Development/semmaps/maps/C2-3rd-floor/POI.jml</value>
+              </mapping>
+              <mapping>
+                <key class="java.lang.String">AttributeColumnsWidthMap</key>
+                <value class="java.util.HashMap">
+                  <mapping>
+                    <key class="java.lang.String" />
+                    <value class="java.lang.Integer">16</value>
+                  </mapping>
+                  <mapping>
+                    <key class="java.lang.String">FID</key>
+                    <value class="java.lang.Integer">36</value>
+                  </mapping>
+                </value>
               </mapping>
             </properties>
           </data-source>
@@ -215,10 +231,6 @@
                   <mapping>
                     <key class="java.lang.String">FID</key>
                     <value class="java.lang.Integer">36</value>
-                  </mapping>
-                  <mapping>
-                    <key class="java.lang.String" />
-                    <value class="java.lang.Integer">16</value>
                   </mapping>
                 </value>
               </mapping>

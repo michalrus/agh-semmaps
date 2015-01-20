@@ -1125,5 +1125,305 @@
           </geometry>
      </feature>
 
+     <feature> 
+          <geometry>
+                <gml:Polygon>
+                  <gml:outerBoundaryIs>
+                  <gml:LinearRing>
+                    <gml:coordinates>653.0,355.7 
+                      653.0,356.3 
+                      654.15,356.3 
+                      654.15,355.7 
+                      653.0,355.7 </gml:coordinates>
+                  </gml:LinearRing>
+                  </gml:outerBoundaryIs>
+                </gml:Polygon>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:Polygon>
+                  <gml:outerBoundaryIs>
+                  <gml:LinearRing>
+                    <gml:coordinates>653.0,353.2 
+                      653.0,353.8 
+                      654.15,353.8 
+                      654.15,353.2 
+                      653.0,353.2 </gml:coordinates>
+                  </gml:LinearRing>
+                  </gml:outerBoundaryIs>
+                </gml:Polygon>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:Polygon>
+                  <gml:outerBoundaryIs>
+                  <gml:LinearRing>
+                    <gml:coordinates>658.1,355.6 
+                      658.1,356.3 
+                      659.4,356.3 
+                      659.4,355.6 
+                      658.1,355.6 </gml:coordinates>
+                  </gml:LinearRing>
+                  </gml:outerBoundaryIs>
+                </gml:Polygon>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:Polygon>
+                  <gml:outerBoundaryIs>
+                  <gml:LinearRing>
+                    <gml:coordinates>656.8,355.6 
+                      656.8,356.3 
+                      658.1,356.3 
+                      658.1,355.6 
+                      656.8,355.6 </gml:coordinates>
+                  </gml:LinearRing>
+                  </gml:outerBoundaryIs>
+                </gml:Polygon>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:Polygon>
+                  <gml:outerBoundaryIs>
+                  <gml:LinearRing>
+                    <gml:coordinates>655.5,355.6 
+                      655.5,356.3 
+                      656.8,356.3 
+                      656.8,355.6 
+                      655.5,355.6 </gml:coordinates>
+                  </gml:LinearRing>
+                  </gml:outerBoundaryIs>
+                </gml:Polygon>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:Polygon>
+                  <gml:outerBoundaryIs>
+                  <gml:LinearRing>
+                    <gml:coordinates>654.15,355.7 
+                      654.15,356.3 
+                      655.3,356.3 
+                      655.3,355.7 
+                      654.15,355.7 </gml:coordinates>
+                  </gml:LinearRing>
+                  </gml:outerBoundaryIs>
+                </gml:Polygon>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:Polygon>
+                  <gml:outerBoundaryIs>
+                  <gml:LinearRing>
+                    <gml:coordinates>655.25,353.2 
+                      655.25,353.9 
+                      656.55,353.9 
+                      656.55,353.2 
+                      655.25,353.2 </gml:coordinates>
+                  </gml:LinearRing>
+                  </gml:outerBoundaryIs>
+                </gml:Polygon>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:Polygon>
+                  <gml:outerBoundaryIs>
+                  <gml:LinearRing>
+                    <gml:coordinates>656.55,353.2 
+                      656.55,353.9 
+                      657.8,353.9 
+                      657.8,353.2 
+                      656.55,353.2 </gml:coordinates>
+                  </gml:LinearRing>
+                  </gml:outerBoundaryIs>
+                </gml:Polygon>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:Polygon>
+                  <gml:outerBoundaryIs>
+                  <gml:LinearRing>
+                    <gml:coordinates>657.8,353.2 
+                      657.8,353.7 
+                      658.5,353.7 
+                      658.5,353.2 
+                      657.8,353.2 </gml:coordinates>
+                  </gml:LinearRing>
+                  </gml:outerBoundaryIs>
+                </gml:Polygon>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:Polygon>
+                  <gml:outerBoundaryIs>
+                  <gml:LinearRing>
+                    <gml:coordinates>655.25,352.5 
+                      655.25,353.2 
+                      656.05,353.2 
+                      656.05,352.5 
+                      655.25,352.5 </gml:coordinates>
+                  </gml:LinearRing>
+                  </gml:outerBoundaryIs>
+                </gml:Polygon>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:Polygon>
+                  <gml:outerBoundaryIs>
+                  <gml:LinearRing>
+                    <gml:coordinates>657.3,352.5 
+                      657.3,353.2 
+                      658.6,353.2 
+                      658.6,352.5 
+                      657.3,352.5 </gml:coordinates>
+                  </gml:LinearRing>
+                  </gml:outerBoundaryIs>
+                </gml:Polygon>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:Polygon>
+                  <gml:outerBoundaryIs>
+                  <gml:LinearRing>
+                    <gml:coordinates>657.7,350.1 
+                      657.7,350.8 
+                      659.0,350.8 
+                      659.0,350.1 
+                      657.7,350.1 </gml:coordinates>
+                  </gml:LinearRing>
+                  </gml:outerBoundaryIs>
+                </gml:Polygon>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:Polygon>
+                  <gml:outerBoundaryIs>
+                  <gml:LinearRing>
+                    <gml:coordinates>656.5,350.1 
+                      656.5,350.6 
+                      657.7,350.6 
+                      657.7,350.1 
+                      656.5,350.1 </gml:coordinates>
+                  </gml:LinearRing>
+                  </gml:outerBoundaryIs>
+                </gml:Polygon>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:Polygon>
+                  <gml:outerBoundaryIs>
+                  <gml:LinearRing>
+                    <gml:coordinates>656.0,350.1 
+                      656.0,350.6 
+                      656.5,350.6 
+                      656.5,350.1 
+                      656.0,350.1 </gml:coordinates>
+                  </gml:LinearRing>
+                  </gml:outerBoundaryIs>
+                </gml:Polygon>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:Polygon>
+                  <gml:outerBoundaryIs>
+                  <gml:LinearRing>
+                    <gml:coordinates>654.8,350.1 
+                      654.8,351.2 
+                      655.5,351.2 
+                      655.5,350.1 
+                      654.8,350.1 </gml:coordinates>
+                  </gml:LinearRing>
+                  </gml:outerBoundaryIs>
+                </gml:Polygon>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:Polygon>
+                  <gml:outerBoundaryIs>
+                  <gml:LinearRing>
+                    <gml:coordinates>653.0,350.1 
+                      653.0,350.7 
+                      654.65,350.7 
+                      654.65,350.1 
+                      653.0,350.1 </gml:coordinates>
+                  </gml:LinearRing>
+                  </gml:outerBoundaryIs>
+                </gml:Polygon>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:Polygon>
+                  <gml:outerBoundaryIs>
+                  <gml:LinearRing>
+                    <gml:coordinates>653.0,352.5 
+                      653.0,353.2 
+                      654.1,353.2 
+                      654.1,352.5 
+                      653.0,352.5 </gml:coordinates>
+                  </gml:LinearRing>
+                  </gml:outerBoundaryIs>
+                </gml:Polygon>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:Polygon>
+                  <gml:outerBoundaryIs>
+                  <gml:LinearRing>
+                    <gml:coordinates>650.0,346.6 
+                      650.0,347.9 
+                      650.7,347.9 
+                      650.7,346.6 
+                      650.0,346.6 </gml:coordinates>
+                  </gml:LinearRing>
+                  </gml:outerBoundaryIs>
+                </gml:Polygon>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>645.1,386.5 
+                    645.1,383.1 
+                    650.0,383.1 
+                    650.0,386.5 
+                    645.1,386.5 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
      </featureCollection>
 </JCSDataFile>

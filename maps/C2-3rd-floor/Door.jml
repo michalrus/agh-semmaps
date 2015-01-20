@@ -169,5 +169,245 @@
           </geometry>
      </feature>
 
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>649.3,353.2 
+                    648.3,353.2 
+                    649.3,353.2 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>648.3,346.7 
+                    649.3,346.7 
+                    648.3,346.7 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>648.3,343.6 
+                    649.3,343.6 
+                    648.3,343.6 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>648.3,340.2 
+                    649.3,340.2 
+                    648.3,340.2 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>648.3,333.7 
+                    649.3,333.7 
+                    648.3,333.7 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>645.6,337.1 
+                    646.6,337.1 
+                    645.6,337.1 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>645.6,350.1 
+                    646.6,350.1 
+                    645.6,350.1 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>650.0,338.0 
+                    650.0,339.0 
+                    650.0,338.0 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>650.0,347.9 
+                    650.0,348.9 
+                    650.0,347.9 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>653.0,347.9 
+                    653.0,348.9 
+                    653.0,347.9 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>653.0,351.1 
+                    653.0,352.1 
+                    653.0,351.1 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>653.0,354.4 
+                    653.0,355.4 
+                    653.0,354.4 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>654.9,340.2 
+                    653.9,340.2 
+                    653.9,340.2 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>655.25,353.2 
+                    654.25,353.2 
+                    655.25,353.2 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>653.0,344.7 
+                    653.0,345.7 
+                    653.0,344.7 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>653.0,334.9 
+                    653.0,335.9 
+                    653.0,334.9 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>653.0,338.0 
+                    653.0,339.0 
+                    653.0,338.0 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>653.0,341.3 
+                    653.0,342.3 
+                    653.0,341.3 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>650.0,384.3 
+                    650.0,385.3 
+                    650.0,384.3 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>651.4,386.5 
+                    650.4,386.5 
+                    651.4,386.5 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>652.4,386.5 
+                    651.4,386.5 
+                    652.4,386.5 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>650.0,358.5 
+                    650.0,359.5 
+                    650.0,358.5 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>650.0,357.5 
+                    650.0,358.5 
+                    650.0,357.5 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
+     <feature> 
+          <geometry>
+                <gml:LineString>
+                  <gml:coordinates>650.0,356.5 
+                    650.0,357.5 
+                    650.0,356.5 </gml:coordinates>
+                </gml:LineString>
+          </geometry>
+     </feature>
+
      </featureCollection>
 </JCSDataFile>

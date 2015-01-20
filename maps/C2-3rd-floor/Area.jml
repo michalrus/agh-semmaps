@@ -473,5 +473,21 @@
           </geometry>
      </feature>
 
+     <feature> 
+          <geometry>
+                <gml:Polygon>
+                  <gml:outerBoundaryIs>
+                  <gml:LinearRing>
+                    <gml:coordinates>645.1,386.5 
+                      645.1,383.1 
+                      650.0,383.1 
+                      650.0,386.5 
+                      645.1,386.5 </gml:coordinates>
+                  </gml:LinearRing>
+                  </gml:outerBoundaryIs>
+                </gml:Polygon>
+          </geometry>
+     </feature>
+
      </featureCollection>
 </JCSDataFile>
