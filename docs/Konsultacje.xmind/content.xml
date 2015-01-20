@@ -681,4 +681,232 @@ kilkanaście predykatów</title>
     </topic>
     <title>Problemy</title>
   </sheet>
+  <sheet id="12mh1ae8kijvdsi1dfl0d1u6h7" theme="xminddefaultthemeid2014">
+    <topic id="46repgqvba359p8rr66uk8b2ne" structure-class="org.xmind.ui.map.unbalanced">
+      <title>Ostateczna postać</title>
+      <extensions>
+        <extension provider="org.xmind.ui.map.unbalanced">
+          <content>
+            <right-number>5</right-number>
+          </content>
+        </extension>
+      </extensions>
+      <children>
+        <topics type="attached">
+          <topic id="6aovmm6tulb2fkiu09vl38e7q0">
+            <title>w pomieszczeniu są beacony</title>
+            <children>
+              <topics type="attached">
+                <topic id="2fu9hr5roqjk79idrnp7qvhhms">
+                  <title svg:width="500">beacony generalnie mówią, że telefon jest w danym pomieszczeniu</title>
+                </topic>
+                <topic id="4i9f98f2q8tbm2obm4h7ts6dsf">
+                  <title svg:width="500">trwają prace nad dokładniejszą lokalizacją…</title>
+                </topic>
+              </topics>
+            </children>
+          </topic>
+          <topic id="337tih427jan414amgcr3cgrjb">
+            <title>mamy mapy GML pomieszczeń</title>
+            <children>
+              <topics type="attached">
+                <topic id="4b0l0gpgd8uthbprs5c5gp6e61">
+                  <title>na mapach zaznaczone są kształty pomieszczeń</title>
+                </topic>
+                <topic id="7ejbh8kua21dkv4a8hal6b6uls">
+                  <title>przeszkody</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="5t0ra5sdkcfhs69a93n2bmfr30">
+                        <title>biurko</title>
+                      </topic>
+                      <topic id="4d16bo0cba6phojdf4g0j0beol">
+                        <title>ściana wewnątrz</title>
+                      </topic>
+                      <topic id="3h49c0hf0mn7pvbegcte545qbv">
+                        <title>szafa</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="641obq3fd0q8cbemnv06b9qqt1">
+                  <title>POI — points of interest</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="1509okematnjlg733cj4pgcbdl">
+                        <title>komputer</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="62ra3nprq064u11d5fjtoe4cjf">
+                  <title>POI często są wewnątrz przeszkód</title>
+                </topic>
+              </topics>
+            </children>
+          </topic>
+          <topic id="7tf214renhjeb44do8r1621r6o">
+            <title>mamy ontologię</title>
+            <children>
+              <topics type="attached">
+                <topic id="3sh18vo2tjnk28qjj26gc4cre6">
+                  <title>czy nie można by jej *generować* z GML?</title>
+                  <marker-refs>
+                    <marker-ref marker-id="priority-1"/>
+                  </marker-refs>
+                </topic>
+                <topic id="4a8g1gu5vqp1ojqdg3o03u8tas">
+                  <title>i atrybutów POI/przeszkód przypisywać w GML?</title>
+                  <marker-refs>
+                    <marker-ref marker-id="priority-1"/>
+                  </marker-refs>
+                </topic>
+                <topic id="7ic7rajm8f1i29p1r6vmdbtld0">
+                  <title>i “has-a” wnioskować z położenia?</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="6pqhg37it6gfe1hjb6ki3fd3bk">
+                        <title>w 2D, “has-a” to zawieranie się figur w sobie</title>
+                      </topic>
+                    </topics>
+                  </children>
+                  <marker-refs>
+                    <marker-ref marker-id="priority-1"/>
+                  </marker-refs>
+                </topic>
+                <topic id="252qjuvaooun0imjfq8k8pfrsa">
+                  <title>atrybuty</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="1a4dro32ts60dpho3vu37alnje">
+                        <title>kolor</title>
+                      </topic>
+                      <topic id="66hhmgthrmgngunfscpiqrmjb0">
+                        <title>rodzaj</title>
+                      </topic>
+                      <topic id="04u7fccdtdp6uu4llad9sn8kmj">
+                        <title>model</title>
+                      </topic>
+                      <topic id="5fdfhrpb6ncbfbct4jf1db1701">
+                        <title>…</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+              </topics>
+            </children>
+          </topic>
+          <topic id="41618pkirrujara06ssqu64ngn">
+            <title>generujemy ARFF</title>
+            <children>
+              <topics type="attached">
+                <topic id="06ulf768ej753k40sbi4n5unjv">
+                  <title>z ontologii</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="1j648hhukham0phcad79qpmasm">
+                        <title>trzeba jeszcze zrobić tłumaczenie OWL → Prolog</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="5adpur6riffmtbb6kb2kc9fn7m">
+                  <title>a może od razu z GML? — pominąć ontologię</title>
+                  <marker-refs>
+                    <marker-ref marker-id="priority-1"/>
+                  </marker-refs>
+                </topic>
+              </topics>
+            </children>
+          </topic>
+          <topic id="6l9in4hn9hs546bo25kjqu8708">
+            <title>generujemy decision tree</title>
+            <children>
+              <topics type="attached">
+                <topic id="3og27qfm1m9mgeo1kd5jr1pmqt">
+                  <title>z ARFF — drzewem decyzyjnym REPTree</title>
+                </topic>
+                <topic id="6nhl6r0n51v95kr40u6jb4a4go">
+                  <title>na ich podstawie zadajemy sensowne pytania userowi</title>
+                </topic>
+                <topic id="00v3mqllcaro3o6vsjclu19aq0">
+                  <title svg:width="500">marzenie: gdyby zrobić od razu GMLs → decision tree, to Android mógłby przyjmować GML-e</title>
+                  <marker-refs>
+                    <marker-ref marker-id="priority-3"/>
+                  </marker-refs>
+                  <children>
+                    <topics type="attached">
+                      <topic id="66kl4oparvrbtrv3boq1q2fg5j">
+                        <title>ale wtedy nie mamy dostępu do Prologa</title>
+                      </topic>
+                      <topic id="0udt5ta8rsaga8q4nj3tdfcd9k">
+                        <title>i łatwego sposobu na „jest na lewo/prawo od”</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+              </topics>
+            </children>
+          </topic>
+          <topic id="176agcai97brv0g4j0ps4sc8nc">
+            <title svg:width="500">1° najpierw chcemy żeby po wejsciu do pomieszczenia było wiadomo, że to to pomieszczenie</title>
+            <children>
+              <topics type="attached">
+                <topic id="6tijjmu1lgn2eegi4di03vkers">
+                  <title>to… 1 beacon wystarczy?… ☺</title>
+                </topic>
+                <topic id="44p6dmnlmds6ce5n4mr06eun0d">
+                  <title svg:width="500">ale ok → na podstawie decision tree zadajemy pytania, które to określą z dużą pewnością</title>
+                </topic>
+              </topics>
+            </children>
+          </topic>
+          <topic id="2204lqbjoabvbuqfa1ud14hc1u">
+            <title svg:width="500">2° później chcemy, żeby pomóc dokładniejsze lokalizacji pytaniem o to co widzisz</title>
+            <children>
+              <topics type="attached">
+                <topic id="0pbl2t5c8k3115nolmkfso8e66">
+                  <title>na lewo</title>
+                </topic>
+                <topic id="3cjpicelj99qnkgvldgnpq44bj">
+                  <title>na prawo</title>
+                </topic>
+                <topic id="21gdtoh32p2ug7jkggeuov36u8">
+                  <title>jak to zakodować w „statycznym” decision tree?</title>
+                  <marker-refs>
+                    <marker-ref marker-id="priority-1"/>
+                  </marker-refs>
+                </topic>
+                <topic id="29fdgahcd7n115nrfccfos0b5h">
+                  <title>Prolog byłby OK, ale nie ma go w Androidzie</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="1ej0nm1ppb7gnqdslpji205dfm">
+                        <title>chociaż…</title>
+                      </topic>
+                      <topic id="4bm00703n04jaduvevcq5d0vts">
+                        <title>http://www.jiprolog.com/</title>
+                      </topic>
+                      <topic id="5u2960jgj2n8i5ckk38t7ach54">
+                        <title>http://www.swi-prolog.org/build/linuxonandroid.html</title>
+                      </topic>
+                      <topic id="63plhme194qdgdi97f92av0sbh">
+                        <title>http://stackoverflow.com/questions/18357171/how-to-use-swi-prolog-with-android</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+              </topics>
+            </children>
+          </topic>
+        </topics>
+      </children>
+      <boundaries>
+        <boundary id="64896dh24j3t2hetpe79onpco7" range="(2,4)">
+          <title>Na pewno w zewnętrznym (względem telefonu) komputrze?…</title>
+        </boundary>
+      </boundaries>
+    </topic>
+    <title>Ostateczna postać</title>
+  </sheet>
 </xmap-content>
