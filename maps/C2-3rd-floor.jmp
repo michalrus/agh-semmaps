@@ -3,34 +3,30 @@
   <properties class="java.util.HashMap">
     <mapping>
       <key class="javax.xml.namespace.QName">Project File</key>
-      <value class="java.lang.String">/home/trickster/Development/semmaps/maps/C2-3rd-floor.jmp</value>
+      <value class="java.lang.String">./maps/C2-3rd-floor.jmp</value>
     </mapping>
   </properties>
-  <windowLocation X="5" Y="5" />
-  <windowSize width="1518" height="565" />
-  <windowZoom left="643.3155792984395" right="677.7861240377116" bottom="344.8855773288702" top="358.0184046061691" />
-  <maximized>true</maximized>
   <layers>
     <category name="Working">
-      <layer class="com.vividsolutions.jump.workbench.model.Layer" name="Door" visible="true" editable="false" selectable="false" read-only="false" drawnLast="false" synchronizedLineColor="true">
+      <layer class="com.vividsolutions.jump.workbench.model.Layer" name="Door" visible="true" read-only="false" drawnLast="false" synchronizedLineColor="true">
         <scaleDependentRendering enabled="false">
-          <minScale null="true" />
-          <maxScale null="true" />
+          <minScale null="true"/>
+          <maxScale null="true"/>
         </scaleDependentRendering>
-        <description />
+        <description/>
         <data-source-query>
-          <query null="true" />
+          <query null="true"/>
           <data-source class="com.vividsolutions.jump.io.datasource.StandardReaderWriterFileDataSource$JML">
             <properties class="java.util.HashMap">
               <mapping>
                 <key class="java.lang.String">File</key>
-                <value class="java.lang.String">/home/trickster/Development/semmaps/maps/C2-3rd-floor/Door.jml</value>
+                <value class="java.lang.String">./maps/C2-3rd-floor/Door.jml</value>
               </mapping>
               <mapping>
                 <key class="java.lang.String">AttributeColumnsWidthMap</key>
                 <value class="java.util.HashMap">
                   <mapping>
-                    <key class="java.lang.String" />
+                    <key class="java.lang.String"/>
                     <value class="java.lang.Integer">16</value>
                   </mapping>
                   <mapping>
@@ -48,10 +44,10 @@
         </data-source-query>
         <styles>
           <style class="com.vividsolutions.jump.workbench.ui.renderer.style.ColorThemingStyle" enabled="false" vertex-style-enabled="false">
-            <attribute-name null="true" />
+            <attribute-name null="true"/>
             <default-style enabled="true">
               <fill enabled="true">
-                <pattern null="true" enabled="false" />
+                <pattern null="true" enabled="false"/>
                 <color>192, 192, 192, 255</color>
               </fill>
               <line enabled="true" width="1">
@@ -60,10 +56,10 @@
               </line>
               <alpha>255</alpha>
             </default-style>
-            <attribute-value-to-style-map class="java.util.HashMap" />
-            <attribute-value-to-label-map class="java.util.HashMap" />
+            <attribute-value-to-style-map class="java.util.HashMap"/>
+            <attribute-value-to-label-map class="java.util.HashMap"/>
           </style>
-          <style class="org.openjump.core.ccordsys.srid.SRIDStyle" enabled="true" srid="0" />
+          <style class="org.openjump.core.ccordsys.srid.SRIDStyle" enabled="true" srid="0"/>
           <style class="com.vividsolutions.jump.workbench.ui.renderer.style.BasicStyle" enabled="true">
             <fill enabled="true">
               <pattern class="com.vividsolutions.jump.workbench.ui.renderer.style.WKTFillPattern" enabled="false">
@@ -96,12 +92,12 @@
             </line>
             <alpha>150</alpha>
           </style>
-          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true"/>
           <style class="com.vividsolutions.jump.workbench.ui.renderer.style.LabelStyle" enabled="false">
             <color>0, 0, 0, 255</color>
             <attribute>$FID</attribute>
-            <angleAttribute />
-            <heightAttribute />
+            <angleAttribute/>
+            <heightAttribute/>
             <font>Dialog, 0, 12</font>
             <height>12.0</height>
             <verticalAlignment>DEFAULT</verticalAlignment>
@@ -118,25 +114,25 @@
         </styles>
         <feature-schema-operation>NULL</feature-schema-operation>
       </layer>
-      <layer class="com.vividsolutions.jump.workbench.model.Layer" name="POI" visible="true" editable="false" selectable="false" read-only="false" drawnLast="false" synchronizedLineColor="true">
+      <layer class="com.vividsolutions.jump.workbench.model.Layer" name="POI" visible="true" read-only="false" drawnLast="false" synchronizedLineColor="true">
         <scaleDependentRendering enabled="false">
-          <minScale null="true" />
-          <maxScale null="true" />
+          <minScale null="true"/>
+          <maxScale null="true"/>
         </scaleDependentRendering>
-        <description />
+        <description/>
         <data-source-query>
-          <query>/home/trickster/Development/WSHOP/SemanticMaps/C2-3rd-floor/POI.jml</query>
+          <query>./maps/C2-3rd-floor/POI.jml</query>
           <data-source class="com.vividsolutions.jump.io.datasource.StandardReaderWriterFileDataSource$JML">
             <properties class="java.util.HashMap">
               <mapping>
                 <key class="java.lang.String">File</key>
-                <value class="java.lang.String">/home/trickster/Development/semmaps/maps/C2-3rd-floor/POI.jml</value>
+                <value class="java.lang.String">./maps/C2-3rd-floor/POI.jml</value>
               </mapping>
               <mapping>
                 <key class="java.lang.String">AttributeColumnsWidthMap</key>
                 <value class="java.util.HashMap">
                   <mapping>
-                    <key class="java.lang.String" />
+                    <key class="java.lang.String"/>
                     <value class="java.lang.Integer">16</value>
                   </mapping>
                   <mapping>
@@ -151,7 +147,7 @@
         <styles>
           <style class="com.vividsolutions.jump.workbench.ui.renderer.style.BasicStyle" enabled="true">
             <fill enabled="true">
-              <pattern null="true" enabled="false" />
+              <pattern null="true" enabled="false"/>
               <color>0, 180, 0, 255</color>
             </fill>
             <line enabled="true" width="1">
@@ -160,12 +156,12 @@
             </line>
             <alpha>150</alpha>
           </style>
-          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true"/>
           <style class="com.vividsolutions.jump.workbench.ui.renderer.style.LabelStyle" enabled="false">
             <color>0, 0, 0, 255</color>
             <attribute>$FID</attribute>
-            <angleAttribute />
-            <heightAttribute />
+            <angleAttribute/>
+            <heightAttribute/>
             <font>Dialog, 0, 12</font>
             <height>12.0</height>
             <verticalAlignment>DEFAULT</verticalAlignment>
@@ -180,10 +176,10 @@
             <horizontalPosition>CENTER</horizontalPosition>
           </style>
           <style class="com.vividsolutions.jump.workbench.ui.renderer.style.ColorThemingStyle" enabled="false" vertex-style-enabled="false">
-            <attribute-name null="true" />
+            <attribute-name null="true"/>
             <default-style enabled="true">
               <fill enabled="true">
-                <pattern null="true" enabled="false" />
+                <pattern null="true" enabled="false"/>
                 <color>192, 192, 192, 255</color>
               </fill>
               <line enabled="true" width="1">
@@ -192,26 +188,26 @@
               </line>
               <alpha>255</alpha>
             </default-style>
-            <attribute-value-to-style-map class="java.util.HashMap" />
-            <attribute-value-to-label-map class="java.util.HashMap" />
+            <attribute-value-to-style-map class="java.util.HashMap"/>
+            <attribute-value-to-label-map class="java.util.HashMap"/>
           </style>
-          <style class="org.openjump.core.ccordsys.srid.SRIDStyle" enabled="true" srid="0" />
+          <style class="org.openjump.core.ccordsys.srid.SRIDStyle" enabled="true" srid="0"/>
         </styles>
         <feature-schema-operation>NULL</feature-schema-operation>
       </layer>
-      <layer class="com.vividsolutions.jump.workbench.model.Layer" name="Obstacle" visible="true" editable="false" selectable="false" read-only="false" drawnLast="false" synchronizedLineColor="true">
+      <layer class="com.vividsolutions.jump.workbench.model.Layer" name="Obstacle" visible="true" read-only="false" drawnLast="false" synchronizedLineColor="true">
         <scaleDependentRendering enabled="false">
-          <minScale null="true" />
-          <maxScale null="true" />
+          <minScale null="true"/>
+          <maxScale null="true"/>
         </scaleDependentRendering>
-        <description />
+        <description/>
         <data-source-query>
-          <query null="true" />
+          <query null="true"/>
           <data-source class="com.vividsolutions.jump.io.datasource.StandardReaderWriterFileDataSource$JML">
             <properties class="java.util.HashMap">
               <mapping>
                 <key class="java.lang.String">File</key>
-                <value class="java.lang.String">/home/trickster/Development/semmaps/maps/C2-3rd-floor/Obstacle.jml</value>
+                <value class="java.lang.String">./maps/C2-3rd-floor/Obstacle.jml</value>
               </mapping>
               <mapping>
                 <key class="java.lang.String">charset</key>
@@ -221,7 +217,7 @@
                 <key class="java.lang.String">AttributeColumnsWidthMap</key>
                 <value class="java.util.HashMap">
                   <mapping>
-                    <key class="java.lang.String" />
+                    <key class="java.lang.String"/>
                     <value class="java.lang.Integer">16</value>
                   </mapping>
                   <mapping>
@@ -239,10 +235,10 @@
         </data-source-query>
         <styles>
           <style class="com.vividsolutions.jump.workbench.ui.renderer.style.ColorThemingStyle" enabled="false" vertex-style-enabled="false">
-            <attribute-name null="true" />
+            <attribute-name null="true"/>
             <default-style enabled="true">
               <fill enabled="true">
-                <pattern null="true" enabled="false" />
+                <pattern null="true" enabled="false"/>
                 <color>192, 192, 192, 255</color>
               </fill>
               <line enabled="true" width="1">
@@ -251,10 +247,10 @@
               </line>
               <alpha>255</alpha>
             </default-style>
-            <attribute-value-to-style-map class="java.util.HashMap" />
-            <attribute-value-to-label-map class="java.util.HashMap" />
+            <attribute-value-to-style-map class="java.util.HashMap"/>
+            <attribute-value-to-label-map class="java.util.HashMap"/>
           </style>
-          <style class="org.openjump.core.ccordsys.srid.SRIDStyle" enabled="true" srid="0" />
+          <style class="org.openjump.core.ccordsys.srid.SRIDStyle" enabled="true" srid="0"/>
           <style class="com.vividsolutions.jump.workbench.ui.renderer.style.BasicStyle" enabled="true">
             <fill enabled="true">
               <pattern class="com.vividsolutions.jump.workbench.ui.renderer.style.WKTFillPattern" enabled="false">
@@ -287,12 +283,12 @@
             </line>
             <alpha>150</alpha>
           </style>
-          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true"/>
           <style class="com.vividsolutions.jump.workbench.ui.renderer.style.LabelStyle" enabled="false">
             <color>0, 0, 0, 255</color>
             <attribute>$FID</attribute>
-            <angleAttribute />
-            <heightAttribute />
+            <angleAttribute/>
+            <heightAttribute/>
             <font>Dialog, 0, 12</font>
             <height>12.0</height>
             <verticalAlignment>DEFAULT</verticalAlignment>
@@ -309,19 +305,19 @@
         </styles>
         <feature-schema-operation>NULL</feature-schema-operation>
       </layer>
-      <layer class="com.vividsolutions.jump.workbench.model.Layer" name="Area" visible="true" editable="false" selectable="false" read-only="false" drawnLast="false" synchronizedLineColor="true">
+      <layer class="com.vividsolutions.jump.workbench.model.Layer" name="Area" visible="true" read-only="false" drawnLast="false" synchronizedLineColor="true">
         <scaleDependentRendering enabled="false">
-          <minScale null="true" />
-          <maxScale null="true" />
+          <minScale null="true"/>
+          <maxScale null="true"/>
         </scaleDependentRendering>
-        <description />
+        <description/>
         <data-source-query>
-          <query>/home/trickster/Development/WSHOP/SemanticMaps/C2-3rd-floor/Area.jml</query>
+          <query>./maps/C2-3rd-floor/Area.jml</query>
           <data-source class="com.vividsolutions.jump.io.datasource.StandardReaderWriterFileDataSource$JML">
             <properties class="java.util.HashMap">
               <mapping>
                 <key class="java.lang.String">File</key>
-                <value class="java.lang.String">/home/trickster/Development/semmaps/maps/C2-3rd-floor/Area.jml</value>
+                <value class="java.lang.String">./maps/C2-3rd-floor/Area.jml</value>
               </mapping>
               <mapping>
                 <key class="java.lang.String">charset</key>
@@ -331,7 +327,7 @@
                 <key class="java.lang.String">AttributeColumnsWidthMap</key>
                 <value class="java.util.HashMap">
                   <mapping>
-                    <key class="java.lang.String" />
+                    <key class="java.lang.String"/>
                     <value class="java.lang.Integer">16</value>
                   </mapping>
                   <mapping>
@@ -349,10 +345,10 @@
         </data-source-query>
         <styles>
           <style class="com.vividsolutions.jump.workbench.ui.renderer.style.ColorThemingStyle" enabled="false" vertex-style-enabled="false">
-            <attribute-name null="true" />
+            <attribute-name null="true"/>
             <default-style enabled="true">
               <fill enabled="true">
-                <pattern null="true" enabled="false" />
+                <pattern null="true" enabled="false"/>
                 <color>192, 192, 192, 255</color>
               </fill>
               <line enabled="true" width="1">
@@ -361,10 +357,10 @@
               </line>
               <alpha>255</alpha>
             </default-style>
-            <attribute-value-to-style-map class="java.util.HashMap" />
-            <attribute-value-to-label-map class="java.util.HashMap" />
+            <attribute-value-to-style-map class="java.util.HashMap"/>
+            <attribute-value-to-label-map class="java.util.HashMap"/>
           </style>
-          <style class="org.openjump.core.ccordsys.srid.SRIDStyle" enabled="true" srid="0" />
+          <style class="org.openjump.core.ccordsys.srid.SRIDStyle" enabled="true" srid="0"/>
           <style class="com.vividsolutions.jump.workbench.ui.renderer.style.BasicStyle" enabled="true">
             <fill enabled="true">
               <pattern class="com.vividsolutions.jump.workbench.ui.renderer.style.WKTFillPattern" enabled="false">
@@ -397,12 +393,12 @@
             </line>
             <alpha>150</alpha>
           </style>
-          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true"/>
           <style class="com.vividsolutions.jump.workbench.ui.renderer.style.LabelStyle" enabled="false">
             <color>0, 0, 0, 255</color>
             <attribute>$FID</attribute>
-            <angleAttribute />
-            <heightAttribute />
+            <angleAttribute/>
+            <heightAttribute/>
             <font>Dialog, 0, 12</font>
             <height>12.0</height>
             <verticalAlignment>DEFAULT</verticalAlignment>
@@ -421,7 +417,6 @@
         <feature-schema-operation>NULL</feature-schema-operation>
       </layer>
     </category>
-    <category name="System" />
+    <category name="System"/>
   </layers>
 </project>
-
