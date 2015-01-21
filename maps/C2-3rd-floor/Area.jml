@@ -5,6 +5,12 @@
 <FeatureElement>feature</FeatureElement>
 <GeometryElement>geometry</GeometryElement>
 <ColumnDefinitions>
+     <column>
+          <name>CHAIRS</name>
+          <type>INTEGER</type>
+          <valueElement elementName="property" attributeName="name" attributeValue="CHAIRS"/>
+          <valueLocation position="body"/>
+     </column>
 </ColumnDefinitions>
 </JCSGMLInputTemplate>
 
@@ -23,6 +29,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS">3</property>
      </feature>
 
      <feature> 
@@ -39,6 +46,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS">18</property>
      </feature>
 
      <feature> 
@@ -55,6 +63,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      <feature> 
@@ -71,6 +80,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      <feature> 
@@ -87,6 +97,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      <feature> 
@@ -103,6 +114,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS">1</property>
      </feature>
 
      <feature> 
@@ -119,6 +131,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS">9</property>
      </feature>
 
      <feature> 
@@ -135,6 +148,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS">5</property>
      </feature>
 
      <feature> 
@@ -151,6 +165,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      <feature> 
@@ -167,6 +182,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      <feature> 
@@ -183,6 +199,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      <feature> 
@@ -199,6 +216,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      <feature> 
@@ -215,6 +233,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      <feature> 
@@ -231,6 +250,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS">3</property>
      </feature>
 
      <feature> 
@@ -247,6 +267,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      <feature> 
@@ -263,6 +284,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      <feature> 
@@ -279,6 +301,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      <feature> 
@@ -295,6 +318,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      <feature> 
@@ -311,6 +335,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      <feature> 
@@ -327,6 +352,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      <feature> 
@@ -343,6 +369,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      <feature> 
@@ -359,6 +386,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      <feature> 
@@ -375,6 +403,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      <feature> 
@@ -391,6 +420,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      <feature> 
@@ -407,6 +437,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      <feature> 
@@ -423,6 +454,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      <feature> 
@@ -439,6 +471,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      <feature> 
@@ -455,6 +488,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      <feature> 
@@ -471,6 +505,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS">26</property>
      </feature>
 
      <feature> 
@@ -487,6 +522,7 @@
                   </gml:outerBoundaryIs>
                 </gml:Polygon>
           </geometry>
+          <property name="CHAIRS"></property>
      </feature>
 
      </featureCollection>

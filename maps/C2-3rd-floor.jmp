@@ -6,13 +6,13 @@
       <value class="java.lang.String">/home/trickster/Development/semmaps/maps/C2-3rd-floor.jmp</value>
     </mapping>
   </properties>
-  <windowLocation X="5" Y="0" />
-  <windowSize width="1518" height="580" />
-  <windowZoom left="639.6509662414421" right="672.6146019210739" bottom="351.269927742788" top="364.4027550200869" />
+  <windowLocation X="5" Y="5" />
+  <windowSize width="1518" height="565" />
+  <windowZoom left="643.3155792984395" right="677.7861240377116" bottom="344.8855773288702" top="358.0184046061691" />
   <maximized>true</maximized>
   <layers>
     <category name="Working">
-      <layer class="com.vividsolutions.jump.workbench.model.Layer" name="Door" visible="true" editable="true" selectable="true" read-only="false" drawnLast="false" synchronizedLineColor="true">
+      <layer class="com.vividsolutions.jump.workbench.model.Layer" name="Door" visible="true" editable="false" selectable="false" read-only="false" drawnLast="false" synchronizedLineColor="true">
         <scaleDependentRendering enabled="false">
           <minScale null="true" />
           <maxScale null="true" />
@@ -36,10 +36,6 @@
                   <mapping>
                     <key class="java.lang.String">FID</key>
                     <value class="java.lang.Integer">36</value>
-                  </mapping>
-                  <mapping>
-                    <key class="java.lang.String" />
-                    <value class="java.lang.Integer">16</value>
                   </mapping>
                 </value>
               </mapping>
@@ -331,6 +327,23 @@
                 <key class="java.lang.String">charset</key>
                 <value class="java.lang.String">UTF-8</value>
               </mapping>
+              <mapping>
+                <key class="java.lang.String">AttributeColumnsWidthMap</key>
+                <value class="java.util.HashMap">
+                  <mapping>
+                    <key class="java.lang.String" />
+                    <value class="java.lang.Integer">16</value>
+                  </mapping>
+                  <mapping>
+                    <key class="java.lang.String">FID</key>
+                    <value class="java.lang.Integer">15</value>
+                  </mapping>
+                  <mapping>
+                    <key class="java.lang.String">CHAIRS</key>
+                    <value class="java.lang.Integer">15</value>
+                  </mapping>
+                </value>
+              </mapping>
             </properties>
           </data-source>
         </data-source-query>
@@ -404,6 +417,7 @@
             <horizontalPosition>CENTER</horizontalPosition>
           </style>
         </styles>
+        <feature-schema-operation>NULL</feature-schema-operation>
         <feature-schema-operation>NULL</feature-schema-operation>
       </layer>
     </category>
