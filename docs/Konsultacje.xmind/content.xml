@@ -71,9 +71,6 @@
                     </topics>
                   </children>
                 </topic>
-                <topic id="62ra3nprq064u11d5fjtoe4cjf">
-                  <title>POI często są wewnątrz przeszkód (“has-a”)</title>
-                </topic>
                 <topic id="68qd6qcebsmroe1f562cf8a4ib">
                   <title>atrybuty POI/przeszkód/pokoi w GML</title>
                   <children>
@@ -87,27 +84,68 @@
                       <topic id="6pnolj62cu5jqnb6gub6kf65tt">
                         <title>model</title>
                       </topic>
-                      <topic id="5sgrib7qfbd80ob9e59irq3t3p">
-                        <title>liczba krzeseł (w pokoju)</title>
-                      </topic>
                       <topic id="0ro15k4v9phsv49bo09p04n87h">
                         <title>…</title>
                       </topic>
                     </topics>
                   </children>
+                  <marker-refs>
+                    <marker-ref marker-id="priority-1"/>
+                  </marker-refs>
+                </topic>
+                <topic id="0scah7seddf0284kvtakqkveh2">
+                  <title svg:width="500">&lt;sbobek&gt; Drzwi, Okna, to również elementy które powinny znaleźć się na mapie</title>
+                  <marker-refs>
+                    <marker-ref marker-id="priority-1"/>
+                  </marker-refs>
+                </topic>
+                <topic id="0dgrn8j0qsnnam1mf4g68gdi9o">
+                  <title svg:width="500">&lt;sbobek&gt; Ilość krzeseł nie powinno być atrybutem pomieszczenia, tylko np. dynamicznym poi/obstacle</title>
+                  <marker-refs>
+                    <marker-ref marker-id="priority-1"/>
+                  </marker-refs>
+                </topic>
+                <topic id="2hlv760dqg4it0i7cjsitqvnv4">
+                  <title svg:width="500">&lt;sbobek&gt; Poszczególne poi mają atrybuty, np. POI o nazwie TV ma atrybuty kolor, model, etc.</title>
+                  <marker-refs>
+                    <marker-ref marker-id="priority-1"/>
+                  </marker-refs>
+                </topic>
+                <topic id="6bnt2730kjgdm5tpg53l7agerv">
+                  <title svg:width="500">&lt;sbobek&gt; Nie tylko POI powinny być serializowane do bazy wiedzy, ale wszystkie elementy charakteryzujące pomieszczenie np. Drzwi, okna, meble (czyli także obstacle) </title>
+                  <marker-refs>
+                    <marker-ref marker-id="priority-1"/>
+                  </marker-refs>
                 </topic>
               </topics>
             </children>
           </topic>
           <topic id="020r58rar1egq3igpd5n0j8vdq">
             <title>generator ontologii w Prologu z plików GML</title>
-            <marker-refs>
-              <marker-ref marker-id="priority-1"/>
-            </marker-refs>
             <children>
               <topics type="attached">
+                <topic id="3qr8tflc4eo06mpija93j1qh7l">
+                  <title>Mateusz Ślażyński opracowuje dokładną ontologię w OWL</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="2bohh9efeql03t8qvoi1q6onm8">
+                        <title svg:width="500">jak opracuje, to zmienimy ew. trochę generator, żeby jego outputem był OWL, zamiast Prologa, którego będziemy używali</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
                 <topic id="1go27aa2hha5rn6hm1progmo0q">
                   <title>biblioteka JTS</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="6rfft5b2aqu8dl3tnjgobev22s">
+                        <title>http://www.vividsolutions.com/jts/JTSHome.htm</title>
+                      </topic>
+                    </topics>
+                  </children>
+                  <marker-refs>
+                    <marker-ref marker-id="priority-1"/>
+                  </marker-refs>
                 </topic>
                 <topic id="4q7nunpmgb4grgi695hbkv6iqo">
                   <title>“has-a” wnioskować z położenia?</title>
@@ -118,25 +156,39 @@
                       </topic>
                     </topics>
                   </children>
-                </topic>
-                <topic id="5qu3518l3jos9sm26rl93rbl9o">
-                  <title>generator zalicza nam SemWeb</title>
                   <marker-refs>
-                    <marker-ref marker-id="priority-4"/>
+                    <marker-ref marker-id="priority-1"/>
                   </marker-refs>
                 </topic>
-                <topic id="3qr8tflc4eo06mpija93j1qh7l">
-                  <title>Mateusz Ślażyński opracowuje dokładną ontologię w OWL</title>
-                  <marker-refs>
-                    <marker-ref marker-id="priority-4"/>
-                  </marker-refs>
+                <topic id="4gh7ugcbhecsb0i475cubn5ro6">
+                  <title>odległości</title>
                   <children>
                     <topics type="attached">
-                      <topic id="2bohh9efeql03t8qvoi1q6onm8">
-                        <title svg:width="500">jak opracuje, to zmienimy ew. trochę generator, żeby jego outputem był OWL, zamiast Prologa, którego będziemy używali</title>
+                      <topic id="1s08024s8jejbvl36ar7otcfi2">
+                        <title svg:width="500">istotną informacja później wykorzystywana w systemie</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="09blhiuubr6hnt5i02v5fufa4p">
+                              <title>czy coś jest blisko albo daleko od innego obiektu</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="7sg5jmvvqpo0fof717ds2l24uh">
+                        <title>realizowane już przez system ontologiczny</title>
+                      </topic>
+                      <topic id="1gh3fii84j31q1g6m0o9r5jalo">
+                        <title svg:width="500">do Prologa fakty postaci:
+distance(class_id1, class_id2, distance_in_meters_or_pixels)</title>
+                      </topic>
+                      <topic id="0c92emp27j7rcu32sl11sgrpq4">
+                        <title svg:width="500">liczyć za pomocą narzędzi w bibliotece JTS</title>
                       </topic>
                     </topics>
                   </children>
+                  <marker-refs>
+                    <marker-ref marker-id="priority-1"/>
+                  </marker-refs>
                 </topic>
               </topics>
             </children>
@@ -163,9 +215,6 @@
                       </topic>
                       <topic id="3e9b3vathngnhdaaftohl1tgo7">
                         <title>reguly XTT uruchamialne na Androidzie?</title>
-                        <marker-refs>
-                          <marker-ref marker-id="priority-4"/>
-                        </marker-refs>
                       </topic>
                     </topics>
                   </children>
