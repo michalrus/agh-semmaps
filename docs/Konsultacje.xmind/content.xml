@@ -87,6 +87,12 @@
                       <topic id="0ro15k4v9phsv49bo09p04n87h">
                         <title>…</title>
                       </topic>
+                      <topic id="1bnamn732hierq4iq4soaueiln">
+                        <title svg:width="500">&lt;sbobek&gt; Poszczególne poi mają atrybuty, np. POI o nazwie TV ma atrybuty kolor, model, etc.</title>
+                        <marker-refs>
+                    
+                  </marker-refs>
+                      </topic>
                     </topics>
                   </children>
                   <marker-refs>
@@ -94,25 +100,41 @@
                   </marker-refs>
                 </topic>
                 <topic id="0scah7seddf0284kvtakqkveh2">
-                  <title svg:width="500">&lt;sbobek&gt; Drzwi, Okna, to również elementy które powinny znaleźć się na mapie</title>
+                  <title svg:width="500">drzwi</title>
                   <marker-refs>
                     <marker-ref marker-id="priority-1"/>
                   </marker-refs>
                 </topic>
-                <topic id="0dgrn8j0qsnnam1mf4g68gdi9o">
-                  <title svg:width="500">&lt;sbobek&gt; Ilość krzeseł nie powinno być atrybutem pomieszczenia, tylko np. dynamicznym poi/obstacle</title>
+                <topic id="1or9l281iuflqeq5en6jlu7hv6">
+                  <title>okna</title>
                   <marker-refs>
                     <marker-ref marker-id="priority-1"/>
                   </marker-refs>
                 </topic>
-                <topic id="2hlv760dqg4it0i7cjsitqvnv4">
-                  <title svg:width="500">&lt;sbobek&gt; Poszczególne poi mają atrybuty, np. POI o nazwie TV ma atrybuty kolor, model, etc.</title>
+                <topic id="5lmbap54v5rtehuhudkaoqsf1c">
+                  <title>krzesła</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="0gej82khe70ib0ppcp00fpumh9">
+                        <title>nie: atrybut pomieszczenia</title>
+                      </topic>
+                      <topic id="1ac7kg4plclqrt6i2610r98b9u">
+                        <title>wrysowane osobno każde</title>
+                      </topic>
+                      <topic id="3htl7nvarcg4rjcim7s6t2o5qa">
+                        <title>nie tracimy możliwości nadania im atrybutów</title>
+                      </topic>
+                      <topic id="0l5e0rnuv0k92t7o1bn07f7a7h">
+                        <title svg:width="500">przy tłumaczeniu do Prologa usuwamy przykładowe położenie zdef. w GML</title>
+                      </topic>
+                    </topics>
+                  </children>
                   <marker-refs>
                     <marker-ref marker-id="priority-1"/>
                   </marker-refs>
                 </topic>
                 <topic id="6bnt2730kjgdm5tpg53l7agerv">
-                  <title svg:width="500">&lt;sbobek&gt; Nie tylko POI powinny być serializowane do bazy wiedzy, ale wszystkie elementy charakteryzujące pomieszczenie np. Drzwi, okna, meble (czyli także obstacle) </title>
+                  <title svg:width="500">meble</title>
                   <marker-refs>
                     <marker-ref marker-id="priority-1"/>
                   </marker-refs>
