@@ -5,7 +5,49 @@
     <FeatureElement>feature</FeatureElement>
     <GeometryElement>geometry</GeometryElement>
     <ColumnDefinitions>
-</ColumnDefinitions>
+      <column>
+        <name>Kind</name>
+        <type>STRING</type>
+        <valueElement elementName="property" attributeName="name" attributeValue="Kind"/>
+        <valueLocation position="body"/>
+      </column>
+      <column>
+        <name>Description</name>
+        <type>STRING</type>
+        <valueElement elementName="property" attributeName="name" attributeValue="Description"/>
+        <valueLocation position="body"/>
+      </column>
+      <column>
+        <name>Colour</name>
+        <type>STRING</type>
+        <valueElement elementName="property" attributeName="name" attributeValue="Colour"/>
+        <valueLocation position="body"/>
+      </column>
+      <column>
+        <name>Manufacturer</name>
+        <type>STRING</type>
+        <valueElement elementName="property" attributeName="name" attributeValue="Manufacturer"/>
+        <valueLocation position="body"/>
+      </column>
+      <column>
+        <name>Model</name>
+        <type>STRING</type>
+        <valueElement elementName="property" attributeName="name" attributeValue="Model"/>
+        <valueLocation position="body"/>
+      </column>
+      <column>
+        <name>Dynamic</name>
+        <type>STRING</type>
+        <valueElement elementName="property" attributeName="name" attributeValue="Dynamic"/>
+        <valueLocation position="body"/>
+      </column>
+      <column>
+        <name>Features</name>
+        <type>STRING</type>
+        <valueElement elementName="property" attributeName="name" attributeValue="Features"/>
+        <valueLocation position="body"/>
+      </column>
+    </ColumnDefinitions>
   </JCSGMLInputTemplate>
   <featureCollection>
     <feature>
@@ -22,6 +64,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">all-in-one computer</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model">iMac</property>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -37,6 +86,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">all-in-one computer</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model">iMac</property>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -52,6 +108,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">all-in-one computer</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model">iMac</property>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -67,6 +130,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">all-in-one computer</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model">iMac</property>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -82,21 +152,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-    </feature>
-    <feature>
-      <geometry>
-        <gml:Polygon>
-          <gml:outerBoundaryIs>
-            <gml:LinearRing>
-              <gml:coordinates>658.3756815836387,372.45 
-                      658.3756815836387,372.76 
-                      658.8156815836387,372.76 
-                      658.8156815836387,372.45 
-                      658.3756815836387,372.45 </gml:coordinates>
-            </gml:LinearRing>
-          </gml:outerBoundaryIs>
-        </gml:Polygon>
-      </geometry>
+      <property name="Kind">all-in-one computer</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model">iMac</property>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -112,6 +174,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">all-in-one computer</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model">iMac</property>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -127,6 +196,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">all-in-one computer</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model">iMac</property>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -142,6 +218,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">all-in-one computer</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model">iMac</property>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -157,21 +240,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-    </feature>
-    <feature>
-      <geometry>
-        <gml:Polygon>
-          <gml:outerBoundaryIs>
-            <gml:LinearRing>
-              <gml:coordinates>655.6817911393136,369.23228350829794 
-                      655.6817911393136,369.54228350829794 
-                      656.1217911393136,369.54228350829794 
-                      656.1217911393136,369.23228350829794 
-                      655.6817911393136,369.23228350829794 </gml:coordinates>
-            </gml:LinearRing>
-          </gml:outerBoundaryIs>
-        </gml:Polygon>
-      </geometry>
+      <property name="Kind">all-in-one computer</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model">iMac</property>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -187,6 +262,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">all-in-one computer</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model">iMac</property>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -202,6 +284,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">all-in-one computer</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model">iMac</property>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -217,6 +306,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">all-in-one computer</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model">iMac</property>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -232,21 +328,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-    </feature>
-    <feature>
-      <geometry>
-        <gml:Polygon>
-          <gml:outerBoundaryIs>
-            <gml:LinearRing>
-              <gml:coordinates>654.9815945119049,369.0864092109211 
-                      654.9815945119049,369.553206962527 
-                      655.2733431066586,369.553206962527 
-                      655.2733431066586,369.0864092109211 
-                      654.9815945119049,369.0864092109211 </gml:coordinates>
-            </gml:LinearRing>
-          </gml:outerBoundaryIs>
-        </gml:Polygon>
-      </geometry>
+      <property name="Kind">all-in-one computer</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model">iMac</property>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -262,6 +350,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">PC</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -277,6 +372,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">PC</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -292,6 +394,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">display</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -307,6 +416,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">PC</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -322,6 +438,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">display</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -337,6 +460,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">display</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -352,6 +482,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">PC</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -367,6 +504,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">PC</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -382,21 +526,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-    </feature>
-    <feature>
-      <geometry>
-        <gml:Polygon>
-          <gml:outerBoundaryIs>
-            <gml:LinearRing>
-              <gml:coordinates>656.1485888909195,366.05222382548277 
-                      656.1485888909195,366.40232213918716 
-                      656.6445615020009,366.40232213918716 
-                      656.6445615020009,366.05222382548277 
-                      656.1485888909195,366.05222382548277 </gml:coordinates>
-            </gml:LinearRing>
-          </gml:outerBoundaryIs>
-        </gml:Polygon>
-      </geometry>
+      <property name="Kind">PC</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -412,6 +548,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">PC</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -427,6 +570,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">whiteboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -442,6 +592,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">display</property>
+      <property name="Description"/>
+      <property name="Colour">gray</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -457,6 +614,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">display</property>
+      <property name="Description"/>
+      <property name="Colour">gray</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -472,6 +636,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">microwave</property>
+      <property name="Description"/>
+      <property name="Colour">gray</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -487,6 +658,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">fridge</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -502,6 +680,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">kettle</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -517,6 +702,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">PC</property>
+      <property name="Description"/>
+      <property name="Colour">dark gray</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -532,6 +724,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">display</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -547,6 +746,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">PC</property>
+      <property name="Description"/>
+      <property name="Colour">dark gray</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -562,6 +768,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">MFP</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -577,6 +790,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">display</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -592,6 +812,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">PC</property>
+      <property name="Description"/>
+      <property name="Colour">dark gray</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -607,6 +834,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">display</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -622,21 +856,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-    </feature>
-    <feature>
-      <geometry>
-        <gml:Polygon>
-          <gml:outerBoundaryIs>
-            <gml:LinearRing>
-              <gml:coordinates>655.0,359.7 
-                      655.0,358.7 
-                      656.0,358.7 
-                      656.0,359.7 
-                      655.0,359.7 </gml:coordinates>
-            </gml:LinearRing>
-          </gml:outerBoundaryIs>
-        </gml:Polygon>
-      </geometry>
+      <property name="Kind">PC</property>
+      <property name="Description"/>
+      <property name="Colour">dark gray</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -652,6 +878,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -667,6 +900,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">gray</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -682,6 +922,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">display</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -697,6 +944,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -712,6 +966,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">gray</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -727,6 +988,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">gray</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -742,6 +1010,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -757,6 +1032,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">display</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -772,6 +1054,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -787,6 +1076,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">gray</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -802,6 +1098,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -817,6 +1120,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">speakers</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -832,6 +1142,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">display</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -847,6 +1164,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">display</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -862,6 +1186,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -877,6 +1208,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -892,6 +1230,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -907,6 +1252,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -922,6 +1274,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -937,6 +1296,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -952,6 +1318,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -967,6 +1340,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -982,6 +1362,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -997,21 +1384,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-    </feature>
-    <feature>
-      <geometry>
-        <gml:Polygon>
-          <gml:outerBoundaryIs>
-            <gml:LinearRing>
-              <gml:coordinates>658.3787655379676,372.18190002073317 
-                      658.3787655379676,372.28590593882376 
-                      658.7739880267119,372.28590593882376 
-                      658.7739880267119,372.18190002073317 
-                      658.3787655379676,372.18190002073317 </gml:coordinates>
-            </gml:LinearRing>
-          </gml:outerBoundaryIs>
-        </gml:Polygon>
-      </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1027,6 +1406,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1042,6 +1428,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1057,6 +1450,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1072,6 +1472,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1087,6 +1494,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1102,6 +1516,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1117,21 +1538,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-    </feature>
-    <feature>
-      <geometry>
-        <gml:Polygon>
-          <gml:outerBoundaryIs>
-            <gml:LinearRing>
-              <gml:coordinates>655.6954128512303,369.0201201107792 
-                      655.6954128512303,369.1241260288698 
-                      656.0906353399746,369.1241260288698 
-                      656.0906353399746,369.0201201107792 
-                      655.6954128512303,369.0201201107792 </gml:coordinates>
-            </gml:LinearRing>
-          </gml:outerBoundaryIs>
-        </gml:Polygon>
-      </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1147,6 +1560,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">all-in-one computer</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model">iMac</property>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1162,6 +1582,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">all-in-one computer</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model">iMac</property>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1177,6 +1604,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">all-in-one computer</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model">iMac</property>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1192,66 +1626,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-    </feature>
-    <feature>
-      <geometry>
-        <gml:Polygon>
-          <gml:outerBoundaryIs>
-            <gml:LinearRing>
-              <gml:coordinates>658.0459466000777,366.7943934636406 
-                      658.0459466000777,367.1043934636406 
-                      658.4859466000777,367.1043934636406 
-                      658.4859466000777,366.7943934636406 
-                      658.0459466000777,366.7943934636406 </gml:coordinates>
-            </gml:LinearRing>
-          </gml:outerBoundaryIs>
-        </gml:Polygon>
-      </geometry>
-    </feature>
-    <feature>
-      <geometry>
-        <gml:Polygon>
-          <gml:outerBoundaryIs>
-            <gml:LinearRing>
-              <gml:coordinates>658.8155903939481,366.75279109640434 
-                      658.8155903939481,367.06279109640434 
-                      659.2555903939482,367.06279109640434 
-                      659.2555903939482,366.75279109640434 
-                      658.8155903939481,366.75279109640434 </gml:coordinates>
-            </gml:LinearRing>
-          </gml:outerBoundaryIs>
-        </gml:Polygon>
-      </geometry>
-    </feature>
-    <feature>
-      <geometry>
-        <gml:Polygon>
-          <gml:outerBoundaryIs>
-            <gml:LinearRing>
-              <gml:coordinates>658.8987951284206,367.23121831962106 
-                      658.8987951284206,367.33522423771166 
-                      659.2940176171649,367.33522423771166 
-                      659.2940176171649,367.23121831962106 
-                      658.8987951284206,367.23121831962106 </gml:coordinates>
-            </gml:LinearRing>
-          </gml:outerBoundaryIs>
-        </gml:Polygon>
-      </geometry>
-    </feature>
-    <feature>
-      <geometry>
-        <gml:Polygon>
-          <gml:outerBoundaryIs>
-            <gml:LinearRing>
-              <gml:coordinates>658.1291513345502,367.2728206868573 
-                      658.1291513345502,367.3768266049479 
-                      658.5243738232945,367.3768266049479 
-                      658.5243738232945,367.2728206868573 
-                      658.1291513345502,367.2728206868573 </gml:coordinates>
-            </gml:LinearRing>
-          </gml:outerBoundaryIs>
-        </gml:Polygon>
-      </geometry>
+      <property name="Kind">all-in-one computer</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model">iMac</property>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1267,6 +1648,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1282,6 +1670,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1297,6 +1692,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1312,6 +1714,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1327,6 +1736,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1342,6 +1758,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1357,6 +1780,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1372,36 +1802,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-    </feature>
-    <feature>
-      <geometry>
-        <gml:Polygon>
-          <gml:outerBoundaryIs>
-            <gml:LinearRing>
-              <gml:coordinates>657.9835430492234,367.1480135851486 
-                      657.9835430492234,367.2728206868573 
-                      658.0459466000777,367.2728206868573 
-                      658.0459466000777,367.1480135851486 
-                      657.9835430492234,367.1480135851486 </gml:coordinates>
-            </gml:LinearRing>
-          </gml:outerBoundaryIs>
-        </gml:Polygon>
-      </geometry>
-    </feature>
-    <feature>
-      <geometry>
-        <gml:Polygon>
-          <gml:outerBoundaryIs>
-            <gml:LinearRing>
-              <gml:coordinates>658.7115844758575,367.1480135851486 
-                      658.7115844758575,367.2728206868573 
-                      658.7739880267119,367.2728206868573 
-                      658.7739880267119,367.1480135851486 
-                      658.7115844758575,367.1480135851486 </gml:coordinates>
-            </gml:LinearRing>
-          </gml:outerBoundaryIs>
-        </gml:Polygon>
-      </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1417,6 +1824,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1432,6 +1846,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1447,21 +1868,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-    </feature>
-    <feature>
-      <geometry>
-        <gml:Polygon>
-          <gml:outerBoundaryIs>
-            <gml:LinearRing>
-              <gml:coordinates>656.153038890829,369.1449272124879 
-                      656.153038890829,369.2697343141966 
-                      656.2154424416833,369.2697343141966 
-                      656.2154424416833,369.1449272124879 
-                      656.153038890829,369.1449272124879 </gml:coordinates>
-            </gml:LinearRing>
-          </gml:outerBoundaryIs>
-        </gml:Polygon>
-      </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1477,6 +1890,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1492,6 +1912,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1507,6 +1934,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1522,21 +1956,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-    </feature>
-    <feature>
-      <geometry>
-        <gml:Polygon>
-          <gml:outerBoundaryIs>
-            <gml:LinearRing>
-              <gml:coordinates>658.8571927611844,372.36911067329623 
-                      658.8571927611844,372.49391777500495 
-                      658.9195963120387,372.49391777500495 
-                      658.9195963120387,372.36911067329623 
-                      658.8571927611844,372.36911067329623 </gml:coordinates>
-            </gml:LinearRing>
-          </gml:outerBoundaryIs>
-        </gml:Polygon>
-      </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1552,6 +1978,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1567,6 +2000,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1582,6 +2022,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1597,6 +2044,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1612,6 +2066,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1627,6 +2088,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1642,6 +2110,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">display</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1657,6 +2132,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1672,6 +2154,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1687,6 +2176,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">PC</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model">Mac Mini</property>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1702,6 +2198,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">PC</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1717,6 +2220,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">MFC</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1732,21 +2242,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-    </feature>
-    <feature>
-      <geometry>
-        <gml:Polygon>
-          <gml:outerBoundaryIs>
-            <gml:LinearRing>
-              <gml:coordinates>658.4531561138585,355.7910650021861 
-                      658.4531561138585,356.10204269727694 
-                      659.0511901428795,356.10204269727694 
-                      659.0511901428795,355.7910650021861 
-                      658.4531561138585,355.7910650021861 </gml:coordinates>
-            </gml:LinearRing>
-          </gml:outerBoundaryIs>
-        </gml:Polygon>
-      </geometry>
+      <property name="Kind">laptop</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1762,21 +2264,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-    </feature>
-    <feature>
-      <geometry>
-        <gml:Polygon>
-          <gml:outerBoundaryIs>
-            <gml:LinearRing>
-              <gml:coordinates>656.0849413589358,355.7193009187036 
-                      656.0849413589358,356.0063572526336 
-                      656.659054026796,356.0063572526336 
-                      656.659054026796,355.7193009187036 
-                      656.0849413589358,355.7193009187036 </gml:coordinates>
-            </gml:LinearRing>
-          </gml:outerBoundaryIs>
-        </gml:Polygon>
-      </geometry>
+      <property name="Kind">display</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1792,6 +2286,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1807,6 +2308,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">display</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1822,6 +2330,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">display</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1837,6 +2352,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">PC</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1852,6 +2374,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">washbasin</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1867,6 +2396,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">dish dryer</property>
+      <property name="Description"/>
+      <property name="Colour"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1882,6 +2418,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">standing hanger</property>
+      <property name="Description"/>
+      <property name="Colour"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1897,6 +2440,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">PC</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1912,6 +2462,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1927,6 +2484,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">display</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1942,6 +2506,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1957,6 +2528,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">fan</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1972,6 +2550,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">display</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -1987,6 +2572,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">speakers</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -2002,6 +2594,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">laptop</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -2017,6 +2616,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">display</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -2032,6 +2638,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">MFC</property>
+      <property name="Description"/>
+      <property name="Colour">gray</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -2047,6 +2660,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">orange</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">inflatable</property>
     </feature>
     <feature>
       <geometry>
@@ -2062,6 +2682,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">bench</property>
+      <property name="Description"/>
+      <property name="Colour">dark brown</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -2077,6 +2704,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">bench</property>
+      <property name="Description"/>
+      <property name="Colour">dark green</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -2092,6 +2726,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">bench</property>
+      <property name="Description"/>
+      <property name="Colour">dark brown</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -2107,6 +2748,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">bench</property>
+      <property name="Description"/>
+      <property name="Colour">dark blue</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -2122,6 +2770,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">bench</property>
+      <property name="Description"/>
+      <property name="Colour">dark blue</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -2137,6 +2792,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">trash bin</property>
+      <property name="Description">Trash bin for other wastes.</property>
+      <property name="Colour">light blue</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -2152,6 +2814,13 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">trash bin</property>
+      <property name="Description">Trash bin for plastic.</property>
+      <property name="Colour">light yellow</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
     </feature>
     <feature>
       <geometry>
@@ -2167,6 +2836,2085 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">trash bin</property>
+      <property name="Description">Trash bin for metal.</property>
+      <property name="Colour">light green</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>650.2017932380062,386.0862001992004 
+                      650.2017932380062,386.3541553081529 
+                      650.4161573251681,386.3541553081529 
+                      650.4161573251681,386.0862001992004 
+                      650.2017932380062,386.0862001992004 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>650.5093591021953,386.06872486600787 
+                      650.5093591021953,386.33667997496036 
+                      650.7237231893572,386.33667997496036 
+                      650.7237231893572,386.06872486600787 
+                      650.5093591021953,386.06872486600787 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>650.8588657660464,386.11532575452134 
+                      650.8588657660464,386.38328086347383 
+                      651.0732298532083,386.38328086347383 
+                      651.0732298532083,386.11532575452134 
+                      650.8588657660464,386.11532575452134 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>653.1189662324456,366.683842240995 
+                      653.1189662324456,367.23206544846767 
+                      653.5176740196985,367.23206544846767 
+                      653.5176740196985,366.683842240995 
+                      653.1189662324456,366.683842240995 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">server stuff</property>
+      <property name="Description"/>
+      <property name="Colour"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>655.6817911393136,369.23228350829794 
+                      655.6817911393136,369.54228350829794 
+                      656.1217911393136,369.54228350829794 
+                      656.1217911393136,369.23228350829794 
+                      655.6817911393136,369.23228350829794 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">all-in-one computer</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model">iMac</property>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>655.6954128512303,369.0201201107792 
+                      655.6954128512303,369.1241260288698 
+                      656.0906353399746,369.1241260288698 
+                      656.0906353399746,369.0201201107792 
+                      655.6954128512303,369.0201201107792 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>656.153038890829,369.1449272124879 
+                      656.153038890829,369.2697343141966 
+                      656.2154424416833,369.2697343141966 
+                      656.2154424416833,369.1449272124879 
+                      656.153038890829,369.1449272124879 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>655.0958923442412,369.09270178898095 
+                      655.0958923442412,369.4747967517649 
+                      655.4281488336185,369.4747967517649 
+                      655.4281488336185,369.09270178898095 
+                      655.0958923442412,369.09270178898095 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">all-in-one computer</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model">iMac</property>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>654.8134743282703,368.99302484216776 
+                      654.8134743282703,369.40834545388947 
+                      654.9131512750836,369.40834545388947 
+                      654.9131512750836,368.99302484216776 
+                      654.8134743282703,368.99302484216776 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>655.0128282218968,368.9265735442923 
+                      655.0128282218968,368.99302484216776 
+                      655.1457308176477,368.99302484216776 
+                      655.1457308176477,368.9265735442923 
+                      655.0128282218968,368.9265735442923 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>653.105593285583,371.6021973592387 
+                      653.105593285583,371.93823569207814 
+                      653.5461768775281,371.93823569207814 
+                      653.5461768775281,371.6021973592387 
+                      653.105593285583,371.6021973592387 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>653.8000725067845,371.6021973592387 
+                      653.8000725067845,371.93823569207814 
+                      654.2406560987296,371.93823569207814 
+                      654.2406560987296,371.6021973592387 
+                      653.8000725067845,371.6021973592387 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>654.6140320241067,371.5872623222236 
+                      654.6140320241067,371.92330065506303 
+                      655.0546156160517,371.92330065506303 
+                      655.0546156160517,371.5872623222236 
+                      654.6140320241067,371.5872623222236 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>655.3906539488912,371.60966487774624 
+                      655.3906539488912,371.9457032105857 
+                      655.8312375408362,371.9457032105857 
+                      655.8312375408362,371.60966487774624 
+                      655.3906539488912,371.60966487774624 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>656.1374057996455,371.60966487774624 
+                      656.1374057996455,371.9457032105857 
+                      656.5779893915906,371.9457032105857 
+                      656.5779893915906,371.60966487774624 
+                      656.1374057996455,371.60966487774624 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>656.8020149468168,371.6395349517764 
+                      656.8020149468168,371.97557328461585 
+                      657.2425985387619,371.97557328461585 
+                      657.2425985387619,371.6395349517764 
+                      656.8020149468168,371.6395349517764 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>657.5861043901089,371.60966487774624 
+                      657.5861043901089,371.9457032105857 
+                      658.0266879820539,371.9457032105857 
+                      658.0266879820539,371.60966487774624 
+                      657.5861043901089,371.60966487774624 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>658.4299339814612,371.6395349517764 
+                      658.4299339814612,371.97557328461585 
+                      658.8705175734062,371.97557328461585 
+                      658.8705175734062,371.6395349517764 
+                      658.4299339814612,371.6395349517764 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>655.6968222077005,370.8479779899768 
+                      655.6968222077005,371.18401632281626 
+                      656.1374057996455,371.18401632281626 
+                      656.1374057996455,370.8479779899768 
+                      655.6968222077005,370.8479779899768 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>656.4585090954698,370.8853155825146 
+                      656.4585090954698,371.22135391535403 
+                      656.8990926874148,371.22135391535403 
+                      656.8990926874148,370.8853155825146 
+                      656.4585090954698,370.8853155825146 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>657.1977934277166,370.8927831010221 
+                      657.1977934277166,371.2288214338615 
+                      657.6383770196617,371.2288214338615 
+                      657.6383770196617,370.8927831010221 
+                      657.1977934277166,370.8927831010221 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>657.8997401674256,370.8927831010221 
+                      657.8997401674256,371.2288214338615 
+                      658.3403237593707,371.2288214338615 
+                      658.3403237593707,370.8927831010221 
+                      657.8997401674256,370.8927831010221 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>655.6968222077005,368.33889177144243 
+                      655.6968222077005,368.6749301042819 
+                      656.1374057996455,368.6749301042819 
+                      656.1374057996455,368.33889177144243 
+                      655.6968222077005,368.33889177144243 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>656.4211715029321,368.3164892159198 
+                      656.4211715029321,368.6525275487592 
+                      656.8617550948771,368.6525275487592 
+                      656.8617550948771,368.3164892159198 
+                      656.4211715029321,368.3164892159198 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>657.1679233536864,368.3314242529349 
+                      657.1679233536864,368.66746258577433 
+                      657.6085069456315,368.66746258577433 
+                      657.6085069456315,368.3314242529349 
+                      657.1679233536864,368.3314242529349 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>657.9818828710087,368.3314242529349 
+                      657.9818828710087,368.66746258577433 
+                      658.4224664629537,368.66746258577433 
+                      658.4224664629537,368.3314242529349 
+                      657.9818828710087,368.3314242529349 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>658.0864281301143,367.6518800687484 
+                      658.0864281301143,367.9879184015879 
+                      658.5270117220593,367.9879184015879 
+                      658.5270117220593,367.6518800687484 
+                      658.0864281301143,367.6518800687484 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>657.354611316375,367.6145424762107 
+                      657.354611316375,367.95058080905017 
+                      657.79519490832,367.95058080905017 
+                      657.79519490832,367.6145424762107 
+                      657.354611316375,367.6145424762107 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>656.6227945026358,367.6518800687484 
+                      656.6227945026358,367.9879184015879 
+                      657.0633780945808,367.9879184015879 
+                      657.0633780945808,367.6518800687484 
+                      656.6227945026358,367.6518800687484 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>655.8909776888966,367.64441255024093 
+                      655.8909776888966,367.9804508830804 
+                      656.3315612808416,367.9804508830804 
+                      656.3315612808416,367.64441255024093 
+                      655.8909776888966,367.64441255024093 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>655.1218232826196,367.6294775132258 
+                      655.1218232826196,367.9655158460653 
+                      655.5624068745647,367.9655158460653 
+                      655.5624068745647,367.6294775132258 
+                      655.1218232826196,367.6294775132258 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>654.0913057285788,368.96616332607596 
+                      654.0913057285788,369.4366169920512 
+                      654.5020192464937,369.4366169920512 
+                      654.5020192464937,368.96616332607596 
+                      654.0913057285788,368.96616332607596 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>654.1585133951467,369.95187576907165 
+                      654.1585133951467,370.4223294350469 
+                      654.5692269130615,370.4223294350469 
+                      654.5692269130615,369.95187576907165 
+                      654.1585133951467,369.95187576907165 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>658.1984409077277,367.1142187362054 
+                      658.1984409077277,367.2390258379141 
+                      658.260844458582,367.2390258379141 
+                      658.260844458582,367.1142187362054 
+                      658.1984409077277,367.1142187362054 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>658.3925963889237,367.24863406934116 
+                      658.3925963889237,367.35263998743176 
+                      658.787818877668,367.35263998743176 
+                      658.787818877668,367.24863406934116 
+                      658.3925963889237,367.24863406934116 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>658.4000639074313,366.8528555884414 
+                      658.4000639074313,367.1628555884414 
+                      658.8400639074313,367.1628555884414 
+                      658.8400639074313,366.8528555884414 
+                      658.4000639074313,366.8528555884414 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">all-in-one computer</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer">Apple</property>
+      <property name="Model">iMac</property>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:LineString>
+          <gml:coordinates>653.0,370.5 
+                    653.0,369.0 
+                    653.0,370.5 </gml:coordinates>
+        </gml:LineString>
+      </geometry>
+      <property name="Kind">whiteboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:LineString>
+          <gml:coordinates>655.5,359.7 
+                    657.0,359.7 
+                    655.5,359.7 </gml:coordinates>
+        </gml:LineString>
+      </geometry>
+      <property name="Kind">whiteboard</property>
+      <property name="Description"/>
+      <property name="Colour">white</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>657.7647961751045,360.3513186268294 
+                      657.7647961751045,360.45532454492 
+                      658.1600186638487,360.45532454492 
+                      658.1600186638487,360.3513186268294 
+                      657.7647961751045,360.3513186268294 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>658.8378437401243,360.369819446916 
+                      658.8378437401243,360.4738253650066 
+                      659.2330662288686,360.4738253650066 
+                      659.2330662288686,360.369819446916 
+                      658.8378437401243,360.369819446916 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>657.6352904344986,360.3143169866563 
+                      657.6352904344986,360.439124088365 
+                      657.697693985353,360.439124088365 
+                      657.697693985353,360.3143169866563 
+                      657.6352904344986,360.3143169866563 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>659.2818634222015,360.3513186268294 
+                      659.2818634222015,360.47612572853814 
+                      659.3442669730558,360.47612572853814 
+                      659.3442669730558,360.3513186268294 
+                      659.2818634222015,360.3513186268294 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>656.1182231874017,366.0865728536595 
+                      656.1182231874017,366.3783214484132 
+                      656.7017203769091,366.3783214484132 
+                      656.7017203769091,366.0865728536595 
+                      656.1182231874017,366.0865728536595 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">display</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>656.1737256476613,365.92006547288054 
+                      656.1737256476613,366.02407139097113 
+                      656.5689481364055,366.02407139097113 
+                      656.5689481364055,365.92006547288054 
+                      656.1737256476613,365.92006547288054 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>656.6362461498251,365.8830638327075 
+                      656.6362461498251,366.0078709344162 
+                      656.6986497006794,366.0078709344162 
+                      656.6986497006794,365.8830638327075 
+                      656.6362461498251,365.8830638327075 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:LineString>
+          <gml:coordinates>653.0,361.9 
+                    653.0,363.4 
+                    653.0,361.9 </gml:coordinates>
+        </gml:LineString>
+      </geometry>
+      <property name="Kind"/>
+      <property name="Description"/>
+      <property name="Colour"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>657.4687830537197,365.1800326694186 
+                      657.4687830537197,365.51607100225806 
+                      657.9093666456647,365.51607100225806 
+                      657.9093666456647,365.1800326694186 
+                      657.4687830537197,365.1800326694186 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>655.3226879236801,365.3650408702841 
+                      655.3226879236801,365.7010792031235 
+                      655.7632715156251,365.7010792031235 
+                      655.7632715156251,365.3650408702841 
+                      655.3226879236801,365.3650408702841 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">gray</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>653.1395911534674,362.8304285184269 
+                      653.1395911534674,363.30088218440216 
+                      653.5503046713823,363.30088218440216 
+                      653.5503046713823,362.8304285184269 
+                      653.1395911534674,362.8304285184269 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>658.5418306187397,364.25499166509115 
+                      658.5418306187397,364.5910299979306 
+                      658.9824142106847,364.5910299979306 
+                      658.9824142106847,364.25499166509115 
+                      658.5418306187397,364.25499166509115 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>657.3207764930274,364.3289949454374 
+                      657.3207764930274,364.66503327827684 
+                      657.7613600849725,364.66503327827684 
+                      657.7613600849725,364.3289949454374 
+                      657.3207764930274,364.3289949454374 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>655.9517158066228,364.31049412535083 
+                      655.9517158066228,364.6465324581903 
+                      656.3922993985678,364.6465324581903 
+                      656.3922993985678,364.31049412535083 
+                      655.9517158066228,364.31049412535083 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>654.8971690616896,364.3289949454374 
+                      654.8971690616896,364.66503327827684 
+                      655.3377526536347,364.66503327827684 
+                      655.3377526536347,364.3289949454374 
+                      654.8971690616896,364.3289949454374 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>656.0812215472287,365.05052692881276 
+                      656.0812215472287,365.3865652616522 
+                      656.5218051391737,365.3865652616522 
+                      656.5218051391737,365.05052692881276 
+                      656.0812215472287,365.05052692881276 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>656.7102494301713,364.40299822578356 
+                      656.7102494301713,364.739036558623 
+                      657.1508330221163,364.739036558623 
+                      657.1508330221163,364.40299822578356 
+                      656.7102494301713,364.40299822578356 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>657.617073095443,360.9658011570123 
+                      657.617073095443,361.3018394898518 
+                      658.057656687388,361.3018394898518 
+                      658.057656687388,360.9658011570123 
+                      657.617073095443,360.9658011570123 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>656.9756207042343,360.9807186544823 
+                      656.9756207042343,361.31675698732175 
+                      657.4162042961793,361.31675698732175 
+                      657.4162042961793,360.9807186544823 
+                      656.9756207042343,360.9807186544823 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>658.4863281584799,365.1430310292455 
+                      658.4863281584799,365.47906936208494 
+                      658.9269117504249,365.47906936208494 
+                      658.9269117504249,365.1430310292455 
+                      658.4863281584799,365.1430310292455 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>658.7358854056906,360.9956361519522 
+                      658.7358854056906,361.3316744847917 
+                      659.1764689976357,361.3316744847917 
+                      659.1764689976357,360.9956361519522 
+                      658.7358854056906,360.9956361519522 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>658.5717929335209,361.6370885431609 
+                      658.5717929335209,361.9731268760004 
+                      659.0123765254659,361.9731268760004 
+                      659.0123765254659,361.6370885431609 
+                      658.5717929335209,361.6370885431609 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>657.3933106333934,361.6370885431609 
+                      657.3933106333934,361.9731268760004 
+                      657.8338942253384,361.9731268760004 
+                      657.8338942253384,361.6370885431609 
+                      657.3933106333934,361.6370885431609 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>655.4242009673575,360.7271211974928 
+                      655.4242009673575,361.06315953033226 
+                      655.8647845593025,361.06315953033226 
+                      655.8647845593025,360.7271211974928 
+                      655.4242009673575,360.7271211974928 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>653.4103388089117,360.78679118737267 
+                      653.4103388089117,361.1228295202121 
+                      653.8509224008567,361.1228295202121 
+                      653.8509224008567,360.78679118737267 
+                      653.4103388089117,360.78679118737267 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">gray</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>654.4993161242194,360.80170868484265 
+                      654.4993161242194,361.1377470176821 
+                      654.9398997161644,361.1377470176821 
+                      654.9398997161644,360.80170868484265 
+                      654.4993161242194,360.80170868484265 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark blue</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>656.6772707548348,360.160256293634 
+                      656.6772707548348,360.49629462647346 
+                      657.1178543467798,360.49629462647346 
+                      657.1178543467798,360.160256293634 
+                      656.6772707548348,360.160256293634 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>655.9015608863965,361.5625010558111 
+                      655.9015608863965,361.89853938865053 
+                      656.3421444783415,361.89853938865053 
+                      656.3421444783415,361.5625010558111 
+                      655.9015608863965,361.5625010558111 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>654.20096617482,358.53424906940734 
+                      654.20096617482,359.0047027353826 
+                      654.6116796927348,359.0047027353826 
+                      654.6116796927348,358.53424906940734 
+                      654.20096617482,358.53424906940734 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>655.289943490128,359.1309489682061 
+                      655.289943490128,359.5188039024253 
+                      655.782220906637,359.5188039024253 
+                      655.782220906637,359.1309489682061 
+                      655.289943490128,359.1309489682061 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">server stuff</property>
+      <property name="Description"/>
+      <property name="Colour"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>658.0795155170124,357.9226316731387 
+                      658.0795155170124,358.39308533911395 
+                      658.4902290349272,358.39308533911395 
+                      658.4902290349272,357.9226316731387 
+                      658.0795155170124,357.9226316731387 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>658.1391855068923,357.2364267895201 
+                      658.1391855068923,357.70688045549537 
+                      658.5498990248071,357.70688045549537 
+                      658.5498990248071,357.2364267895201 
+                      658.1391855068923,357.2364267895201 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>656.0954883535065,358.68342404410714 
+                      656.0954883535065,359.0194623769466 
+                      656.5360719454516,359.0194623769466 
+                      656.5360719454516,358.68342404410714 
+                      656.0954883535065,358.68342404410714 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>655.4838709572377,357.2065917945802 
+                      655.4838709572377,357.54263012741967 
+                      655.9244545491828,357.54263012741967 
+                      655.9244545491828,357.2065917945802 
+                      655.4838709572377,357.2065917945802 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark blue</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>656.3210737982362,353.60214785546214 
+                      656.3210737982362,353.72695495717085 
+                      656.3834773490905,353.72695495717085 
+                      656.3834773490905,353.60214785546214 
+                      656.3210737982362,353.60214785546214 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>656.1097339016064,355.9380098708436 
+                      656.1097339016064,356.2011448436128 
+                      656.5881611248232,356.2011448436128 
+                      656.5881611248232,355.9380098708436 
+                      656.1097339016064,355.9380098708436 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">display</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>658.5901968988924,355.88239410857256 
+                      658.5901968988924,356.14552908134175 
+                      659.0686241221091,356.14552908134175 
+                      659.0686241221091,355.88239410857256 
+                      658.5901968988924,355.88239410857256 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">display</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>656.0096255295186,355.737793126668 
+                      656.0096255295186,355.881321293633 
+                      656.5837381973787,355.881321293633 
+                      656.5837381973787,355.737793126668 
+                      656.0096255295186,355.737793126668 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>658.623566356255,355.6710542119428 
+                      658.623566356255,355.8145823789078 
+                      659.197679024115,355.8145823789078 
+                      659.197679024115,355.6710542119428 
+                      658.623566356255,355.6710542119428 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">keyboard</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>656.6547683718621,355.8601478036642 
+                      656.6547683718621,355.9849549053729 
+                      656.7171719227165,355.9849549053729 
+                      656.7171719227165,355.8601478036642 
+                      656.6547683718621,355.8601478036642 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>659.1797239789648,355.8935172610268 
+                      659.1797239789648,356.0183243627355 
+                      659.2421275298192,356.0183243627355 
+                      659.2421275298192,355.8935172610268 
+                      659.1797239789648,355.8935172610268 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>658.2453791728122,355.62656160212606 
+                      658.2453791728122,356.22459563114694 
+                      658.5324355067423,356.22459563114694 
+                      658.5324355067423,355.62656160212606 
+                      658.2453791728122,355.62656160212606 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">PC</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>654.619231472744,355.20388180886647 
+                      654.619231472744,355.5399201417059 
+                      655.059815064689,355.5399201417059 
+                      655.059815064689,355.20388180886647 
+                      654.619231472744,355.20388180886647 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>655.8761477000683,355.1482660465955 
+                      655.8761477000683,355.48430437943495 
+                      656.3167312920133,355.48430437943495 
+                      656.3167312920133,355.1482660465955 
+                      655.8761477000683,355.1482660465955 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark blue</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>657.3332806715681,355.2150049613207 
+                      657.3332806715681,355.55104329416014 
+                      657.7738642635131,355.55104329416014 
+                      657.7738642635131,355.2150049613207 
+                      657.3332806715681,355.2150049613207 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>658.6680589660717,355.22612811377485 
+                      658.6680589660717,355.5621664466143 
+                      659.1086425580168,355.5621664466143 
+                      659.1086425580168,355.22612811377485 
+                      658.6680589660717,355.22612811377485 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark blue</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>658.1563939531787,354.99254191223673 
+                      658.1563939531787,355.3285802450762 
+                      658.5969775451238,355.3285802450762 
+                      658.5969775451238,354.99254191223673 
+                      658.1563939531787,354.99254191223673 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark blue</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>658.8237831004305,354.55873896652304 
+                      658.8237831004305,354.8947772993625 
+                      659.2643666923756,354.8947772993625 
+                      659.2643666923756,354.55873896652304 
+                      658.8237831004305,354.55873896652304 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark red</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>657.1330639273925,354.1138128683551 
+                      657.1330639273925,354.4498512011946 
+                      657.5736475193376,354.4498512011946 
+                      657.5736475193376,354.1138128683551 
+                      657.1330639273925,354.1138128683551 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>655.8983940049767,354.04707395362993 
+                      655.8983940049767,354.3831122864694 
+                      656.3389775969217,354.3831122864694 
+                      656.3389775969217,354.04707395362993 
+                      655.8983940049767,354.04707395362993 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>655.3756058396294,354.06932025853837 
+                      655.3756058396294,354.4053585913778 
+                      655.8161894315745,354.4053585913778 
+                      655.8161894315745,354.06932025853837 
+                      655.3756058396294,354.06932025853837 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>658.334364392446,352.5343252198591 
+                      658.334364392446,352.6900493542179 
+                      658.4122264596253,352.6900493542179 
+                      658.4122264596253,352.5343252198591 
+                      658.334364392446,352.5343252198591 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">mouse</property>
+      <property name="Description"/>
+      <property name="Colour">black</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic"/>
+      <property name="Features"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>657.9116845991864,352.05602966432866 
+                      657.9116845991864,352.3920679971681 
+                      658.3522681911314,352.3920679971681 
+                      658.3522681911314,352.05602966432866 
+                      657.9116845991864,352.05602966432866 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark blue</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>658.2453791728124,351.01045333363413 
+                      658.2453791728124,351.3464916664736 
+                      658.6859627647574,351.3464916664736 
+                      658.6859627647574,351.01045333363413 
+                      658.2453791728124,351.01045333363413 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark blue</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>657.544620568198,351.01045333363413 
+                      657.544620568198,351.3464916664736 
+                      657.985204160143,351.3464916664736 
+                      657.985204160143,351.01045333363413 
+                      657.544620568198,351.01045333363413 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark blue</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>656.8216156586751,350.7991134370044 
+                      656.8216156586751,351.13515176984384 
+                      657.2621992506201,351.13515176984384 
+                      657.2621992506201,350.7991134370044 
+                      656.8216156586751,350.7991134370044 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">dark blue</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features">rotary</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>655.5869457362592,350.6545124550998 
+                      655.5869457362592,351.12496612107503 
+                      655.997659254174,351.12496612107503 
+                      655.997659254174,350.6545124550998 
+                      655.5869457362592,350.6545124550998 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">chair</property>
+      <property name="Description"/>
+      <property name="Colour">brown</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Dynamic">true</property>
+      <property name="Features"/>
     </feature>
   </featureCollection>
 </JCSDataFile>

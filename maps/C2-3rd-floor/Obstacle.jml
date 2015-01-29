@@ -5,7 +5,37 @@
     <FeatureElement>feature</FeatureElement>
     <GeometryElement>geometry</GeometryElement>
     <ColumnDefinitions>
-</ColumnDefinitions>
+      <column>
+        <name>Kind</name>
+        <type>STRING</type>
+        <valueElement elementName="property" attributeName="name" attributeValue="Kind"/>
+        <valueLocation position="body"/>
+      </column>
+      <column>
+        <name>Manufacturer</name>
+        <type>STRING</type>
+        <valueElement elementName="property" attributeName="name" attributeValue="Manufacturer"/>
+        <valueLocation position="body"/>
+      </column>
+      <column>
+        <name>Model</name>
+        <type>STRING</type>
+        <valueElement elementName="property" attributeName="name" attributeValue="Model"/>
+        <valueLocation position="body"/>
+      </column>
+      <column>
+        <name>Colour</name>
+        <type>STRING</type>
+        <valueElement elementName="property" attributeName="name" attributeValue="Colour"/>
+        <valueLocation position="body"/>
+      </column>
+      <column>
+        <name>Glossy</name>
+        <type>STRING</type>
+        <valueElement elementName="property" attributeName="name" attributeValue="Glossy"/>
+        <valueLocation position="body"/>
+      </column>
+    </ColumnDefinitions>
   </JCSGMLInputTemplate>
   <featureCollection>
     <feature>
@@ -18,6 +48,11 @@
                     650.0,327.0 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -29,6 +64,11 @@
                     653.0,366.5 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind">wall</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">white</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -40,6 +80,11 @@
                     653.0,386.5 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -51,6 +96,11 @@
                     653.0,383.1 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -62,6 +112,11 @@
                     653.0,376.4 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -73,6 +128,11 @@
                     653.0,373.0 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind">wall</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">white</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -84,6 +144,11 @@
                     653.0,359.7 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind">wall</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">white</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -95,6 +160,11 @@
                     653.0,356.3 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind">wall</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">white</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -106,6 +176,11 @@
                     653.0,353.2 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind">wall</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">white</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -117,6 +192,11 @@
                     653.0,350.1 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -128,6 +208,11 @@
                     653.0,346.7 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -139,6 +224,11 @@
                     653.0,343.6 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -150,6 +240,11 @@
                     653.0,340.2 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -161,17 +256,11 @@
                     653.0,337.1 </gml:coordinates>
         </gml:LineString>
       </geometry>
-    </feature>
-    <feature>
-      <geometry>
-        <gml:LineString>
-          <gml:coordinates>654.67,359.7 
-                    654.67,356.3 
-                    659.4,356.3 
-                    659.4,359.7 
-                    654.67,359.7 </gml:coordinates>
-        </gml:LineString>
-      </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -183,6 +272,11 @@
                     645.1,383.1 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -194,6 +288,11 @@
                     645.1,376.4 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -205,6 +304,11 @@
                     645.1,373.0 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -216,6 +320,11 @@
                     645.1,366.5 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -227,6 +336,11 @@
                     645.1,379.7 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -238,6 +352,11 @@
                     645.1,369.8 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -249,6 +368,11 @@
                     645.1,363.1 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -260,6 +384,11 @@
                     650.0,356.3 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -271,6 +400,11 @@
                     650.0,353.2 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -282,6 +416,11 @@
                     650.0,350.1 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -293,6 +432,11 @@
                     650.0,346.7 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -304,6 +448,11 @@
                     650.0,343.6 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -315,6 +464,11 @@
                     650.0,340.2 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -326,6 +480,11 @@
                     650.0,337.1 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -341,6 +500,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">white</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -356,21 +520,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-    </feature>
-    <feature>
-      <geometry>
-        <gml:Polygon>
-          <gml:outerBoundaryIs>
-            <gml:LinearRing>
-              <gml:coordinates>653.0,366.5 
-                      653.0,367.45 
-                      653.7,367.45 
-                      653.7,366.5 
-                      653.0,366.5 </gml:coordinates>
-            </gml:LinearRing>
-          </gml:outerBoundaryIs>
-        </gml:Polygon>
-      </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">white</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -386,6 +540,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">white</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -401,6 +560,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">white</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -416,6 +580,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">white</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -431,6 +600,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">white</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -446,6 +620,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">white</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -461,6 +640,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">wardrobe</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -476,6 +660,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">white</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -491,6 +680,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">white</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -506,6 +700,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">white</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -521,6 +720,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">white</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -536,6 +740,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">white</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -551,6 +760,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">white</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -566,6 +780,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">cabinet</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">white</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -581,51 +800,71 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">cabinet</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">white</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
         <gml:Polygon>
           <gml:outerBoundaryIs>
             <gml:LinearRing>
-              <gml:coordinates>653.0,365.2 
-                      653.0,366.4 
-                      653.9,366.4 
-                      653.9,365.2 
-                      653.0,365.2 </gml:coordinates>
+              <gml:coordinates>653.0,365.5 
+                      653.0,366.5 
+                      653.9,366.5 
+                      653.9,365.5 
+                      653.0,365.5 </gml:coordinates>
             </gml:LinearRing>
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">wardrobe</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
         <gml:Polygon>
           <gml:outerBoundaryIs>
             <gml:LinearRing>
-              <gml:coordinates>653.0,363.9 
-                      653.0,365.1 
-                      653.9,365.1 
-                      653.9,363.9 
-                      653.0,363.9 </gml:coordinates>
+              <gml:coordinates>653.0,364.45 
+                      653.0,365.45 
+                      653.9,365.45 
+                      653.9,364.45 
+                      653.0,364.45 </gml:coordinates>
             </gml:LinearRing>
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">wardrobe</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
         <gml:Polygon>
           <gml:outerBoundaryIs>
             <gml:LinearRing>
-              <gml:coordinates>653.0,362.6 
-                      653.0,363.8 
-                      653.9,363.8 
-                      653.9,362.6 
-                      653.0,362.6 </gml:coordinates>
+              <gml:coordinates>653.0,363.4 
+                      653.0,364.4 
+                      653.9,364.4 
+                      653.9,363.4 
+                      653.0,363.4 </gml:coordinates>
             </gml:LinearRing>
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">wardrobe</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -641,6 +880,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -656,6 +900,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -671,6 +920,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -686,6 +940,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -701,6 +960,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -716,6 +980,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -731,6 +1000,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -746,6 +1020,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -761,6 +1040,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -776,6 +1060,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -791,6 +1080,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -806,6 +1100,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -821,6 +1120,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -836,6 +1140,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -851,6 +1160,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -866,6 +1180,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -881,6 +1200,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -896,6 +1220,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -911,6 +1240,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -926,6 +1260,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">shelf unit</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -941,6 +1280,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">wardrobe</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -956,6 +1300,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -971,6 +1320,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">wardrobe</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -986,6 +1340,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">shelf unit</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1001,6 +1360,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1016,6 +1380,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1031,6 +1400,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">wardrobe</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1046,6 +1420,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1061,6 +1440,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">wardrobe</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1076,6 +1460,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">shelf unit</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1091,6 +1480,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1106,6 +1500,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1121,6 +1520,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1136,6 +1540,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">shelf unit</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1151,6 +1560,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1166,6 +1580,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1181,6 +1600,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">cupboard</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1196,6 +1620,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1211,6 +1640,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1226,6 +1660,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1241,6 +1680,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">shelf unit</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1256,6 +1700,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">cupboard</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1271,6 +1720,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">desk</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1286,6 +1740,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">wardrobe</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1301,6 +1760,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">wardrobe</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">light brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1316,6 +1780,11 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
+      <property name="Kind">cabinet</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">brown</property>
+      <property name="Glossy"/>
     </feature>
     <feature>
       <geometry>
@@ -1327,6 +1796,67 @@
                     645.1,386.5 </gml:coordinates>
         </gml:LineString>
       </geometry>
+      <property name="Kind"/>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:LineString>
+          <gml:coordinates>654.67,359.7 
+                    654.67,356.3 
+                    659.4,356.3 
+                    659.4,359.7 
+                    654.67,359.7 </gml:coordinates>
+        </gml:LineString>
+      </geometry>
+      <property name="Kind">wall</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour">white</property>
+      <property name="Glossy"/>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>653.0,366.5 
+                      653.0,367.45 
+                      653.7,367.45 
+                      653.7,366.5 
+                      653.0,366.5 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">rack cabinet</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy">true</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>655.05,359.7 
+                      655.05,359.0 
+                      656.0,359.0 
+                      656.0,359.7 
+                      655.05,359.7 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">rack cabinet</property>
+      <property name="Manufacturer"/>
+      <property name="Model"/>
+      <property name="Colour"/>
+      <property name="Glossy">true</property>
     </feature>
   </featureCollection>
 </JCSDataFile>
