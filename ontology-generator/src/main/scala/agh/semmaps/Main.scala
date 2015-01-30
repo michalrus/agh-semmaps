@@ -6,7 +6,7 @@ object Main extends App {
 
   Config(args.toList) match {
     case Some(cnf) ⇒
-      GmlParser(cnf.input) flatMap PrologWriter(cnf.output) match {
+      GmlParser(cnf.inputDirectory) flatMap PrologWriter(cnf.output) match {
         case Success(())  ⇒
         case Failure(err) ⇒ err.printStackTrace()
       }
