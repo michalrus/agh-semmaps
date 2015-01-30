@@ -18,7 +18,7 @@ final case class JmlObject(tpe: JmlType, geometry: Geometry, props: Map[String, 
   def isAncestor(that: JmlObject): Boolean = this != that && (this.geometry covers that.geometry)
 }
 
-final case class JmlTree(node: JmlObject, children: List[JmlObject])
+final case class JmlTree(node: JmlObject, children: Set[JmlTree])
 
 object JmlParser {
 
