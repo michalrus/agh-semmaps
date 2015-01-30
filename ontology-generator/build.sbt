@@ -14,7 +14,12 @@ resolvers += "michalrus.com repo" at "http://maven.michalrus.com/"
 
 wartremoverErrors ++= Warts.allBut(Wart.Nothing, Wart.Any, Wart.NoNeedForMonad)
 
+wartremoverExcluded += baseDirectory.value / "src" / "main" / "scala" / "agh" / "semmaps" / "Config.scala"
+
+resolvers += Resolver.sonatypeRepo("public")
+
 libraryDependencies ++= Seq(
+  "com.github.scopt" %% "scopt" % "3.3.0",
   "org.scalatest" %% "scalatest" % "2.2.1" % "test",
   "org.scalacheck" %% "scalacheck" % "1.11.6" % "test"
 )
