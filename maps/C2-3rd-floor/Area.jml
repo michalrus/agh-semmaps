@@ -6,9 +6,9 @@
     <GeometryElement>geometry</GeometryElement>
     <ColumnDefinitions>
       <column>
-        <name>CHAIRS</name>
-        <type>INTEGER</type>
-        <valueElement elementName="property" attributeName="name" attributeValue="CHAIRS"/>
+        <name>Name</name>
+        <type>STRING</type>
+        <valueElement elementName="property" attributeName="name" attributeValue="Name"/>
         <valueLocation position="body"/>
       </column>
     </ColumnDefinitions>
@@ -28,7 +28,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS">3</property>
+      <property name="Name">Corridor</property>
     </feature>
     <feature>
       <geometry>
@@ -44,7 +44,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS">18</property>
+      <property name="Name">316</property>
     </feature>
     <feature>
       <geometry>
@@ -60,7 +60,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">312</property>
     </feature>
     <feature>
       <geometry>
@@ -76,7 +76,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">313</property>
     </feature>
     <feature>
       <geometry>
@@ -92,7 +92,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">314</property>
     </feature>
     <feature>
       <geometry>
@@ -108,7 +108,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS">1</property>
+      <property name="Name">317a</property>
     </feature>
     <feature>
       <geometry>
@@ -124,7 +124,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS">9</property>
+      <property name="Name">318</property>
     </feature>
     <feature>
       <geometry>
@@ -140,7 +140,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS">5</property>
+      <property name="Name">319</property>
     </feature>
     <feature>
       <geometry>
@@ -156,7 +156,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">320</property>
     </feature>
     <feature>
       <geometry>
@@ -172,7 +172,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">321</property>
     </feature>
     <feature>
       <geometry>
@@ -188,7 +188,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">322</property>
     </feature>
     <feature>
       <geometry>
@@ -204,7 +204,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">323</property>
     </feature>
     <feature>
       <geometry>
@@ -220,7 +220,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">324</property>
     </feature>
     <feature>
       <geometry>
@@ -236,7 +236,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS">3</property>
+      <property name="Name">317</property>
     </feature>
     <feature>
       <geometry>
@@ -252,7 +252,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">309</property>
     </feature>
     <feature>
       <geometry>
@@ -268,7 +268,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">308</property>
     </feature>
     <feature>
       <geometry>
@@ -284,7 +284,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">307</property>
     </feature>
     <feature>
       <geometry>
@@ -300,7 +300,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">305</property>
     </feature>
     <feature>
       <geometry>
@@ -316,7 +316,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">308a</property>
     </feature>
     <feature>
       <geometry>
@@ -332,7 +332,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">306</property>
     </feature>
     <feature>
       <geometry>
@@ -348,7 +348,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">304</property>
     </feature>
     <feature>
       <geometry>
@@ -364,7 +364,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">303c</property>
     </feature>
     <feature>
       <geometry>
@@ -380,7 +380,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">303b</property>
     </feature>
     <feature>
       <geometry>
@@ -396,7 +396,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">303</property>
     </feature>
     <feature>
       <geometry>
@@ -412,7 +412,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">303a</property>
     </feature>
     <feature>
       <geometry>
@@ -428,7 +428,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">302b</property>
     </feature>
     <feature>
       <geometry>
@@ -444,7 +444,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">302</property>
     </feature>
     <feature>
       <geometry>
@@ -460,7 +460,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">302a</property>
     </feature>
     <feature>
       <geometry>
@@ -476,7 +476,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS">26</property>
+      <property name="Name">315</property>
     </feature>
     <feature>
       <geometry>
@@ -492,7 +492,7 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="CHAIRS"/>
+      <property name="Name">310</property>
     </feature>
   </featureCollection>
 </JCSDataFile>
