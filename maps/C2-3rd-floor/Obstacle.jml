@@ -24,9 +24,9 @@
         <valueLocation position="body"/>
       </column>
       <column>
-        <name>Colour</name>
+        <name>Color</name>
         <type>STRING</type>
-        <valueElement elementName="property" attributeName="name" attributeValue="Colour"/>
+        <valueElement elementName="property" attributeName="name" attributeValue="Color"/>
         <valueLocation position="body"/>
       </column>
       <column>
@@ -51,7 +51,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -67,7 +67,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">white</property>
+      <property name="Color">white</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -83,7 +83,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -99,7 +99,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -115,7 +115,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -131,7 +131,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">white</property>
+      <property name="Color">white</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -147,7 +147,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">white</property>
+      <property name="Color">white</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -163,7 +163,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">white</property>
+      <property name="Color">white</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -179,7 +179,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">white</property>
+      <property name="Color">white</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -195,7 +195,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -211,7 +211,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -227,7 +227,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -243,7 +243,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -259,7 +259,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -275,7 +275,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -291,7 +291,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -307,7 +307,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -323,7 +323,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -339,7 +339,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -355,7 +355,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -371,7 +371,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -387,7 +387,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -403,7 +403,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -419,7 +419,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -435,7 +435,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -451,7 +451,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -467,7 +467,7 @@
       <property name="Kind"/>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -483,7 +483,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -503,7 +503,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">white</property>
+      <property name="Color">white</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -523,7 +523,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">white</property>
+      <property name="Color">white</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -543,7 +543,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">white</property>
+      <property name="Color">white</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -563,7 +563,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">white</property>
+      <property name="Color">white</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -583,7 +583,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">white</property>
+      <property name="Color">white</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -603,7 +603,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">white</property>
+      <property name="Color">white</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -623,7 +623,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">white</property>
+      <property name="Color">white</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -643,7 +643,7 @@
       <property name="Kind">wardrobe</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -663,7 +663,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">white</property>
+      <property name="Color">white</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -683,7 +683,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">white</property>
+      <property name="Color">white</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -703,7 +703,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">white</property>
+      <property name="Color">white</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -723,7 +723,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">white</property>
+      <property name="Color">white</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -743,7 +743,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">white</property>
+      <property name="Color">white</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -763,7 +763,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">white</property>
+      <property name="Color">white</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -783,7 +783,7 @@
       <property name="Kind">cabinet</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">white</property>
+      <property name="Color">white</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -803,7 +803,7 @@
       <property name="Kind">cabinet</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">white</property>
+      <property name="Color">white</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -823,7 +823,7 @@
       <property name="Kind">wardrobe</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -843,7 +843,7 @@
       <property name="Kind">wardrobe</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -863,7 +863,7 @@
       <property name="Kind">wardrobe</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -883,7 +883,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -903,7 +903,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -923,7 +923,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -943,7 +943,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -963,7 +963,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -983,7 +983,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1003,7 +1003,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1023,7 +1023,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1043,7 +1043,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1063,7 +1063,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1083,7 +1083,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1103,7 +1103,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1123,7 +1123,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1143,7 +1143,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1163,7 +1163,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1183,7 +1183,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1203,7 +1203,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1223,7 +1223,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1243,7 +1243,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1263,7 +1263,7 @@
       <property name="Kind">shelf unit</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1283,7 +1283,7 @@
       <property name="Kind">wardrobe</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1303,7 +1303,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1323,7 +1323,7 @@
       <property name="Kind">wardrobe</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1343,7 +1343,7 @@
       <property name="Kind">shelf unit</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1363,7 +1363,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1383,7 +1383,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1403,7 +1403,7 @@
       <property name="Kind">wardrobe</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1423,7 +1423,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1443,7 +1443,7 @@
       <property name="Kind">wardrobe</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1463,7 +1463,7 @@
       <property name="Kind">shelf unit</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1483,7 +1483,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1503,7 +1503,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1523,7 +1523,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1543,7 +1543,7 @@
       <property name="Kind">shelf unit</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1563,7 +1563,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1583,7 +1583,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1603,7 +1603,7 @@
       <property name="Kind">cupboard</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1623,7 +1623,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1643,7 +1643,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1663,7 +1663,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1683,7 +1683,7 @@
       <property name="Kind">shelf unit</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1703,7 +1703,7 @@
       <property name="Kind">cupboard</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1723,7 +1723,7 @@
       <property name="Kind">desk</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1743,7 +1743,7 @@
       <property name="Kind">wardrobe</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1763,7 +1763,7 @@
       <property name="Kind">wardrobe</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">light brown</property>
+      <property name="Color">light brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1783,7 +1783,7 @@
       <property name="Kind">cabinet</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">brown</property>
+      <property name="Color">brown</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1799,7 +1799,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1815,7 +1815,7 @@
       <property name="Kind">wall</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour">white</property>
+      <property name="Color">white</property>
       <property name="Transparent"/>
     </feature>
     <feature>
@@ -1835,7 +1835,7 @@
       <property name="Kind">rack cabinet</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent">true</property>
     </feature>
     <feature>
@@ -1855,7 +1855,7 @@
       <property name="Kind">rack cabinet</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent">true</property>
     </feature>
     <feature>
@@ -1869,7 +1869,7 @@
       <property name="Kind">window</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent">true</property>
     </feature>
     <feature>
@@ -1883,7 +1883,7 @@
       <property name="Kind">window</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent">true</property>
     </feature>
     <feature>
@@ -1897,7 +1897,7 @@
       <property name="Kind">window</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent">true</property>
     </feature>
     <feature>
@@ -1911,7 +1911,7 @@
       <property name="Kind">window</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent">true</property>
     </feature>
     <feature>
@@ -1925,7 +1925,7 @@
       <property name="Kind">window</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent">true</property>
     </feature>
     <feature>
@@ -1939,7 +1939,7 @@
       <property name="Kind">window</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent">true</property>
     </feature>
     <feature>
@@ -1953,7 +1953,7 @@
       <property name="Kind">window</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent">true</property>
     </feature>
     <feature>
@@ -1967,7 +1967,7 @@
       <property name="Kind">window</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent">true</property>
     </feature>
     <feature>
@@ -1981,7 +1981,7 @@
       <property name="Kind">window</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent">true</property>
     </feature>
     <feature>
@@ -1995,7 +1995,7 @@
       <property name="Kind">window</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent">true</property>
     </feature>
     <feature>
@@ -2009,7 +2009,7 @@
       <property name="Kind">window</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent">true</property>
     </feature>
     <feature>
@@ -2023,7 +2023,7 @@
       <property name="Kind">window</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent">true</property>
     </feature>
     <feature>
@@ -2037,7 +2037,7 @@
       <property name="Kind">window</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent">true</property>
     </feature>
     <feature>
@@ -2051,7 +2051,7 @@
       <property name="Kind">window</property>
       <property name="Manufacturer"/>
       <property name="Model"/>
-      <property name="Colour"/>
+      <property name="Color"/>
       <property name="Transparent">true</property>
     </feature>
   </featureCollection>

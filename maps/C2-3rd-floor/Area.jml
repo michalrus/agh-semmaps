@@ -6,9 +6,15 @@
     <GeometryElement>geometry</GeometryElement>
     <ColumnDefinitions>
       <column>
-        <name>Name</name>
+        <name>Kind</name>
         <type>STRING</type>
-        <valueElement elementName="property" attributeName="name" attributeValue="Name"/>
+        <valueElement elementName="property" attributeName="name" attributeValue="Kind"/>
+        <valueLocation position="body"/>
+      </column>
+      <column>
+        <name>Number</name>
+        <type>STRING</type>
+        <valueElement elementName="property" attributeName="name" attributeValue="Number"/>
         <valueLocation position="body"/>
       </column>
     </ColumnDefinitions>
@@ -28,7 +34,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">Corridor</property>
+      <property name="Kind">hallway</property>
+      <property name="Number"/>
     </feature>
     <feature>
       <geometry>
@@ -44,7 +51,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">316</property>
+      <property name="Kind">room</property>
+      <property name="Number">316</property>
     </feature>
     <feature>
       <geometry>
@@ -60,7 +68,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">312</property>
+      <property name="Kind">room</property>
+      <property name="Number">312</property>
     </feature>
     <feature>
       <geometry>
@@ -76,7 +85,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">313</property>
+      <property name="Kind">room</property>
+      <property name="Number">313</property>
     </feature>
     <feature>
       <geometry>
@@ -92,7 +102,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">314</property>
+      <property name="Kind">room</property>
+      <property name="Number">314</property>
     </feature>
     <feature>
       <geometry>
@@ -108,7 +119,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">317a</property>
+      <property name="Kind">room</property>
+      <property name="Number">317a</property>
     </feature>
     <feature>
       <geometry>
@@ -124,7 +136,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">318</property>
+      <property name="Kind">room</property>
+      <property name="Number">318</property>
     </feature>
     <feature>
       <geometry>
@@ -140,7 +153,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">319</property>
+      <property name="Kind">room</property>
+      <property name="Number">319</property>
     </feature>
     <feature>
       <geometry>
@@ -156,7 +170,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">320</property>
+      <property name="Kind">room</property>
+      <property name="Number">320</property>
     </feature>
     <feature>
       <geometry>
@@ -172,7 +187,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">321</property>
+      <property name="Kind">room</property>
+      <property name="Number">321</property>
     </feature>
     <feature>
       <geometry>
@@ -188,7 +204,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">322</property>
+      <property name="Kind">room</property>
+      <property name="Number">322</property>
     </feature>
     <feature>
       <geometry>
@@ -204,7 +221,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">323</property>
+      <property name="Kind">room</property>
+      <property name="Number">323</property>
     </feature>
     <feature>
       <geometry>
@@ -220,7 +238,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">324</property>
+      <property name="Kind">room</property>
+      <property name="Number">324</property>
     </feature>
     <feature>
       <geometry>
@@ -236,7 +255,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">317</property>
+      <property name="Kind">room</property>
+      <property name="Number">317</property>
     </feature>
     <feature>
       <geometry>
@@ -252,7 +272,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">309</property>
+      <property name="Kind">room</property>
+      <property name="Number">309</property>
     </feature>
     <feature>
       <geometry>
@@ -268,7 +289,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">308</property>
+      <property name="Kind">room</property>
+      <property name="Number">308</property>
     </feature>
     <feature>
       <geometry>
@@ -284,7 +306,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">307</property>
+      <property name="Kind">room</property>
+      <property name="Number">307</property>
     </feature>
     <feature>
       <geometry>
@@ -300,7 +323,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">305</property>
+      <property name="Kind">room</property>
+      <property name="Number">305</property>
     </feature>
     <feature>
       <geometry>
@@ -316,7 +340,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">308a</property>
+      <property name="Kind">room</property>
+      <property name="Number">308a</property>
     </feature>
     <feature>
       <geometry>
@@ -332,7 +357,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">306</property>
+      <property name="Kind">room</property>
+      <property name="Number">306</property>
     </feature>
     <feature>
       <geometry>
@@ -348,7 +374,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">304</property>
+      <property name="Kind">room</property>
+      <property name="Number">304</property>
     </feature>
     <feature>
       <geometry>
@@ -364,7 +391,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">303c</property>
+      <property name="Kind">room</property>
+      <property name="Number">303c</property>
     </feature>
     <feature>
       <geometry>
@@ -380,7 +408,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">303b</property>
+      <property name="Kind">room</property>
+      <property name="Number">303b</property>
     </feature>
     <feature>
       <geometry>
@@ -396,7 +425,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">303</property>
+      <property name="Kind">room</property>
+      <property name="Number">303</property>
     </feature>
     <feature>
       <geometry>
@@ -412,7 +442,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">303a</property>
+      <property name="Kind">room</property>
+      <property name="Number">303a</property>
     </feature>
     <feature>
       <geometry>
@@ -428,7 +459,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">302b</property>
+      <property name="Kind">room</property>
+      <property name="Number">302b</property>
     </feature>
     <feature>
       <geometry>
@@ -444,7 +476,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">302</property>
+      <property name="Kind">room</property>
+      <property name="Number">302</property>
     </feature>
     <feature>
       <geometry>
@@ -460,7 +493,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">302a</property>
+      <property name="Kind">room</property>
+      <property name="Number">302a</property>
     </feature>
     <feature>
       <geometry>
@@ -476,7 +510,8 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">315</property>
+      <property name="Kind">room</property>
+      <property name="Number">315</property>
     </feature>
     <feature>
       <geometry>
@@ -492,7 +527,25 @@
           </gml:outerBoundaryIs>
         </gml:Polygon>
       </geometry>
-      <property name="Name">310</property>
+      <property name="Kind">room</property>
+      <property name="Number">310</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>650.0,359.7 
+                      650.0,356.3 
+                      645.1,356.3 
+                      645.1,359.7 
+                      650.0,359.7 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Kind">staircase</property>
+      <property name="Number">304</property>
     </feature>
   </featureCollection>
 </JCSDataFile>
