@@ -27,7 +27,7 @@ object JmlParser {
     val parser = new GMLReader
     features.toList map { feature ⇒
       val geom = parser.read((feature \ "geometry" flatMap (_.child)).mkString, new GeometryFactory())
-      val props = feature \ "property" map (p ⇒ (p \@ "name", p.text))
+      val props = feature \ "property" map (p ⇒ (p \@ "name", p.text.trim)) filter { case (k, v) ⇒ v.nonEmpty }
       JmlObject(tpe, geom, props.toMap)
     }
   }
