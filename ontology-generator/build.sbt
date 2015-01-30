@@ -14,7 +14,10 @@ resolvers += "michalrus.com repo" at "http://maven.michalrus.com/"
 
 wartremoverErrors ++= Warts.allBut(Wart.Nothing, Wart.Any, Wart.NoNeedForMonad)
 
-wartremoverExcluded += baseDirectory.value / "src" / "main" / "scala" / "agh" / "semmaps" / "Config.scala"
+wartremoverExcluded ++= Seq(
+  baseDirectory.value / "src" / "main" / "scala" / "agh" / "semmaps" / "Config.scala",
+  baseDirectory.value / "src" / "main" / "scala" / "agh" / "semmaps" / "TreeBuilder.scala"
+)
 
 resolvers += Resolver.sonatypeRepo("public")
 
