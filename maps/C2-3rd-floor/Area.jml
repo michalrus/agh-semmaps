@@ -545,7 +545,7 @@
         </gml:Polygon>
       </geometry>
       <property name="Kind">staircase</property>
-      <property name="Number">304</property>
+      <property name="Number"/>
     </feature>
   </featureCollection>
 </JCSDataFile>
