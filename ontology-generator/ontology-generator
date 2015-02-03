@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -o noclobber
+set -o errexit
+set -o nounset
+
+d="$(dirname "$(readlink -f "$0")")"
+f="$d/target/universal/stage/bin/ontology-generator"
+
+[ -x "$f" ] || {
+  echo >&2 "run ./build first"
+  exit 1
+}
+
+exec "$f" "$@"

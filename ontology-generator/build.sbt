@@ -1,3 +1,5 @@
+enablePlugins(JavaAppPackaging)
+
 organization := "agh.semmaps"
 
 name := "ontology-generator"
