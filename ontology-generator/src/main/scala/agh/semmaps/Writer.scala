@@ -41,17 +41,15 @@ object PrologWriter extends Writer {
     }
     val hasText = if (children.isEmpty) " exists" else " has [\n" + redundant(children.map(_.dump).sorted).mkString(",\n") + "\n" + i + "]"
     val chClass = children.flatMap(_.classesUsed)
-    def props(m: Map[String, String]): String = m map { case (k, v) ⇒ s"""${k.toLowerCase}: "$v"""" } mkString ", "
+    def props(node: JmlObject): String = ((node.props filterKeys (_ != "Kind")) +
+      ("uuid" → tree.node.uuid.toString)) map { case (k, v) ⇒ s"""${k.toLowerCase}: "$v"""" } mkString ", "
 
-    tree.node.tpe match {
-      case JmlArea | JmlObstacle | JmlPoi ⇒
-        val kind = tree.node.props.getOrElse("Kind", "unnamed").replace(" ", "_").toLowerCase
-        Some(DumpResult(i + s"$kind{${props(tree.node.props filterKeys (_ != "Kind"))}}" + hasText, Set(kind) ++ chClass))
-
-      case JmlDoor ⇒
-        val kind = "door"
-        Some(DumpResult(i + s"$kind{${props(tree.node.props)}}" + hasText, Set(kind) ++ chClass))
+    val kind = tree.node.tpe match {
+      case JmlArea | JmlObstacle | JmlPoi ⇒ tree.node.props.getOrElse("Kind", "unnamed").replace(" ", "_").toLowerCase
+      case JmlDoor                        ⇒ "door"
     }
+
+    Some(DumpResult(i + s"$kind{${props(tree.node)}}" + hasText, Set(kind) ++ chClass))
   }
 }
 

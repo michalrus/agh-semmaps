@@ -1,6 +1,7 @@
 package agh.semmaps
 
 import java.io.File
+import java.util.UUID
 
 import com.vividsolutions.jts.geom.{ Geometry, GeometryFactory }
 import com.vividsolutions.jts.io.gml2.GMLReader
@@ -14,7 +15,7 @@ case object JmlDoor extends JmlType
 case object JmlObstacle extends JmlType
 case object JmlPoi extends JmlType
 
-final case class JmlObject(tpe: JmlType, geometry: Geometry, props: Map[String, String]) {
+final case class JmlObject(uuid: UUID, tpe: JmlType, geometry: Geometry, props: Map[String, String]) {
   def isAncestor(that: JmlObject): Boolean = this != that && (this.geometry covers that.geometry)
 }
 
@@ -28,7 +29,7 @@ object JmlParser {
     features.toSet map { (feature: xml.Node) ⇒
       val geom = parser.read((feature \ "geometry" flatMap (_.child)).mkString, new GeometryFactory())
       val props = feature \ "property" map (p ⇒ (p \@ "name", p.text.trim)) filter { case (k, v) ⇒ v.nonEmpty }
-      JmlObject(tpe, geom, props.toMap)
+      JmlObject(UUID.randomUUID(), tpe, geom, props.toMap)
     }
   }
 
