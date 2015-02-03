@@ -22,10 +22,10 @@ final case class JmlTree(node: JmlObject, children: Set[JmlTree])
 
 object JmlParser {
 
-  def apply(tpe: JmlType, input: File): List[JmlObject] = {
+  def apply(tpe: JmlType, input: File): Set[JmlObject] = {
     val features = XML.loadFile(input) \\ "feature"
     val parser = new GMLReader
-    features.toList map { feature ⇒
+    features.toSet map { (feature: xml.Node) ⇒
       val geom = parser.read((feature \ "geometry" flatMap (_.child)).mkString, new GeometryFactory())
       val props = feature \ "property" map (p ⇒ (p \@ "name", p.text.trim)) filter { case (k, v) ⇒ v.nonEmpty }
       JmlObject(tpe, geom, props.toMap)
