@@ -2,10 +2,13 @@ package agh.semmaps
 
 import java.io.{ PrintWriter, File }
 
+import scala.collection.immutable.Set
 import scala.util.Try
 
 trait Writer {
   def apply(output: File)(ontology: Ontology): Try[Unit]
+  def nodeSet(tree: JmlTree): Set[JmlObject] =
+    Set(tree.node) ++ (tree.children flatMap nodeSet)
 }
 
 object PrologWriter extends Writer {
@@ -20,10 +23,13 @@ object PrologWriter extends Writer {
     val result =
       s"""relation(has).
          |relation(consists_of).
+         |relation(exists).
          |
          |${classesUsed map (cl ⇒ s"class($cl).") mkString "\n"}
          |
-         |$dmp.""".stripMargin
+         |$dmp.
+         |
+         |${distances(ontology.trees)}""".stripMargin
     if (output.toString == "-") println(result) else {
       val pw = new PrintWriter(output)
       pw.write(result)
@@ -50,6 +56,16 @@ object PrologWriter extends Writer {
     }
 
     Some(DumpResult(i + s"$kind{${props(tree.node)}}" + hasText, Set(kind) ++ chClass))
+  }
+  def distances(trees: List[JmlTree]): String = {
+    val all = trees.toSet flatMap nodeSet
+    all.subsets(2) map {
+      _.toList match {
+        case a :: b :: Nil ⇒
+          s"""distance("${a.uuid}", "${b.uuid}", "${a distance b}")."""
+        case _ ⇒ ""
+      }
+    } mkString "\n"
   }
 }
 

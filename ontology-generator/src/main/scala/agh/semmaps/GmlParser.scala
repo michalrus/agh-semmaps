@@ -17,6 +17,7 @@ case object JmlPoi extends JmlType
 
 final case class JmlObject(uuid: UUID, tpe: JmlType, geometry: Geometry, props: Map[String, String]) {
   def isAncestor(that: JmlObject): Boolean = this != that && (this.geometry covers that.geometry)
+  def distance(that: JmlObject): Double = this.geometry distance that.geometry
 }
 
 final case class JmlTree(node: JmlObject, children: Set[JmlTree])
