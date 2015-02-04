@@ -304,7 +304,7 @@ distance(class_id1, class_id2, distance_in_meters_or_pixels)</title>
       <children>
         <topics type="attached">
           <topic id="0188ncpugpp2bc162cilv4mhus">
-            <title>December 3, 2014</title>
+            <title>Dec 3, 2014</title>
             <children>
               <topics type="attached">
                 <topic id="7r83n632hdoanmc3ttu5cp0lno">
@@ -379,6 +379,237 @@ kilkanaście predykatów</title>
                 </topic>
               </topics>
             </children>
+          </topic>
+          <topic id="0ns5q6ov2f1h2flit9ked8kkmc">
+            <title>Feb 4, 2015</title>
+            <children>
+              <topics type="attached">
+                <topic id="33fs02mg6u5ur48guffm7712bs">
+                  <title>pytania</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="5hb45a0buqdr9imopuuusuvhei">
+                        <title>zaliczenia</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="2gic4ui6ks95s2g9708ibkkbuo">
+                              <title>ok</title>
+                            </topic>
+                            <topic id="0hj1udoesfvv1jbvdjelm0gc66">
+                              <title>aml?</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="7ausitkhi7fjuig8eul37ltt6j">
+                                    <title>krzysztof : pokazać swoją pracę magisterską</title>
+                                    <marker-refs>
+                                      <marker-ref marker-id="priority-1"/>
+                                    </marker-refs>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                            <topic id="06b2g3st37sf4j8f2usdbnqglt">
+                              <title>semweb</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="7pj2hcgkg2cahdq5iotpflv5d6">
+                                    <title>kkutt napisze</title>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="4vnhh0urhjge1pj8ii38q4qmuj">
+                        <title>co dalej?</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="21j50dt6be9u57oedpscli4dm5">
+                              <title>wrzucić release na wiki</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="2roa08gi30glvj7235f7p4too5">
+                                    <title>bez dystansów</title>
+                                  </topic>
+                                  <topic id="40qkg638a31aha029u4uhjffkl">
+                                    <title>z buildem</title>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                            <topic id="12kefppolu43p2o58drl2j6lr9">
+                              <title>features:rotary → rotary:true</title>
+                            </topic>
+                            <topic id="5dmgm2tb5deh7oevb58uutt4k2">
+                              <title>nie działają krotności</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="724i2k4s6foe79kvpi51s1og6t">
+                                    <title>UUID</title>
+                                  </topic>
+                                  <topic id="3ea69dkidr5p8j02m1663ilskk">
+                                    <title>wyrzucić</title>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                            <topic id="7o29hevsf90rfjs9oktg8pm57h">
+                              <title>spotkanie z MŚ</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="11jcbvhvg4e2gbt7jtrobl6suq">
+                                    <title>poczekać na kontakt</title>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="60rf5ml5v9i3otsl5a4h4t30q4">
+                        <title>najlepszy flow byłby</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="2vm3cq7dfon31v8v9l2ghdgqh7">
+                              <title>1. mapy</title>
+                            </topic>
+                            <topic id="5hecmui5m9fsbhdtj1uiem3ceb">
+                              <title svg:width="500">0. na początku opisać co to znaczy „has” / „near” w module z regułami</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="3cel44mb924rhgvaf6o32r016g">
+                                    <title>nie zakodowana w generatorze</title>
+                                  </topic>
+                                  <topic id="1sois3i1efsjl5i7u8b81m2pm7">
+                                    <title>element osobny</title>
+                                  </topic>
+                                  <topic id="1cd27lvdjemccup56gtv5123cp">
+                                    <title>reguły?</title>
+                                    <children>
+                                      <topics type="attached">
+                                        <topic id="2k7i80dpaatv11mpdptedg810e">
+                                          <title>dość przejrzyste</title>
+                                        </topic>
+                                      </topics>
+                                    </children>
+                                  </topic>
+                                  <topic id="42d7i098f7n1sdbft9ng267ab4">
+                                    <title>i generator używając tych reguł, generuje ontologię</title>
+                                    <children>
+                                      <topics type="attached">
+                                        <topic id="0mcujh2rpsv922frskl346vtj9">
+                                          <title>bez distance()</title>
+                                        </topic>
+                                      </topics>
+                                    </children>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                            <topic id="43456n8u9t5e7tuon9ongdq5co">
+                              <title>2. generator</title>
+                            </topic>
+                            <topic id="74vrmurmhs18ts3r34heg8a7ni">
+                              <title>3. generuje się onto</title>
+                            </topic>
+                            <topic id="52p077jlrkoilisnb5lf4v6uah">
+                              <title>4. moduł do generowania drzewek</title>
+                            </topic>
+                            <topic id="36ks04tj2rimhuqv482u0cvmk0">
+                              <title>5. onto/generator ma „has”</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="66886f21k18ps00spsmdgmfbao">
+                                    <title>fajnie byłoby mieć…</title>
+                                    <children>
+                                      <topics type="attached">
+                                        <topic id="7e36rhl6l2h4qu31p7rdluqp4q">
+                                          <title>żeby można było robić więcej niż relację has</title>
+                                          <children>
+                                            <topics type="attached">
+                                              <topic id="3r89plgsmcfmfgsm9i20tvtiv3">
+                                                <title>więcej niż jedną</title>
+                                              </topic>
+                                            </topics>
+                                          </children>
+                                        </topic>
+                                      </topics>
+                                    </children>
+                                  </topic>
+                                  <topic id="5am58rna6kfpjseg03adueeu92">
+                                    <title>MŚ pracuje nad onto</title>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                            <topic id="1dkr4dh8vadreg9sfo89fhevci">
+                              <title svg:width="500">być może ograniczyć się do relacji w obrebie jednego pomieszczenia</title>
+                            </topic>
+                            <topic id="009et33s84p634gqa6geg97ibr">
+                              <title>kontekst</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="4ej03v2gpskbkvkbq796u1d3ke">
+                                    <title>co innego „near” w 318</title>
+                                  </topic>
+                                  <topic id="3pu9pm3j45ibrd3vr88pnb3qe5">
+                                    <title>a co innego w sali gimnastycznej wielkiej</title>
+                                  </topic>
+                                  <topic id="1dj7mhun4eo95fi216hloegunn">
+                                    <title>co innego znaczy</title>
+                                    <children>
+                                      <topics type="attached">
+                                        <topic id="27gimtptces4a1cr0t7coaq08u">
+                                          <title>mały schowek na szczotki</title>
+                                        </topic>
+                                        <topic id="1jvu7gb7qmpfc8jo89rf1qqmuk">
+                                          <title>a mała sala gimnastyczna</title>
+                                        </topic>
+                                        <topic id="0nth3i0u4tkh3v2475p4cj1oab">
+                                          <title>też na podstawie reguł</title>
+                                        </topic>
+                                      </topics>
+                                    </children>
+                                  </topic>
+                                  <topic id="2i0j4490hang6sjk6q28n2ievd">
+                                    <title>zamiast pisać biurko-ma-monitor</title>
+                                    <children>
+                                      <topics type="attached">
+                                        <topic id="70kvmlc4e7tgelvulckcocj62f">
+                                          <title>-na-</title>
+                                        </topic>
+                                      </topics>
+                                    </children>
+                                  </topic>
+                                  <topic id="3i9te749uvnn2lpi8c6cdl54mn">
+                                    <title>szafa</title>
+                                    <children>
+                                      <topics type="attached">
+                                        <topic id="16f3i0c7qg5msrgd5mqt3q4l19">
+                                          <title>-inside-</title>
+                                        </topic>
+                                      </topics>
+                                    </children>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+              </topics>
+            </children>
+            <extensions>
+              <extension provider="org.xmind.ui.map.unbalanced">
+                <content>
+                  <right-number>1</right-number>
+                </content>
+              </extension>
+            </extensions>
           </topic>
         </topics>
       </children>
