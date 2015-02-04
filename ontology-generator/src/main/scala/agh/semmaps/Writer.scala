@@ -27,9 +27,7 @@ object PrologWriter extends Writer {
          |
          |${classesUsed map (cl ⇒ s"class($cl).") mkString "\n"}
          |
-         |$dmp.
-         |
-         |${distances(ontology.trees)}""".stripMargin
+         |$dmp.""".stripMargin
     if (output.toString == "-") println(result) else {
       val pw = new PrintWriter(output)
       pw.write(result)
