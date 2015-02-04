@@ -4,12 +4,10 @@ set -o noclobber
 set -o errexit
 set -o nounset
 
-d="$(dirname "$(readlink -f "$0")")"
+d="$(cd "$(dirname "$0")" ; pwd)"
 
 curl -s 'https://raw.githubusercontent.com/paulp/sbt-extras/master/sbt' -o "$d/sbt"
 chmod 0700 "$d/sbt"
-
-_args="$(getopt --options "" --shell sh -- -- "$@" | dd ibs=1 skip=3 2>/dev/null)"
 
 cd "$d"
 ./sbt stage

@@ -4,7 +4,7 @@ set -o noclobber
 set -o errexit
 set -o nounset
 
-d="$(dirname "$(readlink -f "$0")")"
+d="$(cd "$(dirname "$0")" ; pwd)"
 f="$d/target/universal/stage/bin/ontology-generator"
 
 [ -x "$f" ] || {
