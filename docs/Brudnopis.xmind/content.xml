@@ -5,8 +5,144 @@
       <title>Brudnopis</title>
       <children>
         <topics type="attached">
-          
-          
+          <topic id="623rfhvc95panr1h3nvnkevc7j">
+            <title>Spotkanie</title>
+            <labels>
+              <label>Apr 22 2015</label>
+            </labels>
+            <children>
+              <topics type="attached">
+                <topic id="0m3rla52u68eltat3alff3u1ed">
+                  <title>Pytania</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="1ro2635909jh99ev6kagiapqpl">
+                        <title>plan pracy</title>
+                        <marker-refs>
+                          <marker-ref marker-id="priority-1"/>
+                        </marker-refs>
+                      </topic>
+                      <topic id="5djj12dd8uver0vfgh2uesgep7">
+                        <title>has / consists_of</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="20oeupf6kfp53jpo9danbvp4nm">
+                              <title>czy *właściwie* nie to samo?</title>
+                            </topic>
+                            <topic id="2lk60l641052hqrs1va7aobfnj">
+                              <title>distributes_over?</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="01cddjnm4prfm5qm49k3fiumjr">
+                                    <title>classroom has (work_place consists_of desk)</title>
+                                  </topic>
+                                  <topic id="5ek7aqg4o56n2599iqpj519brd">
+                                    <title svg:width="500">(classroom has work_place) consists_of (classroom has desk)</title>
+                                    <children>
+                                      <topics type="attached">
+                                        <topic id="0ogoqr8kvm7q4cqlr97pst5lov">
+                                          <title>? ☺</title>
+                                        </topic>
+                                      </topics>
+                                    </children>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="0o5laff7fa8bfd318r9snra492">
+                        <title>exists</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="780bvve3h6gslnqkq6mg9c5mfe">
+                              <title svg:width="500">&lt;sbk&gt; hack, żeby generowana ontologia.pl narazie się wczytywała</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="3popqpfsvkvs9iuuis48tfrogs">
+                        <title>jest-na-lewo-od</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="6dil3ef28g2s85hklcn9qj6a6l">
+                              <title>transitive</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="0gemhphkss5orha6u370j01pvc">
+                                    <title>chyba nie bardzo… czasem</title>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                            <topic id="4b73oms4qp3vulc71u984q5jve">
+                              <title>distributes_over consists_of</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="3p80l22j145015iphbau6j160j">
+                                    <title>ale po co?</title>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                            <topic id="0chh6uditjocgqqj30auurklnr">
+                              <title>implikuje jest-blisko</title>
+                            </topic>
+                            <topic id="1fdpbr3h2mv1mleeeoae0ob56g">
+                              <title>wymaga, żeby obie rzeczy były pod ścianą</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="5qjpk3hvkes3qdmlt8sdgp2fc4">
+                        <title>jest-blisko</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="2nl88hnt6vatjsqo8cae010h1u">
+                              <title>kontekst…</title>
+                            </topic>
+                            <topic id="686theo4ae2aj9v5vm8vaitvta">
+                              <title>symetryczna</title>
+                            </topic>
+                            <topic id="0p87ltki6r1nu0evflj78ajm0p">
+                              <title>transitive?… zależy</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="0apsb5pv9n2cqnv3lpcu15ihkt">
+                        <title>jest-nad</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="6gr1gibrsjhc2427dnip55hnl2">
+                              <title>niewnioskowalne z map w GML</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="61pqolt2l0pu181gb0s0m2c58l">
+                        <title>co daje distributes_over?</title>
+                      </topic>
+                      <topic id="17hohlo08bopvdgf4dc5j5kvhv">
+                        <title>UUID</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="3puiuprsjp8jse9kqfef9nd6r2">
+                              <title>aktualnie nadawanie wszystkiemu UUID niszczy krotności</title>
+                            </topic>
+                            <topic id="2cc1hkste9fpq61crvkg3br45a">
+                              <title svg:width="500">oprócz tego UUID się zmieniają przy każdej generacji GML→onto</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+              </topics>
+            </children>
+          </topic>
         </topics>
       </children>
       <extensions>
