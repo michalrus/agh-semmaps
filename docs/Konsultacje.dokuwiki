@@ -1,0 +1,160 @@
+====== Semantyzacja map mikrolokalizacyjnych na potrzeby lokalizacji użytkowników aplikacji mobilnych w budynkach ======
+Michał Rus <m@michalrus.com>
+
+===== Aktualnie na tapecie =====
+
+<mslaz> Ręczne określenie relacji i ich właściwości.
+
+<sbk> + komponent generujący ontologię
+
+===== Obraz całości (na dzień Feb 4, 2015) =====
+
+  * zewnętrzny algorytm lokalizacyjny
+    * w pomieszczeniu są beacony
+    * beacony mówią, że telefon jest w danym pomieszczeniu
+    * trwają prace nad dokładniejszą lokalizacją
+      * krokomierz
+      * kompas
+  * mapy GML pomieszczeń
+    * na mapach zaznaczone są kształty pomieszczeń
+    * przeszkody
+      * biurko
+      * ściana wewnątrz
+      * szafa
+    * POI — points of interest
+      * komputer
+    * atrybuty POI/przeszkód/pokoi w GML
+      * kolor
+      * rodzaj
+      * model
+      * …
+      * <sbobek> Poszczególne poi mają atrybuty, np. POI o nazwie TV ma atrybuty kolor, model, etc.
+    * drzwi
+    * okna
+    * krzesła
+      * nie: atrybut pomieszczenia
+      * wrysowane osobno każde
+      * nie tracimy możliwości nadania im atrybutów
+      * przy tłumaczeniu do Prologa usuwamy przykładowe położenie zdef. w GML
+    * meble
+  * moduł z regułami do generacji ontologii
+    * relacje
+      * onto/generator na razie rozumieją „has”
+      * fajnie byłoby mieć możliwość dodawania >1 takiej relacji
+      * MŚ pracuje nad onto
+    * reguły?
+      * bo dość przejrzyste
+      * łatwe do zmiany
+        * więc NIE zakodowane w generatorze
+      * i generator używając tych reguł, generuje ontologię
+        * bez distance()
+      * na początku opisać co to znaczy „has” / „near”
+    * być może ograniczyć się do relacji w obrebie jednego pomieszczenia
+    * kontekst
+      * co innego znaczy
+        * near
+          * co innego „near” w 318
+          * a co innego w sali gimnastycznej wielkiej
+        * small
+          * mały schowek na szczotki
+          * a mała sala gimnastyczna
+          * też na podstawie reguł
+      * zamiast pisać biurko „ma” monitor
+        * „na”
+      * szafa
+        * „inside”
+  * generator ontologii w Prologu z plików GML
+    * Mateusz Ślażyński opracowuje dokładną ontologię w OWL
+      * jak opracuje, to zmienimy ew. trochę generator, żeby jego outputem był OWL, zamiast Prologa, którego będziemy używali
+    * biblioteka JTS
+      * http://www.vividsolutions.com/jts/JTSHome.htm
+    * “has-a” wnioskować z położenia?
+      * w 2D, “has-a” to zawieranie się figur w sobie
+    * odległości
+      * istotną informacja później wykorzystywana w systemie
+        * czy coś jest blisko albo daleko od innego obiektu
+      * realizowane już przez system ontologiczny
+      * do Prologa fakty postaci: distance(class_id1, class_id2, distance_in_meters_or_pixels)
+      * liczyć za pomocą narzędzi w bibliotece JTS
+  * serwer HTTP w Prologu
+    * odpytywany przez telefon
+    * drawback: nie działa bez Internetów
+    * decision tree
+      * na podstawie ontologii z generatora GML→Prolog
+      * na ich podstawie zadajemy sensowne pytania userowi
+      * reguly XTT uruchamialne na Androidzie?
+  * etapy
+    * 1° które pomieszczenie?
+      * z beaconów zawężamy możliwości do kilku pomieszczeń (?)
+      * na podstawie decision tree zadajemy pytania, które to dookreślą
+    * 2° gdzie dokładnie w pomieszczeniu?
+      * podzielić przestrzeń w której da się stać w pokoju na kilka sekcji
+      * pytanie: „czy stoisz OBOK/BLISKO [czegoś]”
+  * zastosowania
+    * muzeum
+    * sklep
+    * inteligentna sala laboratoryjna
+
+===== Spotkania =====
+
+==== Mar 5, 2015 ====
+
+Spotkanie tylko z Mateuszem Ślażyńskim.
+
+Pytanie pytaniu nierówne:
+  * niektóre są bardziej obciążające dla użytkownika,
+  * pomysł: automatyczna metryka — ocena trudności/łatwości po liczbie elementów,
+  * pomysł: ręczne dopisanie kosztu do typu pytania — np. pytanie o model telewizora jest b. kosztowne.
+
+Sama generacja pytań:
+  * np. [[http://en.wikipedia.org/wiki/Definite_clause_grammar|definite clause grammar]] w Prologu,
+    * to bardziej rozbudowane context-free grammar,
+    * pytania byłyby różne.
+
+UX — może prezentować te pytania graficznie?
+
+Semantyzacja relacji przestrzennych
+  * żeby były context-sensitive,
+  * np. blisko–daleko znaczą co innego w zależności od sali.
+
+O jakie rzeczy warto pytać i jakie są ich właściwości?
+
+Co teraz:
+  * najpierw ręczne określenie relacji i ich właściwości, jak na screenie
+    * {{:pl:dydaktyka:mgr:2015msc_semmaps:reczne-okreslenie-relacji-i-ich-wlasciwosci.png?250|}},
+    * jakby ręcznie wyjście przyszłego systemu regułowego (a dopiero potem system),
+    * które atrybuty konieczne
+      * //<mslaz> „w pracy możesz napisać, że uwzględniasz semantykę miejsc i semantykę relacji, wow, super!”//
+      * np. rozmiar (ale możemy go nie znać, wtedy pytanie o rozmiar jest mało wartościowe),
+      * np. jest-nad,
+      * np. jest-na-lewo-od (o ile obie są pod ścianą, wtedy tylko jest jednoznacznie),
+      * inne relacje,
+      * ich właściwości:
+        * zwrotność,
+        * symetryczność,
+        * distributes over,
+        * że jedna implikuje drugą (oszczędność „pamięci”)
+          * np. jest-na-lewo-od implikuje jest-blisko.
+
+==== Feb 4, 2015 ====
+
+Co teraz:
+  * spotkanie z Mateuszem Ślażyńskim, poczekać na kontakt.
+
+==== Dec 3, 2014 ====
+
+<sbk> zaczynamy od tego co na WSHOP, dlatego lepiej, że Michał Rus zrobił robotę koncepcyjną, a Krzysztof Janosz pomógł narzędziowo.
+
+<gjn> Prolog:
+  * bo da się wpakować w ontologię, ale to sztuka dla sztuki,
+  * prosta warstwa pośrednia w Prologu, kilkanaście predykatów:
+    * co to jest na prawo,
+    * na lewo,
+  * http://www.cs.toronto.edu/~hector/PublicTCSlides.pdf — rozdział „Understanding visual scenes”,
+
+Współrzędne:
+  * <sbobek> Lucas raczej wszystko trzyma w jednym OXY,
+  * <gjn> ale rozbicie na pomieszczenia dobre:
+    * ściany mogą wpływać na dostępność sygnału,
+    * wygodniej dla tworzącego,
+    * wiemy jakie beacony znajdują się w obszarze.
