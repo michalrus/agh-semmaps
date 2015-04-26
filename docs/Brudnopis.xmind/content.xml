@@ -5,42 +5,33 @@
       <title>Brudnopis</title>
       <children>
         <topics type="attached">
-          <topic id="623rfhvc95panr1h3nvnkevc7j">
-            <title>Spotkanie</title>
-            <labels>
-              <label>Apr 22 2015</label>
-            </labels>
+          <topic id="40v7ieegcpin2p2v08p7aog7bs">
+            <title>next</title>
             <children>
               <topics type="attached">
-                <topic id="0m3rla52u68eltat3alff3u1ed">
-                  <title>Pytania</title>
+                <topic id="54hhqferprdo2ludkfmer2hi13">
+                  <title>wymyślone relacje (?)</title>
                   <children>
                     <topics type="attached">
-                      <topic id="1ro2635909jh99ev6kagiapqpl">
-                        <title>plan pracy</title>
-                        <marker-refs>
-                          <marker-ref marker-id="priority-1"/>
-                        </marker-refs>
-                      </topic>
-                      <topic id="5djj12dd8uver0vfgh2uesgep7">
+                      <topic id="7bssg1ogj6gtr3kl4u5vvr0dcj">
                         <title>has / consists_of</title>
                         <children>
                           <topics type="attached">
-                            <topic id="20oeupf6kfp53jpo9danbvp4nm">
+                            <topic id="1kq1vjeaj3bd952d345g8i4v1s">
                               <title>czy *właściwie* nie to samo?</title>
                             </topic>
-                            <topic id="2lk60l641052hqrs1va7aobfnj">
+                            <topic id="3ebblgsvbphu4l8f2q305ratmh">
                               <title>distributes_over?</title>
                               <children>
                                 <topics type="attached">
-                                  <topic id="01cddjnm4prfm5qm49k3fiumjr">
+                                  <topic id="49i6c602tljis5tjpsqufsn070">
                                     <title>classroom has (work_place consists_of desk)</title>
                                   </topic>
-                                  <topic id="5ek7aqg4o56n2599iqpj519brd">
+                                  <topic id="2rliqccalgr9vnkk51i979khpk">
                                     <title svg:width="500">(classroom has work_place) consists_of (classroom has desk)</title>
                                     <children>
                                       <topics type="attached">
-                                        <topic id="0ogoqr8kvm7q4cqlr97pst5lov">
+                                        <topic id="677m2u43rbkhi6iicb17as3jrb">
                                           <title>? ☺</title>
                                         </topic>
                                       </topics>
@@ -52,671 +43,132 @@
                           </topics>
                         </children>
                       </topic>
-                      <topic id="0o5laff7fa8bfd318r9snra492">
+                      <topic id="0soec2qnu449vq3eb6v3j8ndji">
                         <title>exists</title>
                         <children>
                           <topics type="attached">
-                            <topic id="780bvve3h6gslnqkq6mg9c5mfe">
+                            <topic id="5q6g3tg1b7tmm9jkd9agdrvved">
                               <title svg:width="500">&lt;sbk&gt; hack, żeby generowana ontologia.pl narazie się wczytywała</title>
                             </topic>
                           </topics>
                         </children>
                       </topic>
-                      <topic id="3popqpfsvkvs9iuuis48tfrogs">
+                      <topic id="7rfic9gha1dg9477m028jjsb1j">
                         <title>jest-na-lewo-od</title>
                         <children>
                           <topics type="attached">
-                            <topic id="6dil3ef28g2s85hklcn9qj6a6l">
+                            <topic id="2fv6g304epu2gdkq09ip7ecv1l">
                               <title>transitive</title>
                               <children>
                                 <topics type="attached">
-                                  <topic id="0gemhphkss5orha6u370j01pvc">
+                                  <topic id="58d71ev6oh43ntrjmgb4b62u2i">
                                     <title>chyba nie bardzo… czasem</title>
                                   </topic>
                                 </topics>
                               </children>
                             </topic>
-                            <topic id="4b73oms4qp3vulc71u984q5jve">
+                            <topic id="0pub0qqapmnacllll8mcvtrrcj">
                               <title>distributes_over consists_of</title>
                               <children>
                                 <topics type="attached">
-                                  <topic id="3p80l22j145015iphbau6j160j">
+                                  <topic id="5p2a550ciub1amv0j64fnu42ek">
                                     <title>ale po co?</title>
                                   </topic>
                                 </topics>
                               </children>
                             </topic>
-                            <topic id="0chh6uditjocgqqj30auurklnr">
+                            <topic id="6dn5sg97juifhgrb65jsorf2b0">
                               <title>implikuje jest-blisko</title>
                             </topic>
-                            <topic id="1fdpbr3h2mv1mleeeoae0ob56g">
+                            <topic id="15qi7imrtsfbgfu8jbr2g05vf6">
                               <title>wymaga, żeby obie rzeczy były pod ścianą</title>
                             </topic>
                           </topics>
                         </children>
                       </topic>
-                      <topic id="4m6fmb1i8tqtqb5f3u4r28ppgi">
+                      <topic id="66vsabf2ekgd6ikmvpt9fqvrmk">
                         <title>na-prawo-od</title>
                         <children>
                           <topics type="attached">
-                            <topic id="1iqgv8qa3l8jii69urf3s04qa9">
+                            <topic id="698hdgbj5cf5j1cajcf55j5qbm">
                               <title>analogicznie</title>
                             </topic>
                           </topics>
                         </children>
                       </topic>
-                      <topic id="75boejm5me77qjt7ki7rjcea6e">
+                      <topic id="42v12o8ob2ja4aom1k41qb7mav">
                         <title>jest-na</title>
                         <children>
                           <topics type="attached">
-                            <topic id="62jpediphjpcbqh9r09g084l5t">
+                            <topic id="735r5aulj9asqk23ekmb4cj67i">
                               <title svg:width="500">przykład niewnioskowalnego z GML przypadku has/consists-of</title>
                             </topic>
-                            <topic id="0vtv6uhjsefo3ai0suh37ub260">
+                            <topic id="12bqt9mrch7v3d6ka9c88bt5hg">
                               <title>ale można by np. regułowo</title>
                               <children>
                                 <topics type="attached">
-                                  <topic id="3nb3sr7rgb44b7l2nc21m71h2i">
+                                  <topic id="4q30r0gc04oibp2el4g4g8i52e">
                                     <title>jeśli biurko ma komputer ⇒ komputer jest-na biurko</title>
                                   </topic>
                                 </topics>
                               </children>
                             </topic>
-                            <topic id="2ehautmkg15tk6hlf705r496k0">
+                            <topic id="7e010i4icg0rpa0s7q8p502ckd">
                               <title>asymetryczna, jak has</title>
                             </topic>
-                            <topic id="3snilk4622vp4284t1dsuidea2">
+                            <topic id="3jbi9083umu051o9e2u49unb68">
                               <title>transitive…</title>
                             </topic>
-                            <topic id="7mitrufm35t8ah9k55h7vil785">
+                            <topic id="6fsvgf2p19n4s5pc5qmsku3cos">
                               <title>również implikuje jest-blisko?</title>
                             </topic>
                           </topics>
                         </children>
                       </topic>
-                      <topic id="0p3fkss19j2bohbqsfkifrkfud">
+                      <topic id="6tq4221f9sufs7ko99pu9kfqta">
                         <title>jest-pod?</title>
                       </topic>
-                      <topic id="5qjpk3hvkes3qdmlt8sdgp2fc4">
+                      <topic id="6k022ep0f9it5h2gklmglbtsbd">
                         <title>jest-blisko</title>
                         <children>
                           <topics type="attached">
-                            <topic id="2nl88hnt6vatjsqo8cae010h1u">
+                            <topic id="570mtgb5t9a0e4hkkk7d3sd503">
                               <title>kontekst…</title>
                             </topic>
-                            <topic id="686theo4ae2aj9v5vm8vaitvta">
+                            <topic id="5dc4bqkekm13q0u0fd66uovfea">
                               <title>symetryczna</title>
                             </topic>
-                            <topic id="0p87ltki6r1nu0evflj78ajm0p">
+                            <topic id="440bvas3o0hrlahp3gv84i2ab6">
                               <title>transitive?… zależy</title>
                             </topic>
                           </topics>
                         </children>
                       </topic>
-                      <topic id="0apsb5pv9n2cqnv3lpcu15ihkt">
+                      <topic id="1j311sau7k5gcmjto5tr44svmm">
                         <title>jest-nad</title>
                         <children>
                           <topics type="attached">
-                            <topic id="6gr1gibrsjhc2427dnip55hnl2">
+                            <topic id="4el730eai4ri2bvn18tlkjd1ug">
                               <title>niewnioskowalne z map w GML</title>
                             </topic>
                           </topics>
                         </children>
                       </topic>
-                      <topic id="61pqolt2l0pu181gb0s0m2c58l">
+                      <topic id="6uh8dopv6u3d77dska0sh30use">
                         <title>co daje distributes_over?</title>
-                      </topic>
-                      <topic id="17hohlo08bopvdgf4dc5j5kvhv">
-                        <title>UUID</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="3puiuprsjp8jse9kqfef9nd6r2">
-                              <title>aktualnie nadawanie wszystkiemu UUID niszczy krotności</title>
-                            </topic>
-                            <topic id="2cc1hkste9fpq61crvkg3br45a">
-                              <title svg:width="500">oprócz tego UUID się zmieniają przy każdej generacji GML→onto</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="58o2delcs1tjltb6is6dfn3qdg">
-                        <title svg:width="500">czym *naprawdę* jest to wyjście systemu regułowego, które najpierw mam napisać ręcznie?</title>
                       </topic>
                     </topics>
                   </children>
                 </topic>
-                <topic id="114a98qtk6a57msol1j32pk3nd">
-                  <title>plan</title>
+                <topic id="08pnjrldlvioojsch8joiemnn8">
+                  <title>UUID</title>
                   <children>
                     <topics type="attached">
-                      <topic id="1ttvjct8mkti7qhvidjhan1h95">
-                        <title>p. wiki</title>
+                      <topic id="5111sce8cgp4lsn3vjjvirelio">
+                        <title>aktualnie nadawanie wszystkiemu UUID niszczy krotności</title>
                       </topic>
-                      <topic id="43c4nm5rv97fm5s3324vbs4hvc">
-                        <title>&lt;gjn&gt; pomysł</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="0sg0d9dmcpttsqbqa9g1j2gdra">
-                              <title>kawałek w innej skali</title>
-                            </topic>
-                            <topic id="303pcn9jcbckrvco5ni3fi79qd">
-                              <title>mapy krakowa</title>
-                            </topic>
-                            <topic id="62cfh3iv5l7t1pnbgihs4rn55k">
-                              <title>miasta europy</title>
-                            </topic>
-                            <topic id="729a2jtbrcv4u2akihjvpj108q">
-                              <title svg:width="500">być może kiedyś system wspomagający turystów</title>
-                            </topic>
-                            <topic id="5bnqms4ujjk7c8mnhlu25njgjn">
-                              <title>stare miasto</title>
-                            </topic>
-                            <topic id="26jogdo6lbjspvir8vjtddgatt">
-                              <title svg:width="500">zupełnie inny problem, ale kwestia mediacji pozostaje</title>
-                            </topic>
-                            <topic id="4sbh48ka4nanbf6dhnlfabh0s7">
-                              <title svg:width="500">całkowicie niezależny od Lukasa, a interesuje nas kwestia mediacji</title>
-                            </topic>
-                            <topic id="0oigmka2r0cscs1jt5h3o3e3g0">
-                              <title svg:width="500">bo komponent mediacyjny jest b. niezależny od Lukasa</title>
-                            </topic>
-                            <topic id="5hi9v3pbg8dp7gah56ivtj4fl0">
-                              <title>ileś POI na starym mieście</title>
-                            </topic>
-                            <topic id="2idasd4rtjpfufrmvpkfulc0sn">
-                              <title>jeden use case od Lukasa</title>
-                            </topic>
-                            <topic id="77aggho255ucrirtk78v145td7">
-                              <title>drugi → rynek?</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="1veh10gl767unj6f11dlru2im2">
-                        <title>&lt;sbk&gt;</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="0r9lqukh5oab707bmdn07679o7">
-                              <title>my skupiamy się na użytkowniku</title>
-                            </topic>
-                            <topic id="7djniqampiq6gbt04s90dh86ma">
-                              <title svg:width="500">ale moduł mediacyjny może być autonomiczny i np. po dźwięku</title>
-                            </topic>
-                            <topic id="2d5c1hqlpjffukrka45be4675r">
-                              <title svg:width="500">a moduł mediacyjny w ogóle nie musi dotyczyć lokalizacji</title>
-                            </topic>
-                            <topic id="4g9v282o4sqk6j6ed34qe30lo7">
-                              <title svg:width="500">ostatecznie ma dotyczyć mediacji kontekstu, a nie lokalizacji</title>
-                            </topic>
-                            <topic id="7nuvn250b6v3ciqeqnj517a9q2">
-                              <title svg:width="500">nie musi bazować tylko na obiektach z onto i ich relacjach</title>
-                              <children>
-                                <topics type="attached">
-                                  <topic id="3ab9rf9jhvjns3s2s7b4t95tuo">
-                                    <title svg:width="500">może być: cicho/głośno, zapachy, ciemno/jasno, większa liczba zmysłów</title>
-                                  </topic>
-                                </topics>
-                              </children>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="6ugjvrpg3k9palf8ekoohch0hm">
-                        <title>&lt;gjn&gt; może coś innego</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="6e39qick6mme71emeh141g96tn">
-                              <title>ważne: jakaś mapa obszaru</title>
-                              <children>
-                                <topics type="attached">
-                                  <topic id="4j59s86c7rn08joslrsevbfick">
-                                    <title>weryfikowalna</title>
-                                    <children>
-                                      <topics type="attached">
-                                        <topic id="5l2gunn25gga9jltf4inidl3j4">
-                                          <title>nie w domu ☺</title>
-                                        </topic>
-                                      </topics>
-                                    </children>
-                                  </topic>
-                                  <topic id="5bvphigetsh16jjq8mmqju5heo">
-                                    <title svg:width="500">np. wędrowanie po A-0 i jak jestęś przy gablotce …</title>
-                                  </topic>
-                                </topics>
-                              </children>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="35rvaqhmgcpqfofng9kb425t9k">
-                        <title>&lt;gjn&gt;</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="6hh1mfmq7p055csmt8f7m28mt5">
-                              <title>zaczynać pisać tekst</title>
-                            </topic>
-                            <topic id="6c2ipjtpgeh8nc76udov8v2tb5">
-                              <title>najważniejsze w tekście</title>
-                              <children>
-                                <topics type="attached">
-                                  <topic id="42of51sh635dn2v2jsgo4d9f75">
-                                    <title svg:width="500">coś o systemach rekomendacyjnych + context</title>
-                                    <children>
-                                      <topics type="attached">
-                                        <topic id="0ggsse7ugmik95bkkt6udk7ttt">
-                                          <title>1 rodzial</title>
-                                        </topic>
-                                      </topics>
-                                    </children>
-                                  </topic>
-                                  <topic id="77vnjld97p6hcapttuer1guuil">
-                                    <title>coś o sstemach regułowych</title>
-                                    <children>
-                                      <topics type="attached">
-                                        <topic id="27darf82ueibuvq2fk6cjgdvll">
-                                          <title>podstawy repr. wiedzy semantycznej</title>
-                                        </topic>
-                                        <topic id="6g9fr879btcp6o0mtnh27sjibt">
-                                          <title>1 r.</title>
-                                        </topic>
-                                      </topics>
-                                    </children>
-                                  </topic>
-                                  <topic id="0vb5b9cdrmjld4bvf5n0mdavoj">
-                                    <title>coś o lokalizacji</title>
-                                    <children>
-                                      <topics type="attached">
-                                        <topic id="4bl7p80bkomtukvcm1avtfp4vk">
-                                          <title svg:width="500">o mikro- i lokalizacji — jak rezować na systemach mobilnych</title>
-                                        </topic>
-                                      </topics>
-                                    </children>
-                                  </topic>
-                                  <topic id="6bnno8ghs7g5g1dcsfd4q0d8jj">
-                                    <title>&lt;sbk&gt; jeden rodział „motywacyjny”</title>
-                                    <children>
-                                      <topics type="attached">
-                                        <topic id="1d95d4srfsv0viceff2hk1anqi">
-                                          <title>gdzie jest miejsce na to rozw.</title>
-                                        </topic>
-                                        <topic id="4dr9novm8ml1phsvaj71omis8m">
-                                          <title>w czym mapy semantyczne mogą pomóc</title>
-                                        </topic>
-                                      </topics>
-                                    </children>
-                                  </topic>
-                                  <topic id="301p0btssbp9cu9ie5n6fj8o77">
-                                    <title>o ontologii generowanej z mapy</title>
-                                    <children>
-                                      <topics type="attached">
-                                        <topic id="29e1ejo85alf77tojndm3f19eu">
-                                          <title>1 r.</title>
-                                        </topic>
-                                        <topic id="5avjtd41i3fe58jlqnkf0maadu">
-                                          <title>główne wyniki</title>
-                                        </topic>
-                                      </topics>
-                                    </children>
-                                  </topic>
-                                  <topic id="3t448ui0rhmjdvibtb3f0sau28">
-                                    <title>ewaluacja</title>
-                                  </topic>
-                                  <topic id="7grbid1sgve60mpp0rn0cuis9r">
-                                    <title>p. wiki</title>
-                                  </topic>
-                                </topics>
-                              </children>
-                            </topic>
-                            <topic id="3jif89oda57m26gvulnm2obfjg">
-                              <title>teraz:  dwutorowo</title>
-                              <children>
-                                <topics type="attached">
-                                  <topic id="3q9gfdvl1gordaquqio27reban">
-                                    <title>szkielet całości pracy</title>
-                                    <children>
-                                      <topics type="attached">
-                                        <topic id="61fuvks3luehgl9e14inajdamv">
-                                          <title>sect. subsect.</title>
-                                        </topic>
-                                      </topics>
-                                    </children>
-                                  </topic>
-                                  <topic id="0eepgg43ni88aq9h9qtampp9ql">
-                                    <title>któryś z rozdziałów przeglądowych</title>
-                                  </topic>
-                                  <topic id="3btk2ifq6pqma18vrpduannfjg">
-                                    <title>równocześnie dokończyć koncepcyjno-impl.</title>
-                                  </topic>
-                                  <topic id="5q3e2dgkflu5mj470dvk6g1f61">
-                                    <title>w miesiąc</title>
-                                    <children>
-                                      <topics type="attached">
-                                        <topic id="26n45rsgalbu7vf6pi4j99ukro">
-                                          <title>z ontologią</title>
-                                        </topic>
-                                        <topic id="6v351l1spaags19dgq1pt5sdpm">
-                                          <title>z przykładem działającym</title>
-                                        </topic>
-                                        <topic id="3c1ihdubjpb3ejvldneropuhpb">
-                                          <title>szansa zrobienia tego w HD</title>
-                                        </topic>
-                                        <topic id="0f03bn2b04gjlc8jdu67lq08a3">
-                                          <title>⇒ szansa zamknąć do lipca</title>
-                                        </topic>
-                                      </topics>
-                                    </children>
-                                  </topic>
-                                </topics>
-                              </children>
-                              <marker-refs>
-                                <marker-ref marker-id="priority-1"/>
-                              </marker-refs>
-                            </topic>
-                            <topic id="3qplhjcosf61lemsi4j8um0upn">
-                              <title>plan/priorytety</title>
-                              <children>
-                                <topics type="attached">
-                                  <topic id="7koj9rfv7mufasjqvk088d5r4f">
-                                    <title svg:width="500">&lt;sbk&gt; jeśli chodzi o tekst, nie będę się wtrącał</title>
-                                  </topic>
-                                  <topic id="054n118kh0f0vo8bq7s9un0js7">
-                                    <title>priorytety</title>
-                                    <children>
-                                      <topics type="attached">
-                                        <topic id="09duhjvp201qnjnq9o80vvt5pr">
-                                          <title>nowe relacje</title>
-                                          <children>
-                                            <topics type="attached">
-                                              <topic id="5latr1aet6sqobsohhsuoaf2m3">
-                                                <title>2 rzeczy</title>
-                                                <children>
-                                                  <topics type="attached">
-                                                    <topic id="1hn77mc9hahh6t07id3ugm4a3i">
-                                                      <title svg:width="500">z onto → zbiór uczący ARFF → drzewa symbolizujące pytania</title>
-                                                    </topic>
-                                                    <topic id="3af52q89u5l9u05jibh7t01e4q">
-                                                      <title svg:width="500">więc sprawdzić czy z nowymi relacjami będzie działać generowanie zbioru</title>
-                                                      <children>
-                                                        <topics type="attached">
-                                                          <topic id="1omsmov9b3aro6nn0eual7vn3e">
-                                                            <title>dosyć trudne zagadnienie</title>
-                                                          </topic>
-                                                        </topics>
-                                                      </children>
-                                                    </topic>
-                                                    <topic id="7h6d5b9v5djdm59qcrst66upl9">
-                                                      <title>skontaktować się z Mateuszem</title>
-                                                      <children>
-                                                        <topics type="attached">
-                                                          <topic id="1kcmfuo051qd6b5hv06r6rasgn">
-                                                            <title>gdzie są zasadzki</title>
-                                                          </topic>
-                                                          <topic id="0pf61s2ffgsalnh3sa36ac80bp">
-                                                            <title>w tym tygodniu, jutro najlepiej spotkać</title>
-                                                          </topic>
-                                                        </topics>
-                                                      </children>
-                                                      <marker-refs>
-                                                        <marker-ref marker-id="priority-1"/>
-                                                      </marker-refs>
-                                                    </topic>
-                                                    <topic id="4bkgf5jecv5v2974s9a36fb5j8">
-                                                      <title>ważnym aspektem jest koszt pytania</title>
-                                                      <children>
-                                                        <topics type="attached">
-                                                          <topic id="07ocuvg5ui1ol44h3ga5omncpf">
-                                                            <title svg:width="500">jak dochodzą nowe relacje, to zmienia się liczenie kosztu</title>
-                                                          </topic>
-                                                        </topics>
-                                                      </children>
-                                                    </topic>
-                                                  </topics>
-                                                </children>
-                                              </topic>
-                                              <topic id="613nplcd7bt9o7dr2he9kp8srq">
-                                                <title svg:width="500">bloker, przebrnąć, a dalej powinno być z górki</title>
-                                              </topic>
-                                              <topic id="4fo2lccdv6vf0s0s9gnp58083a">
-                                                <title>&lt;mslaz&gt;</title>
-                                                <children>
-                                                  <topics type="attached">
-                                                    <topic id="16dcjpspsgmm2uojv8fgamd3sj">
-                                                      <title>aktualnie dwie relacje:</title>
-                                                      <children>
-                                                        <topics type="attached">
-                                                          <topic id="3cjv3n700u175n72valk3i2f7g">
-                                                            <title>należy = ma = has</title>
-                                                          </topic>
-                                                          <topic id="21fr6r71l39c865rf8glrh05d4">
-                                                            <title>składa się</title>
-                                                          </topic>
-                                                          <topic id="6nfoie490cudpivi40apr8memi">
-                                                            <title>działają, ale są zrobione na sztywno</title>
-                                                          </topic>
-                                                          <topic id="3l0q1tec7bol5eonapbnbf6t4r">
-                                                            <title svg:width="500">1 reguła defniuje tranzytywność consists-of</title>
-                                                          </topic>
-                                                        </topics>
-                                                      </children>
-                                                    </topic>
-                                                    <topic id="7ip86u0gpkeihoh2llm27i648f">
-                                                      <title>dodać predykat w prologu</title>
-                                                      <children>
-                                                        <topics type="attached">
-                                                          <topic id="2r07nqifb7h0iegc4jcevsru03">
-                                                            <title svg:width="500">dla każdego wystąpienia relacji symetryczności assertuje fakt tej smetryczności</title>
-                                                          </topic>
-                                                        </topics>
-                                                      </children>
-                                                    </topic>
-                                                    <topic id="1gkkokljk5ughs2nnl8e7ss6rb">
-                                                      <title>główny problem:</title>
-                                                      <children>
-                                                        <topics type="attached">
-                                                          <topic id="1t954nrk8enbevp8qh77ktp169">
-                                                            <title>rootem drzew jest has</title>
-                                                            <children>
-                                                            <topics type="attached">
-                                                            <topic id="5o7hgg33t75fjm56qc1jkmqfd3">
-                                                            <title>albo atrybuty</title>
-                                                            </topic>
-                                                            </topics>
-                                                            </children>
-                                                          </topic>
-                                                          <topic id="3appnihoqsm5hur6m1ucp8qek1">
-                                                            <title>wszystko idzie tylko po has’ach</title>
-                                                          </topic>
-                                                          <topic id="7vs49pqna4p6a6lc0bsu668rb2">
-                                                            <title svg:width="500">można by zrobić „coś ma coś, co jest blisko czegoś”</title>
-                                                          </topic>
-                                                        </topics>
-                                                      </children>
-                                                    </topic>
-                                                  </topics>
-                                                </children>
-                                              </topic>
-                                              <topic id="34scd8o7t0p6ih32u4krdk007g">
-                                                <title>&lt;sbk&gt;</title>
-                                                <children>
-                                                  <topics type="attached">
-                                                    <topic id="4ue1f9t2fbnitqq50ke5bgitkv">
-                                                      <title>co zlecić Michałowi</title>
-                                                    </topic>
-                                                  </topics>
-                                                </children>
-                                              </topic>
-                                              <topic id="7li65i2tgdi08b24sturd40g53">
-                                                <title>&lt;mslaz&gt;</title>
-                                                <children>
-                                                  <topics type="attached">
-                                                    <topic id="2lhnglajleqjdo511g3m9ga4kn">
-                                                      <title>1. wydzielić opis ontologii od reszty</title>
-                                                      <children>
-                                                        <topics type="attached">
-                                                          <topic id="3lu12q2kous6v6g6savrhrq6cp">
-                                                            <title svg:width="500">bo bardzo przeszkadza, że jest w jednym pliku</title>
-                                                          </topic>
-                                                          <topic id="7tnobreo33taqvbtm7lph33m23">
-                                                            <title>Subtopic 3</title>
-                                                          </topic>
-                                                          <topic id="35kmrfh2ij2dgbjuusmtd07qee">
-                                                            <title>Subtopic 2</title>
-                                                          </topic>
-                                                        </topics>
-                                                      </children>
-                                                    </topic>
-                                                    <topic id="7stf744njigdhoscrdcqpauppc">
-                                                      <title svg:width="500">znaleźć elementy bezpośrednio odwołujące się do has</title>
-                                                      <children>
-                                                        <topics type="attached">
-                                                          <topic id="1a00lg3uuq04f7a045hj759vbr">
-                                                            <title>dwa miejsca w kodzie?</title>
-                                                          </topic>
-                                                          <topic id="1ovam27bf7de4vrag33bn55506">
-                                                            <title>nie powinno być na sztywno</title>
-                                                          </topic>
-                                                          <topic id="6q4etnq564ctebs6qt5lusnb21">
-                                                            <title>tylko jakaś relacja</title>
-                                                          </topic>
-                                                          <topic id="4apsn1qh41smd9h1sk11c8c1qa">
-                                                            <title>w model_compiler:177 → model_compile</title>
-                                                            <children>
-                                                            <topics type="attached">
-                                                            <topic id="2falre6diu5cufpj5lmlbpc1ed">
-                                                            <title>opakować tego foralla w innego foralla?</title>
-                                                            </topic>
-                                                            </topics>
-                                                            </children>
-                                                          </topic>
-                                                          <topic id="0kgq3e1hjvl23veu0g8o0al2n1">
-                                                            <title>w L100 dopisać w underscore nazwę relacji</title>
-                                                          </topic>
-                                                          <topic id="1tvch5ktf54uof7a4vghvbfai7">
-                                                            <title>olać na razie Prefix w L100</title>
-                                                          </topic>
-                                                        </topics>
-                                                      </children>
-                                                    </topic>
-                                                    <topic id="2s80t8uv1thgjsipe5cch17b28">
-                                                      <title svg:width="500">&lt;sbk&gt; da narzędzia → poklikać → jeśli nic z tego nie wyniknie, to przyjść i pokaże use case, jak tego się używa itd.</title>
-                                                    </topic>
-                                                    <topic id="22svfeak990pgsj13182k64qvu">
-                                                      <title svg:width="500">jeśli problem z kodem → napisać do Mateusza</title>
-                                                    </topic>
-                                                    <topic id="2sm15kil88h1juvllj3ovifvae">
-                                                      <title>swi prolog 7</title>
-                                                    </topic>
-                                                    <topic id="5rp8bhp6rhp1238ltdg0meu8s4">
-                                                      <title svg:width="500">&lt;sbk&gt; spotkajmy się we wtorek o 15:00, ale wcześniej przejrzeć artykuł, narzędzia z maila</title>
-                                                      <marker-refs>
-                                                        <marker-ref marker-id="priority-1"/>
-                                                      </marker-refs>
-                                                    </topic>
-                                                    <topic id="7eefbeobeao5lvo7dqigi7j6l6">
-                                                      <title svg:width="500">&lt;mslaz&gt; skupić  się na klasie compiler, gdzie nie ma jeszcze model loader/generator</title>
-                                                      <marker-refs>
-                                                        <marker-ref marker-id="priority-1"/>
-                                                      </marker-refs>
-                                                    </topic>
-                                                    <topic id="4g42nrdob60ri62tkhugthd4al">
-                                                      <title>dlaczego has i has_atom</title>
-                                                      <children>
-                                                        <topics type="attached">
-                                                          <topic id="4cglmnqa5hgr1jvl0d9kbim0dk">
-                                                            <title svg:width="500">żeby symbole z ontologii nie mieszały się z symbolami z generatora</title>
-                                                          </topic>
-                                                          <topic id="301m27plfo7idfjhf1m4u35edo">
-                                                            <title>has_atom → trójki („atomicznie posiada”)</title>
-                                                          </topic>
-                                                          <topic id="54qko2gjtgcpju5qlu4eovb97o">
-                                                            <title>near_atom</title>
-                                                            <children>
-                                                            <topics type="attached">
-                                                            <topic id="3c1vjnqbu7css581g9b7i0kte0">
-                                                            <title>itd. jakaś konwencja</title>
-                                                            </topic>
-                                                            </topics>
-                                                            </children>
-                                                          </topic>
-                                                        </topics>
-                                                      </children>
-                                                    </topic>
-                                                    <topic id="2lfhev4nn78eecrst6btj1e0ti">
-                                                      <title>mamy bazę wszytkch relacji w ontologii</title>
-                                                    </topic>
-                                                    <topic id="62cusma1dnn8p4d1evitq7b8u2">
-                                                      <title svg:width="500">dalej: nazwy w generate([...]) są złe, powinno być bez „room_” na początku</title>
-                                                    </topic>
-                                                  </topics>
-                                                </children>
-                                              </topic>
-                                            </topics>
-                                          </children>
-                                          <marker-refs>
-                                            <marker-ref marker-id="priority-1"/>
-                                          </marker-refs>
-                                        </topic>
-                                        <topic id="34m4vvjimfvp0f4ji8roj1aoic">
-                                          <title>nowa mapa</title>
-                                          <children>
-                                            <topics type="attached">
-                                              <topic id="0qp4va3tb2ls0i15ftnmisehf1">
-                                                <title>luźna sprawa, w miarę niezależna</title>
-                                              </topic>
-                                              <topic id="2j6u916rgvb6ohqjkob3j2183t">
-                                                <title>w OpenJUMP albo ręcznie w Prologu</title>
-                                              </topic>
-                                              <topic id="5tkgbljmsqg6md08b6cvu3rq1t">
-                                                <title>dla rynku</title>
-                                              </topic>
-                                              <topic id="1mcvmeu3kkjv45b77b7q134sfr">
-                                                <title svg:width="500">nie powinien być duży, bo nie zmieści się w pracy</title>
-                                              </topic>
-                                              <topic id="3o1uesto21v37hv2uj8jr77ori">
-                                                <title>reprezentacyjny</title>
-                                              </topic>
-                                            </topics>
-                                          </children>
-                                          <marker-refs>
-                                            <marker-ref marker-id="priority-2"/>
-                                          </marker-refs>
-                                        </topic>
-                                        <topic id="5dcphdhtru4ea54t0c1lncron9">
-                                          <title>generowanie HMR dla HeaRT</title>
-                                          <marker-refs>
-                                            <marker-ref marker-id="priority-2"/>
-                                          </marker-refs>
-                                        </topic>
-                                        <topic id="6neddcsjp74akikqn3uvk68839">
-                                          <title>spotkanie za tydzień — 29-go</title>
-                                        </topic>
-                                        <topic id="0eu9sucj8ko1ul87i0q58fb9qi">
-                                          <title>&lt;gjn&gt; deadline na część tekstową</title>
-                                          <children>
-                                            <topics type="attached">
-                                              <topic id="67i3dan4l90bapt996l38ioal1">
-                                                <title>ten 2-gi i 3-ci rodziały wprowadzające</title>
-                                                <labels>
-                                                  <label>May 13</label>
-                                                </labels>
-                                              </topic>
-                                              <topic id="4u06rfdrjrgpcbq3elgfa3k7vo">
-                                                <title>praca top-down</title>
-                                              </topic>
-                                            </topics>
-                                          </children>
-                                          <marker-refs>
-                                            <marker-ref marker-id="priority-1"/>
-                                          </marker-refs>
-                                        </topic>
-                                      </topics>
-                                    </children>
-                                  </topic>
-                                </topics>
-                              </children>
-                            </topic>
-                          </topics>
-                        </children>
+                      <topic id="1la0nr6rg3235r3tqbq32pqaob">
+                        <title svg:width="500">oprócz tego UUID się zmieniają przy każdej generacji GML→onto</title>
                       </topic>
                     </topics>
                   </children>

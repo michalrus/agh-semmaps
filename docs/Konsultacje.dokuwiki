@@ -1,14 +1,124 @@
 ====== Semantyzacja map mikrolokalizacyjnych na potrzeby lokalizacji użytkowników aplikacji mobilnych w budynkach ======
 Michał Rus <m@michalrus.com>
 
-===== Aktualnie na tapecie =====
+===== Spotkania =====
 
-<mslaz> Ręczne określenie relacji i ich właściwości.
+==== Apr 22, 2015 — @sbk @mslaz ====
 
-<sbk> + komponent generujący ontologię
+Odnośnie https://bitbucket.org/mslazynski/pronto
 
-===== Obraz całości (na dzień Feb 4, 2015) =====
+<sbk>
+  * bloker, przebrnąć, a dalej powinno być z górki
+  * z onto → zbiór uczący ARFF → drzewa symbolizujące pytania
+  * więc sprawdzić czy z nowymi relacjami będzie działać generowanie zbioru (dosyć trudne zagadnienie)
+  * ważnym aspektem jest koszt pytania (jak dochodzą nowe relacje, to zmienia się liczenie kosztu)
 
+<mslaz>
+  * aktualnie dwie relacje:
+    * należy = ma = has
+    * składa się = consists_of
+    * działają, ale są zrobione na sztywno
+    * 1 reguła defniuje tranzytywność consists-of
+  * mamy bazę wszytkch relacji w ontologii [?]
+  * dlaczego has i has_atom
+    * żeby symbole z ontologii nie mieszały się z symbolami z generatora
+    * has_atom → trójki („atomicznie posiada”)
+    * dalej: near_atom — itd. jakaś konwencja
+  * skupić  się na klasie compiler, gdzie nie ma jeszcze model loader/generator
+  * np. dla symetryczności: dodać predykat, który dla każdego wystąpienia relacji sym. assertuje jej fakt
+  * główny problem: rootem drzew jest has albo atrybuty (wszystko idzie tylko po has’ach) → można by teraz zrobić „coś ma coś, co jest blisko czegoś”
+  * wydzielić opis ontologii od reszty, bo bardzo przeszkadza, że jest w jednym pliku
+  * refactoring elementów bezpośrednio odwołujących się do has (nie powinno być na sztywno, tylko jakaś relacja):
+    * dwa miejsca w kodzie?
+    * w model_compiler L177 → model_compile → opakować tego foralla w innego foralla?
+    * w L100 dopisać między underscore’ami nazwę relacji
+    * olać na razie Prefix w L100 (nazwy w generate([...]) są złe, powinno być bez „room_” na początku)
+==== Apr 22, 2015 — @gjn @sbk ====
+
+ToC
+  - wstęp
+  - systemy kontekstowe i rekomendacyjne — deadline: May 13
+  - systemy regułowe i heartdroid, reprezentacja wiedzy semantycznej — deadline: May 13
+  - metody mikro/lokalizacji i motywacja dla użycia map semantycznych w lokalizacji
+    * jak realizować mikro/lokalizację w systemach mobilnych
+  - wyniki: ontologia, mapy, generator + moduł rek. w heartdroid
+  - przykłady i ewaluacja
+  - pods
+
+Zakres:
+  * opr. generatora openjump-> onto/prolog
+  * rozszerz onto wzg. wersji z Lukasem
+  * rozszerz generatora j.w.
+  * zamodelowanie przykładów z posz. onto, C2/3p.
+  * zamodelowanie innego generycznego przykładu mapy: np. Rynek
+    * <gjn> Rynek
+      * kawałek w innej skali: mapy krakowa (ileś POI na starym mieście) / miasta europy / A-0 + gablotki
+      * być może kiedyś system wspomagający turystów
+      * zupełnie inny problem, ale kwestia mediacji pozostaje
+      * całkowicie niezależny od Lukasa, a interesuje nas kwestia mediacji (komponent mediacyjny jest b. niezależny od Lukasa)
+      * ważne: weryfikowalna
+    * <sbk> ostatecznie ma dotyczyć mediacji kontekstu, a nie lokalizacji (skupiamy się na użytkowniku)
+      * moduł mediacyjny może być autonomiczny i np. po dźwięku
+      * nie musi bazować tylko na obiektach z onto i ich relacjach — może być: cicho/głośno, zapachy, ciemno/jasno, większa liczba zmysłów
+  * poszerzony przykład i ontologia o inny typ danych kontekstowych
+  * heartdroid: impl. regułowa mod. zapytań + kontekstowość pytań
+
+<gjn> Praca top-down. W miesiąc:
+  * z ontologią
+  * z przykładem działającym
+  * szansa zrobienia tego w HeaRTDroid
+  * ⇒ szansa zamknąć do lipca
+
+<sbk> Jeśli chodzi o tekst, nie będę się wtrącał. Priorytety:
+  * generowanie HMR dla HeaRT
+  * nowa mapa
+    * luźna sprawa, w miarę niezależna
+    * w OpenJUMP (albo nawet ręcznie w Prologu)
+    * dla rynku
+    * nie duży, bo nie zmieści się w pracy, ale reprezentacyjny
+==== Mar 5, 2015 — @mslaz ====
+
+Pytanie pytaniu nierówne:
+  * niektóre są bardziej obciążające dla użytkownika,
+  * pomysł: automatyczna metryka — ocena trudności/łatwości po liczbie elementów,
+  * pomysł: ręczne dopisanie kosztu do typu pytania — np. pytanie o model telewizora jest b. kosztowne.
+
+Sama generacja pytań:
+  * np. [[http://en.wikipedia.org/wiki/Definite_clause_grammar|definite clause grammar]] w Prologu,
+    * to bardziej rozbudowane context-free grammar,
+    * pytania byłyby różne.
+
+UX — może prezentować te pytania graficznie?
+
+Semantyzacja relacji przestrzennych
+  * żeby były context-sensitive,
+  * np. blisko–daleko znaczą co innego w zależności od sali.
+
+O jakie rzeczy warto pytać i jakie są ich właściwości?
+
+Co teraz:
+  * najpierw ręczne określenie relacji i ich właściwości, jak na screenie
+    * {{:pl:dydaktyka:mgr:2015msc_semmaps:reczne-okreslenie-relacji-i-ich-wlasciwosci.png?250|}},
+    * jakby ręcznie wyjście przyszłego systemu regułowego (a dopiero potem system),
+    * które atrybuty konieczne
+      * //<mslaz> „w pracy możesz napisać, że uwzględniasz semantykę miejsc i semantykę relacji, wow, super!”//
+      * np. rozmiar (ale możemy go nie znać, wtedy pytanie o rozmiar jest mało wartościowe),
+      * np. jest-nad,
+      * np. jest-na-lewo-od (o ile obie są pod ścianą, wtedy tylko jest jednoznacznie),
+      * inne relacje,
+      * ich właściwości:
+        * zwrotność,
+        * symetryczność,
+        * distributes over,
+        * że jedna implikuje drugą (oszczędność „pamięci”)
+          * np. jest-na-lewo-od implikuje jest-blisko.
+
+==== Feb 4, 2015 — @sbk ====
+
+Co dalej:
+  * spotkanie z Mateuszem Ślażyńskim, poczekać na kontakt.
+
+Ustalono:
   * zewnętrzny algorytm lokalizacyjny
     * w pomieszczeniu są beacony
     * beacony mówią, że telefon jest w danym pomieszczeniu
@@ -95,53 +205,7 @@ Michał Rus <m@michalrus.com>
     * sklep
     * inteligentna sala laboratoryjna
 
-===== Spotkania =====
-
-==== Mar 5, 2015 ====
-
-Spotkanie tylko z Mateuszem Ślażyńskim.
-
-Pytanie pytaniu nierówne:
-  * niektóre są bardziej obciążające dla użytkownika,
-  * pomysł: automatyczna metryka — ocena trudności/łatwości po liczbie elementów,
-  * pomysł: ręczne dopisanie kosztu do typu pytania — np. pytanie o model telewizora jest b. kosztowne.
-
-Sama generacja pytań:
-  * np. [[http://en.wikipedia.org/wiki/Definite_clause_grammar|definite clause grammar]] w Prologu,
-    * to bardziej rozbudowane context-free grammar,
-    * pytania byłyby różne.
-
-UX — może prezentować te pytania graficznie?
-
-Semantyzacja relacji przestrzennych
-  * żeby były context-sensitive,
-  * np. blisko–daleko znaczą co innego w zależności od sali.
-
-O jakie rzeczy warto pytać i jakie są ich właściwości?
-
-Co teraz:
-  * najpierw ręczne określenie relacji i ich właściwości, jak na screenie
-    * {{:pl:dydaktyka:mgr:2015msc_semmaps:reczne-okreslenie-relacji-i-ich-wlasciwosci.png?250|}},
-    * jakby ręcznie wyjście przyszłego systemu regułowego (a dopiero potem system),
-    * które atrybuty konieczne
-      * //<mslaz> „w pracy możesz napisać, że uwzględniasz semantykę miejsc i semantykę relacji, wow, super!”//
-      * np. rozmiar (ale możemy go nie znać, wtedy pytanie o rozmiar jest mało wartościowe),
-      * np. jest-nad,
-      * np. jest-na-lewo-od (o ile obie są pod ścianą, wtedy tylko jest jednoznacznie),
-      * inne relacje,
-      * ich właściwości:
-        * zwrotność,
-        * symetryczność,
-        * distributes over,
-        * że jedna implikuje drugą (oszczędność „pamięci”)
-          * np. jest-na-lewo-od implikuje jest-blisko.
-
-==== Feb 4, 2015 ====
-
-Co teraz:
-  * spotkanie z Mateuszem Ślażyńskim, poczekać na kontakt.
-
-==== Dec 3, 2014 ====
+==== Dec 3, 2014 — @gjn @sbk ====
 
 <sbk> zaczynamy od tego co na WSHOP, dlatego lepiej, że Michał Rus zrobił robotę koncepcyjną, a Krzysztof Janosz pomógł narzędziowo.
 
@@ -158,3 +222,17 @@ Współrzędne:
     * ściany mogą wpływać na dostępność sygnału,
     * wygodniej dla tworzącego,
     * wiemy jakie beacony znajdują się w obszarze.
+
+===== Materiały =====
+  * Artykuł gdzie mowa po co wogóle robić semantyzację danych: 
+    * {{:pl:dydaktyka:mgr:2015msc_semmaps:fusion2015.pdf|Improving Indoor Localization by User Feedback}} 
+    * Tam jest sporo matematyki, ale te części pana wogóle nie powinny obchodzić. Ważne jest tylko ot co dotyczy mediacji, ontologii, etc.
+  * Opis tego jak powinno/może wyglądać korzystanie z mediacji (map semantycznych): 
+    * [[http://ai.ia.agh.edu.pl/wiki/research:siegen:semanticmaps:start#section20150204|Opis]] (powinien mieć pan dostęp)
+  * Narzędzie do "symulacji" mediacji: 
+    * [[https://bitbucket.org/sbobek/microlocationmediator/wiki/Home|Mediator Tool]] (dostęp powinien pan dostać mailem) 
+    * :!: W sekcji Wiki na Bitbuckecie jest opis działania wersji konsolowej i wersji z GUI: [[https://bitbucket.org/sbobek/microlocationmediator/wiki/Home|Opis]]
+    * Przykładowe pliki z fuzji znajdują się w repo: [[https://bitbucket.org/sbobek/microlocationmediator/src/929ed68ae7b63d4bdce8ffe035cd0a7fa4f0099a/assets/semmaps/gaussian_estimates_full.csv?at=default| "Track"]]
+  * Narzędzie Pronto (generujące drzewa decyzyjne - dostęp mailem): 
+    * [[https://bitbucket.org/mslazynski/pronto |Pronto]]
+    * W razie jakichś commitów niech pan zrobi branch dev i tam ciśnie nowy kod.
