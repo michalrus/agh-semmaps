@@ -215,6 +215,12 @@ specific instances</title>
                             <topic id="5bmpahbm2jr7a99c4vs93dc3qo">
                               <title>Nie powinien być graf acyklicnzny skierowany?</title>
                             </topic>
+                            <topic id="39ss80c2ljh0ji9al7r9ncj4fb">
+                              <title svg:width="500">na razie jest 1, ale jak ktoś chce powtó©zyć, to ma być redundancja np. kolor, kształt itp. 2×</title>
+                              <marker-refs>
+                                <marker-ref marker-id="priority-1"/>
+                              </marker-refs>
+                            </topic>
                           </topics>
                         </children>
                       </topic>
@@ -245,7 +251,10 @@ in which this tree allows to correctly classify a room</title>
                         <children>
                           <topics type="attached">
                             <topic id="3illiv3he3rhig7qbr2ulb6i2s">
-                              <title>?</title>
+                              <title>to dziedzina</title>
+                              <marker-refs>
+                                <marker-ref marker-id="priority-1"/>
+                              </marker-refs>
                             </topic>
                           </topics>
                         </children>
@@ -266,6 +275,96 @@ in which this tree allows to correctly classify a room</title>
                           <topics type="attached">
                             <topic id="1ajja9naalsbmu9rgh0p45ecdb">
                               <title>dlaczego tylko tutaj pojawiło się “place”?</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="6d6p6nd053nq3c30v46ervgb2r">
+                  <title>use case</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="08o5n37ht6c7jjfguguc06gb7g">
+                        <title>dla każdego z atrubutów głównych osobne pytania</title>
+                      </topic>
+                      <topic id="0frtm2ir9fuibahugjjkrqepnj">
+                        <title>zbiór tych pytań → </title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="7a50782cdnrtummdg5o9u5keeb">
+                              <title>drzewo</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="253kg2762a2c5ja79onguogp8g">
+                                    <title>czy widzisz projektor</title>
+                                    <children>
+                                      <topics type="attached">
+                                        <topic id="3hthu2ei87ducrq741gahmcba8">
+                                          <title>tak</title>
+                                          <children>
+                                            <topics type="attached">
+                                              <topic id="449vnb2gqbsbnff103m2terrpu">
+                                                <title>koloru czerwonego?</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                    <topic id="4f0njnbvdrq9u63ql99koiqcjm">
+                                                      <title>w tej sali</title>
+                                                    </topic>
+                                                  </topics>
+                                                </children>
+                                              </topic>
+                                              <topic id="0me0tfpjgrpbc9pm8hq9erlge3">
+                                                <title>innego?</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                    <topic id="5s096jf3khc5ljrc26861nl0be">
+                                                      <title>w tamtej</title>
+                                                    </topic>
+                                                  </topics>
+                                                </children>
+                                              </topic>
+                                            </topics>
+                                          </children>
+                                        </topic>
+                                      </topics>
+                                    </children>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="521r136p3ukksot62q4mv5m7fm">
+                        <title>moja rola</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="5f2ge43ukdg2higss1qndgtnh5">
+                              <title>dodanie relacji innych niż has</title>
+                            </topic>
+                            <topic id="26p5gu8afdsk9i2jvjuh6lrpa3">
+                              <title>openjump → ??? → pytania</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="2d4g0o3eaivh2e7hj5507k4j8r">
+                                    <title>system regułowy co to jest near itd.</title>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                            <topic id="0j1gkitjol925ctbaql2hgpl9v">
+                              <title svg:width="500">implementacja (na telefonie) nie aż taka ważna — można napisać, że PoC i da się dalej, ale akurat nie ma</title>
+                            </topic>
+                            <topic id="0ni7eeca9s4jfl1i2svptklkm8">
+                              <title>&lt;sbk&gt; drzewka wystarczą z mojej perspektywy</title>
+                            </topic>
+                            <topic id="50oh59peuqmk14i9glh3qoqvcp">
+                              <title svg:width="500">&lt;sbk&gt; pokazać GJNowi solidny plan, i on się zgodzi — nie pytać, bo wymyśli 1000 rzeczy</title>
+                            </topic>
+                            <topic id="7tj7ud1bnbl9hsr161h7st5jcm">
+                              <title svg:width="500">&lt;sbk&gt; nawiązać do HD, że … że  ale że to ciężkie itd., więc drzewka są etapem końcowym</title>
                             </topic>
                           </topics>
                         </children>
