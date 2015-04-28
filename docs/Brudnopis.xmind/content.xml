@@ -176,6 +176,109 @@
               </topics>
             </children>
           </topic>
+          <topic id="3r6mnhgf0581bulpd6rdjplrsv">
+            <title>konsultacje @sbk</title>
+            <children>
+              <topics type="attached">
+                <topic id="3bb6nr7c1l6bo6oadk8n152a9n">
+                  <title>pytania</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="17to51tilnqp1mckhq322fiqke">
+                        <title svg:width="500">Our results show that the user’s feedback significantly improves localization results.</title>
+                      </topic>
+                      <topic id="3ngcal202d5utthrer3rla7svv">
+                        <title>allows for an online mediation between the user and the sensor</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="1i47cm4i1tardien0upit2inmm">
+                              <title>co znaczy „online”?</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="1pdb5p3hsm7tv0o9li868rsblf">
+                        <title svg:width="500">An ABox part consists of the ontology instances — every
+statement represents a one-to-many relation holding between
+specific instances</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="4f728no33odl42gg8u6868hb03">
+                              <title svg:width="500">To mogą być tylko (A R₁ B)?</title>
+                            </topic>
+                            <topic id="4bmt46p0qvnjv9903oesgqgi80">
+                              <title svg:width="500">A jak chcę też (A R₂ B)?</title>
+                            </topic>
+                            <topic id="0s72qhe8b2tm2dnqphgq9d53mq">
+                              <title svg:width="500">Przecież to drzewo tych obiektów…</title>
+                            </topic>
+                            <topic id="5bmpahbm2jr7a99c4vs93dc3qo">
+                              <title>Nie powinien być graf acyklicnzny skierowany?</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="327esnqv79kopur023ua5gis0o">
+                        <title>1.) class assertions assigning the
+instance with its plain attributes to the specified class;</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="5ml5igcj15svogbpdqb4f291ph">
+                              <title>co to?</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="1vk7ts312cv87jbbeo4ijlipn9">
+                        <title>an aggregated cost assigned, which indicates the degree
+in which this tree allows to correctly classify a room</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="424dpvctnkq9nk7es3bi4iqic5">
+                              <title>koszt to miara dokładności ew. klasyfikacji?</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="0it7dr9v2edf71rflm7vk187ui">
+                        <title>attribute(classroom_computer, [true, false]).</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="3illiv3he3rhig7qbr2ulb6i2s">
+                              <title>?</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="62luof49cffru97th4ss288mdg">
+                        <title>entry(data{classroom_door:true, classroom_door_color:gray, id:lab318}).</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="6mf91k7ar854utli50vibjjrv4">
+                              <title>zawsze “id” topowego elementu?</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="5jmfiluk6ocelruee3ru70ojeb">
+                        <title svg:width="500">entry(data{classroom_color:yellow, classroom_color_intensity:dark, classroom_name:unspecified, classroom_size:small, id:lab318, place:classroom}).</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="1ajja9naalsbmu9rgh0p45ecdb">
+                              <title>dlaczego tylko tutaj pojawiło się “place”?</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+              </topics>
+            </children>
+            <labels>
+              <label>Apr 28 2015</label>
+            </labels>
+          </topic>
         </topics>
       </children>
       <extensions>
