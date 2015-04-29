@@ -378,6 +378,54 @@ in which this tree allows to correctly classify a room</title>
               <label>Apr 28 2015</label>
             </labels>
           </topic>
+          <topic id="38th4ag7qmsja1mu8k3fedcbn7">
+            <title>prezentacja</title>
+            <children>
+              <topics type="attached">
+                <topic id="3forhj2d57n9gh7o1oomgsl93f">
+                  <title>&lt;mszpyrka&gt; presentationzen.com</title>
+                </topic>
+                <topic id="1sglsi43tbtensiifdpd8f55pr">
+                  <title>&lt;gjn&gt; do 10 min</title>
+                </topic>
+                <topic id="14o7gjr66sc69nu30nnbtpg7uo">
+                  <title>&lt;gjn&gt; zacząć „celem mojej pracy jest”</title>
+                </topic>
+                <topic id="1c63hvmk7nesguf4hno14vngv3">
+                  <title svg:width="500">&lt;gjn&gt; nie ma sensu robić planu prezentacji (bo to 10 min i każda obrona ma taki sam plan)</title>
+                </topic>
+                <topic id="3f3ie12r8dt6kc1g51vfujhvst">
+                  <title svg:width="500">&lt;gjn&gt; „po co? jaki benefit? do czego to się może przydać?” — dobre pytanie (przewodniczący komisji nie czyta prac…) / na czym polega »original contribution«?</title>
+                </topic>
+                <topic id="7pgak1qrm7ffgq7rsfg61q21te">
+                  <title>&lt;gjn&gt; wydrukowac prezentacje, zeby komisja mogla wrocic</title>
+                </topic>
+                <topic id="641ofdeggkjjeab0i3b9md2nc8">
+                  <title>&lt;gjn&gt; handouty nie muszą być slajd/A4, nie muszą być kolorowe</title>
+                </topic>
+                <topic id="2ulhec1r1lf034mjsnja001j3e">
+                  <title svg:width="500">&lt;gjn&gt; nawet jeśli praca po angielsku, to prezentacja po polsku</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="4fbstgvus8vbrk9uq8b6c6khat">
+                        <title>ukłon w stronę dziekana Oprzędkiewicza ☺</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="5280dmrheba51925nciv5ahcu5">
+                  <title svg:width="500">&lt;gjn&gt; nie podobają mi się itemize, gdzie w każdym item jest skrót, który niczego nie mówi słuchaczowi</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="1das9f5786cbekgicn08upu207">
+                        <title svg:width="500">aha, w sumie nic nie wiem z tego slajdu, nic mi ten skrót nie mówi</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+              </topics>
+            </children>
+          </topic>
         </topics>
       </children>
       <extensions>
