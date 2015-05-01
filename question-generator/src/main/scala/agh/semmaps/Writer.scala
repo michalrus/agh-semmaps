@@ -43,7 +43,10 @@ object PrologWriter extends Writer {
 
     val children = (tree.children.toList map dump(indent + 1)).flatten
 
-    val hasText = if (children.isEmpty) " exists" else " has [\n" + children.map(_.dump).mkString(",\n") + "\n" + i + "]"
+    def redundant(xs: List[String]): List[String] = {
+      (xs groupBy identity mapValues (_.size) map { case (x, num) ⇒ x + (if (num > 1) s" * $num" else "") }).toList
+    }
+    val hasText = if (children.isEmpty) " exists" else " has [\n" + redundant(children.map(_.dump).sorted).mkString(",\n") + "\n" + i + "]"
     val chClass = children.flatMap(_.classesUsed)
 
     def props(node: JmlObject): String = {
