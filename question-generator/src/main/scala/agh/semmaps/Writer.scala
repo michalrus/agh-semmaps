@@ -6,14 +6,14 @@ import scala.collection.immutable.Set
 import scala.util.Try
 
 trait Writer {
-  def apply(output: File)(ontology: Ontology): Try[Unit]
+  def apply(trees: List[JmlTree])(output: File): Try[Unit]
   def nodeSet(tree: JmlTree): Set[JmlObject] =
     Set(tree.node) ++ (tree.children flatMap nodeSet)
 }
 
 object PrologWriter extends Writer {
-  def apply(output: File)(ontology: Ontology): Try[Unit] = Try {
-    val DumpResult(dmp, classesUsed) = (ontology.trees foldLeft DumpResult("", Set.empty)) {
+  def apply(trees: List[JmlTree])(output: File): Try[Unit] = Try {
+    val DumpResult(dmp, classesUsed) = (trees foldLeft DumpResult("", Set.empty)) {
       case (acc, tree) ⇒
         dump(0)(tree) match {
           case Some(dr) ⇒ DumpResult(acc.dump + (if (acc.dump.nonEmpty) ".\n" else "") + dr.dump, acc.classesUsed ++ dr.classesUsed)
@@ -47,11 +47,10 @@ object PrologWriter extends Writer {
     val chClass = children.flatMap(_.classesUsed)
 
     def props(node: JmlObject): String = {
-      val ps = ((node.props filterKeys (_ != "Kind")) +
-        ("uuid" → tree.node.uuid.toString)) flatMap {
-          case (k, v) if k.toUpperCase == "FEATURES" ⇒ v.split(';') map (_.trim) filter (_.nonEmpty) map (prologize(_) → "true")
-          case x                                     ⇒ Map(x)
-        }
+      val ps = node.props filterKeys (_ != "Kind") flatMap {
+        case (k, v) if k.toUpperCase == "FEATURES" ⇒ v.split(';') map (_.trim) filter (_.nonEmpty) map (prologize(_) → "true")
+        case x                                     ⇒ Map(x)
+      }
       ps map { case (k, v) ⇒ s"""${k.toLowerCase}: "$v"""" } mkString ", "
     }
 
@@ -62,6 +61,7 @@ object PrologWriter extends Writer {
 
     Some(DumpResult(i + s"$kind{${props(tree.node)}}" + hasText, Set(kind) ++ chClass))
   }
+  /* FIXME: how do we output distances without UUIDs?
   def distances(trees: List[JmlTree]): String = {
     val all = trees.toSet flatMap nodeSet
     all.subsets(2) map {
@@ -72,9 +72,5 @@ object PrologWriter extends Writer {
       }
     } mkString "\n"
   }
-}
-
-object OwlWriter extends Writer {
-  // TODO: really?…
-  def apply(output: File)(ontology: Ontology): Try[Unit] = ???
+  */
 }

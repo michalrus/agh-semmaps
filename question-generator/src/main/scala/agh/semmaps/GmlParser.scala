@@ -1,7 +1,6 @@
 package agh.semmaps
 
 import java.io.File
-import java.util.UUID
 
 import com.vividsolutions.jts.geom.{ Geometry, GeometryFactory }
 import com.vividsolutions.jts.io.gml2.GMLReader
@@ -15,7 +14,7 @@ case object JmlDoor extends JmlType
 case object JmlObstacle extends JmlType
 case object JmlPoi extends JmlType
 
-final case class JmlObject(uuid: UUID, tpe: JmlType, geometry: Geometry, props: Map[String, String]) {
+final case class JmlObject(tpe: JmlType, geometry: Geometry, props: Map[String, String]) {
   def isAncestor(that: JmlObject): Boolean = this != that && (this.geometry covers that.geometry)
   def distance(that: JmlObject): Double = this.geometry distance that.geometry
 }
@@ -30,7 +29,7 @@ object JmlParser {
     features.toSet map { (feature: xml.Node) ⇒
       val geom = parser.read((feature \ "geometry" flatMap (_.child)).mkString, new GeometryFactory())
       val props = feature \ "property" map (p ⇒ (p \@ "name", p.text.trim)) filter { case (k, v) ⇒ v.nonEmpty }
-      JmlObject(UUID.randomUUID(), tpe, geom, props.toMap)
+      JmlObject(tpe, geom, props.toMap)
     }
   }
 
@@ -40,13 +39,13 @@ object GmlParser {
 
   val Files = Map[String, JmlType]("Area.jml" → JmlArea, "Door.jml" → JmlDoor, "Obstacle.jml" → JmlObstacle, "POI.jml" → JmlPoi)
 
-  def apply(inputDirectory: File): Try[Ontology] = Try {
+  def apply(inputDirectory: File): Try[List[JmlTree]] = Try {
     require(inputDirectory.isDirectory, s"$inputDirectory: not a directory")
     val files = inputDirectory.listFiles().toSet
 
     require(files.map(_.getName) == Files.keySet, s"$inputDirectory: should contain only ${Files.keySet}")
 
     TreeBuilder(files flatMap (f ⇒ JmlParser(Files(f.getName), f)))
-  } flatMap Ontology.fromJmlTrees
+  }
 
 }
