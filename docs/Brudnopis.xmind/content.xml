@@ -235,30 +235,6 @@ instance with its plain attributes to the specified class;</title>
                           </topics>
                         </children>
                       </topic>
-                      <topic id="1vk7ts312cv87jbbeo4ijlipn9">
-                        <title>an aggregated cost assigned, which indicates the degree
-in which this tree allows to correctly classify a room</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="424dpvctnkq9nk7es3bi4iqic5">
-                              <title>koszt to miara dokładności ew. klasyfikacji?</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="0it7dr9v2edf71rflm7vk187ui">
-                        <title>attribute(classroom_computer, [true, false]).</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="3illiv3he3rhig7qbr2ulb6i2s">
-                              <title>to dziedzina</title>
-                              <marker-refs>
-                                <marker-ref marker-id="priority-1"/>
-                              </marker-refs>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
                       <topic id="62luof49cffru97th4ss288mdg">
                         <title>entry(data{classroom_door:true, classroom_door_color:gray, id:lab318}).</title>
                         <children>
@@ -419,6 +395,92 @@ in which this tree allows to correctly classify a room</title>
                     <topics type="attached">
                       <topic id="1das9f5786cbekgicn08upu207">
                         <title svg:width="500">aha, w sumie nic nie wiem z tego slajdu, nic mi ten skrót nie mówi</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+              </topics>
+            </children>
+            <extensions>
+              <extension provider="org.xmind.ui.map.unbalanced">
+                <content>
+                  <right-number>1</right-number>
+                </content>
+              </extension>
+            </extensions>
+          </topic>
+          <topic id="56na7ra99017dldo0uof4gd8pi">
+            <title>algo drzewkowe</title>
+            <children>
+              <topics type="attached">
+                <topic id="1966tdabddl28he45gdhrn6rb1">
+                  <title>alternatives received from a Sensor Fusion Mechanism</title>
+                </topic>
+                <topic id="67eh5n43s9lio24duibin3b40v">
+                  <title svg:width="500">Every instance related (directly or indirectly) to an alternative becomes a new training feature. The same applies to their plain attributes.</title>
+                </topic>
+                <topic id="65o6vln6c2bod9b2h01aeus9fj">
+                  <title>Training features are then grouped into entries</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="3iubv9cudlopdpcac0u7q3ni0n">
+                        <title svg:width="500">there is one training entry with the all plain attributes of the alternative</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="0u7foldh81n8d8bu08phpqs7oi">
+                              <title>entry(data{classroom_color:yellow, classroom_color_intensity:unspecified, classroom_name:"Laboratorium 316", classroom_size:small, id:lab316, place:classroom}).</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="2bq01f1k1apj5d9klfb8u6ve5h">
+                        <title svg:width="500">other training entries contain a training feature representing an instance related directly to the alternative and its descendants</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="233eg47e42nv1rqho3qtrtqs7r">
+                              <title>entry(data{classroom_desk:true, classroom_desk_color:brown, classroom_desk_color_intensity:high, classroom_desk_model:regular, id:lab318}).</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="2un146vpue0l1qnt1mdsp45f1g">
+                  <title>training set T is generated based on</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="1mmeunlftpeqppf0428p8o6bn8">
+                        <title>Possible user positions P</title>
+                      </topic>
+                      <topic id="5bselotbadc7tcoi1nttbiujha">
+                        <title>Semantic map M</title>
+                      </topic>
+                      <topic id="1mfp17l4dotjbdpui78ijld0oh">
+                        <title svg:width="500">Set of facts F about the user location obtained in mediation</title>
+                      </topic>
+                      <topic id="15657alnk02d3641bkkoh19l04">
+                        <title svg:width="500">question roots R which are defined as independent objects or features of
+every room from P</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="3l24e35b17malilhl0p639g4vd">
+                  <title>question forest is generated from</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="38755gc3pi65t65g5cmuiim63o">
+                        <title>training set T</title>
+                      </topic>
+                      <topic id="647ff5j30ldjpcvt840998j5s3">
+                        <title>question roots R</title>
+                      </topic>
+                      <topic id="1dpilrrikbqt0oqprfq8cepl70">
+                        <title svg:width="500">algorithm takes every question root from R, and generate a decision tree for it.</title>
+                      </topic>
+                      <topic id="3e2aq46hji9aqeqdgv5vma5epa">
+                        <title>The decision tree algorithm is loosely based on ID3 algorithm.</title>
                       </topic>
                     </topics>
                   </children>
