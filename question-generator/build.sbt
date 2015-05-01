@@ -2,7 +2,7 @@ enablePlugins(JavaAppPackaging)
 
 organization := "agh.semmaps"
 
-name := "ontology-generator"
+name := "question-generator"
 
 scalaVersion := "2.11.5"
 

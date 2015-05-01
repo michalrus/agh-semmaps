@@ -13,4 +13,4 @@ cd "$d"
 ./sbt stage
 
 echo
-echo "now, run ./ontology-generator --help"
+echo "now, run ./question-generator --help"

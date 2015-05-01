@@ -5,7 +5,7 @@ set -o errexit
 set -o nounset
 
 d="$(cd "$(dirname "$0")" ; pwd)"
-f="$d/target/universal/stage/bin/ontology-generator"
+f="$d/target/universal/stage/bin/question-generator"
 
 [ -x "$f" ] || {
   echo >&2 "run ./build first"
