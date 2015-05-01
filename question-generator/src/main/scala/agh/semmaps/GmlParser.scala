@@ -8,13 +8,7 @@ import com.vividsolutions.jts.io.gml2.GMLReader
 import scala.util.Try
 import scala.xml.XML
 
-sealed trait JmlType
-case object JmlArea extends JmlType
-case object JmlDoor extends JmlType
-case object JmlObstacle extends JmlType
-case object JmlPoi extends JmlType
-
-final case class JmlObject(tpe: JmlType, geometry: Geometry, props: Map[String, String]) {
+final case class JmlObject(origin: File, geometry: Geometry, props: Map[String, String]) {
   def isAncestor(that: JmlObject): Boolean = this != that && (this.geometry covers that.geometry)
   def distance(that: JmlObject): Double = this.geometry distance that.geometry
 }
@@ -23,13 +17,13 @@ final case class JmlTree(node: JmlObject, children: Set[JmlTree])
 
 object JmlParser {
 
-  def apply(tpe: JmlType, input: File): Set[JmlObject] = {
+  def apply(input: File): Set[JmlObject] = {
     val features = XML.loadFile(input) \\ "feature"
     val parser = new GMLReader
     features.toSet map { (feature: xml.Node) ⇒
       val geom = parser.read((feature \ "geometry" flatMap (_.child)).mkString, new GeometryFactory())
       val props = feature \ "property" map (p ⇒ (p \@ "name", p.text.trim)) filter { case (k, v) ⇒ v.nonEmpty }
-      JmlObject(tpe, geom, props.toMap)
+      JmlObject(input, geom, props.toMap)
     }
   }
 
@@ -37,15 +31,10 @@ object JmlParser {
 
 object GmlParser {
 
-  val Files = Map[String, JmlType]("Area.jml" → JmlArea, "Door.jml" → JmlDoor, "Obstacle.jml" → JmlObstacle, "POI.jml" → JmlPoi)
-
   def apply(inputDirectory: File): Try[List[JmlTree]] = Try {
     require(inputDirectory.isDirectory, s"$inputDirectory: not a directory")
-    val files = inputDirectory.listFiles().toSet
-
-    require(files.map(_.getName) == Files.keySet, s"$inputDirectory: should contain only ${Files.keySet}")
-
-    TreeBuilder(files flatMap (f ⇒ JmlParser(Files(f.getName), f)))
+    val files = inputDirectory.listFiles.filter(_.isFile).filter(_.getName.toUpperCase.endsWith(".JML")).toSet
+    TreeBuilder(files flatMap JmlParser.apply)
   }
 
 }

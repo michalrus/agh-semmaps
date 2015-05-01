@@ -8,7 +8,7 @@ object Main extends App {
     case Some(cnf) ⇒
       GmlParser(cnf.inputDirectory) match {
         case Success(jmlTrees) ⇒
-          cnf.prologOntology foreach PrologWriter(jmlTrees)
+          cnf.prologOntology foreach (o ⇒ PrologWriter(jmlTrees)(o) recover { case err ⇒ err.printStackTrace() })
         case Failure(err) ⇒
           err.printStackTrace()
       }

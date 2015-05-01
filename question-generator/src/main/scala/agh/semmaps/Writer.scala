@@ -57,10 +57,7 @@ object PrologWriter extends Writer {
       ps map { case (k, v) ⇒ s"""${k.toLowerCase}: "$v"""" } mkString ", "
     }
 
-    val kind = tree.node.tpe match {
-      case JmlArea | JmlObstacle | JmlPoi ⇒ prologize(tree.node.props.getOrElse("Kind", "unnamed"))
-      case JmlDoor                        ⇒ "door"
-    }
+    val kind = prologize(tree.node.props.getOrElse("Kind", tree.node.origin.getName.dropRight(".jml".length)))
 
     Some(DumpResult(i + s"$kind{${props(tree.node)}}" + hasText, Set(kind) ++ chClass))
   }
