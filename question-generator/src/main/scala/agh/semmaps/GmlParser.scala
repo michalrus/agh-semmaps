@@ -17,12 +17,15 @@ final case class JmlTree(node: JmlObject, children: Set[JmlTree])
 
 object JmlParser {
 
+  val SanitizeKeys = """[^a-z0-9_]""".r
+  def sanitizeKeys(id: String): String = SanitizeKeys.replaceAllIn(id.toLowerCase, "_")
+
   def apply(input: File): Set[JmlObject] = {
     val features = XML.loadFile(input) \\ "feature"
     val parser = new GMLReader
     features.toSet map { (feature: xml.Node) ⇒
       val geom = parser.read((feature \ "geometry" flatMap (_.child)).mkString, new GeometryFactory())
-      val props = feature \ "property" map (p ⇒ (p \@ "name", p.text.trim)) filter { case (k, v) ⇒ v.nonEmpty }
+      val props = feature \ "property" map (p ⇒ (sanitizeKeys(p \@ "name"), p.text.trim)) filter { case (k, v) ⇒ v.nonEmpty }
       JmlObject(input, geom, props.toMap)
     }
   }
