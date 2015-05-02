@@ -15,10 +15,10 @@ object Config {
     val p = new OptionParser[Config]("question-generator") {
       head("question-generator")
       opt[File]('i', "input-directory") required () valueName "<file>" action { (x, c) ⇒ c.copy(inputDirectory = x) } text "an input directory with *.jml files"
-      opt[Seq[String]]('s', "split-keys") valueName "<key1>,<key2>,..." action { (x, c) ⇒ c.copy(splitKeys = x.toSet map JmlParser.sanitizeKeys) } text "GML feature keys values of which should be splitted into boolean attributes"
+      opt[Seq[String]]('s', "split-keys") valueName "<key1>,<key2>,..." action { (x, c) ⇒ c.copy(splitKeys = x.toSet map JmlParser.sanitizeKeys) } text "GML feature keys, values of which will be splitted into boolean attributes"
       opt[String]('d', "split-delimiters") valueName "<delim1><delim2>..." action { (x, c) ⇒ c.copy(splitDelimiters = x.toCharArray.toList) } text "delimiter characters used for --split-keys"
-      opt[File]("prolog-ontology") valueName "<file>" action { (x, c) ⇒ c.copy(prologOntology = Some(x)) } text "an optional output file that’ll hold the intermediate ontology"
-      opt[String]("prolog-key") valueName "<key>" action { (x, c) ⇒ c.copy(prologKey = Some(JmlParser.sanitizeKeys(x))) } text "a GML feature key values of which will be used as the source of term names in the Prolog ontology"
+      opt[File]("prolog-ontology") valueName "<file>" action { (x, c) ⇒ c.copy(prologOntology = Some(x)) } text "an optional output file to hold the intermediate ontology"
+      opt[String]("prolog-key") valueName "<key>" action { (x, c) ⇒ c.copy(prologKey = Some(JmlParser.sanitizeKeys(x))) } text "a GML feature key, values of which will be used as the source for term names in the Prolog ontology"
       help("help") abbr "h" text "display this help and exit"
       arg[String]("<key1>=<value1> <key2>=<value2> ...") minOccurs 2 maxOccurs 1024 validate { x ⇒ if (x contains '=') success else failure("an alternative has to be given as <key>=<value>") } action {
         (x, c) ⇒
