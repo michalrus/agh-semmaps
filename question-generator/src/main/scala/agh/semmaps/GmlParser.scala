@@ -20,13 +20,19 @@ object JmlParser {
   val SanitizeKeys = """[^a-z0-9_]""".r
   def sanitizeKeys(id: String): String = SanitizeKeys.replaceAllIn(id.toLowerCase, "_")
 
-  def apply(input: File): Set[JmlObject] = {
+  def apply(splitKeys: Set[String], splitDelimiters: List[Char])(input: File): Set[JmlObject] = {
     val features = XML.loadFile(input) \\ "feature"
     val parser = new GMLReader
     features.toSet map { (feature: xml.Node) ⇒
       val geom = parser.read((feature \ "geometry" flatMap (_.child)).mkString, new GeometryFactory())
       val props = feature \ "property" map (p ⇒ (sanitizeKeys(p \@ "name"), p.text.trim)) filter { case (k, v) ⇒ v.nonEmpty }
-      JmlObject(input, geom, props.toMap)
+      val splitted = props.toMap flatMap {
+        case (k, v) if splitKeys contains k ⇒
+          if (splitDelimiters.isEmpty) Map(sanitizeKeys(v) → "true")
+          else v.split(splitDelimiters.toArray) map (_.trim) filter (_.nonEmpty) map (sanitizeKeys(_) → "true")
+        case x ⇒ Map(x)
+      }
+      JmlObject(input, geom, splitted)
     }
   }
 
@@ -34,10 +40,10 @@ object JmlParser {
 
 object GmlParser {
 
-  def apply(inputDirectory: File): Try[List[JmlTree]] = Try {
+  def apply(inputDirectory: File, splitKeys: Set[String], splitDelimiters: List[Char]): Try[List[JmlTree]] = Try {
     require(inputDirectory.isDirectory, s"$inputDirectory: not a directory")
     val files = inputDirectory.listFiles.filter(_.isFile).filter(_.getName.toUpperCase.endsWith(".JML")).toSet
-    TreeBuilder(files flatMap JmlParser.apply)
+    TreeBuilder(files flatMap JmlParser(splitKeys, splitDelimiters))
   }
 
 }

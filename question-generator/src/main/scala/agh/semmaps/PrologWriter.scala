@@ -42,10 +42,7 @@ object PrologWriter {
     val chClass = children.flatMap(_.classesUsed)
 
     def props(node: JmlObject): String = {
-      val ps = node.props filterKeys (_ != gmlKey) flatMap {
-        case (k, v) if k.toUpperCase == "FEATURES" ⇒ v.split(';') map (_.trim) filter (_.nonEmpty) map (_ → "true")
-        case x                                     ⇒ Map(x)
-      }
+      val ps = node.props filterKeys (_ != gmlKey)
       ps map { case (k, v) ⇒ s"""${k.toLowerCase}: "$v"""" } mkString ", "
     }
 
