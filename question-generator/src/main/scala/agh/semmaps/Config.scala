@@ -19,12 +19,12 @@ object Config {
       opt[String]('d', "split-delimiters") valueName "<delim1><delim2>..." action { (x, c) ⇒ c.copy(splitDelimiters = x.toCharArray.toList) } text "delimiter characters used for --split-keys"
       opt[File]("prolog-ontology") valueName "<file>" action { (x, c) ⇒ c.copy(prologOntology = Some(x)) } text "an optional output file to hold the intermediate ontology"
       opt[String]("prolog-key") valueName "<key>" action { (x, c) ⇒ c.copy(prologKey = Some(JmlParser.sanitizeKeys(x))) } text "a GML feature key, values of which will be used as the source for term names in the Prolog ontology"
-      help("help") abbr "h" text "display this help and exit"
-      arg[String]("<key1>=<value1> <key2>=<value2> ...") minOccurs 1 maxOccurs 1024 validate { x ⇒ if (x contains '=') success else failure("an alternative has to be given as <key>=<value>") } action {
+      opt[String]('a', "alternative") minOccurs 1 maxOccurs 1024 valueName "<key>=<value>" validate { x ⇒ if (x contains '=') success else failure("an --alternative has to be given as <key>=<value>") } action {
         (x, c) ⇒
           val n = x.indexOf('=')
           c.copy(alternatives = c.alternatives + ((x take n, x drop (n + 1))))
-      } text "alternatives obtained from sensor fusion mechanism; <key> is a GML key, e.g. \"number\" and <value> is its value, e.g. \"316\""
+      } text "alternatives obtained from sensor fusion mechanism; <key> is a GML key, e.g. \"number\" and <value> is its value, e.g. \"316\" (if specify more than one --alternative, they will be ORed)"
+      help("help") abbr "h" text "display this help and exit"
       checkConfig(c ⇒ if (c.prologKey.isDefined == c.prologOntology.isDefined) success else failure("you've got to have both --prolog-key and --prolog-ontology either defined or undefined"))
     }
 
