@@ -5,6 +5,9 @@ package agh.semmaps
 
 object TreeBuilder {
 
+  def findAncestorless(in: Set[JmlObject]): Set[JmlObject] =
+    in filter (obj ⇒ !(in exists (_ isAncestor obj)))
+
   def apply(objects: Set[JmlObject]): List[JmlTree] = {
     final case class MutableJmlTree(node: JmlObject, children: collection.mutable.HashSet[MutableJmlTree]) {
       def toImmutable: JmlTree = JmlTree(node, children.toSet.map((child: MutableJmlTree) ⇒ child.toImmutable))
@@ -39,22 +42,6 @@ object TreeBuilder {
     }
 
     trees map (_.toImmutable)
-  }
-
-  def findAncestorless(in: Set[JmlObject]): Set[JmlObject] =
-    in filter (obj ⇒ !(in exists (_ isAncestor obj)))
-
-  def prettyPrint(trees: List[JmlTree]): Unit = {
-    def prtr(indent: Int)(tree: JmlTree): Unit = {
-      val ind = " " * (indent * 2)
-      println(s"$ind${tree.node}")
-      tree.children foreach prtr(indent + 1)
-    }
-    trees foreach { tree ⇒
-      println("------------------------------------------------------")
-      prtr(0)(tree)
-    }
-    println("------------------------------------------------------")
   }
 
 }

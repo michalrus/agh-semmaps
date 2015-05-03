@@ -13,7 +13,11 @@ final case class JmlObject(origin: File, geometry: Geometry, props: Map[String, 
   def distance(that: JmlObject): Double = this.geometry distance that.geometry
 }
 
-final case class JmlTree(node: JmlObject, children: Set[JmlTree])
+final case class JmlTree(node: JmlObject, children: Set[JmlTree]) {
+  /** Finds all subtrees that match the given predicate */
+  def find(p: JmlObject ⇒ Boolean): Set[JmlTree] =
+    (if (p(node)) Set(this) else Set.empty) ++ (children flatMap (_.find(p)))
+}
 
 object JmlParser {
 
