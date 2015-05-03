@@ -16,7 +16,7 @@ object Main extends App {
       // select only the alternatives
       val alternativeTrees = cnf.alternatives flatMap { case (k, v) ⇒ jmlTrees flatMap (_.find(_.props.get(k) == Some(v))) }
 
-      log(s"${alternativeTrees.size} alternatives selected")
+      log(s"${alternativeTrees.size} alternative(s) selected")
       alternativeTrees foreach (t ⇒ log(s"  ${t.node.props}"))
 
       QuestionGenerator(alternativeTrees)
