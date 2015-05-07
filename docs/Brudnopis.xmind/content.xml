@@ -410,7 +410,7 @@ instance with its plain attributes to the specified class;</title>
             </extensions>
           </topic>
           <topic id="56na7ra99017dldo0uof4gd8pi">
-            <title>algo drzewkowe</title>
+            <title>algo drzewkowe @mslaz i @sbk</title>
             <children>
               <topics type="attached">
                 <topic id="1966tdabddl28he45gdhrn6rb1">
@@ -484,6 +484,174 @@ every room from P</title>
                       </topic>
                     </topics>
                   </children>
+                </topic>
+              </topics>
+            </children>
+          </topic>
+          <topic id="0m1sst11mqqrp6dap73u0r22cq">
+            <title>algo moje</title>
+            <extensions>
+              <extension provider="org.xmind.ui.map.unbalanced">
+                <content>
+                  <right-number>3</right-number>
+                </content>
+              </extension>
+            </extensions>
+            <children>
+              <topics type="attached">
+                <topic id="6fs8rdfvvfai4bome1hbosi319">
+                  <title svg:width="500">jak najbardziej generyczny w stosunku do struktury</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="1v0c0utkbmj574fsa1ru9ittl8">
+                        <title svg:width="500">doprecyzowanie używające nazw «properties» w module regułowym</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="1c0jne5116ef32mkso8q18g7pg">
+                  <title svg:width="500">podajemy wybrane alternatywy — drzewa JmlTree</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="5k54a8o7o19s9dveniq4i0neli">
+                        <title>np. pokoje</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="0i68e91ignam69s7aqhp953efj">
+                  <title>węzłami w drzewie są JmlObject</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="5o1j1o09r2ghg2tv036vtkpd19">
+                        <title>ma mapę K–V «properties»</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="1n8omaqdv1npf2rt7fs8em61g9">
+                  <title svg:width="500">dziecko znajduje się wewnątrz rodzica na mapie</title>
+                </topic>
+                <topic id="31hmu2lsc2b4hbri7kda6uh86v">
+                  <title svg:width="500">budujemy „tabelę” z flattened propsów</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="66lsavg8lc3ctjhp89s5p6gn2v">
+                        <title>od góry</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="6ar595mio958jd1q7287k6n8aj">
+                              <title>uwzględniamy tylko pierwszy poziom</title>
+                            </topic>
+                            <topic id="540gd0sh049mupjj7splg28cqf">
+                              <title>następne wiersze to pierwszy + tylko drugi</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="3r2dbpahgm6lhmtticl2bnicfo">
+                        <title>od dołu</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="7l1ha7ba75mmjv5r13qbgdm8u0">
+                              <title>uwzględniamy tylko ostatni poziom</title>
+                            </topic>
+                            <topic id="0s0b35aieb1acodhd86n9pf7db">
+                              <title>następne wiersze to ostatni + przedostatni</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="57pqb0n6spivmu54266g607ors">
+                                    <title svg:width="500">przy czym jak mamy A jest-rodzicem [B, C] ⇒ to robimy osobne wiersze A→B i A→C</title>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="57q8uf3heu94lh5p3e2jf1fjj8">
+                  <title svg:width="500">odpalamy na niej ID3, żeby wybrać najlepsze pytanie</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="5hv1fcvefgsv11dv08lr4hqdur">
+                        <title>zwykłe ID3</title>
+                      </topic>
+                      <topic id="5qg9ob37l696aepld9pd3hselu">
+                        <title>uwzględniające koszty z regułowego</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="7m8jphslfh8gp03qoe355jdr92">
+                  <title svg:width="500">uwzględniamy odpowiedź</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="3tn1th9dlreqbhgo64e15ae7ii">
+                        <title>przebudowujemy odpowiednio „tabelę”</title>
+                      </topic>
+                      <topic id="443a6ddcvbgujq5mds5bubcba1">
+                        <title>odpalamy nowe ID3, żeby wybrać nowe najlepsze pytanie</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="4ndud78fc5uev4a5p4kp4s95k8" style-id="7jpilelo5m1cfjfm2ul046tclg">
+                  <title>jak dokładnie oblicza się gain / entropy?</title>
+                  <marker-refs>
+                    <marker-ref marker-id="priority-1"/>
+                  </marker-refs>
+                  <children>
+                    <topics type="attached">
+                      <topic id="0hf943k0sl8dkvdgg99pbjel6s">
+                        <title svg:width="500">patrzę na dany atrybut i, olewając None’y, sprawdzam jak dobrze klasyfikuje mi alternatywy</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="72gm0u1eu5kjiflcutl6c5llle" style-id="7jpilelo5m1cfjfm2ul046tclg">
+                              <title svg:width="500">ale co, kiedy jest window=true ⇒ 316,
+a nie ma window=false ⇒ 315?</title>
+                              <marker-refs>
+                                <marker-ref marker-id="priority-1"/>
+                              </marker-refs>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="3pt1i3pgjdsmr2h3br3v5s4erm">
+                        <title>zapisuję sobie tę dobroć (Double)</title>
+                      </topic>
+                      <topic id="68l2vgck0foci3m56npnb7jn47">
+                        <title svg:width="500">mogę uwzględnić w tym Double koszt pytania o dany atrybut</title>
+                      </topic>
+                      <topic id="2kd0i4m9b5qai393874upjk961">
+                        <title svg:width="500">przy czym im krótsza lista, tym mniejszy koszt-od-długości-listy</title>
+                      </topic>
+                      <topic id="314bgvkmeestqv73keepct3jnb">
+                        <title>wybieram najlepszy po Double’u i pytam</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+              </topics>
+            </children>
+          </topic>
+          <topic id="03h6shaot1982qeqgmff3ul4g7" style-id="77cd79cd74teoidmuo7do67su6">
+            <title>problem</title>
+            <marker-refs>
+              <marker-ref marker-id="priority-1"/>
+            </marker-refs>
+            <children>
+              <topics type="attached">
+                <topic id="5v5utkhbbjpo9r4fouvmec49lr">
+                  <title svg:width="500">a 316 może być biurko z komputrem, z myszą</title>
+                </topic>
+                <topic id="6q8e8ogmm30hjlfp9if66shqvj">
+                  <title>a w 315 taki sam (albo b. podobny) układ, ale na dywanie</title>
+                </topic>
+                <topic id="74sslh90l6j4gs37an39u6dmef">
+                  <title svg:width="500">pytamy usera: czy jest biurko z komputrem, z myszą, a on jest w pokoju z dywanem… odpowiada: TAK.</title>
                 </topic>
               </topics>
             </children>
