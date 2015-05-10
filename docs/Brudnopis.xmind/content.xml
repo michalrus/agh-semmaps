@@ -257,6 +257,13 @@ instance with its plain attributes to the specified class;</title>
                       </topic>
                     </topics>
                   </children>
+                  <extensions>
+                    <extension provider="org.xmind.ui.map.unbalanced">
+                      <content>
+                        <right-number>1</right-number>
+                      </content>
+                    </extension>
+                  </extensions>
                 </topic>
                 <topic id="6d6p6nd053nq3c30v46ervgb2r">
                   <title>use case</title>
@@ -633,6 +640,136 @@ a nie ma window=false ⇒ 315?</title>
                       </topic>
                     </topics>
                   </children>
+                </topic>
+                <topic id="5bdl9q7mec2u29av8puj83p8gb" structure-class="org.xmind.ui.map.clockwise">
+                  <title svg:width="500">pytania sprowadzają się do</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="4fdn6omhh80g4q890qrusfi8n9">
+                        <title svg:width="500">ai</title>
+                        <labels>
+                          <label>exists()</label>
+                        </labels>
+                        <children>
+                          <topics type="attached">
+                            <topic id="7pdhtbdml4jnelnidh620frt4h" style-id="0m3pnq4oq5du6fo2oe3h2a2okg">
+                              <title svg:width="500">czy «coś» jest «jakieś»
+==
+czy istnieje «coś» «jakieś»</title>
+                            </topic>
+                            <topic id="0qct3ra1rq197b9f53oa48mvhd">
+                              <title>przykłady</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="5t2rfjrj67vpaecgjhdd7h48no">
+                                    <title>[kind=wall].color</title>
+                                  </topic>
+                                  <topic id="4rsdt3vpamodr17kjua6ieeh1r">
+                                    <title>[kind=computer].model</title>
+                                  </topic>
+                                  <topic id="7607j7n2hj8t2e518hraqho7uc">
+                                    <title>[kind=tv].model</title>
+                                  </topic>
+                                  <topic id="3lnst3utc1344oaajdkpe1khe3">
+                                    <title>[kind=tv].color</title>
+                                  </topic>
+                                  <topic id="5f83unfe1v0t940egolshr6ktk">
+                                    <title>exists([kind=computer])</title>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="1k44r84uq22l2ge36114uc9bgp">
+                        <title>ile sztuk istnieje «czegoś» [«jakiegoś» ...]</title>
+                        <labels>
+                          <label>count()</label>
+                        </labels>
+                        <children>
+                          <topics type="attached">
+                            <topic id="32q07kk0du95n5pote2gmu84i4">
+                              <title>przykłady</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="3iubeoik4hub7o4h48i6qrtrre">
+                                    <title>count([kind=desk])</title>
+                                  </topic>
+                                  <topic id="215uo1lc1p17rs2n1jlom2b4ko">
+                                    <title>count([kind=computer])</title>
+                                  </topic>
+                                  <topic id="54e2bgg40buvg4cmlvk2o2d57p">
+                                    <title>count([kind=chair, rotary=true])</title>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="34hkkb1i27vst5pqfa44eq7qgl">
+                        <title svg:width="500">CWA — jeśli «coś» nie występuje w JmlTree, to zakładamy, że tego nie ma</title>
+                      </topic>
+                      <topic id="0h10pmhu9dmhub3an2fppqqsmc">
+                        <title svg:width="500">jak porównywać ze sobą dwa JmlObject?</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="5nk1gvi7mq477c5r81rpdp1ka2">
+                              <title>mogą się różnić nieco</title>
+                            </topic>
+                            <topic id="7kvpcurp76nsj96706g6tuoach">
+                              <title>może jakieś Double similarity</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="7kg9k8bivbdf341nb7fjapat2b">
+                        <title>więc tak:</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="4h427aetu8iklarsct21vr1rda">
+                              <title>1) spłaszczyć wszystko</title>
+                            </topic>
+                            <topic id="76c9i8q1cmg8soeg9s41tngq7h">
+                              <title svg:width="500">2) pamiętać relacje osobno</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="4gf2tsjck34ae6h2qn8jtjoqma">
+                                    <title>wtedy może tłumaczyć mapowe zawieranie na konkretnie “has”, …</title>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="01u959h7fbdldrdllfgk2jr89u">
+                        <title svg:width="500">user może odpowiedzieć niezgodnie z prawdą (np. z niewiedzy)</title>
+                        <marker-refs>
+                          <marker-ref marker-id="priority-1"/>
+                        </marker-refs>
+                      </topic>
+                      <topic id="6q6jgpg6nc1q9fushbk78jco64">
+                        <title svg:width="500">00:17:18 &lt;KubaRakoczy_&gt; Czy informacje o relacjach między obiektami nie są istotne do wyboru parametrów (np. łóżko na krześle dość się rzuca w oczy).</title>
+                        <marker-refs>
+                          <marker-ref marker-id="priority-1"/>
+                        </marker-refs>
+                      </topic>
+                      <topic id="56mmm6q9jhee781la8hbrp542p">
+                        <title svg:width="500">01:02:57 &lt;MichalRus&gt; A może należałoby od kilku stron uderzyć, zmiksować to podejście.
+01:03:25 &lt;MichalRus&gt; Podejście do autmatycznego wybierania pytań na podstawie drzewa z mapy.
+01:03:40 &lt;MichalRus&gt; Bo jakoś też chciałbym mieć w tych pytaniach parametr komputer-obok-lampy</title>
+                      </topic>
+                    </topics>
+                  </children>
+                  <extensions>
+                    <extension provider="org.xmind.ui.map.unbalanced">
+                      <content>
+                        <right-number>1</right-number>
+                      </content>
+                    </extension>
+                  </extensions>
                 </topic>
               </topics>
             </children>
