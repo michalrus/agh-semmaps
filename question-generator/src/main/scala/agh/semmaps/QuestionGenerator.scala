@@ -2,10 +2,18 @@ package agh.semmaps
 
 object QuestionGenerator {
 
-  def MinAlternatives = 2
+  sealed trait QuestionParam
+  final case class Exists() extends QuestionParam
+  final case class Count() extends QuestionParam
+  final case class Relation() extends QuestionParam
 
-  def apply(trees: Set[JmlTree]) = {
-    require(trees.size >= MinAlternatives, s"${trees.size} alternative(s) selected -- there need to be at least $MinAlternatives")
+  def apply(alternatives: Set[JmlTree]) = {
+    // 1. Build the Set from trees of alternatives
+
+    // 2. Choose a question param with the lowest entropy
+
   }
+
+  def buildSet(alternative: JmlTree): Set[QuestionParam] = ???
 
 }

@@ -8,7 +8,7 @@ import com.vividsolutions.jts.io.gml2.GMLReader
 import scala.util.Try
 import scala.xml.XML
 
-final case class JmlObject(origin: File, geometry: Geometry, props: Map[String, String]) {
+final case class JmlObject(origin: File, className: String, geometry: Geometry, props: Map[String, String]) {
   def isAncestor(that: JmlObject): Boolean = this != that && (this.geometry covers that.geometry)
   def distance(that: JmlObject): Double = this.geometry distance that.geometry
 }
@@ -24,7 +24,7 @@ object JmlParser {
   val SanitizeKeys = """[^a-z0-9_]""".r
   def sanitizeKeys(id: String): String = SanitizeKeys.replaceAllIn(id.toLowerCase, "_")
 
-  def apply(splitKeys: Set[String], splitDelimiters: List[Char])(input: File): Set[JmlObject] = {
+  def apply(classNameKey: String, splitKeys: Set[String], splitDelimiters: List[Char])(input: File): Set[JmlObject] = {
     val features = XML.loadFile(input) \\ "feature"
     val parser = new GMLReader
     features.toSet map { (feature: xml.Node) ⇒
@@ -36,7 +36,8 @@ object JmlParser {
           else v.split(splitDelimiters.toArray) map (_.trim) filter (_.nonEmpty) map (sanitizeKeys(_) → "true")
         case x ⇒ Map(x)
       }
-      JmlObject(input, geom, splitted)
+      val className = JmlParser.sanitizeKeys(splitted.getOrElse(classNameKey, input.getName.dropRight(".jml".length)))
+      JmlObject(input, className, geom, splitted)
     }
   }
 
@@ -44,10 +45,10 @@ object JmlParser {
 
 object GmlParser {
 
-  def apply(inputDirectory: File, splitKeys: Set[String], splitDelimiters: List[Char]): Try[List[JmlTree]] = Try {
+  def apply(inputDirectory: File, classNameKey: String, splitKeys: Set[String], splitDelimiters: List[Char]): Try[List[JmlTree]] = Try {
     require(inputDirectory.isDirectory, s"$inputDirectory: not a directory")
     val files = inputDirectory.listFiles.filter(_.isFile).filter(_.getName.toUpperCase.endsWith(".JML")).toSet
-    TreeBuilder(files flatMap JmlParser(splitKeys, splitDelimiters))
+    TreeBuilder(files flatMap JmlParser(classNameKey, splitKeys, splitDelimiters))
   }
 
 }

@@ -6,10 +6,10 @@ import scala.collection.immutable.Set
 import scala.util.Try
 
 object PrologWriter {
-  def apply(trees: List[JmlTree], gmlKey: String)(output: File): Try[Unit] = Try {
+  def apply(trees: List[JmlTree], hideKeys: Set[String])(output: File): Try[Unit] = Try {
     val DumpResult(dmp, classesUsed) = (trees foldLeft DumpResult("", Set.empty)) {
       case (acc, tree) ⇒
-        dump(0, gmlKey)(tree) match {
+        dump(0, hideKeys)(tree) match {
           case Some(dr) ⇒ DumpResult(acc.dump + (if (acc.dump.nonEmpty) ".\n" else "") + dr.dump, acc.classesUsed ++ dr.classesUsed)
           case None     ⇒ acc
         }
@@ -30,10 +30,10 @@ object PrologWriter {
   }
 
   final case class DumpResult(dump: String, classesUsed: Set[String])
-  def dump(indent: Int, gmlKey: String)(tree: JmlTree): Option[DumpResult] = {
+  def dump(indent: Int, hideKeys: Set[String])(tree: JmlTree): Option[DumpResult] = {
     val i = "  " * indent
 
-    val children = (tree.children.toList map dump(indent + 1, gmlKey)).flatten
+    val children = (tree.children.toList map dump(indent + 1, hideKeys)).flatten
 
     def redundant(xs: List[String]): List[String] = {
       (xs groupBy identity mapValues (_.size) map { case (x, num) ⇒ x + (if (num > 1) s" * $num" else "") }).toList
@@ -41,14 +41,10 @@ object PrologWriter {
     val hasText = if (children.isEmpty) " exists" else " has [\n" + redundant(children.map(_.dump).sorted).mkString(",\n") + "\n" + i + "]"
     val chClass = children.flatMap(_.classesUsed)
 
-    def props(node: JmlObject): String = {
-      val ps = node.props filterKeys (_ != gmlKey)
-      ps map { case (k, v) ⇒ s"""${k.toLowerCase}: "$v"""" } mkString ", "
-    }
+    def props(node: JmlObject): String =
+      node.props filterKeys (k ⇒ !hideKeys.contains(k)) map { case (k, v) ⇒ s"""$k: "$v"""" } mkString ", "
 
-    val termName = JmlParser.sanitizeKeys(tree.node.props.getOrElse(gmlKey, tree.node.origin.getName.dropRight(".jml".length)))
-
-    Some(DumpResult(i + s"$termName{${props(tree.node)}}" + hasText, Set(termName) ++ chClass))
+    Some(DumpResult(i + s"${tree.node.className}{${props(tree.node)}}" + hasText, Set(tree.node.className) ++ chClass))
   }
   /* FIXME: how do we output distances without UUIDs?
   def distances(trees: List[JmlTree]): String = {
