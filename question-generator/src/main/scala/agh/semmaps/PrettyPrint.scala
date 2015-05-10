@@ -1,8 +1,5 @@
 package agh.semmaps
 
-/**
- * Created by m on 5/3/15.
- */
 object PrettyPrint {
 
   def apply(trees: List[JmlTree]): Unit = {
