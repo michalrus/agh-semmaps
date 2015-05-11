@@ -1,0 +1,15 @@
+/praca.*
+!/praca.tex
+
+/rozdzial1.*
+!/rozdzial1.tex
+
+/rozdzial2.*
+!/rozdzial2.tex
+
+/rozdzial3.*
+!/rozdzial3.tex
+
+/gitinfo.tex
+
+*.log

@@ -610,6 +610,16 @@ czy istnieje «coś» «jakieś»</title>
               </topics>
             </children>
           </topic>
+          <topic id="2mpl42sb49jbqj60tpq8dns0tb">
+            <title>tekst pracy</title>
+            <children>
+              <topics type="attached">
+                <topic id="0hv8t3rivc9vceh4sec9nkg3be">
+                  <title>http://home.agh.edu.pl/~wojnicki/wiki/pl:jak_pisac_prace_dyplomowa</title>
+                </topic>
+              </topics>
+            </children>
+          </topic>
         </topics>
       </children>
       <extensions>

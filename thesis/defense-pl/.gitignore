@@ -1,0 +1,6 @@
+/prezentacja.*
+!/prezentacja.tex
+
+/gitinfo.tex
+
+*.log
