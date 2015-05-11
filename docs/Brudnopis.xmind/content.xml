@@ -5,362 +5,6 @@
       <title>Brudnopis</title>
       <children>
         <topics type="attached">
-          <topic id="40v7ieegcpin2p2v08p7aog7bs">
-            <title>next</title>
-            <children>
-              <topics type="attached">
-                <topic id="54hhqferprdo2ludkfmer2hi13">
-                  <title>wymyślone relacje (?)</title>
-                  <children>
-                    <topics type="attached">
-                      <topic id="7bssg1ogj6gtr3kl4u5vvr0dcj">
-                        <title>has / consists_of</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="1kq1vjeaj3bd952d345g8i4v1s">
-                              <title>czy *właściwie* nie to samo?</title>
-                            </topic>
-                            <topic id="3ebblgsvbphu4l8f2q305ratmh">
-                              <title>distributes_over?</title>
-                              <children>
-                                <topics type="attached">
-                                  <topic id="49i6c602tljis5tjpsqufsn070">
-                                    <title>classroom has (work_place consists_of desk)</title>
-                                  </topic>
-                                  <topic id="2rliqccalgr9vnkk51i979khpk">
-                                    <title svg:width="500">(classroom has work_place) consists_of (classroom has desk)</title>
-                                    <children>
-                                      <topics type="attached">
-                                        <topic id="677m2u43rbkhi6iicb17as3jrb">
-                                          <title>? ☺</title>
-                                        </topic>
-                                      </topics>
-                                    </children>
-                                  </topic>
-                                </topics>
-                              </children>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="0soec2qnu449vq3eb6v3j8ndji">
-                        <title>exists</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="5q6g3tg1b7tmm9jkd9agdrvved">
-                              <title svg:width="500">&lt;sbk&gt; hack, żeby generowana ontologia.pl narazie się wczytywała</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="7rfic9gha1dg9477m028jjsb1j">
-                        <title>jest-na-lewo-od</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="2fv6g304epu2gdkq09ip7ecv1l">
-                              <title>transitive</title>
-                              <children>
-                                <topics type="attached">
-                                  <topic id="58d71ev6oh43ntrjmgb4b62u2i">
-                                    <title>chyba nie bardzo… czasem</title>
-                                  </topic>
-                                </topics>
-                              </children>
-                            </topic>
-                            <topic id="0pub0qqapmnacllll8mcvtrrcj">
-                              <title>distributes_over consists_of</title>
-                              <children>
-                                <topics type="attached">
-                                  <topic id="5p2a550ciub1amv0j64fnu42ek">
-                                    <title>ale po co?</title>
-                                  </topic>
-                                </topics>
-                              </children>
-                            </topic>
-                            <topic id="6dn5sg97juifhgrb65jsorf2b0">
-                              <title>implikuje jest-blisko</title>
-                            </topic>
-                            <topic id="15qi7imrtsfbgfu8jbr2g05vf6">
-                              <title>wymaga, żeby obie rzeczy były pod ścianą</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="66vsabf2ekgd6ikmvpt9fqvrmk">
-                        <title>na-prawo-od</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="698hdgbj5cf5j1cajcf55j5qbm">
-                              <title>analogicznie</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="42v12o8ob2ja4aom1k41qb7mav">
-                        <title>jest-na</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="735r5aulj9asqk23ekmb4cj67i">
-                              <title svg:width="500">przykład niewnioskowalnego z GML przypadku has/consists-of</title>
-                            </topic>
-                            <topic id="12bqt9mrch7v3d6ka9c88bt5hg">
-                              <title>ale można by np. regułowo</title>
-                              <children>
-                                <topics type="attached">
-                                  <topic id="4q30r0gc04oibp2el4g4g8i52e">
-                                    <title>jeśli biurko ma komputer ⇒ komputer jest-na biurko</title>
-                                  </topic>
-                                </topics>
-                              </children>
-                            </topic>
-                            <topic id="7e010i4icg0rpa0s7q8p502ckd">
-                              <title>asymetryczna, jak has</title>
-                            </topic>
-                            <topic id="3jbi9083umu051o9e2u49unb68">
-                              <title>transitive…</title>
-                            </topic>
-                            <topic id="6fsvgf2p19n4s5pc5qmsku3cos">
-                              <title>również implikuje jest-blisko?</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="6tq4221f9sufs7ko99pu9kfqta">
-                        <title>jest-pod?</title>
-                      </topic>
-                      <topic id="6k022ep0f9it5h2gklmglbtsbd">
-                        <title>jest-blisko</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="570mtgb5t9a0e4hkkk7d3sd503">
-                              <title>kontekst…</title>
-                            </topic>
-                            <topic id="5dc4bqkekm13q0u0fd66uovfea">
-                              <title>symetryczna</title>
-                            </topic>
-                            <topic id="440bvas3o0hrlahp3gv84i2ab6">
-                              <title>transitive?… zależy</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="1j311sau7k5gcmjto5tr44svmm">
-                        <title>jest-nad</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="4el730eai4ri2bvn18tlkjd1ug">
-                              <title>niewnioskowalne z map w GML</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="6uh8dopv6u3d77dska0sh30use">
-                        <title>co daje distributes_over?</title>
-                      </topic>
-                    </topics>
-                  </children>
-                </topic>
-                <topic id="08pnjrldlvioojsch8joiemnn8">
-                  <title>UUID</title>
-                  <children>
-                    <topics type="attached">
-                      <topic id="5111sce8cgp4lsn3vjjvirelio">
-                        <title>aktualnie nadawanie wszystkiemu UUID niszczy krotności</title>
-                      </topic>
-                      <topic id="1la0nr6rg3235r3tqbq32pqaob">
-                        <title svg:width="500">oprócz tego UUID się zmieniają przy każdej generacji GML→onto</title>
-                      </topic>
-                    </topics>
-                  </children>
-                </topic>
-              </topics>
-            </children>
-          </topic>
-          <topic id="3r6mnhgf0581bulpd6rdjplrsv">
-            <title>konsultacje @sbk</title>
-            <children>
-              <topics type="attached">
-                <topic id="3bb6nr7c1l6bo6oadk8n152a9n">
-                  <title>pytania</title>
-                  <children>
-                    <topics type="attached">
-                      <topic id="17to51tilnqp1mckhq322fiqke">
-                        <title svg:width="500">Our results show that the user’s feedback significantly improves localization results.</title>
-                      </topic>
-                      <topic id="3ngcal202d5utthrer3rla7svv">
-                        <title>allows for an online mediation between the user and the sensor</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="1i47cm4i1tardien0upit2inmm">
-                              <title>co znaczy „online”?</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="1pdb5p3hsm7tv0o9li868rsblf">
-                        <title svg:width="500">An ABox part consists of the ontology instances — every
-statement represents a one-to-many relation holding between
-specific instances</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="4f728no33odl42gg8u6868hb03">
-                              <title svg:width="500">To mogą być tylko (A R₁ B)?</title>
-                            </topic>
-                            <topic id="4bmt46p0qvnjv9903oesgqgi80">
-                              <title svg:width="500">A jak chcę też (A R₂ B)?</title>
-                            </topic>
-                            <topic id="0s72qhe8b2tm2dnqphgq9d53mq">
-                              <title svg:width="500">Przecież to drzewo tych obiektów…</title>
-                            </topic>
-                            <topic id="5bmpahbm2jr7a99c4vs93dc3qo">
-                              <title>Nie powinien być graf acyklicnzny skierowany?</title>
-                            </topic>
-                            <topic id="39ss80c2ljh0ji9al7r9ncj4fb">
-                              <title svg:width="500">na razie jest 1, ale jak ktoś chce powtó©zyć, to ma być redundancja np. kolor, kształt itp. 2×</title>
-                              <marker-refs>
-                                <marker-ref marker-id="priority-1"/>
-                              </marker-refs>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="327esnqv79kopur023ua5gis0o">
-                        <title>1.) class assertions assigning the
-instance with its plain attributes to the specified class;</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="5ml5igcj15svogbpdqb4f291ph">
-                              <title>co to?</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="62luof49cffru97th4ss288mdg">
-                        <title>entry(data{classroom_door:true, classroom_door_color:gray, id:lab318}).</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="6mf91k7ar854utli50vibjjrv4">
-                              <title>zawsze “id” topowego elementu?</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="5jmfiluk6ocelruee3ru70ojeb">
-                        <title svg:width="500">entry(data{classroom_color:yellow, classroom_color_intensity:dark, classroom_name:unspecified, classroom_size:small, id:lab318, place:classroom}).</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="1ajja9naalsbmu9rgh0p45ecdb">
-                              <title>dlaczego tylko tutaj pojawiło się “place”?</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                    </topics>
-                  </children>
-                  <extensions>
-                    <extension provider="org.xmind.ui.map.unbalanced">
-                      <content>
-                        <right-number>1</right-number>
-                      </content>
-                    </extension>
-                  </extensions>
-                </topic>
-                <topic id="6d6p6nd053nq3c30v46ervgb2r">
-                  <title>use case</title>
-                  <children>
-                    <topics type="attached">
-                      <topic id="08o5n37ht6c7jjfguguc06gb7g">
-                        <title>dla każdego z atrubutów głównych osobne pytania</title>
-                      </topic>
-                      <topic id="0frtm2ir9fuibahugjjkrqepnj">
-                        <title>zbiór tych pytań → </title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="7a50782cdnrtummdg5o9u5keeb">
-                              <title>drzewo</title>
-                              <children>
-                                <topics type="attached">
-                                  <topic id="253kg2762a2c5ja79onguogp8g">
-                                    <title>czy widzisz projektor</title>
-                                    <children>
-                                      <topics type="attached">
-                                        <topic id="3hthu2ei87ducrq741gahmcba8">
-                                          <title>tak</title>
-                                          <children>
-                                            <topics type="attached">
-                                              <topic id="449vnb2gqbsbnff103m2terrpu">
-                                                <title>koloru czerwonego?</title>
-                                                <children>
-                                                  <topics type="attached">
-                                                    <topic id="4f0njnbvdrq9u63ql99koiqcjm">
-                                                      <title>w tej sali</title>
-                                                    </topic>
-                                                  </topics>
-                                                </children>
-                                              </topic>
-                                              <topic id="0me0tfpjgrpbc9pm8hq9erlge3">
-                                                <title>innego?</title>
-                                                <children>
-                                                  <topics type="attached">
-                                                    <topic id="5s096jf3khc5ljrc26861nl0be">
-                                                      <title>w tamtej</title>
-                                                    </topic>
-                                                  </topics>
-                                                </children>
-                                              </topic>
-                                            </topics>
-                                          </children>
-                                        </topic>
-                                      </topics>
-                                    </children>
-                                  </topic>
-                                </topics>
-                              </children>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="521r136p3ukksot62q4mv5m7fm">
-                        <title>moja rola</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="5f2ge43ukdg2higss1qndgtnh5">
-                              <title>dodanie relacji innych niż has</title>
-                            </topic>
-                            <topic id="26p5gu8afdsk9i2jvjuh6lrpa3">
-                              <title>openjump → ??? → pytania</title>
-                              <children>
-                                <topics type="attached">
-                                  <topic id="2d4g0o3eaivh2e7hj5507k4j8r">
-                                    <title>system regułowy co to jest near itd.</title>
-                                  </topic>
-                                </topics>
-                              </children>
-                            </topic>
-                            <topic id="0j1gkitjol925ctbaql2hgpl9v">
-                              <title svg:width="500">implementacja (na telefonie) nie aż taka ważna — można napisać, że PoC i da się dalej, ale akurat nie ma</title>
-                            </topic>
-                            <topic id="0ni7eeca9s4jfl1i2svptklkm8">
-                              <title>&lt;sbk&gt; drzewka wystarczą z mojej perspektywy</title>
-                            </topic>
-                            <topic id="50oh59peuqmk14i9glh3qoqvcp">
-                              <title svg:width="500">&lt;sbk&gt; pokazać GJNowi solidny plan, i on się zgodzi — nie pytać, bo wymyśli 1000 rzeczy</title>
-                            </topic>
-                            <topic id="7tj7ud1bnbl9hsr161h7st5jcm">
-                              <title svg:width="500">&lt;sbk&gt; nawiązać do HD, że … że  ale że to ciężkie itd., więc drzewka są etapem końcowym</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                    </topics>
-                  </children>
-                </topic>
-              </topics>
-            </children>
-            <labels>
-              <label>Apr 28 2015</label>
-            </labels>
-          </topic>
           <topic id="38th4ag7qmsja1mu8k3fedcbn7">
             <title>prezentacja</title>
             <children>
@@ -821,6 +465,189 @@ czy istnieje «coś» «jakieś»</title>
                 </topic>
                 <topic id="74sslh90l6j4gs37an39u6dmef">
                   <title svg:width="500">pytamy usera: czy jest biurko z komputrem, z myszą, a on jest w pokoju z dywanem… odpowiada: TAK.</title>
+                </topic>
+              </topics>
+            </children>
+          </topic>
+          <topic id="61r3kb46saf5qn9lh2sqc2ajh7">
+            <title>wymyślone relacje (?)</title>
+            <children>
+              <topics type="attached">
+                <topic id="268i5tlcu5ren75rquunug61vc">
+                  <title>has / consists_of</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="6ao80dhoi073kau7mro775tm05">
+                        <title>czy *właściwie* nie to samo?</title>
+                      </topic>
+                      <topic id="6as8s8ndpb2kk4sgo7475f1eq3">
+                        <title>distributes_over?</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="0439juag0pgssnr0sd42p1oq54">
+                              <title>classroom has (work_place consists_of desk)</title>
+                            </topic>
+                            <topic id="0mae29so56pcibbj3tul1a5gjn">
+                              <title svg:width="500">(classroom has work_place) consists_of (classroom has desk)</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="3566kulp9psv6jv53ql9fit5de">
+                                    <title>? ☺</title>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="205tnanmhhqpbfj6uinq63lvgr">
+                  <title>exists</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="24vam4o60i2etllfvb6ihevio4">
+                        <title svg:width="500">&lt;sbk&gt; hack, żeby generowana ontologia.pl narazie się wczytywała</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="01mb88m8s872ub430v8b0fv581">
+                  <title>jest-na-lewo-od</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="6ttic7mciojvmbdbj6jlvqmhjs">
+                        <title>transitive</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="1oks6vd3s78k53oqi2o5l6c4ng">
+                              <title>chyba nie bardzo… czasem</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="6hg2g8i8ao9khk5d1vq2msto1u">
+                        <title>distributes_over consists_of</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="37thcpehn96slj996uso5uo84g">
+                              <title>ale po co?</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="536mro9pkht3amqhito4aukb8u">
+                        <title>implikuje jest-blisko</title>
+                      </topic>
+                      <topic id="1kg746tha7nckfs4k7nicc2238">
+                        <title>wymaga, żeby obie rzeczy były pod ścianą</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="1r5dmf65t8p4tqv31ucpb8avjg">
+                  <title>na-prawo-od</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="7a4trkmmbl3vpk4j2jb7ska6g1">
+                        <title>analogicznie</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="3799odmnkub3pftusmq12c3f3p">
+                  <title>jest-na</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="7lilv7l9p263p6m1q8pe5l18pc">
+                        <title svg:width="500">przykład niewnioskowalnego z GML przypadku has/consists-of</title>
+                      </topic>
+                      <topic id="2lvm44du375305i0ohc5iskinl">
+                        <title>ale można by np. regułowo</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="3a6i4e69ult8oie4i8rafkmcn6">
+                              <title>jeśli biurko ma komputer ⇒ komputer jest-na biurko</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="0rf3ol0dm6gnok3i09l9phmj8h">
+                        <title>asymetryczna, jak has</title>
+                      </topic>
+                      <topic id="3se0lgr91dhl5ekl3vkvshsck0">
+                        <title>transitive…</title>
+                      </topic>
+                      <topic id="1gi5m6lvrmieljnsqn0be8u2gf">
+                        <title>również implikuje jest-blisko?</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="08jhqc9fbumnc6lprpr18uka4v">
+                  <title>jest-pod?</title>
+                </topic>
+                <topic id="7f564pij5j9le4v33fv12kcj67">
+                  <title>jest-blisko</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="0abormqq5jhtri8dapu7aou8o7">
+                        <title>kontekst…</title>
+                      </topic>
+                      <topic id="0r4vdjtavt1ofopprkpo1l7ps4">
+                        <title>symetryczna</title>
+                      </topic>
+                      <topic id="16mc756qk592qdccepnmigs636">
+                        <title>transitive?… zależy</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="2mv4l0pfi0e238588gt2g45mg2">
+                  <title>jest-nad</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="10fomarno385fg77gn5lbaqi0l">
+                        <title>niewnioskowalne z map w GML</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="58mneq3e9tjqusdaomjde6pa6u">
+                  <title>co daje distributes_over?</title>
+                </topic>
+              </topics>
+            </children>
+          </topic>
+          <topic id="7al11q1dm4dtg8ghsl9elribtj">
+            <title>moja rola © &lt;sbk&gt;</title>
+            <children>
+              <topics type="attached">
+                <topic id="1j5pk8m4gkrjkmk3d7mc5nevng">
+                  <title>dodanie relacji innych niż has</title>
+                </topic>
+                <topic id="4qljpfe357npfe02hm4ajgndd6">
+                  <title>openjump → ??? → pytania</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="27ahlveg4ibs9fi28lbfkp6mem">
+                        <title>system regułowy co to jest near itd.</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
+                <topic id="7k4nupu48u23pk65use2h1pdkd">
+                  <title svg:width="500">implementacja (na telefonie) nie aż taka ważna — można napisać, że PoC i da się dalej, ale akurat nie ma</title>
+                </topic>
+                <topic id="6g87m5df1ljftkjh83qgvflj4b">
+                  <title>drzewka wystarczą z mojej perspektywy</title>
+                </topic>
+                <topic id="56o3jj9apjcnc5p93id0sdvnn7">
+                  <title svg:width="500">pokazać GJNowi solidny plan, i on się zgodzi — nie pytać, bo wymyśli 1000 rzeczy</title>
+                </topic>
+                <topic id="1ufcuhq1svpfapdsg34n7mb5tr">
+                  <title svg:width="500">nawiązać do HD, że … że  ale że to ciężkie itd., więc drzewka są etapem końcowym</title>
                 </topic>
               </topics>
             </children>
