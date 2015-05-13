@@ -50,6 +50,22 @@
                     </topics>
                   </children>
                 </topic>
+                <topic id="1fcpc9fg4vf1kuro37qnkuird2">
+                  <title svg:width="500">&lt;gjn&gt; jak pan dziekan nie wie, co to jest Docker, to z Pana prezentacji się nie dowie</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="0ra6jfcqa2f1jg3k61noru40j9">
+                        <title>ograniczać slang</title>
+                      </topic>
+                      <topic id="6ga58tupdfh4j0s20ahht31f2o">
+                        <title>albo tłumaczyć slang</title>
+                      </topic>
+                      <topic id="6jnjvnf9r6k65rk777bq4bc4rq">
+                        <title>inaczej: prezentacja kamikadze</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
               </topics>
             </children>
             <extensions>
