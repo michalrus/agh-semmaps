@@ -3,7 +3,9 @@
 \usepackage[utf8]{inputenc}
 
 \usepackage{enumerate}
+\usepackage[colorinlistoftodos,prependcaption]{todonotes}
 \usepackage{hyperref}
+\usepackage[nameinlink]{cleveref}
 
 %---------------------------------------------------------------------------
 
@@ -36,6 +38,8 @@
 
 \setcounter{secnumdepth}{4}
 
+\setlength{\marginparwidth}{1.5cm}
+
 \begin{document}
 
 \titlepages
@@ -43,12 +47,14 @@
 \tableofcontents
 \clearpage
 
+x \todo[fancyline]{Bam!} y
+
 % \include{chapter1}
 % \appendix
 % \include{appendixA}
 % \include{appendixB}
 
 \bibliographystyle{alpha}
-\bibliography{bibliografia}
+\bibliography{bibliography}
 
 \end{document}
