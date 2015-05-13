@@ -1,6 +1,4 @@
 /main.*
 !/main.tex
 
-/gitinfo.tex
-
 *.log
