@@ -6,6 +6,9 @@
 \usepackage[colorinlistoftodos,prependcaption]{todonotes}
 \usepackage{hyperref}
 \usepackage[nameinlink]{cleveref}
+\usepackage{lipsum}
+
+\presetkeys{todonotes}{fancyline}{}
 
 %---------------------------------------------------------------------------
 
@@ -26,11 +29,13 @@
 
 \date{2015}
 
-\department{\href{http://www.kis.agh.edu.pl/}{Department of Applied Computer Science}}
+\department{Department of Applied Computer Science}
+\departmenturl{http://www.kis.agh.edu.pl/}
 
-\faculty{\href{https://www.eaiib.agh.edu.pl/}{Faculty of Electrical Engineering, Automatics,\protect\\[-1mm] Computer Science and Biomedical Engineering}}
+\faculty{Faculty of Electrical Engineering, Automatics,\protect\\[-1mm] Computer Science and Biomedical Engineering}
+\facultyurl{https://www.eaiib.agh.edu.pl/}
 
-\acknowledgements{I would like to thank\dots}
+\acknowledgements{\lipsum[7]}
 
 \setlength{\cftsecnumwidth}{10mm}
 
@@ -38,23 +43,41 @@
 
 \setcounter{secnumdepth}{4}
 
-\setlength{\marginparwidth}{1.5cm}
-
 \begin{document}
 
 \titlepages
+
+\pagenumbering{roman}
+\setcounter{page}{1}
+\include{abstract}
+
+\pagestyle{empty}
+\cleardoublepage
+\pagestyle{fancy}
+
 \setcounter{tocdepth}{3}
+
 \tableofcontents
-\clearpage
+\listoffigures
+\listoftables
 
-x \todo[fancyline]{Bam!} y
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
 
-% \include{chapter1}
-% \appendix
-% \include{appendixA}
-% \include{appendixB}
+\include{introduction}
+\include{recommenders}
+\include{rules}
+\include{motivation}
+\include{results}
+\include{evaluation}
+\include{summary}
 
+\cleardoublepage
 \bibliographystyle{alpha}
 \bibliography{bibliography}
+
+\appendix
+\include{licensing}
 
 \end{document}

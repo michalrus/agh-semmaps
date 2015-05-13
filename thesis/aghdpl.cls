@@ -25,8 +25,9 @@
 \RequirePackage{url}
 \RequirePackage{titlesec}
 \RequirePackage{tocloft}
+\RequirePackage{hyperref}
+\RequirePackage{afterpage}
 
-\geometry{lmargin=30mm, rmargin=20mm, tmargin=30mm, bmargin=30mm, foot=10mm, head=10mm}
 \definecolor{Green}{rgb}{0.1,0.5,0.1}
 
 \def\shorttitlePL#1   {\gdef\@shorttitlePL{#1}}
@@ -35,15 +36,17 @@
 \def\titlePL#1        {\gdef\@titlePL{#1}}
 \def\titleEN#1        {\gdef\@titleEN{#1}}
 \def\faculty#1      {\gdef\@faculty{#1}}
+\def\facultyurl#1   {\gdef\@facultyurl{#1}}
 \def\thesistype#1   {\gdef\@thesistype{#1}}
 \def\supervisor#1   {\gdef\@supervisor{#1}}
 \def\acknowledgements#1   {\gdef\@acknowledgements{#1}}
-\def\department#1   {\gdef\@department{#1}}
+\def\department#1    {\gdef\@department{#1}}
+\def\departmenturl#1 {\gdef\@departmenturl{#1}}
 \def\degreeprogramme#1 {\gdef\@degreeprogramme{#1}}
 
 
 %\bibliographystyle{abbrv}
-\linespread{1.3}
+\linespread{1.5}
 \renewcommand{\labelitemi}{--}
 
 %------------------------------------------------------------------------------
@@ -78,6 +81,7 @@ Supervisor: & {\itshape \@supervisor}\\
 \ProcessOptions
 
 \newcommand{\titlepages}{%
+\newgeometry{margin=2.7cm}
 
 \newpage \titlepage 
 
@@ -88,14 +92,14 @@ Supervisor: & {\itshape \@supervisor}\\
 
 \vspace*{2mm}
 
-{\large{\bfseries{\scshape \href{http://www.agh.edu.pl/}{Akademia G\'{o}rniczo-Hutnicza im. Stanis\l{}awa Staszica w Krakowie}}}
+{{\large\bfseries{\scshape \href{http://www.agh.edu.pl/}{Akademia G\'{o}rniczo-Hutnicza im. Stanis\l{}awa Staszica w Krakowie}}}
 
 \vspace*{1mm}
 
-{\small\bfseries \MakeUppercase{\@faculty}}}
+{\small\bfseries \href{\@facultyurl}{\MakeUppercase{\@faculty}}}}
 \vspace*{3mm}
 
-{\small{\MakeUppercase{\@department}}}
+{\small{\href{\@departmenturl}{\MakeUppercase{\@department}}}}
 \vspace*{12mm}
 
 {\Large \@thesistype}
@@ -105,7 +109,8 @@ Supervisor: & {\itshape \@supervisor}\\
 \vspace*{1mm}
 
 {\Large\itshape \@titleEN}
-\vspace*{30mm}
+%\vspace*{30mm}
+\vfill
 \end{center}
 
 \noindent
@@ -117,37 +122,36 @@ Supervisor: & {\itshape \@supervisor}\\
 
 \centerline{\small Krak\'{o}w, \@date}
 
-\clearpage 
+\clearpage
+\restoregeometry
 \thispagestyle{empty} 
 
 \include{gitinfo}
 
-{~~}\vspace{20mm}
+{\itshape {\large O\'swiadczam, \'swiadomy odpowiedzialno\'sci karnej za po\'swiadczenie nieprawdy, \.ze \mbox{niniejsz\k{a}} prac\k{e} dyplomow\k{a} wykona\l{}em osobi\'scie i samodzielnie i nie korzysta\l{}em ze \'zr\'ode\l{} innych ni\.z wymienione w pracy.}
 
-{\large\itshape O\'swiadczam, \'swiadomy odpowiedzialno\'sci karnej za po\'swiadczenie nieprawdy, \.ze \mbox{niniejsz\k{a}} prac\k{e} dyplomow\k{a} wykona\l{}em osobi\'scie i samodzielnie i nie korzysta\l{}em ze \'zr\'ode\l{} innych ni\.z wymienione w pracy.
+\vfill
 
-\vspace{187mm}
-
-\gitshortrev{} @ \gitauthordate{}
+\begin{center}
+	\small \gitshortrev{} @ \gitauthordate{}
+\end{center}
 }
 
 
-\clearpage \titlepage
+\cleardoublepage \titlepage
 
-\vspace*{15cm} \vfill
+\null
+\vfill
 \begin{flushright} 
 \begin{minipage}[!h]{10cm}
 {\Large\itshape \@acknowledgements}
 \end{minipage}
 \end{flushright}
 
-\clearpage
-\thispagestyle{empty}
-\vspace*{15cm} \vfill
-\clearpage
-
-\setcounter{page}{5}
-
+%\titlepage
+\pagestyle{empty}
+\cleardoublepage
+\pagestyle{fancy}
 }
 
 
@@ -176,33 +180,33 @@ Supervisor: & {\itshape \@supervisor}\\
 %---------------------------------------------------------------------------
 
 
-\titleformat{\chapter}[block]
-{\bfseries\LARGE}{\filright \LARGE\thechapter. }{0ex}{}
+%\titleformat{\chapter}[block]
+%{\bfseries\LARGE}{\filright \LARGE\thechapter. }{0ex}{}
 %odstępy: lewy, góra, dół
-\titlespacing{\chapter}{0pt}{17mm}{19mm}
-\titleformat{\section}[block]
-{\bfseries\Large}{\filright \Large\thesection. }{0ex}{}
-\titlespacing{\section}{7mm}{8mm plus 0mm minus 1mm}{4mm plus 0mm minus 1mm}
-\titleformat{\subsection}[block]
-{\bfseries\large}{\filright \large\thesubsection. }{0ex}{}
-\titlespacing{\subsection}{7mm}{6mm}{2.5mm}
-\titleformat{\subsubsection}[block]
-{\bfseries\normalsize}{\filright \normalsize\thesubsubsection. }{0ex}{}
-\titlespacing{\subsubsection}{7mm}{3mm}{1.5mm}
+%\titlespacing{\chapter}{0pt}{17mm}{19mm}
+%\titleformat{\section}[block]
+%{\bfseries\Large}{\filright \Large\thesection. }{0ex}{}
+%\titlespacing{\section}{7mm}{8mm plus 0mm minus 1mm}{4mm plus 0mm minus 1mm}
+%\titleformat{\subsection}[block]
+%{\bfseries\large}{\filright \large\thesubsection. }{0ex}{}
+%\titlespacing{\subsection}{7mm}{6mm}{2.5mm}
+%\titleformat{\subsubsection}[block]
+%{\bfseries\normalsize}{\filright \normalsize\thesubsubsection. }{0ex}{}
+%\titlespacing{\subsubsection}{7mm}{3mm}{1.5mm}
 
 %---------------------------------------------------------------------------
 % Ustawienia parametrów generowania spisu treści i spisu rysunków
 %---------------------------------------------------------------------------
 
-\renewcommand{\cfttoctitlefont}{\bfseries\Large}
-\renewcommand{\cftbeforetoctitleskip}{20mm}
-\renewcommand{\cftaftertoctitleskip}{19mm}
+%\renewcommand{\cfttoctitlefont}{\bfseries\Large}
+%\renewcommand{\cftbeforetoctitleskip}{20mm}
+%\renewcommand{\cftaftertoctitleskip}{19mm}
 \renewcommand{\cftchapleader}{\cftdotfill{\cftdot}}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdot}}
 \renewcommand{\cftsubsecleader}{\cftdotfill{\cftdot}}
-\renewcommand{\cftchapaftersnum}{.}
-\renewcommand{\cftsecaftersnum}{.}
-\renewcommand{\cftsubsecaftersnum}{.}
-\setlength{\cftparskip}{2pt}
-\setlength{\cftbeforechapskip}{0mm}
-\renewcommand{\cftchappagefont}{\normalsize}
+%\renewcommand{\cftchapaftersnum}{.}
+%\renewcommand{\cftsecaftersnum}{.}
+%\renewcommand{\cftsubsecaftersnum}{.}
+%\setlength{\cftparskip}{2pt}
+%\setlength{\cftbeforechapskip}{0mm}
+%\renewcommand{\cftchappagefont}{\normalsize}
