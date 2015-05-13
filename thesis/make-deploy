@@ -1,0 +1,31 @@
+#!/bin/sh
+
+set -o noclobber
+set -o errexit
+set -o nounset
+
+d="$(dirname "$(readlink "$0")")"
+
+cd "$d"
+
+echo "------- Generating gitinfo.tex -------"
+[ -n "$(git status --porcelain)" ] && {
+  echo >&2 "git: unclean repository state, aborting"
+  exit 1
+}
+[ -f gitinfo.tex ] && rm gitinfo.tex
+cat >gitinfo.tex <<EOF
+\newcommand{\gitrev}{$(git rev-parse HEAD)}
+\newcommand{\gitshortrev}{$(git rev-parse --short HEAD)}
+\newcommand{\gitauthordate}{$(git show -s --format=%aD HEAD)}
+EOF
+
+echo "------- Building main.pdf -------"
+pdflatex -synctex=1 -interaction=nonstopmode "main.tex"
+
+echo
+
+echo "------- Deploying to michalrus.com -------"
+cat <<'EOF' | sftp michalrus@michalrus.com
+put main.pdf /michalrus.com/cv/thesis-msc.pdf
+EOF
