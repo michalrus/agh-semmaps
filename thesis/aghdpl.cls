@@ -84,7 +84,7 @@ Supervisor: & {\itshape \@supervisor}\\
 \begin{center}
 \vspace*{1.5cm}
 
-\includegraphics[scale=0.6]{agh}
+\includegraphics[scale=1.4]{agh}
 
 \vspace*{2mm}
 
