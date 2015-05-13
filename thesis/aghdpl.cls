@@ -44,7 +44,6 @@
 \def\degreeprogramme#1 {\gdef\@degreeprogramme{#1}}
 
 \linespread{1.5}
-\renewcommand{\labelitemi}{--}
 
 %------------------------------------------------------------------------------
 
