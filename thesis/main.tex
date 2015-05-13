@@ -8,11 +8,14 @@
 \usepackage[nameinlink]{cleveref}
 \usepackage{lipsum}
 
+\usepackage[backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
 \presetkeys{todonotes}{fancyline}{}
 
 %---------------------------------------------------------------------------
 
-\author{\href{https://michalrus.com/}{Michał Rus}}
+\author{\href{https://michalrus.com/}{Michal Rus}}
 \shortauthor{M. Rus}
 
 \titlePL{Semantyzacja map mikrolokalizacyjnych na~potrzeby\\lokalizacji użytkowników aplikacji mobilnych w~budynkach}
@@ -61,6 +64,9 @@
 \listoffigures
 \listoftables
 
+\todototoc
+\listoftodos
+
 \cleardoublepage
 \pagenumbering{arabic}
 \setcounter{page}{1}
@@ -74,8 +80,10 @@
 \include{summary}
 
 \cleardoublepage
-\bibliographystyle{alpha}
-\bibliography{bibliography}
+%\bibliographystyle{alpha}
+%\bibliography{bibliography}
+
+\printbibliography
 
 \appendix
 \include{licensing}

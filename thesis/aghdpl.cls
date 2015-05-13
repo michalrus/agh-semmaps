@@ -26,7 +26,6 @@
 \RequirePackage{titlesec}
 \RequirePackage{tocloft}
 \RequirePackage{hyperref}
-\RequirePackage{afterpage}
 
 \definecolor{Green}{rgb}{0.1,0.5,0.1}
 
@@ -44,8 +43,6 @@
 \def\departmenturl#1 {\gdef\@departmenturl{#1}}
 \def\degreeprogramme#1 {\gdef\@degreeprogramme{#1}}
 
-
-%\bibliographystyle{abbrv}
 \linespread{1.5}
 \renewcommand{\labelitemi}{--}
 
