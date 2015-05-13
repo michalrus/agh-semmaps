@@ -17,7 +17,6 @@
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}} 
 \ProcessOptions\LoadClass[a4paper,twoside,openright]{report} 
 
-\RequirePackage{times}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{graphicx}
 \RequirePackage{geometry}
@@ -57,7 +56,7 @@
 \def\thesistable{
 \begin{tabular}{p{45mm}l}
 Autor: & {\itshape \@author}\\[-1mm]
-Kierunek studiów: & {\itshape \@degreeprogramme}\\[-1mm]
+Kierunek studi\'{o}w: & {\itshape \@degreeprogramme}\\[-1mm]
 Opiekun pracy: & {\itshape \@supervisor}\\
 \end{tabular}
 }
@@ -89,7 +88,7 @@ Supervisor: & {\itshape \@supervisor}\\
 
 \vspace*{2mm}
 
-{\sffamily{\large{\bfseries{\scshape Akademia G\'{o}rniczo-Hutnicza im. Stanis\l{}awa Staszica w Krakowie}}}
+{\large{\bfseries{\scshape Akademia G\'{o}rniczo-Hutnicza im. Stanis\l{}awa Staszica w Krakowie}}
 
 \vspace*{1mm}
 
@@ -99,24 +98,24 @@ Supervisor: & {\itshape \@supervisor}\\
 {\small{\MakeUppercase{\@department}}}
 \vspace*{12mm}
 
-{\sffamily\Large \@thesistype}
+{\Large \@thesistype}
 \vspace*{9mm}
 
-{\sffamily\Large\itshape \@titlePL}
+{\Large\itshape \@titlePL}
 \vspace*{1mm}
 
-{\sffamily\Large\itshape \@titleEN}
+{\Large\itshape \@titleEN}
 \vspace*{38mm}
 \end{center}
 
 \noindent
-{\sffamily
+{
 \thesistable
 }
 
 \vspace*{17mm}
 
-\centerline{\small\sffamily Krak\'{o}w, \@date}
+\centerline{\small Krak\'{o}w, \@date}
 
 \clearpage 
 \thispagestyle{empty} 
