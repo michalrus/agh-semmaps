@@ -1,4 +1,4 @@
-\documentclass[en,11pt]{aghdpl}
+\documentclass[en,12pt]{aghdpl}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 
@@ -19,7 +19,7 @@
 \shortauthor{M. Rus}
 
 \titlePL{Semantyzacja map mikrolokalizacyjnych na~potrzeby\\lokalizacji użytkowników aplikacji mobilnych w~budynkach}
-\titleEN{Semantic micro-location maps for\\indoor localization of mobile app users}
+\titleEN{Semantic micro-location maps\\for indoor localization of mobile app users}
 
 \shorttitlePL{Semantyzacja map mikrolokalizacyjnych}
 \shorttitleEN{Semantic micro-location maps}
@@ -44,48 +44,47 @@
 
 %---------------------------------------------------------------------------
 
+\setlength{\marginparwidth}{1in}
 \setcounter{secnumdepth}{4}
 
 \begin{document}
 
 \titlepages
 
-\pagenumbering{roman}
-\setcounter{page}{1}
-\include{abstract}
+\pagestyle{plain}
+\begin{abstract}
+	\setcounter{page}{5}
+	\thispagestyle{plain}
+	\input{abstract}
+\end{abstract}
 
-\pagestyle{empty}
 \cleardoublepage
-\pagestyle{fancy}
 
 \setcounter{tocdepth}{3}
 
-\tableofcontents
-\listoffigures
-\listoftables
+\tableofcontents \clearpage
+\listoffigures \cleardoublepage
+%\listoftables \cleardoublepage
 
 \todototoc
 \listoftodos
 
 \cleardoublepage
-\pagenumbering{arabic}
-\setcounter{page}{1}
+\pagestyle{fancy}
 
-\include{introduction}
-\include{recommenders}
-\include{rules}
-\include{motivation}
-\include{results}
-\include{evaluation}
-\include{summary}
+\input{introduction}
+\input{recommenders}
+\input{rules}
+\input{motivation}
+\input{results}
+\input{evaluation}
+\input{summary}
 
 \cleardoublepage
-%\bibliographystyle{alpha}
-%\bibliography{bibliography}
 
 \printbibliography
 
 \appendix
-\include{licensing}
+\input{licensing}
 
 \end{document}

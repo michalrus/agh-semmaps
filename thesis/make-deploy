@@ -18,6 +18,7 @@ cat >gitinfo.tex <<EOF
 \newcommand{\gitrev}{$(git rev-parse HEAD)}
 \newcommand{\gitshortrev}{$(git rev-parse --short HEAD)}
 \newcommand{\gitauthordate}{$(git show -s --format=%aD HEAD)}
+\newcommand{\giturl}{https://github.com/michalrus/agh-semmaps/commit/$(git rev-parse HEAD)}
 EOF
 
 echo "------- Building main.pdf -------"

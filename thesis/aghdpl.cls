@@ -19,13 +19,15 @@
 
 \RequirePackage[T1]{fontenc}
 \RequirePackage{graphicx}
-\RequirePackage{geometry}
+\RequirePackage[top=1.5in,bottom=2in,left=1.25in,right=1.25in]{geometry}
 \RequirePackage[usenames]{color}
 \RequirePackage{fancyhdr}
 \RequirePackage{url}
 \RequirePackage{titlesec}
 \RequirePackage{tocloft}
 \RequirePackage{hyperref}
+\RequirePackage{setspace}
+
 
 \definecolor{Green}{rgb}{0.1,0.5,0.1}
 
@@ -43,10 +45,8 @@
 \def\departmenturl#1 {\gdef\@departmenturl{#1}}
 \def\degreeprogramme#1 {\gdef\@degreeprogramme{#1}}
 
-\linespread{1.5}
-
 %------------------------------------------------------------------------------
-
+\linespread{1.5}
 
 \def\thesisheaders{
 \fancyfoot[LE,RO]{\small \@shortauthor\quad\textit{\@shorttitlePL}}
@@ -77,75 +77,70 @@ Supervisor: & {\itshape \@supervisor}\\
 \ProcessOptions
 
 \newcommand{\titlepages}{%
-\newgeometry{margin=2.7cm}
 
-\newpage \titlepage 
+\newpage \titlepage
+
+{
+	\setstretch{1.25}
 
 \begin{center}
-\vspace*{1.5cm}
+	
 
-\includegraphics[scale=1.4]{agh}
+\includegraphics[height=2.5in]{agh}
+\vspace*{0.25in}
 
-\vspace*{2mm}
+{{\large\bfseries{\scshape \href{http://www.agh.edu.pl/}{Akademia G\'{o}rniczo-Hutnicza\\im.~Stanis\l{}awa Staszica w~Krakowie}}}
 
-{{\large\bfseries{\scshape \href{http://www.agh.edu.pl/}{Akademia G\'{o}rniczo-Hutnicza im. Stanis\l{}awa Staszica w Krakowie}}}
-
-\vspace*{1mm}
+\vspace*{0.125in}
 
 {\small\bfseries \href{\@facultyurl}{\MakeUppercase{\@faculty}}}}
-\vspace*{3mm}
+
+\vspace*{0.125in}
 
 {\small{\href{\@departmenturl}{\MakeUppercase{\@department}}}}
-\vspace*{12mm}
 
-{\Large \@thesistype}
-\vspace*{9mm}
+\vspace*{0.25in}
+{\large \@thesistype}
+\vspace*{0.25in}
 
-{\Large\itshape \@titlePL}
-\vspace*{1mm}
+{\large\itshape \@titlePL}
 
-{\Large\itshape \@titleEN}
-%\vspace*{30mm}
-\vfill
+\vspace*{0.125in}
+
+{\large\itshape \@titleEN}
 \end{center}
 
-\noindent
-{
-\thesistable
-}
-
-\vspace*{17mm}
+\vfill
+\noindent{\thesistable}
+\vfill
 
 \centerline{\small Krak\'{o}w, \@date}
 
-\clearpage
-\restoregeometry
-\thispagestyle{empty} 
-
-\include{gitinfo}
-
-{\itshape {\large O\'swiadczam, \'swiadomy odpowiedzialno\'sci karnej za po\'swiadczenie nieprawdy, \.ze \mbox{niniejsz\k{a}} prac\k{e} dyplomow\k{a} wykona\l{}em osobi\'scie i samodzielnie i nie korzysta\l{}em ze \'zr\'ode\l{} innych ni\.z wymienione w pracy.}
-
-\vfill
-
-\begin{center}
-	\small \gitshortrev{} @ \gitauthordate{}
-\end{center}
 }
 
+\clearpage
+\thispagestyle{empty}
 
-\cleardoublepage \titlepage
+\input{gitinfo}
 
+{\itshape O\'swiadczam, \'swiadomy odpowiedzialno\'sci karnej za po\'swiadczenie nieprawdy, \.ze \mbox{niniejsz\k{a}} prac\k{e} dyplomow\k{a} wykona\l{}em osobi\'scie i~samodzielnie, i~nie korzysta\l{}em ze \'zr\'ode\l{} innych ni\.z wymienione w~pracy.}
+
+\vfill
+\centerline{\small \href{\giturl}{\gitshortrev{} @ \gitauthordate{}}}
+
+
+\cleardoublepage
+
+\pagestyle{plain}
+\thispagestyle{empty}
 \null
 \vfill
 \begin{flushright} 
 \begin{minipage}[!h]{10cm}
-{\Large\itshape \@acknowledgements}
+{\itshape \@acknowledgements}
 \end{minipage}
 \end{flushright}
 
-%\titlepage
-\pagestyle{empty}
 \cleardoublepage
 \pagestyle{fancy}
 }
@@ -203,6 +198,6 @@ Supervisor: & {\itshape \@supervisor}\\
 %\renewcommand{\cftchapaftersnum}{.}
 %\renewcommand{\cftsecaftersnum}{.}
 %\renewcommand{\cftsubsecaftersnum}{.}
-%\setlength{\cftparskip}{2pt}
-%\setlength{\cftbeforechapskip}{0mm}
+\setlength{\cftparskip}{2pt}
+\setlength{\cftbeforechapskip}{0mm}
 %\renewcommand{\cftchappagefont}{\normalsize}
