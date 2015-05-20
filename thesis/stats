@@ -1,0 +1,42 @@
+#!/bin/sh
+
+self="$(readlink -f "$0")"
+
+if [ "$#" -gt 2 ] ; then
+  goal="$1" ; shift
+  prev="$1" ; shift
+  pdflatex -synctex=1 -interaction=nonstopmode "$@"
+  rc="$?"
+  "$self" "$goal" "$prev" >&2
+  exit "$rc"
+elif [ "$#" = 2 ] ; then
+  goal="$1"
+  echo "$goal" | grep -qoE '^[1-9][0-9]*$' || {
+    echo >&2 '$1 must be a positive number' && exit 3
+  }
+  prev="$2"
+  echo "$prev" | grep -qoE '^[0-9]+$' || {
+    echo >&2 '$2 must be a non-negative number' && exit 3
+  }
+  tots="$("$self")"
+  neww="$(echo "$tots-$prev" | bc)"
+  perc="$(echo "scale=1; $neww*100/$goal" | bc)"
+  numd="$(echo "scale=0; $neww*50/$goal" | bc)"
+  numc="$(echo "scale=0; 50-$numd" | bc)"
+  [ "$numd" -lt 0 ] && numd=0
+  [ "$numc" -lt 0 ] && numc=0
+  printf '%s [%s%s] %s\n' "+$neww words ($tots total)" "$(yes '•' | head -n "$numd" | tr -d '\n')" "$(yes '_' | head -n "$numc" | tr -d '\n')" "$perc% of the planned $goal!"
+else
+  pdftotext main.pdf - \
+    | sed -n -re '/^\fAbstract$/,$ p' \
+    | sed '1d' \
+    | sed -re '/^\fContents$/,/^\fChapter 1$/ d' \
+    | sed -re '/^\fBibliography$/,/^\fAppendix A$/ d' \
+    | sed -re 's/M. Rus Semantic micro-location maps//g' \
+    | grep -vP '^\f?[\d.]+( |$)' \
+    | grep -vP '^\f?Chapter \d+$' \
+    | sed -re 's/\s*\[[0-9]+\]//g' \
+    | sed -re 's/\s*•//g' \
+    | sed -re 's/\f//g' \
+    | wc -w
+fi
