@@ -61,3 +61,45 @@ Choosing which elements of context are relevant for a given case is quite demand
 \clearpage
 
 \section{Recommender systems}
+
+According to \cite{Ricci:recommenders}, recommender systems are computer systems that may be used to predict ratings their users would give to certain items. In other words, these systems are able to predict (obviously, to some degree of correctness) which items would be most likely to be chosen by the user to interact with. In recent years, the solutions grew in popularity so much, that it is hard to imagine our digital lives without them. Classes of recommended items include:
+
+\begin{itemize}
+	\item entertainment: books, music, news, movies,
+	\item restaurants, concerts, museums, places in general,
+	\item interestingly, search queries (when we get intelligent suggestions after starting to type our queries into Google's search engine),
+	\item help with (semi-)manual classification: hash-tags, social tags, question tags on question-oriented sites like Quora or StackExchange etc.,
+	\item contacts: new friends on Facebook (the ``Friends \& People You May Know'' feature), new people to follow on Twitter (the ``Who To Follow'' or ``WTF'' feature) and also people one might be interested in on online dating services,
+	\item financial services, life insurance policies. \cite{Felfernig:recommenders}
+\end{itemize}
+
+Recommender systems can be divided into three types.
+
+\begin{enumerate}
+	\item Collaborative filtering.
+	\item Content-based filtering.
+	\item Any mix of the two above (the so-called \emph{hybrid recommender systems}).
+\end{enumerate}
+
+\subsection{Collaborative filtering}
+
+Collaborative filtering method works by looking at user's past behaviors, comparing them to other users of the system, finding most similar users and recommending items based on their decisions in the past. This model has several drawbacks (which, again, depend on the point of view):
+
+\begin{itemize}
+	\item a rather large amount of data is required for the system to provide valuable insight (the \emph{cold start} problem),
+	\item at the same time care must be taken to make the system scalable; often, these systems face millions and millions of users and items,
+	\item sparsity and scarcity of data (user explicit or implicit ratings) --- again, as there are millions of items, it is often the case that only some of the items are rated and theres not enough data to make necessary connections,
+	\item all current realizations assume that users agreeing in the past will agree in the future (future understood as the recommendations to be made), which might not always be true.
+\end{itemize}
+
+The sparsity problem can be solved by inventing better methods of obtaining user ratings. These ratings can be generally classified 
+
+While explicitness of asking a user to rate a movie is understandable---after all few people would complain, as it is obvious that the movie recommending system has to learn our likes and dislikes to build the proper model of our brains (and going through the movies we watched again and rating them is fun, too!)---when we start getting into e-commerce areas, it stops being justified right away.
+
+This phenomenon might be explained psychologically. When interacting with a movie recommender, the person wants to get some great new recommendations, they are willing to pay for them with their ratings. On the other hand, the commercial recommender is seen as one wanting to take advantage of the user, make them buy some more items and in turn make even more money. This negative image can only be overturned by the system recommending just the right items (from the user's perspective).
+
+One of the most popular collaborative filtering algorithms is the \emph{item--to--item} one, originally popularized by Amazon (the ``people \todo{Mention explainability?}who buy A buy also B'' feature), used also by Facebook and LinkedIn and Twitter for new friends and groups suggestions, and Last.fm for new music recommendations.
+
+\subsection{Content-based filtering}
+
+The second approach to recommending is content-based filtering. These methods are in turn based on comparing distinctive features of the recommended items to the user's preferences, instead of on what other people (similar to the user) think of them.
