@@ -1,0 +1,8 @@
+/main.*
+!/main.tex
+
+/beamercolorthememetropolis.sty
+/beamerfontthememetropolis.sty
+/beamerthemem.sty
+
+*.log
