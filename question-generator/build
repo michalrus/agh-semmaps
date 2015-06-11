@@ -4,7 +4,7 @@ set -o noclobber
 set -o errexit
 set -o nounset
 
-d="$(cd "$(dirname "$0")" ; pwd)"
+d="$(cd "$(dirname "$0")" ; pwd -P)"
 
 curl -s 'https://raw.githubusercontent.com/paulp/sbt-extras/master/sbt' -o "$d/sbt"
 chmod 0700 "$d/sbt"

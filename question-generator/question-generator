@@ -4,7 +4,7 @@ set -o noclobber
 set -o errexit
 set -o nounset
 
-d="$(cd "$(dirname "$0")" ; pwd)"
+d="$(cd "$(dirname "$0")" ; pwd -P)"
 f="$d/target/universal/stage/bin/question-generator"
 
 [ -x "$f" ] || {
