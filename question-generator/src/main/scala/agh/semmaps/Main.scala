@@ -14,10 +14,10 @@ object Main extends App {
       cnf.prologOntology foreach { o ⇒ PrologWriter(jmlTrees, Set(cnf.classNameKey))(o).get }
 
       // select only the alternatives
-      val alternativeTrees = cnf.alternatives flatMap { case (k, v) ⇒ jmlTrees flatMap (_.find(_.props.get(k) == Some(v))) }
+      val alternativeTrees = cnf.alternatives flatMap { case (k, v) ⇒ jmlTrees flatMap (_.find(_.props.get(k).contains(v))) }
 
       log(s"${alternativeTrees.size} alternative(s) selected")
-      alternativeTrees foreach (t ⇒ log(s"  ${t.node.props}"))
+      alternativeTrees foreach (t ⇒ log(s"  ${t.node}"))
 
       QuestionGenerator(alternativeTrees)
     }

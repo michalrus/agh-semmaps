@@ -112,52 +112,7 @@
             <title>algorytm</title>
             <children>
               <topics type="attached">
-                <topic id="12k9h7evh4frhsl70cv2hkq6j8">
-                  <title>problemy</title>
-                  <marker-refs>
-                    <marker-ref marker-id="priority-1"/>
-                  </marker-refs>
-                  <children>
-                    <topics type="attached">
-                      <topic id="7b0gvngtr0d9a34o7g5ibd06fu">
-                        <title svg:width="500">user może odpowiedzieć niezgodnie z prawdą</title>
-                        <marker-refs>
-                          
-                        </marker-refs>
-                      </topic>
-                      <topic id="6c7o7ke21susn6kdfq6908fa1c">
-                        <title>kontrprzykład do algorytmu @sbk @mslaz</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="56j48t7gnh9p9i91ake1aaqaa0">
-                              <title svg:width="500">a 316 może być biurko z komputrem, z myszą</title>
-                            </topic>
-                            <topic id="1jq84udfmvc91cqslfsqmukpqd">
-                              <title>a w 315 taki sam (albo b. podobny) układ, ale na dywanie</title>
-                            </topic>
-                            <topic id="22qc8eovqk74g491pd2vuhk63t">
-                              <title svg:width="500">pytamy usera: czy jest biurko z komputrem, z myszą, a on jest w pokoju z dywanem… odpowiada: TAK.</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                      <topic id="59f7apn002te85785hr8lq28ih">
-                        <title svg:width="500">na razie „klasowanie” obiektów po wybranym przez usera atrybucie z GML</title>
-                        <children>
-                          <topics type="attached">
-                            <topic id="3r1g24dk7in1nr3lc6f4kmjq5l">
-                              <title>np. „kind”</title>
-                            </topic>
-                            <topic id="5tkf1c57s4vv1k63mh29t5no9l">
-                              <title>trochę psuje tę generyczność</title>
-                            </topic>
-                          </topics>
-                        </children>
-                      </topic>
-                    </topics>
-                  </children>
-                </topic>
-                <topic id="47pe7n7c8vsbg3qklbnopaqlks">
+                <topic id="47pe7n7c8vsbg3qklbnopaqlks" style-id="6ihjra6rqhkhd70v6s5sm9j5oh">
                   <title>algo drzewkowe @mslaz i @sbk</title>
                   <children>
                     <topics type="attached">
@@ -229,6 +184,22 @@ every room from P</title>
                             </topic>
                             <topic id="57vq5iga1j2q9il86gflk7do41">
                               <title>The decision tree algorithm is loosely based on ID3 algorithm.</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="2e8c5q2eme0i1cr3398scti3uv">
+                        <title>kontrprzykład do algorytmu @sbk @mslaz</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="4sim5dff6a4tos4pve4dk6j49i">
+                              <title svg:width="500">a 316 może być biurko z komputrem, z myszą</title>
+                            </topic>
+                            <topic id="0kkqldd9hajqucm6r4dhg9q0b8">
+                              <title>a w 315 taki sam (albo b. podobny) układ, ale na dywanie</title>
+                            </topic>
+                            <topic id="5vh1pfudf4nbvl3fslri069ep7">
+                              <title svg:width="500">pytamy usera: czy jest biurko z komputrem, z myszą, a on jest w pokoju z dywanem… odpowiada: TAK.</title>
                             </topic>
                           </topics>
                         </children>
@@ -328,33 +299,7 @@ czy istnieje «coś» «jakieś»</title>
                                       </topics>
                                     </children>
                                   </topic>
-                                  <topic id="5qlg424k6pare9721ou5flb4k4">
-                                    <title>ile sztuk istnieje «czegoś» [«jakiegoś» ...]</title>
-                                    <labels>
-                                      <label>count()</label>
-                                    </labels>
-                                    <children>
-                                      <topics type="attached">
-                                        <topic id="4q0lvjdf1bv6a9n56e5vj3vd24">
-                                          <title>przykłady</title>
-                                          <children>
-                                            <topics type="attached">
-                                              <topic id="7irk992ukka9heesn0ltgoe55r">
-                                                <title>count([kind=desk])</title>
-                                              </topic>
-                                              <topic id="7c5anetjb2ln8i9iks815bhfds">
-                                                <title>count([kind=computer])</title>
-                                              </topic>
-                                              <topic id="6qi3bhqsjgrk9t5fp5drt111ch">
-                                                <title>count([kind=chair, rotary=true])</title>
-                                              </topic>
-                                            </topics>
-                                          </children>
-                                        </topic>
-                                      </topics>
-                                    </children>
-                                  </topic>
-                                  <topic id="4t0e0roe24gg34ta8ksddnhljh">
+                                  <topic id="4t0e0roe24gg34ta8ksddnhljh" style-id="6ihjra6rqhkhd70v6s5sm9j5oh">
                                     <title>czy «coś» jest w «relacji» z «czymś»</title>
                                     <children>
                                       <topics type="attached">
@@ -366,7 +311,7 @@ czy istnieje «coś» «jakieś»</title>
                                                 <title>[kind=tv] —near— [kind=blackboard]</title>
                                               </topic>
                                               <topic id="2143nip6ul92f0sv3n7l1h852b">
-                                                <title>[kind=computer] —on-to-of— [kind=desk]</title>
+                                                <title>[kind=computer] —on-top-of— [kind=desk]</title>
                                               </topic>
                                             </topics>
                                           </children>
@@ -522,10 +467,72 @@ czy istnieje «coś» «jakieś»</title>
                                             </topics>
                                           </children>
                                         </topic>
+                                        <topic id="5th21j8tpecmkmfa2lrr1qfa4h">
+                                          <title svg:width="500">relacje zeżarłyby za dużo czasu na coś tak prostego, jak praca mgr</title>
+                                          <children>
+                                            <topics type="attached">
+                                              <topic id="04lb5nu3hjjm3upl1m2o641eta">
+                                                <title>„Czy coś jest koło okna?”</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                    <topic id="1h51n0gu7l5376nsgjmugtjm70">
+                                                      <title svg:width="500">np. to jest dużo prostsze niż „Czy coś istnieje?”, ponieważ okno jest proste do znalezienia</title>
+                                                    </topic>
+                                                    <topic id="64d3tunkm5h1jpdae75fju3vmq">
+                                                      <title>i 50k podobnych przypadków</title>
+                                                    </topic>
+                                                  </topics>
+                                                </children>
+                                              </topic>
+                                              <topic id="3llt08qtuptls69tv36jkt8vcf">
+                                                <title>generować każdy z każdym do wyboru z Set?</title>
+                                              </topic>
+                                              <topic id="513jp65815l0qamf277eoepfb5">
+                                                <title>przecież to eksplozja kombinatoryczna…</title>
+                                              </topic>
+                                            </topics>
+                                          </children>
+                                        </topic>
                                       </topics>
                                     </children>
                                     <labels>
                                       <label>relation()</label>
+                                    </labels>
+                                  </topic>
+                                  <topic id="5qlg424k6pare9721ou5flb4k4" style-id="6ihjra6rqhkhd70v6s5sm9j5oh">
+                                    <title>ile sztuk istnieje «czegoś» [«jakiegoś» ...]</title>
+                                    <children>
+                                      <topics type="attached">
+                                        <topic id="4q0lvjdf1bv6a9n56e5vj3vd24">
+                                          <title>przykłady</title>
+                                          <children>
+                                            <topics type="attached">
+                                              <topic id="7irk992ukka9heesn0ltgoe55r">
+                                                <title>count([kind=desk])</title>
+                                              </topic>
+                                              <topic id="7c5anetjb2ln8i9iks815bhfds">
+                                                <title>count([kind=computer])</title>
+                                              </topic>
+                                              <topic id="6qi3bhqsjgrk9t5fp5drt111ch">
+                                                <title>count([kind=chair, rotary=true])</title>
+                                              </topic>
+                                            </topics>
+                                          </children>
+                                        </topic>
+                                        <topic id="12da0n9dtms4vmq8fju30q2676">
+                                          <title svg:width="500">na razie olewamy, za trudne do oceny skomplikowania pytania</title>
+                                          <children>
+                                            <topics type="attached">
+                                              <topic id="5ks4dlbs4s7llli3kqtf932gqs">
+                                                <title>#future</title>
+                                              </topic>
+                                            </topics>
+                                          </children>
+                                        </topic>
+                                      </topics>
+                                    </children>
+                                    <labels>
+                                      <label>count()</label>
                                     </labels>
                                   </topic>
                                 </topics>
@@ -539,7 +546,7 @@ czy istnieje «coś» «jakieś»</title>
                               </extensions>
                             </topic>
                             <topic id="2pc1estq1lgk80b0a4n6qrvdmq">
-                              <title svg:width="500">CWA — jeśli «coś» nie występuje w JmlTree, to zakładamy, że tego nie ma</title>
+                              <title svg:width="500">CWA — jeśli «coś» nie występuje w JmlTree, to zakładamy, że tego nie ma w danej alternatywie</title>
                             </topic>
                             <topic id="0ait31hd21o3di9rdeu9kbfni9">
                               <title svg:width="500">jak porównywać ze sobą dwa JmlObject?</title>
@@ -602,10 +609,43 @@ czy istnieje «coś» «jakieś»</title>
                         <children>
                           <topics type="attached">
                             <topic id="4ljq36k2dmj4ghquvp9t0n2g7q">
-                              <title>zwykłe ID3</title>
+                              <title>zwykła pierwsza iteracja ID3</title>
                             </topic>
                             <topic id="6ihg5nsgkppk067fd56id4clbh">
                               <title>uwzględniające koszty z regułowego</title>
+                            </topic>
+                            <topic id="403fflcjjksj2hhrfcma0vs6p0">
+                              <title>wybieramy najmniejszy koszt</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="7vad7hffrh84fp6o8dfpdekomp">
+                                    <title>a jeśli kilka ma najmniejszy koszt, to najprostszą strukturę</title>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="0evrhlivaoqgdbrn52pc8odb72" style-id="6ihjra6rqhkhd70v6s5sm9j5oh">
+                        <title>co z subklasami?</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="4u473rpn2lailoqrpherlps043">
+                              <title>krzesło jest subklasą mebel</title>
+                            </topic>
+                            <topic id="6lhttspqj41d9en4vrocbp75ik">
+                              <title>krzesło obrotowe jest subklasą krzesło</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="13qq9312g71f0v38tp3dtoe3p6">
+                                    <title>no ale to załatwił @kjanosz chair{rotary:true}</title>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                            <topic id="17lvoam9q26j3j3mtr8ik1a1dc">
+                              <title>niepotrzebne, nie widzę kontrprzykładu dla samych cech</title>
                             </topic>
                           </topics>
                         </children>

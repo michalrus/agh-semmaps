@@ -1,0 +1,42 @@
+# default cost, i.e. “Do you see a computer?”
+cost [] +50
+
+# by how much the cost increases when we incorporate .color information in the question?
+# (“Do you see a black computer?”)
+cost [].color +10
+
+# reading off the model is not so easy
+cost [].model +40
+
+# even more so if it’s a black mouse
+cost [kind=mouse, color=black].model  +110
+
+# how costly is it to spot a regular mouse relative to the default cost? Let’s make it 60.
+cost [kind=mouse] +10
+
+# how about a computer? Easy. “Do you see a computer?” should cost around 50-15=35
+cost [kind=computer] -15
+
+# reading a model of that black tv? Not so convenient… It’ll be 50+10(for color)+70(for model)
+cost [kind=tv, color = black].model   +70
+
+# how about asking about anything lying on the desk??
+cost [kind=desk].[] +10
+
+# how about the model of a black mouse that lies on a desk?
+cost [kind=desk].[kind=mouse color=black].model +10
+
+# etc.
+
+# relations but YAGNI in most cases…
+
+# refining the default HAS a.k.a. is-inside-of-on-the-map
+#relation   lies-on   [kind=desk]--HERE--[]
+
+# 
+
+#relation   near   [kind=room, size>1000].[kind=desk]--HERE--[]
+
+#relation near [kind=room, size>1000].
+
+# relations are put off for the time being, see the mind map

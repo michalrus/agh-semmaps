@@ -25,6 +25,7 @@ wartremoverExcluded ++= Seq(
 resolvers += Resolver.sonatypeRepo("public")
 
 libraryDependencies ++= Seq(
+  "org.parboiled" %% "parboiled" % "2.1.0",
   "com.github.scopt" %% "scopt" % "3.3.0",
   "org.scala-lang.modules" %% "scala-xml" % "1.0.3",
   "com.vividsolutions" % "jts" % "1.13",

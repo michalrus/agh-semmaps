@@ -7,7 +7,7 @@ object QuestionGenerator {
   final case class Count() extends QuestionParam
   final case class Relation() extends QuestionParam
 
-  def apply(alternatives: Set[JmlTree]) = {
+  def apply(alternatives: Set[JmlTree]): Unit = {
     // 1. Build the Set from trees of alternatives
 
     // 2. Choose a question param with the lowest entropy and cost combined
@@ -22,8 +22,8 @@ object QuestionGenerator {
 
   def buildSet(alternative: JmlTree): Set[QuestionParam] = ???
 
-  trait ParamSetBuilder {
-    def apply(alternative: JmlTree): Set[(QuestionParam, Answer)]
-  }
+  //  trait ParamSetBuilder {
+  //    def apply(alternative: JmlTree): Set[(QuestionParam, Answer)]
+  //  }
 
 }
