@@ -1,0 +1,60 @@
+Obiegówkę zbierasz do odebrania dyplomu.
+
+
+[quote="aanti"]
+https://www.eaiib.agh.edu.pl/files/1385/Zasady_dyplomowania_2014.pdf
+
+Dodam tylko, że na liście obowiązkowych dokumentów w tym PDF-ie brakuje chyba najważniejszej z punktu widzenia dziekanatu rzeczy czyli oświadczenia o udzieleniu praw autorskich (załącznik nr 4).
+
+Lista potrzebnych rzeczy wygląda więc tak:
+1. Oprawiona praca (tutaj ważne jest podpisanie oświadczenia o samodzielnym wykonaniu pracy - oświadczenie to [u]musi[/u] być na odwrocie strony tytułowej w pracy)
+2. Ocena opiekuna i recenzenta
+3. Zdjęcia (4 dla dyplomu wyłącznie w języku polskim lub 5 w przypadku zażyczenia sobie odpisu w języku angielskim) - na odwrocie jednego ze zdjęć [u]Imię, Nazwisko i PESEL[/u]
+4. Płyta CD w opisanej wg wzoru w PDF-ie koszulce i na płycie też trzeba napisać tak jak podają (załącznik 3)
+5. Wyciąg z indeksu (ja w nim wpisałam tylko oceny końcowe z wszystkich przedmiotów, "suma wag" i "suma wag do średniej" zostawiłam takie same)
+6. Podanie do dziekana z prośbą o dopuszczenie do egzaminu dyplomowego
+7. Potwierdzenie wykonania przelewu (60 zł lub 100 zł z dodatkowym odpisem w jęz. angielskim)
+8. Oświadczenie o udzieleniu praw autorskich (załącznik nr 4)
+9. (Jeśli zostaliśmy skreśleni z listy studentów) to dodatkowo podanie do dziekana z prośbą o reaktywację na czas obrony (załącznik nr 9)
+10. Jeśli chcemy odpis w języku angielskim to dodatkowo podanie do dziekana o wydanie odpisu dyplomu w języku angielskim (załącznik nr 10)
+11. Indeks - oddajemy (musi być wpisana przez promotora ocena pracy dyplomowej oraz na [u]str. 90[/u] wypełniamy trzy pola [i]Imię i nazwisko[/i], [i]Przedstawił(-a) pracę[/i], [i]na temat[/i] - resztę zostawiamy pustą)
+Dodatkowo:
+- jeśli składaliśmy już kartę egzaminacyjną z obniżoną liczbą punktów ECTS (to chyba dotyczy tylko skreślonych, którzy chcą się reaktywować):  musimy złożyć kartę egzaminacyjną wydrukowaną specjalnie na jeden przedmiot (Praca dyplomowa) i dać promotorowi żeby tam też wpisał ocenę.
+Generalnie ocena za pracę dyplomową musi być wpisana zarówno w indeksie, jak i na karcie egzaminacyjnej.
+
+A, i nie przejmujemy się tym, że promotor nam nie wpisał oceny za pracę dyplomową do WD - nie miał prawa tego zrobić bo robią to sami po złożeniu pracy w dziekanacie  ;)
+[/quote]
+
+[quote="bronco"]
+Udało mi się złożyć pracę i:
+- generalnie, to należy trzymać się instrukcji podanej przez aanti oprócz punktu 11, który nas nie dotyczy. Wystarczy więc ocena na recenzji.
+- pytalem co w przypadku rozbieżności w ocenach od promotora i recenzenta. Wywołało to niemałą dyskusję w dziekanacie, w końcu p.Fraczek poszła zapytać prodziekana który stwierdził, że do średniej liczy się ocena opiekuna :)
+- u mnie nawet nie spojrzała na zawartość płyty (miałem tam pdfa i xlsa)
+[/quote]
+
+na płycie ma być tylko pdf z pracą i xls z ocenami
+
+Dziekanat przekazuje informacje nt. terminu obrony mailem.
+
+W wyciągu ocen tylko rzeczy z II st.
+
+dopilnujcie sobie, żeby recenzent zgadzał się z osobą którą macie wpisaną w systemie. albowiem robią problemy.
+
+1. Ogólne założenia edytorskie dla prac dyplomowych są następujące:
+• Format pracy: A4,
+• Wielkość czcionki: 12 pkt. Times New Roman,
+• Odstępy między wierszami: 1,25 wiersza,
+• Marginesy: lewy 3 cm, pozostałe 2 cm na stronach nieparzystych; prawy 3 cm, pozostałe 2 cm na stronach parzystych ,
+• Druk dwustronny. Poszczególne, główne rozdziały drukowane od nowej stronynieparzystej.
+
+2. Struktura pracy
+• strona tytułowa (załącznik nr 1),
+• oświadczenie studenta (załącznik nr 2),
+• spis treści,
+• wstęp (zawierający cel i zakres pracy),
+• rozdziały i podrozdziały,
+• podsumowanie i wnioski,
+• wykaz literatury,
+• załączniki.
+
+3. Liczba stron pracy dyplomowej nie może stanowić podstawowego warunku, jaki powinna praca spełniać. Zwyczajowo przyjmuje się dla pracy magisterskiej od 40 do 100 stron maszynopisu wg przyjętych założeń. Uwzględniając charakter pracy inżynierskiej sugerowana liczba stron powinna zawierać się w przedziale od 30 do 80 stron.
