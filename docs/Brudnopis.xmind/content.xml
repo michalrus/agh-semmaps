@@ -325,10 +325,10 @@ czy istnieje «coś» «jakieś»</title>
                                                 <children>
                                                   <topics type="attached">
                                                     <topic id="6e84rhdq4sc8dii0vjs3sfhdcq">
-                                                      <title>czy *właściwie* nie to samo?</title>
+                                                      <title>czy nie to samo?</title>
                                                     </topic>
                                                     <topic id="0acorkkq50aeqmhsjp5plap6j9">
-                                                      <title>distributes_over?</title>
+                                                      <title>mateuszowe „nie, bo distributes_over”?</title>
                                                       <children>
                                                         <topics type="attached">
                                                           <topic id="16eqfb5o80pfrjcbl4930jgei3">
@@ -490,6 +490,25 @@ czy istnieje «coś» «jakieś»</title>
                                               <topic id="513jp65815l0qamf277eoepfb5">
                                                 <title>przecież to eksplozja kombinatoryczna…</title>
                                               </topic>
+                                              <topic id="4fnkmtfai5t7ke38lu0jqkbaib">
+                                                <title svg:width="500">sensownie i generycznie w konfigu z rules da się zapisać jedynie:</title>
+                                                <children>
+                                                  <topics type="attached">
+                                                    <topic id="6vbrrejdq1fkdk92tud45of9qc">
+                                                      <title>lies-on</title>
+                                                    </topic>
+                                                    <topic id="1kg7j9072qc9kdd8rsesjgm7sl">
+                                                      <title>is-near</title>
+                                                    </topic>
+                                                    <topic id="361oq9418tvgbf3i11qp069nts">
+                                                      <title>inne, np. "po lewej" wymagają tego, żeby rozumiał je KOD</title>
+                                                    </topic>
+                                                    <topic id="263o0dolak1eu5sqni8m0v2geo">
+                                                      <title>p. plik maps/C2-3rd-floor.relations</title>
+                                                    </topic>
+                                                  </topics>
+                                                </children>
+                                              </topic>
                                             </topics>
                                           </children>
                                         </topic>
@@ -548,19 +567,6 @@ czy istnieje «coś» «jakieś»</title>
                             <topic id="2pc1estq1lgk80b0a4n6qrvdmq">
                               <title svg:width="500">CWA — jeśli «coś» nie występuje w JmlTree, to zakładamy, że tego nie ma w danej alternatywie</title>
                             </topic>
-                            <topic id="0ait31hd21o3di9rdeu9kbfni9">
-                              <title svg:width="500">jak porównywać ze sobą dwa JmlObject?</title>
-                              <children>
-                                <topics type="attached">
-                                  <topic id="7euqign90deubuo598luoe1517">
-                                    <title>mogą się różnić nieco</title>
-                                  </topic>
-                                  <topic id="7rt4l2pc5orsloh5lbk2m1bud5">
-                                    <title>może jakieś Double similarity</title>
-                                  </topic>
-                                </topics>
-                              </children>
-                            </topic>
                             <topic id="1k90spfarhqehdj4iq16tld8t5">
                               <title>więc tak:</title>
                               <children>
@@ -581,22 +587,42 @@ czy istnieje «coś» «jakieś»</title>
                                 </topics>
                               </children>
                             </topic>
-                            <topic id="15k6cbsb68lddielvaqsbcgdot">
-                              <title svg:width="500">jak automatycznie wybierać ciekawsze możliwe QuestionParam?</title>
+                            <topic id="4hr33bjca56q6vjqtdt0snkp0p">
+                              <title>wątpliwości</title>
                               <children>
                                 <topics type="attached">
-                                  <topic id="05t07mlvpuerttc0bkbbka82hf">
-                                    <title>nietypowe, „dziwne”, rzucające się w oczy</title>
+                                  <topic id="54nurd6a178hlu9i9otgsbeefo">
+                                    <title svg:width="500">jak automatycznie wybierać ciekawsze możliwe QuestionParam?</title>
                                     <children>
                                       <topics type="attached">
-                                        <topic id="2fahsc7gfpas2a3u13ksabcdmj">
-                                          <title>„krzesło na łóżku”</title>
+                                        <topic id="19kt4eip342slj8p2mm0v7s7fr">
+                                          <title>nietypowe, „dziwne”, rzucające się w oczy</title>
+                                          <children>
+                                            <topics type="attached">
+                                              <topic id="1jjrdmigs1gangs824j12hnegq">
+                                                <title>„krzesło na łóżku”</title>
+                                              </topic>
+                                            </topics>
+                                          </children>
+                                        </topic>
+                                        <topic id="1j3gbo48fc5lop9t0t9tbdfltm">
+                                          <title>też definiować to w systemie regułowym</title>
                                         </topic>
                                       </topics>
                                     </children>
                                   </topic>
-                                  <topic id="1ql7r1n1b4gv6cc1ik5dh7jfke">
-                                    <title>też definiować to w systemie regułowym</title>
+                                  <topic id="627ps3qhb2t6ak6q5m10cb8asg">
+                                    <title svg:width="500">jak porównywać ze sobą dwa JmlObject?</title>
+                                    <children>
+                                      <topics type="attached">
+                                        <topic id="4sjt7e97d79bgpr01602kso790">
+                                          <title>mogą się różnić nieco</title>
+                                        </topic>
+                                        <topic id="7f0qhb3bk5afa0f23qmmo6ul1r">
+                                          <title>może jakieś Double similarity</title>
+                                        </topic>
+                                      </topics>
+                                    </children>
                                   </topic>
                                 </topics>
                               </children>

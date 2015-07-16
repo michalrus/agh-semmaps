@@ -1,0 +1,16 @@
+# relations but YAGNI… a not working draft
+
+# refining the default `has' (transitive) a.k.a. `is-inside-of-on-the-map':
+
+relation L lies-on R
+  L being []
+  R being [kind=room].[kind=desk]
+  R has L
+  transitive
+
+relation L near R
+  W being [kind=room]
+  L being W.[]
+  R being W.[]
+  distance(L,R) < 0.10*W.size
+  symmetric

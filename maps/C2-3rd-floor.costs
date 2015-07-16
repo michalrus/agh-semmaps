@@ -27,16 +27,3 @@ cost [kind=desk].[] +10
 cost [kind=desk].[kind=mouse color=black].model +10
 
 # etc.
-
-# relations but YAGNI in most cases…
-
-# refining the default HAS a.k.a. is-inside-of-on-the-map
-#relation   lies-on   [kind=desk]--HERE--[]
-
-# 
-
-#relation   near   [kind=room, size>1000].[kind=desk]--HERE--[]
-
-#relation near [kind=room, size>1000].
-
-# relations are put off for the time being, see the mind map
