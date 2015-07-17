@@ -2,13 +2,19 @@ package agh.semmaps
 
 object QuestionGenerator {
 
-  sealed trait QuestionParam
-  final case class Exists() extends QuestionParam
-  final case class Count() extends QuestionParam
-  final case class Relation() extends QuestionParam
+  sealed trait Question {
+    val alternative: JmlTree
+  }
+
+  final case class Exists(obj: JmlObject, alternative: JmlTree) extends Question
+
+  // final case class Count(...) extends QuestionParam // TODO
+  // final case class Relation(...) extends QuestionParam // TODO
 
   def apply(alternatives: Set[JmlTree]): Unit = {
     // 1. Build the Set from trees of alternatives
+    val inp: Set[Set[Question]] = alternatives map (alt ⇒ allOf(alt) map (obj ⇒ Exists(obj, alt): Question))
+
 
     // 2. Choose a question param with the lowest entropy and cost combined
 
@@ -20,10 +26,11 @@ object QuestionGenerator {
 
   }
 
-  def buildSet(alternative: JmlTree): Set[QuestionParam] = ???
+  def allOf(tree: JmlTree): Set[JmlObject] =
+    (tree.children flatMap allOf) + tree.node
 
-  //  trait ParamSetBuilder {
-  //    def apply(alternative: JmlTree): Set[(QuestionParam, Answer)]
-  //  }
+//  trait ParamSetBuilder {
+//    def apply(alternative: JmlTree): Set[(QuestionParam, Answer)]
+//  }
 
 }

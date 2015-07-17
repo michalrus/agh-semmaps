@@ -689,6 +689,29 @@ czy istnieje «coś» «jakieś»</title>
                     </topics>
                   </children>
                 </topic>
+                <topic id="2kei1uadhcmjce49334712ai24" style-id="41h32eu4erl4spm877pvtgrgr7">
+                  <title>loose thoughts</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="0h9o1tjh0p9d1th06d09uegub9">
+                        <title svg:width="500">why would you ask more than one question if there are only 2 alternatives? :)</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="77me9m8924iovqs524gbecor44">
+                              <title>either you have a discerning question and one is sufficient</title>
+                            </topic>
+                            <topic id="0ai3vvdt4o4sfeak4r8lbq5jvs">
+                              <title>or you don’t (rooms are identical ⇒ undistinguishable)</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="2n3assjk9e9fn6rikmtutkf4oh">
+                        <title svg:width="500">in the future, find the domain of a property (only between alternatives) and if the sizeof(domain) ≤ 3, ask about that property, too (answers being property values)</title>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
               </topics>
             </children>
           </topic>
