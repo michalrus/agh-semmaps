@@ -8,6 +8,8 @@ object Main extends App {
     try {
       log("parsing GML...")
       val jmlTrees = GmlParser(cnf.inputDirectory, cnf.classNameKey, cnf.splitKeys, cnf.splitDelimiters).get
+      log("parsing costs...")
+      val costs = CostsParser(cnf.costsFile)
       log("done parsing")
 
       // write the prolog ontology if necessary
@@ -19,7 +21,7 @@ object Main extends App {
       log(s"${alternativeTrees.size} alternative(s) selected")
       alternativeTrees foreach (t ⇒ log(s"  ${t.node}"))
 
-      QuestionGenerator(alternativeTrees)
+      QuestionGenerator(alternativeTrees, costs)
     }
     catch {
       case e: Exception ⇒ Console.err.println(e.getMessage)

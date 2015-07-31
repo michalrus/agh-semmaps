@@ -20,10 +20,10 @@ cost [kind=computer] -15
 # reading a model of that black tv? Not so convenient… It’ll be 50+10(for color)+70(for model)
 cost [kind=tv, color = black].model   +70
 
-# how about asking about anything lying on the desk??
+# how about asking about anything lying on a desk?
 cost [kind=desk].[] +10
 
 # how about the model of a black mouse that lies on a desk?
-cost [kind=desk].[kind=mouse color=black].model +10
+cost [kind=desk].[kind=mouse, color=black].model +10
 
 # etc.

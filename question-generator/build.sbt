@@ -19,6 +19,7 @@ wartremoverErrors ++= Warts.allBut(Wart.Nothing, Wart.Any, Wart.NoNeedForMonad)
 wartremoverExcluded ++= Seq(
   baseDirectory.value / "src" / "main" / "scala" / "agh" / "semmaps" / "Config.scala",
   baseDirectory.value / "src" / "main" / "scala" / "agh" / "semmaps" / "Main.scala",
+  baseDirectory.value / "src" / "main" / "scala" / "agh" / "semmaps" / "CostsParser.scala",
   baseDirectory.value / "src" / "main" / "scala" / "agh" / "semmaps" / "TreeBuilder.scala"
 )
 

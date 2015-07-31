@@ -11,10 +11,10 @@ object QuestionGenerator {
   // final case class Count(...) extends QuestionParam // TODO
   // final case class Relation(...) extends QuestionParam // TODO
 
-  def apply(alternatives: Set[JmlTree]): Unit = {
+  def apply(alternatives: Set[JmlTree], costs: Set[Cost]): Unit = {
     // 1. Build the Set from trees of alternatives
-    val inp: Set[Set[Question]] = alternatives map (alt ⇒ allOf(alt) map (obj ⇒ Exists(obj, alt): Question))
 
+    // val inp: Set[Set[Question]] = alternatives map (alt ⇒ allOf(alt) map (obj ⇒ Exists(obj, alt): Question))
 
     // 2. Choose a question param with the lowest entropy and cost combined
 
@@ -29,8 +29,8 @@ object QuestionGenerator {
   def allOf(tree: JmlTree): Set[JmlObject] =
     (tree.children flatMap allOf) + tree.node
 
-//  trait ParamSetBuilder {
-//    def apply(alternative: JmlTree): Set[(QuestionParam, Answer)]
-//  }
+  //  trait ParamSetBuilder {
+  //    def apply(alternative: JmlTree): Set[(QuestionParam, Answer)]
+  //  }
 
 }
