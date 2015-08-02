@@ -18,8 +18,8 @@ object CostsParser {
     }
 
     def CostDef: Rule1[Cost] = rule {
-      ("cost" ~ oneOrMore(WS) ~ MultiSelector ~ optional(Prop) ~ oneOrMore(WS) ~ Change) ~>
-        ((os: Seq[Map[String, String]], pr: Option[String], ch: Int) ⇒ Cost(os.toList, pr, ch))
+      ("cost" ~ oneOrMore(WS) ~ MultiSelector ~ optional("." ~ Identifier) ~ oneOrMore(WS) ~ Change) ~>
+        ((selectors: Seq[Map[String, String]], prop: Option[String], change: Int) ⇒ Cost(selectors.toList, prop, change))
     }
 
     def MultiSelector: Rule1[Seq[Map[String, String]]] = rule {
@@ -36,13 +36,11 @@ object CostsParser {
         ((k: String, v: String) ⇒ k → v)
     }
 
-    def Prop: Rule1[String] = rule { "." ~ Identifier }
-
     def Change: Rule1[Int] = rule { capture(("+" | "-") ~ oneOrMore(CharPredicate.Digit)) ~> ((_: String).toInt) }
 
     def Identifier: Rule1[String] = rule { capture(oneOrMore(CharPredicate.AlphaNum)) }
 
-    def WS = rule { quiet(anyOf(" \t\n\r")) }
+    def WS = rule { quiet(anyOf(" \t")) }
   }
 
   def apply(file: File): Set[Cost] = {
