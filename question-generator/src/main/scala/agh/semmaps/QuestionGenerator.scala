@@ -4,6 +4,18 @@ object QuestionGenerator {
 
   sealed trait Question[Answer] {
     val answers: Map[Answer, Set[JmlTree]]
+
+    def entropy: Double = {
+      val counts = answers map (_._2.size)
+      val numAll = counts.sum
+
+      counts.filter(_ > 0).map { count ⇒
+        val p = 1.0 / count
+        val single = -p * math.log(p) / math.log(2)
+        val entr = count * single
+        count.toDouble / numAll * entr
+      }.sum
+    }
   }
 
   final case class Exists(className: String, prop: Option[(String, String)], answers: Map[Boolean, Set[JmlTree]]) extends Question[Boolean]
@@ -21,7 +33,10 @@ object QuestionGenerator {
         Exists(className, None, Map(true → alts, false → (alternatives -- alts))): Question[_]
     }.toSet
 
-    simpleClassExists foreach println
+    simpleClassExists foreach { q ⇒
+      println(q)
+      println(s"   entropy = ${q.entropy}")
+    }
 
     // już z tego można policzyć entropię, koszty i wybrać najlepsze pytanie:
     //
