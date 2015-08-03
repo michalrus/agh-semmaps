@@ -2,10 +2,12 @@ package agh.semmaps
 
 object QuestionGenerator {
 
+  /** Any question is characterized by some entropy (how badly it discerns rooms) and a cost (indirectly defined in a configuration file) */
   sealed trait Question[Answer] {
     val answers: Map[Answer, Set[JmlTree]]
+    val cost: Double
 
-    def entropy: Double = {
+    final def entropy: Double = {
       val counts = answers map (_._2.size)
       val numAll = counts.sum
 
@@ -16,50 +18,52 @@ object QuestionGenerator {
         count.toDouble / numAll * entr
       }.sum
     }
+
+    final def overallCost: Double = ??? // TODO: combine entropy and cost somehow (mayhap like in Bobek’s paper)
   }
 
-  final case class Exists(className: String, prop: Option[(String, String)], answers: Map[Boolean, Set[JmlTree]]) extends Question[Boolean]
+  /** “Does an object of a given className (and—optionally—such-and-such property) exist in the room?” */
+  final case class Exists(className: String, prop: Option[(String, String)], answers: Map[Boolean, Set[JmlTree]], cost: Double) extends Question[Boolean]
 
   // final case class Count(...) extends Question[Int] // TODO
   // final case class Relation(...) extends Question[???] // TODO
 
-  def apply(alternatives: Set[JmlTree], costs: Set[Cost]): Unit = {
-    // 1. Build the Set from trees of alternatives
+  /** Question generator for given alternatives and costs map */
+  type QuestionSetGen = (Set[JmlTree], Map[JmlObject, Double]) ⇒ Set[Question[_]]
 
-    val simpleClassExists = alternatives.map(alternative ⇒
-      (flattened(alternative) map (_.className → alternative)).toSeq
+  /** Primitively flattens JML trees and compares only classes (in ontological sense) of objects that exists in alternative rooms */
+  val SimpleClassExists: QuestionSetGen = { (alternatives, costs) ⇒
+    alternatives.map(alternative ⇒
+      (flattened(alternative) map (obj ⇒ (obj.className, costs(obj)) → alternative)).toSeq
     ).fold(Seq.empty)(_ ++ _).groupBy(_._1).mapValues(_.map(_._2).toSet).map {
-      case (className, alts) ⇒
-        Exists(className, None, Map(true → alts, false → (alternatives -- alts))): Question[_]
+      case ((className, cost), alts) ⇒
+        Exists(className, None, Map(true → alts, false → (alternatives -- alts)), cost): Question[_]
     }.toSet
+  }
 
-    simpleClassExists foreach { q ⇒
+  def apply(alternatives: Set[JmlTree], costRules: Set[Cost]): Unit = {
+    // 0. Build the hash map of costs (point of possible optimization)
+    val costs = (alternatives map costsMap(costRules)).fold(Map.empty)(_ ++ _)
+
+    // 1. Build the question Set from trees of alternatives
+    SimpleClassExists(alternatives, costs) foreach { q ⇒
       println(q)
       println(s"   entropy = ${q.entropy}")
     }
 
-    // już z tego można policzyć entropię, koszty i wybrać najlepsze pytanie:
-    //
-    // Question_1 → Answer_a → room_x, room_y
-    //            → Answer_b → room_z
-
     // 2. Choose a question param with the lowest entropy and cost combined
-    //
-    // https://youtu.be/wL9aogTuZw8?t=69
 
     // 3. Ask the question
 
-    // 4. Get rid of non-matching alternatives
-
-    // 5. Loop
+    // 4. Go to 1. considering only matching alternatives.
 
   }
 
   def flattened(tree: JmlTree): Set[JmlObject] =
     (tree.children flatMap flattened) + tree.node
 
-  //  trait ParamSetBuilder {
-  //    def apply(alternative: JmlTree): Set[(QuestionParam, Answer)]
-  //  }
+  def costsMap(costRules: Set[Cost])(tree: JmlTree): Map[JmlObject, Double] = {
+    ??? // TODO
+  }
 
 }

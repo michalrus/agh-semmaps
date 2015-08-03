@@ -728,6 +728,56 @@ czy istnieje «coś» «jakieś»</title>
                 <topic id="0hv8t3rivc9vceh4sec9nkg3be">
                   <title>http://home.agh.edu.pl/~wojnicki/wiki/pl:jak_pisac_prace_dyplomowa</title>
                 </topic>
+                <topic id="3as9i3ddq4glioubtm2k03rbd1">
+                  <title>ciekawe rzeczy do poruszenia</title>
+                  <children>
+                    <topics type="attached">
+                      <topic id="7uo84l5lonk3mu9cljqafquog9">
+                        <title>zakładamy, że user zawsze mówi prawdę, a może to błąd</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="2506tr9enbt8mh2osjd26mb74r">
+                              <title>nawet niecelowo może zaznaczyć fałsz</title>
+                              <children>
+                                <topics type="attached">
+                                  <topic id="5div5904r9navok12f7bqkb4se">
+                                    <title>z niewiedzy / omsknie się palec</title>
+                                  </topic>
+                                </topics>
+                              </children>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="0vfd16b58qqo65f0hhg3b7j80c">
+                        <title>dlaczego odrzucam metodę Bobka i Ślażyńskiego</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="1ch673qvf0iff61gsbu8os3neh">
+                              <title>kontrprzykład</title>
+                            </topic>
+                            <topic id="2ovi0r0hfvlah4hlbnnm5emtrt">
+                              <title>prolog → nie da się uruchomić na telefonie</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                      <topic id="6sq6tdf27lke1opqrgeslvf7u4">
+                        <title>dlaczego koncentracja na Exists</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="5hm8392glsv1topl4v33fc7vpl">
+                              <title>zwykle dwie alternatywy z modułu fizycznego</title>
+                            </topic>
+                            <topic id="5qhvcgfjn6f934jub5mb0t26t6">
+                              <title svg:width="500">musiałyby być pokoje z identyczną zawartością, żeby nie dało się ich odróżnić po Exists</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
+                    </topics>
+                  </children>
+                </topic>
               </topics>
             </children>
           </topic>
