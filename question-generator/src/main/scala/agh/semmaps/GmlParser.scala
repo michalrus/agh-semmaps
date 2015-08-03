@@ -17,6 +17,7 @@ final case class JmlTree(node: JmlObject, children: Set[JmlTree]) {
   /** Finds all subtrees that match the given predicate */
   def find(p: JmlObject ⇒ Boolean): Set[JmlTree] =
     (if (p(node)) Set(this) else Set.empty) ++ (children flatMap (_.find(p)))
+  override def toString: String = super.toString
 }
 
 object JmlParser {

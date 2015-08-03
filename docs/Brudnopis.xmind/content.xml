@@ -574,8 +574,14 @@ czy istnieje «coś» «jakieś»</title>
                                   <topic id="080q4g3n4fl4bnc9iamgnaftnc">
                                     <title>1) spłaszczyć wszystko</title>
                                   </topic>
-                                  <topic id="7nsijkbj90afsf8for0sv82u1f">
-                                    <title svg:width="500">2) pamiętać relacje osobno</title>
+                                  <topic id="4ednkhc6kk8fhktecmm6jjn6ne">
+                                    <title>2) na podstawie samego atrybutu `class`</title>
+                                  </topic>
+                                  <topic id="1ev6glvrnk6j2lnj7e0ecpsf9m">
+                                    <title>id</title>
+                                  </topic>
+                                  <topic id="7nsijkbj90afsf8for0sv82u1f" style-id="6ihjra6rqhkhd70v6s5sm9j5oh">
+                                    <title svg:width="500">9999) pamiętać relacje osobno</title>
                                     <children>
                                       <topics type="attached">
                                         <topic id="3r199p6onv81v6cr0uqd01b5qo">
