@@ -775,6 +775,16 @@ czy istnieje «coś» «jakieś»</title>
                           </topics>
                         </children>
                       </topic>
+                      <topic id="0p6vva0ksn3e19062uok07ughg">
+                        <title>optimization</title>
+                        <children>
+                          <topics type="attached">
+                            <topic id="098adhnlf9qqm96nghpg5dsm31">
+                              <title>cost matching</title>
+                            </topic>
+                          </topics>
+                        </children>
+                      </topic>
                     </topics>
                   </children>
                 </topic>
