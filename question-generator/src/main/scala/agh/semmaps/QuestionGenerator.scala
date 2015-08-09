@@ -3,7 +3,9 @@ package agh.semmaps
 object QuestionGenerator {
 
   /** Any question is characterized by some entropy (how badly it discerns rooms) and a cost (indirectly defined in a configuration file) */
-  sealed trait Question[Answer] {
+  sealed trait Question {
+    type Answer
+
     val answers: Map[Answer, Set[JmlTree]]
     val cost: Double
     val asText: String
@@ -31,7 +33,9 @@ object QuestionGenerator {
   }
 
   /** “Does an object of a given className (and—optionally—such-and-such property) exist in the room?” */
-  final case class Exists(className: String, prop: Option[(String, String)], answers: Map[Boolean, Set[JmlTree]], cost: Double) extends Question[Boolean] {
+  final case class Exists(className: String, prop: Option[(String, String)], answers: Map[Boolean, Set[JmlTree]], cost: Double) extends Question {
+    type Answer = Boolean
+
     val Vowels = Set('a', 'e', 'i', 'o', 'u')
 
     val asText = {
@@ -48,7 +52,7 @@ object QuestionGenerator {
   // final case class Relation(...) extends Question[???] // TODO
 
   /** Question generator for given alternatives and costs map */
-  type QuestionSetGen = (Set[JmlTree], Map[JmlObject, Map[Option[String], Double]]) ⇒ Set[Question[_]]
+  type QuestionSetGen = (Set[JmlTree], Map[JmlObject, Map[Option[String], Double]]) ⇒ Set[Question]
 
   /** Primitively flattens JML trees and compares only classes (in ontological sense) of objects that exists in alternative rooms */
   val SimpleClassExists: QuestionSetGen = { (alternatives, costs) ⇒
@@ -56,15 +60,15 @@ object QuestionGenerator {
       (flattened(alternative) map (obj ⇒ (obj.className, costs(obj)) → alternative)).toSeq
     ).fold(Seq.empty)(_ ++ _).groupBy(_._1).mapValues(_.map(_._2).toSet).map {
       case ((className, cost), alts) ⇒
-        Exists(className, None, Map(true → alts, false → (alternatives -- alts)), cost.getOrElse(None, 0.0)): Question[_]
+        Exists(className, None, Map(true → alts, false → (alternatives -- alts)), cost.getOrElse(None, 0.0)): Question
     }.toSet
   }
 
-  def apply(alternatives: Set[JmlTree], costRules: Set[Cost]): Option[Question[_]] = {
+  def apply(alternatives: Set[JmlTree], costRules: Set[Cost]): Option[Question] = {
     // 0. Build the map of costs (point of possible optimization)
     val costs = (alternatives map costsMap(costRules)).fold(Map.empty)(_ ++ _)
 
-    def forQuestionSetGen(gen: QuestionSetGen): Option[Question[_]] = {
+    def forQuestionSetGen(gen: QuestionSetGen): Option[Question] = {
       // 1. Build the question Set from trees of alternatives
       val allQs = SimpleClassExists(alternatives, costs)
 

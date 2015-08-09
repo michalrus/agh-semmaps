@@ -21,12 +21,10 @@ object Main extends App {
       log(s"${alternativeTrees.size} alternative(s) selected")
       alternativeTrees foreach (t ⇒ log(s"  ${t.node}"))
 
-      QuestionGenerator(alternativeTrees, costs) match {
-        case None ⇒
-          println("No discerning question can be generated.")
-        case Some(q) ⇒
-          println(q.asText)
-      }
+      // mediate
+      val alternative = Mediator(alternativeTrees, costs)
+
+      log(s"\nChosen alternative: ${alternative map (_.node)}.")
     }
     catch {
       case e: Exception ⇒ Console.err.println(e.getMessage)
