@@ -20,6 +20,12 @@ object QuestionGenerator {
     }
 
     final def overallCost: Double = ??? // TODO: combine entropy and cost somehow (mayhap like in Bobek’s paper)
+
+    /**
+     * As we’re choosing the best question based on overall cost (which is entropy and acquisition cost combined),
+     * we need a way to eliminate pointless questions. These might have been chosen if the acquisition cost was set favorably.
+     */
+    final def givesNoInfo: Boolean = answers.count(_._2.nonEmpty) == 1
   }
 
   /** “Does an object of a given className (and—optionally—such-and-such property) exist in the room?” */
@@ -46,12 +52,21 @@ object QuestionGenerator {
     val costs = (alternatives map costsMap(costRules)).fold(Map.empty)(_ ++ _)
 
     // 1. Build the question Set from trees of alternatives
-    SimpleClassExists(alternatives, costs) foreach { q ⇒
+    val allQs = SimpleClassExists(alternatives, costs)
+
+    // 1.1. Filter out questions that, when answered, would give absolutely no additional info.
+    //      Question#overallCost combines entropy with acquisition cost and such question could
+    //      be chosen.
+
+    val qs = allQs filterNot (_.givesNoInfo)
+
+    qs foreach { q ⇒
       println(q)
       println(s"   entropy = ${q.entropy}")
+      println(s"   cost    = ${q.cost}")
     }
 
-    // 2. Choose a question param with the lowest entropy and cost combined
+    // 2. Choose a question with the lowest entropy and cost combined
 
     // 3. Ask the question
 
