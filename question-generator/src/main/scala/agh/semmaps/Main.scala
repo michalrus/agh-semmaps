@@ -21,7 +21,12 @@ object Main extends App {
       log(s"${alternativeTrees.size} alternative(s) selected")
       alternativeTrees foreach (t ⇒ log(s"  ${t.node}"))
 
-      QuestionGenerator(alternativeTrees, costs)
+      QuestionGenerator(alternativeTrees, costs) match {
+        case None ⇒
+          println("No discerning question can be generated.")
+        case Some(q) ⇒
+          println(q.asText)
+      }
     }
     catch {
       case e: Exception ⇒ Console.err.println(e.getMessage)

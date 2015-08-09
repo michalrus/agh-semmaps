@@ -6,6 +6,8 @@ object QuestionGenerator {
   sealed trait Question[Answer] {
     val answers: Map[Answer, Set[JmlTree]]
     val cost: Double
+    val asText: String
+    def asText(a: Answer): String
 
     final def entropy: Double = {
       val counts = answers map (_._2.size)
@@ -19,7 +21,7 @@ object QuestionGenerator {
       }.sum
     }
 
-    final def overallCost: Double = ??? // TODO: combine entropy and cost somehow (mayhap like in Bobek’s paper)
+    final def overallCost: Double = cost * (1.0 + entropy)
 
     /**
      * As we’re choosing the best question based on overall cost (which is entropy and acquisition cost combined),
@@ -29,7 +31,18 @@ object QuestionGenerator {
   }
 
   /** “Does an object of a given className (and—optionally—such-and-such property) exist in the room?” */
-  final case class Exists(className: String, prop: Option[(String, String)], answers: Map[Boolean, Set[JmlTree]], cost: Double) extends Question[Boolean]
+  final case class Exists(className: String, prop: Option[(String, String)], answers: Map[Boolean, Set[JmlTree]], cost: Double) extends Question[Boolean] {
+    val Vowels = Set('a', 'e', 'i', 'o', 'u')
+
+    val asText = {
+      // a/an — bad idea (“a speakers”, “an uniform” etc.)
+      val aAn = "some" //if (Try(className.charAt(0)).map(Vowels.contains) getOrElse false) "an" else "a"
+
+      s"Do you see $aAn $className?"
+    }
+
+    def asText(a: Boolean): String = if (a) "Yes" else "No"
+  }
 
   // final case class Count(...) extends Question[Int] // TODO
   // final case class Relation(...) extends Question[???] // TODO
@@ -47,31 +60,26 @@ object QuestionGenerator {
     }.toSet
   }
 
-  def apply(alternatives: Set[JmlTree], costRules: Set[Cost]): Unit = {
+  def apply(alternatives: Set[JmlTree], costRules: Set[Cost]): Option[Question[_]] = {
     // 0. Build the map of costs (point of possible optimization)
     val costs = (alternatives map costsMap(costRules)).fold(Map.empty)(_ ++ _)
 
-    // 1. Build the question Set from trees of alternatives
-    val allQs = SimpleClassExists(alternatives, costs)
+    def forQuestionSetGen(gen: QuestionSetGen): Option[Question[_]] = {
+      // 1. Build the question Set from trees of alternatives
+      val allQs = SimpleClassExists(alternatives, costs)
 
-    // 1.1. Filter out questions that, when answered, would give absolutely no additional info.
-    //      Question#overallCost combines entropy with acquisition cost and such question could
-    //      be chosen.
+      // 1.1. Filter out questions that, when answered, would give absolutely no additional info.
+      //      Question#overallCost combines entropy with acquisition cost and such question could
+      //      be chosen.
+      val qs = allQs filterNot (_.givesNoInfo)
 
-    val qs = allQs filterNot (_.givesNoInfo)
-
-    qs foreach { q ⇒
-      println(q)
-      println(s"   entropy = ${q.entropy}")
-      println(s"   cost    = ${q.cost}")
+      // 2. Choose a question with the lowest entropy and cost combined
+      if (qs.nonEmpty) Some(qs.minBy(_.overallCost)) else None
     }
 
-    // 2. Choose a question with the lowest entropy and cost combined
+    val gensToTry = Stream(SimpleClassExists)
 
-    // 3. Ask the question
-
-    // 4. Go to 1. considering only matching alternatives.
-
+    gensToTry.map(forQuestionSetGen).find(_.isDefined).flatten
   }
 
   def flattened(tree: JmlTree): Set[JmlObject] =
