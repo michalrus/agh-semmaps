@@ -62,7 +62,7 @@ object QuestionGenerator {
   /** Primitively flattens JML trees and compares only classes (in ontological sense) of objects that exists in alternative rooms */
   val SimpleClassExists: QuestionSetGen = { (alternatives, costs) ⇒
     alternatives.map(alternative ⇒
-      (flattened(alternative) map (obj ⇒ (obj.className, costs(obj).getOrElse(None, 0.0)) → alternative)).toSeq
+      (flattened(alternative) filterNot alternative.node.== map (obj ⇒ (obj.className, costs(obj).getOrElse(None, 0.0)) → alternative)).toSeq
     ).fold(Seq.empty)(_ ++ _).groupBy(_._1).mapValues(_.map(_._2).toSet).map {
       case ((className, cost), alts) ⇒
         Exists(className, None, Map(true → alts, false → (alternatives -- alts)), cost): Question
@@ -71,7 +71,7 @@ object QuestionGenerator {
 
   val ClassPropExists: QuestionSetGen = { (alternatives, costs) ⇒
     alternatives.map(alternative ⇒
-      (flattened(alternative) flatMap (obj ⇒ obj.props.to[Set].map(prop ⇒ (obj.className, prop, {
+      (flattened(alternative) filterNot alternative.node.== flatMap (obj ⇒ obj.props.to[Set].map(prop ⇒ (obj.className, prop, {
         val cs = costs(obj)
         cs.getOrElse(None, 0.0) + cs.getOrElse(Some(prop._1), 0.0)
       }) → alternative))).toSeq
@@ -98,7 +98,7 @@ object QuestionGenerator {
       if (qs.nonEmpty) Some(qs.minBy(_.overallCost)) else None
     }
 
-    val gensToTry = Stream(ClassPropExists)
+    val gensToTry = Stream(SimpleClassExists, ClassPropExists)
 
     gensToTry.map(forQuestionSetGen).find(_.isDefined).flatten
   }
