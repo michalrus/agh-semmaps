@@ -38,11 +38,16 @@ object QuestionGenerator {
 
     val Vowels = Set('a', 'e', 'i', 'o', 'u')
 
-    val asText = {
+    val propAsText: String = prop match {
+      case None         ⇒ "x"
+      case Some((k, v)) ⇒ s" $k=$v" // TODO: these rules should be defined in *.rules file
+    }
+
+    val asText: String = {
       // a/an — bad idea (“a speakers”, “an uniform” etc.)
       val aAn = "some" //if (Try(className.charAt(0)).map(Vowels.contains) getOrElse false) "an" else "a"
 
-      s"Do you see $aAn $className?"
+      s"Do you see $aAn$propAsText $className?"
     }
 
     def asText(a: Boolean): String = if (a) "Yes" else "No"
@@ -57,10 +62,22 @@ object QuestionGenerator {
   /** Primitively flattens JML trees and compares only classes (in ontological sense) of objects that exists in alternative rooms */
   val SimpleClassExists: QuestionSetGen = { (alternatives, costs) ⇒
     alternatives.map(alternative ⇒
-      (flattened(alternative) map (obj ⇒ (obj.className, costs(obj)) → alternative)).toSeq
+      (flattened(alternative) map (obj ⇒ (obj.className, costs(obj).getOrElse(None, 0.0)) → alternative)).toSeq
     ).fold(Seq.empty)(_ ++ _).groupBy(_._1).mapValues(_.map(_._2).toSet).map {
       case ((className, cost), alts) ⇒
-        Exists(className, None, Map(true → alts, false → (alternatives -- alts)), cost.getOrElse(None, 0.0)): Question
+        Exists(className, None, Map(true → alts, false → (alternatives -- alts)), cost): Question
+    }.toSet
+  }
+
+  val ClassPropExists: QuestionSetGen = { (alternatives, costs) ⇒
+    alternatives.map(alternative ⇒
+      (flattened(alternative) flatMap (obj ⇒ obj.props.to[Set].map(prop ⇒ (obj.className, prop, {
+        val cs = costs(obj)
+        cs.getOrElse(None, 0.0) + cs.getOrElse(Some(prop._1), 0.0)
+      }) → alternative))).toSeq
+    ).fold(Seq.empty)(_ ++ _).groupBy(_._1).mapValues(_.map(_._2).toSet).map {
+      case ((className, prop, cost), alts) ⇒
+        Exists(className, Some(prop), Map(true → alts, false → (alternatives -- alts)), cost): Question
     }.toSet
   }
 
@@ -70,7 +87,7 @@ object QuestionGenerator {
 
     def forQuestionSetGen(gen: QuestionSetGen): Option[Question] = {
       // 1. Build the question Set from trees of alternatives
-      val allQs = SimpleClassExists(alternatives, costs)
+      val allQs = gen(alternatives, costs)
 
       // 1.1. Filter out questions that, when answered, would give absolutely no additional info.
       //      Question#overallCost combines entropy with acquisition cost and such question could
@@ -81,7 +98,7 @@ object QuestionGenerator {
       if (qs.nonEmpty) Some(qs.minBy(_.overallCost)) else None
     }
 
-    val gensToTry = Stream(SimpleClassExists)
+    val gensToTry = Stream(ClassPropExists)
 
     gensToTry.map(forQuestionSetGen).find(_.isDefined).flatten
   }
