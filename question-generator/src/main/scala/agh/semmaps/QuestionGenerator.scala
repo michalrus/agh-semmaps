@@ -39,7 +39,7 @@ object QuestionGenerator {
     val Vowels = Set('a', 'e', 'i', 'o', 'u')
 
     val propAsText: String = prop match {
-      case None         ⇒ "x"
+      case None         ⇒ ""
       case Some((k, v)) ⇒ s" $k=$v" // TODO: these rules should be defined in *.rules file
     }
 
