@@ -69,6 +69,7 @@ object QuestionGenerator {
     }.toSet
   }
 
+  /** Flattens JML trees and compares classes & properties of objects */
   val ClassPropExists: QuestionSetGen = { (alternatives, costs) ⇒
     alternatives.map(alternative ⇒
       (flattened(alternative) filterNot alternative.node.== flatMap (obj ⇒ obj.props.to[Set].map(prop ⇒ (obj.className, prop, {
@@ -80,6 +81,8 @@ object QuestionGenerator {
         Exists(className, Some(prop), Map(true → alts, false → (alternatives -- alts)), cost): Question
     }.toSet
   }
+
+  // TODO: GEIST’s idea for QuestionSetGen
 
   def apply(alternatives: Set[JmlTree], costRules: Set[Cost]): Option[Question] = {
     // 0. Build the map of costs (point of possible optimization)
