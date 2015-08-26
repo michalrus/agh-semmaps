@@ -22,7 +22,7 @@ elif [ "$#" = 2 ] ; then
   neww="$(echo "$tots-$prev" | bc)"
   perc="$(echo "scale=1; $neww*100/$goal" | bc)"
   numd="$(echo "scale=0; $neww*50/$goal" | bc)"
-  numc="$(echo "scale=0; 50-$numd" | bc)"
+  numc="$(echo "scale=0; 50-($numd)" | bc)"
   [ "$numd" -lt 0 ] && numd=0
   [ "$numc" -lt 0 ] && numc=0
   printf '%s [%s%s] %s\n' "+$neww words ($tots total)" "$(yes '•' | head -n "$numd" | tr -d '\n')" "$(yes '_' | head -n "$numc" | tr -d '\n')" "$perc% of the planned $goal!"
