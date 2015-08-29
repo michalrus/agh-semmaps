@@ -3,8 +3,50 @@
 
 % see: http://home.agh.edu.pl/~wojnicki/wiki/pl:jak_pisac_prace_dyplomowa
 
-\todo[inline]{What? The problem}
-\todo[inline]{How? Shortly about the method}
-\todo[inline]{Why? The source}
-\todo[inline]{What for? Consequences}
-\todo[inline]{What's in next chapters?}
+% What? The problem
+
+We, as a species, are currently quite successful at having various devices localized outdoors. The flagship solution for this is undeniably the Global Positioning System---or GPS---created by U.S. military scientists in 1970s. Possible applications for this technology are endless: navigation, astronomy, cartography, fleet tracking, sport, robotics etc. Apart from navigational applications, GPS is also widely used for extremely cheap and accurate time transfer (where multiple sites have their clocks synchronized in a very precise manner); this includes traffic lights timing, synchronization of GSM base stations etc. External location is also used as one of the context sources in context-aware systems (see \cref{sec:context-aware}). Numbers of mobile applications using this particular technology are simply overwhelming in application stores of both Google and Apple.
+
+Recently, a new idea has emerged. What if it was equally possible to conveniently locate a device inside a building, but using technology currently deployed to approximately 2 billion smartphones in use today? As humans spend a lot more time inside than outside, only this micro-location would be truly freeing for developers' imagination. Not to mention commercial applications that would allow for dramatic cuts in costs of building a customized micro-location infrastructure in warehouses, factories, quarries, underground and countless other enterprises.
+
+% Why? The source
+% What for? Consequences
+
+For that, the Global Positioning System cannot be used. At least 4 satellites are needed to be visible to get a fix. And even if 4 are, electromagnetic waves emitted by GPS satellites refract when hitting walls and interfere with each other, misleading GPS receivers and by that rendering the system practically useless for indoor applications. More about existing solutions can be found in \cref{sec:existing-uloc}.
+
+\section{Overview of existing solutions for micro-location}
+\label{sec:existing-uloc}
+
+\begin{description}
+	\item[Magnetic positioning] is a technique that uses data from smartphone's magnetic sensor, the compass. Most buildings nowadays use reinforced concrete (concrete with steel bars as a skeleton). These bars affect Earth's magnetic field in a unique way \cite{Haverinen:magnetic}. Crowd sourcing may be used to map a building and, later, these maps may be used to locate a device indoors. This technique gives accuracy of 1--2 meters with confidence level of 90\%. However, it is not as perfect, as the measurement is heavily impacted by moving metal objects inside the building such as elevators, drawer cabinets etc.
+	
+	\item[Inertial measurements]
+	
+	\item[Wi-Fi based positioning]
+	
+	\item[Bluetooth, iBeacons]
+	
+	\item[RFID]
+	
+	\item[Grid concepts]
+	
+	\item[Angle of arrival]
+	
+	\item[Time of arrival]
+	
+	\item[Ultrawide band]
+
+	\item[Infrared]
+	
+	\item[Visible light communication]
+	
+	\item[Ultrasound]
+	
+	\item[QR]
+	
+	\item[NFC]
+\end{description}
+
+\section{Shortly about the proposed method}
+
+\section{What's in next chapters?}
