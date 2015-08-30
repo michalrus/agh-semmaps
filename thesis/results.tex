@@ -4,6 +4,14 @@
 \section{Physics-based module for providing alternatives}
 \label{sec:physics-module}
 
-\section{Case 1: AGH UST building}
+\todo[inline]{something about inertial measurements}
 
-\section{Case 2: Main Square, Kraków}
+\todo{something about beacons} Arguably, this is somewhat of a misuse of the beacons technology. Manufacturers generally speak of three recognizable levels of ``interaction'' with the beacon (based on signal strength): \begin{itemize}
+ 	\item receiver being in very close proximity to the transmitter,
+ 	\item being in the same room,
+ 	\item no interaction at all.
+ \end{itemize}
+ 
+The idea for using beacons in the module is to make an assessment about distances to nearby transmitters based on signal strength and law of inverse squares (see \cref{eq:inverse-sq}). Wojnicki et al. claim that this works; however, \emph{only under laboratory conditions}. \todo{cite Wojnicki} As iBeacons use extremely low energy to transmit the signal, even a person walking across the room while taking the measurement can influence it so negatively, that any information inferred is almost worthless.
+
+\todo[inline]{describe architecture etc.}
