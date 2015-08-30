@@ -36,13 +36,13 @@ In this field---pun intended---also called RSSI (or Received Signal Strength Ind
 	
 	\item[Ultra-wideband] (also called UWB) is radio transmission method that uses a wide part of the radio frequency spectrum and extremely low energy to transmit large amounts of data over very short distances \cite{ultra-wideband}. These short distances are of interest here, as we don't want to receive signals from other rooms. Unfortunately, modern smartphones are not compatible with this radio technology.
 	
-	\item[Infrared]
+	\item[Infrared] communication requires that receivers and transmitters ``see'' each other. Thanks to that, locating based on infrared light would be confined to a single room, a desirable trait. Infrared sensors used to be popular in mobile phones, but this popularity decreased dramatically with the advent of smartphones. Nowadays, it's usable only in custom deployments.
 	
-	\item[Visible light communication]
+	\item[Visible light communication] method is similar in its concept to the infrared-based one. One major difference is that all smartphones have visible light sensors built in, the camera. Zhang and Kavehrad propose a method for indoor localization system based on visible light LEDs \cite{Zhang:visible-light}. Its computer model is able to localize a device in two dimensions with accuracy of centimeters for a reasonably sized room. Along with localization using local warps of Earth's magnetic field, this method is one of the most promising ones. One blatant downside would be the need to lay out the diodes in all rooms being observed, while magnetic positioning works almost out-of-the-box.
 	
-	\item[Ultrasound]
+	\item[Ultrasound] positioning offer much greater accuracy due to the fact that sound travels through air at a \emph{lot} slower speeds than light or other electromagnetic signals. The method works---similarly to RFID positioning---by having simple tags attached to to-be-located objects transmit ultrasound identifying information. Again, such a method cannot be used with currently marketed mobile devices, as these lack capabilities of projecting ultrasonic---in this case---signals with their unique IDs.
 	
-	\item[QR]
+	\item[QR codes] (abbreviation for Quick Response codes) is a trade name for a particular type of two-dimensional barcode (see \todo{image} \ldots for an example of such code). This method of micro-location is \emph{similarly burdensome and awkward} for the user as the method proposed in this paper (more about bad User Experience in \cref{sec:user-experience}). It works by---first---having these graphical codes laid out in the observed building. Each of them is encoding either a unique identifier of the exact spot it's placed at or even just information about that location directly. Next, the user has to scan a code---take a picture, basically, and then wait for its processing---if they want to learn where exactly this code is physically placed (i.e. just read off information encoded in the QR). Downsides: a lot of preparation needed on the side of the building's management and a lot of awkward hassle for the user. It's worth noting that there exists an Internet movement among software developers aims at discouraging QR code use to the point of total elimination from public space \cite{should-i-use-qr}.
 	
 	\item[NFC]
 \end{description}
