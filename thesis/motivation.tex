@@ -28,13 +28,13 @@ In this field---pun intended---also called RSSI (or Received Signal Strength Ind
 	
 	\item[RFID] is an acronym for radio-frequency identification. This method is similar in its concept to iBeacons. \todo{photo?} Small chips with unique identifiers are placed in the room. RFID reader knows the mapping between chips' IDs and rooms/positions. When an ID is read, its matching room is chosen as the user's current location. One big disqualifying disadvantage is that today mobile phones are not RFID readers.
 	
-	\item[Grid concepts]
+	\item[Grid concepts] revert the receiver and transmitter roles. A device being micro-located broadcasts its identification information, usually by using RFID technology. A large number of receivers are arranged in a grid pattern over an area under observation. Low energy of the signal guarantees that only the receivers closest to the transmitting chip will get its identification. Because of these considerations this method is not readily available for today mobile phones.
 	
-	\item[Angle of arrival]
+	\item[Angle of arrival] methods usually need to operate on an array of antennas. Each sensor in the array gets the signal at slightly different time. From this time difference of arrival---\todo{\url{https://en.wikipedia.org/wiki/File:CrossCorr_Pulse.png}?}TDOA---for the whole array, the angle of arrival can be calculated. Other solutions use highly directional receivers arrange in a circular pattern. A receiver that gets the signal, determines the angle. After having the angle measured for at least 2 distinct transmitters, in the next step, the angles are used during \todo{picture of triangulation} triangulation which, in the end, provides array's position.
 	
-	\item[Time of arrival]
+	\item[Time of arrival] method is slightly similar to \emph{angle} of arrival. When time the signal took to get from a transmitter to a receiver is known, and so is its propagation speed, the traveled distance can be calculated straightforwardly. Transmitted signal has to encode some kind of a time marker, marking the time of sending. The main instantly visible problem here is\ldots extremely accurate time synchronization needed between the both parties. This technique is used in GPS, which is the reason for it being able to be used as a time source.
 	
-	\item[Ultrawide band]
+	\item[Ultra-wideband] (also called UWB) is radio transmission method that uses a wide part of the radio frequency spectrum and extremely low energy to transmit large amounts of data over very short distances \cite{ultra-wideband}. These short distances are of interest here, as we don't want to receive signals from other rooms. Unfortunately, modern smartphones are not compatible with this radio technology.
 	
 	\item[Infrared]
 	
