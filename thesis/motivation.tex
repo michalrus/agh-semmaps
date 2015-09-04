@@ -1,5 +1,5 @@
 \chapter{Micro-location}
-\label{cha:motivation}
+\label{cha:microlocation}
 
 % Motivation
 
@@ -19,7 +19,7 @@ The primary motivation for providing an ultimate solution to the micro-location 
 
 If correctly working micro-location was widely available, there would probably emerge a place for some centralized service holding most---if not all---of the indoor navigational maps, like Google Maps does for GPS and outdoor data, mapping the whole world. Or, more likely, an application able to use openly distributed data about public space buildings, but at the same time with an option to plug in---possibly with some kind of authentication---into non-public maps. That could be of use when confidential data becomes involved (plans of classified government buildings, business secrets etc.).
 
-UX UX \todo{UX}
+Undeniably, in recent years, a new truth has become more and more prominent and at this point, it would be really dishonest not to mention importance of User Experience. It's even more visible in the field of localizing devices. GPS-based outdoor navigation annoys the user heavily, when it misleads them. In addition to the possibility of misleading, the proposed method is based on \emph{mediation} (\cref{sec:mediation})---indirectly asking the user where they are---something, that already will annoy them to some degree. More about the not-so-good User Experience of this particular method can be found in \cref{sec:user-experience}.
 
 Below, both more and less promising solutions for this problem already existing today are described. Some of them are used in the micro-location method proposed in this paper; in these cases the relation is discussed briefly. More details can be found in \cref{sec:physics-module}.
 
@@ -65,4 +65,3 @@ In this field---pun intended---also called RSSI (or Received Signal Strength Ind
 	\item[NFC] is an abbreviation for Near Field Communication. NFC allows enabled devices to establish a radio connection over a very close range (less than 10 cm). This necessary closeness can be used to locate a device with confidence, as the user has to almost touch a tag with their device (so they have to be near it), to read it. At the same time this requirement renders this method highly impractical and burdensome for the user. The NFC technology is only built into new smartphones by Apple and most premium Android phones, and because of that it is not compatible with most devices currently in use. These points don't stop some researchers from publishing a paper about their proposed framework for such a micro-location method \cite{nfc-ulocation}. As a tidbit, this is also the technology used in contactless payments using credit and debit cards.
 	
 \end{description}
-
