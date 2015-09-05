@@ -4,7 +4,7 @@ set -o noclobber
 set -o errexit
 set -o nounset
 
-d="$(dirname "$(readlink "$0")")"
+d="$(dirname "$(readlink -f "$0")")"
 
 cd "$d"
 
