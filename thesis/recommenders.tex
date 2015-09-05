@@ -56,9 +56,14 @@ The collected data is sent to a pre-configured web service running a SQL data ba
 
 Choosing which elements of context are relevant for a given case is quite demanding, as there are many points to take into consideration. As AWARE developers put it, ``Capturing context is challenging. In fact, context is produced anytime, anywhere, by everything and anyone: it is extremely volatile and subjective.'' \cite{aware} One also has to think of such a mundane question as\ldots battery life of the mobile device.
 
-\vspace{4cm}
-\todo{cite something by S. Bobek}
-\clearpage
+Nalepa and Bobek in \cite{Bobek:rule-mobile-context} point out, that in mobile device environments, not only the question of creating a valid model for a context-aware system is important. Designers also have to consider several other factors.
+
+\begin{itemize}
+	\item Energy efficiency, as having all sensors constantly turned on uses excessive amounts of battery power, and by that reduces the time till the next charging, impacting the environment negatively, not to mention user's annoyance.
+	\item Respecting data privacy is regarded highly by the users. Because of this fact, sending all user data to a in-cloud service for processing and inference tasks might turn out to be a risky design decision.
+	\item As CPU time and memory in mobile devices are limited, when compared to an average personal computer (but less and less so in recent years), it's important for a context-aware system to not be heavy CPU nor RAM. The system has to work as unnoticeably as possible, not slowing down other applications run by the user.
+	\item \todo{finish}
+\end{itemize}
 
 \section{Recommender systems}
 
@@ -106,8 +111,12 @@ The second approach to recommending is content-based filtering. These methods ar
 
 For that to work, each user's profile has to be created. This can be done using information from two sources: what the user told us they like, and---more reliably---how they were interacting with the system in the past (what they bought, how and what they rated positively/negatively etc.). While their profile indicates what types of things this person may like, we also need a way to categorize the \emph{things}. A knowledge base of distinct features and their values for all objects need to be created.
 
-It's necessary to say, that weights denoting the importance of each such feature exist and are not equal among users and objects. This whole profile building can be thought of as determining vectors of the weights for each user and each feature of an object. Methods for calculating these vectors vary from something as simple as average rating of that feature to Bayesian networks even to artificial neural networks.
+It's necessary to say, that weights denoting the importance of each such feature exist and are not equal among users and objects. This whole profile building can be thought of as determining vectors of the weights for each user and each feature of an object. Methods for calculating these vectors vary from something as simple as average rating of that feature to Bayesian networks even to artificial neural networks. Apart from rating, in some systems user is provided with a ``Like'' and ``Dislike'' buttons, use of which can in addition influence calculation of the weights.
 
-Apart from rating, in some systems user is provided with a ``Like'' and ``Dislike'' buttons, use of which can in addition influence calculation of the weights.
+One desirable trait while building content-based recommender system (or a recommender system in general) is this system's ability to recommend objects/items of \emph{other} types than these used in learning about the user's preference. I.e. it would be desirable for a system to be able to recommend a music CD based on their shoe shopping history or belles-lettres taste.
 
-\todo{more?}
+Some examples of content-based filtering systems offering recommendations could be ``Rotten Tomatoes'' (offering movie recommendations), ``Pandora Radio'', ``Internet Movie Database.''
+
+\subsection{Hybrid filtering}
+
+A new wave of recommender systems incorporate both approaches, content-based-- and collaborative filtering. Some of the ways in which this can be done include calculating outputs of each model independently and then comparing results or adding some of the content-based features to collaborative filtering or the other way round. Adomavicius and Tuzhilin describe various possible extensions in detail \cite{Adomavicius:recommenders}.
