@@ -104,4 +104,10 @@ One of the most popular collaborative filtering algorithms is the \emph{item--to
 
 The second approach to recommending is content-based filtering. These methods are in turn based on comparing distinctive features of the recommended items to the user's preferences, instead of on what other people (similar to the user) think of them.
 
+For that to work, each user's profile has to be created. This can be done using information from two sources: what the user told us they like, and---more reliably---how they were interacting with the system in the past (what they bought, how and what they rated positively/negatively etc.). While their profile indicates what types of things this person may like, we also need a way to categorize the \emph{things}. A knowledge base of distinct features and their values for all objects need to be created.
+
+It's necessary to say, that weights denoting the importance of each such feature exist and are not equal among users and objects. This whole profile building can be thought of as determining vectors of the weights for each user and each feature of an object. Methods for calculating these vectors vary from something as simple as average rating of that feature to Bayesian networks even to artificial neural networks.
+
+Apart from rating, in some systems user is provided with a ``Like'' and ``Dislike'' buttons, use of which can in addition influence calculation of the weights.
+
 \todo{more?}
