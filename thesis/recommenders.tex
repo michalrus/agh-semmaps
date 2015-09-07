@@ -61,9 +61,12 @@ Nalepa and Bobek in \cite{Bobek:rule-mobile-context} point out, that in mobile d
 \begin{itemize}
 	\item Energy efficiency, as having all sensors constantly turned on uses excessive amounts of battery power, and by that reduces the time till the next charging, impacting the environment negatively, not to mention user's annoyance.
 	\item Respecting data privacy is regarded highly by the users. Because of this fact, sending all user data to a in-cloud service for processing and inference tasks might turn out to be a risky design decision.
-	\item As CPU time and memory in mobile devices are limited, when compared to an average personal computer (but less and less so in recent years), it's important for a context-aware system to not be heavy CPU nor RAM. The system has to work as unnoticeably as possible, not slowing down other applications run by the user.
-	\item \todo{finish}
+	\item As CPU time and memory in mobile devices are limited, when compared to an average personal computer (but less and less so in recent years), it's important for a context-aware system to not be heavy on CPU nor RAM. The system has to work as unnoticeably as possible, not slowing down other applications run by the user.
+	\item The essence of a mobile device is that it is carried by the owner almost all of the time. This causes rapid changes of the context. Because of that, it would be desirable for a context-aware system to be responsive enough to pair with the pace of changes.
+	\item Amounts of data produced by all observed sensors of a mobile device are---so to speak---screaming. A correct mathematical methods of fitting characteristics to these unstable signals need to be proposed.
 \end{itemize}
+
+It would also be valuable for a context-aware system---also, for any other artificially intelligent system---to be \emph{intelligible}. What this means in the context of artificial intelligence is that the system is able to explain to the user why it decided like it did. It can be thought of as explainability from expert systems. As Lim and Dey have found out, ``intelligibility improves user impression of a context-aware application if its certainty is high'' \cite{Dey:intelligibility}. In their other paper \cite{Dey:explainations}, they point to the fact, that this is because users generally have difficulties reasoning about behaviors of systems that collect data implicitly, ``in the background,'' without user involvement. As a side note, in this proposed solution, the certainty \emph{is} certainly high (see \cref{sec:mediation}).
 
 \section{Recommender systems}
 
@@ -103,7 +106,7 @@ While explicitness of asking a user to rate a movie is understandable---after al
 
 This phenomenon might be explained psychologically. When interacting with a movie recommender, the person wants to get some great new recommendations, they are willing to pay for them with their ratings. On the other hand, the commercial recommender is seen as one wanting to take advantage of the user, make them buy some more items and in turn make even more money. This negative image can only be overturned by the system recommending just the right items (from the user's perspective).
 
-One of the most popular collaborative filtering algorithms is the \emph{item--to--item} one, originally popularized by Amazon (the ``people \todo{mention explainability}who buy A buy also B'' feature), used also by Facebook and LinkedIn and Twitter for new friends and groups suggestions, and Last.fm for new music recommendations.
+One of the most popular collaborative filtering algorithms is the \emph{item--to--item} one, originally popularized by Amazon (the ``people who buy A buy also B'' feature), used also by Facebook and LinkedIn and Twitter for new friends and groups suggestions, and Last.fm for new music recommendations. It's worth noting, that Amazon employs strict intelligibility/explainability politics (the term is explained in \cref{sec:context-aware}), showing the user why a particular item is being recommended.
 
 \subsection{Content-based filtering}
 
