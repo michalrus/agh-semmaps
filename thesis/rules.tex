@@ -20,15 +20,33 @@ In very simple terms, an example of a fact could be \texttt{Ann is a human}. If 
 
 In thinking about how this approach is different from regular programming--- ``regular'' as in ``imperative'', for functional programming languages show some similarities---it is really important to notice, that---in their purest form, in theory---rule-based systems do not impose any order in which rules are going to be executed. At least, that is the suggested mindset when defining rules of a particular RB system.
 
-\todo{parts of rbs}
-
-\todo{knowledge base}
-
-Some other differences---apart from no obvious order of execution---can be also thought of as advantages of this approach. They are listed below.
+Usually, a rule-based systems is composed of at least three main components (the first three on the list below).
 
 \begin{itemize}
-	\item \todo{advantages}
+	\item A rule base (knowledge base) described above, consisting of a set of rules (and, possibly, predefined facts).
+	\item A reasoning engine (also called inference engine). It usually works in three phases. \begin{enumerate}
+		\item In the first step, all rules are matched against the working memory (containing all previously asserted facts) and these with their left side (\texttt{IF a}) satisfied are chosen. From these rules, the \emph{conflict set} is built. If the set is empty, execution halts until there are more/less facts known, and after some are asserted/retracted, it begins again at step one.
+		\item Then, in the second step, only one rule is chosen from the conflict set. There are different strategies for resolving this conflict (``which rule to run first'').
+		\item This rule is executed. Its right side, \texttt{THEN b} is run. The execution might change the contents of working memory. The whole process is now looped and starts again at the first step (with possibly modified working memory).
+	\end{enumerate}
+	\item The inference engine also has to be equipped with so called \emph{working memory}, in which the current mutable state of the system is residing. The engine will be modifying this memory.
+	\item Another very common part would of course be some user interface to interact with the system (ask questions, modify the knowledge, rules etc.).
 \end{itemize}
+
+Some other differences from regular programming---apart from no obvious order of execution---can be also thought of as advantages of this approach. They are listed below.
+
+\begin{itemize}
+	\item Arguably, the most important one is lower knowledge acquisition and maintenance cost. In regular computer systems, to change or define their rules of functioning, a programmer needs to be used, apart from an expert in given field. In case of RBS, the rules are usually notated/presented in a form that is capable of being understood by a field expert. They can delete, modify and define new rules without programmer's help.
+	\item It is possible for the system to explain its decisions (e.g. using backtracking). It is incredibly important for simplification of verifying the correctness of its decisions. As the knowledge is contained explicitly in the rules, it is usually not hard to obtain a chain of reasoning and present it to the user. (That also is the intelligibility mentioned in \cref{sec:context-aware}.)
+\end{itemize}
+
+Inference engines may use two modes of operation: forward and backward chaining.
+
+In backward chaining, there's a goal/question set forth by the user of the system. Then, the system is working backwards, looking for rules with right hand side satisfying the goal (or left hand sides from previous links in the chain of reasoning). If it happens so that all left hand sides are satisfied, the goal/question is true.
+
+In forward chaining, \todo{forward chaining}
+
+\todo{example: expert systems}
 
 \section{HeaRTDroid}
 
