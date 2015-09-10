@@ -40,13 +40,22 @@ Some other differences from regular programming---apart from no obvious order of
 	\item It is possible for the system to explain its decisions (e.g. using backtracking). It is incredibly important for simplification of verifying the correctness of its decisions. As the knowledge is contained explicitly in the rules, it is usually not hard to obtain a chain of reasoning and present it to the user. (That also is the intelligibility mentioned in \cref{sec:context-aware}.)
 \end{itemize}
 
-Inference engines may use two modes of operation: forward and backward chaining.
+Inference engines may use two modes of operation: forward and backward chaining. The sample engine described above is using forward chaining. This method can also be thought of as incrementally applying \emph{modus ponens}:
 
-In backward chaining, there's a goal/question set forth by the user of the system. Then, the system is working backwards, looking for rules with right hand side satisfying the goal (or left hand sides from previous links in the chain of reasoning). If it happens so that all left hand sides are satisfied, the goal/question is true.
+\begin{equation}
+	((P \to Q) \land P) \to Q
+	\label{eq:modus-ponens}
+\end{equation}
 
-In forward chaining, \todo{forward chaining}
+\Cref{eq:modus-ponens} claims that whenever we have a rule, $P \to Q$ and know that a fact sitting on its left hand side is true, $P$, we also know that $Q$ must be true. Iteratively applying this law of logic to the working memory and the defined rules is the core of forward chaining.
 
-\todo{example: expert systems}
+In backward chaining, there's a goal/question set forth by the user of the system. Then, the system, working backwards, is looking for rules with right hand side satisfying the goal (or those satisfying left hand sides from previous links in the chain of reasoning). If it happens so that all left hand sides are satisfied, the goal/question is true. Backward chaining systems usually employ depth-first strategy for traversing the knowledge graph \cite{chein2008graph}. One notable example of a language implementing backward chaining and DFS is Prolog.
+
+Hayes-Roth et al. claim in \cite{hayes1984building}, that one advantage of forward-- over backward chaining systems is that the first is data-driven, and not by the goal. What that means is that arrival of new data (facts) can trigger new actions, the inference and the system on the whole are naturally more reactive.
+
+The most obvious and widely-discussed use case for a rule-based system is an \emph{expert system}, one that is able to successfully emulate the decision making process of a human expert. Expert systems were the first truly successful achievement in the artificial intelligence software field \cite{russell1995artificial}.
+
+Hayes-Roth in his already mentioned book, \cite{hayes1984building}, divides expert systems into ten distinct categories: interpretation, prediction, diagnosis, design, planning, monitoring, debugging, repair, instruction and control (tidbit: a system from the ``control'' group implemented in CLIPS, a rule-based language by NASA, was until recently used for Space Shuttle Mission Control \cite{rasmussen1990inco}). All this shows the vast applicability of rule-based systems.
 
 \section{HeaRTDroid}
 
