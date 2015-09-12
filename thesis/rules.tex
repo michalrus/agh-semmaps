@@ -59,4 +59,24 @@ Hayes-Roth in his already mentioned book, \cite{hayes1984building}, divides expe
 
 \section{HeaRTDroid}
 
-One example of rule-based systems that might be of particular interest for this project is HeaRTDroid. As the last part of the name suggests, it is meant to be run on mobile devices controlled by the Android system.
+One example of rule-based systems that might be of particular interest for this project is the HeaRTDroid project \cite{heartdroid}. As the last part of the name suggests, it is meant to be run on mobile devices controlled by the Android system. Because of that, it was the first technology to turn to, as the proposed solution is meant to run on mobile devices.
+
+As its developers claim in \cite{heartdroid}, the inference engine works with rules defined using XTT2 representation. XTT (Extended Tabular Trees), the predecessor of XTT2, was introduced by Nalepa in \cite{nalepa2004new}. Its ideas are based on ALSV---or Attributive Logic with Set Values---a concept described by Ligęza (its author) in \cite{ligeza2006rule}, sometimes referred to as ALSV(FD)---Attributive Logic with Set Values over Finite Domain---in the literature.
+
+In ALSV(FD), the basic idea is that an attribute of a rule, say, \texttt{person in the room} needs not be satisfied with only one defined value, e.g. \texttt{Alice} (``taking an \emph{atomic} value''), but can also ``take a set of values'', i.e. be defined to be satisfiable with any of the values of some set, eg. \texttt{\{Alice, Bob, Cécile\}}.
+
+Nalepa states in \cite{nalepa2008xtt2}:
+
+\begin{quotation}
+	``XTT is a knowledge representation and design formalism for \emph{rules}. It serves both as a \emph{logical} and \emph{algebraic} specification of rules \elide.
+	
+	In contrast to \elide a \emph{flat} (single-level) set of rules (e.g. using the Rete-based inference engines), XTT introduces an explicit \emph{structure} \elide: \emph{tables}, used to represent groups of rules working in the same context (having similar structure of preconditions), and \emph{intertable links}, used to provide explicit specification of inference control, \elide, that allow for decision-tree like structure.
+	
+	Each table is composed of its scheme \elide definition \elide, and
+	the rules defined by the operators and values \elide.
+	The method is used during the phase of the logical design of the rulebase. \elide
+	
+	XTT is a formal method based on an expressive logical calculus called Attributive Logic (or Attribute Logic).''
+\end{quotation}
+
+Interesting as these concepts seem, they are also surprisingly unknown outside of their authors. This claim is based on Google Scholar results for queries about subsequently: \texttt{"xtt2"~+rules}\footnote{\url{https://scholar.google.com/scholar?q="xtt2"+\%2Brules}} (17 of the 143 publications found were unrelated to the authors) and \texttt{"Attributive Logic with Set Values"}\footnote{\url{https://scholar.google.com/scholar?q="Attributive+Logic+with+Set+Values"}} (3 unrelated of the 26 results) and \texttt{"ALSV(FD)"}\footnote{\url{https://scholar.google.com/scholar?q="ALSV\%28FD\%29"}} (2 unrelated of the 55).
