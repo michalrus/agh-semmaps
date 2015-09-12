@@ -120,4 +120,10 @@ Some of the other methods make extensive use of the triangulation technique know
 \section{Mediation. The proposed method}
 \label{sec:mediation}
 
-\todo[inline]{Motivation for using semantic maps}
+As previously stated, the proposed method is an addition to the micro-localization based on the physics module (\cref{sec:physics-module}). The module, using data from various physical sensors, is able to provide a few alternative locations of where the user may currently be. Most of the time, the module outputs just two of them. These alternatives are then input to a mediation module, the heart of this proposed method.
+
+By asking the user a few questions (often just one, if there are only two alternatives), the mediation module is able to discern between the alternatives and infer where the user really is. While this approach is moving a \emph{lot} of burden from the technology side onto the user (see \cref{sec:user-experience}), this method---given rich enough maps---is able to accomplish this task successfully.
+
+The questions are generated using a few algorithms (one for each question type) with the data coming from maps prepared beforehand.
+
+Motivation for this approach is that---again, given rich enough maps---it is able to \emph{guarantee} a $100\%$ success in distinguishing between the alternatives. ``Rich enough'' here means that there is at least one detail differentiating every selectable pair of rooms.
