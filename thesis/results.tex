@@ -1,14 +1,29 @@
 \chapter{Results}
 \label{cha:results}
 
+\todo{some intro}
+
 \section{Architecture of the proposed solution}
 \label{sec:architecture}
+
+\Cref{fig:architecture} presents the overview of main components of the solution. First, the data about locations used for micro-location purposes, held in human heads needs to be digitized into computer-readable maps in OpenGIS format.
+
+\todo{finish}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{architecture}
+	\caption{Architecture of the proposed solution (own work).}
+	\label{fig:architecture}
+\end{figure}
 
 \section{OpenGIS maps}
 
 \section{Ontology}
 
-\section{Physics-based module for providing alternatives}
+Supports optional export to a Prolog-like format for further research.
+
+\section{Physics-based module for providing alternative possible user locations}
 \label{sec:physics-module}
 
 To get a few alternative location (an input to the mediation process, ``where the user might be''), an external physics-based module is used. The one used currently is the subject of work of Bobek and Grodzki among others, and more about it can be read in \cite{bobek2015indoor, Koeping2015indoor}. Therein, details of mathematical models used are presented.
