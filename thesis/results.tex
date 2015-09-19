@@ -1,14 +1,20 @@
 \chapter{Results}
 \label{cha:results}
 
-\todo{some intro}
-
 \section{Architecture of the proposed solution}
 \label{sec:architecture}
 
-\Cref{fig:architecture} presents the overview of main components of the solution. First, the data about locations used for micro-location purposes, held in human heads needs to be digitized into computer-readable maps in OpenGIS format.
+\Cref{fig:architecture} presents the overview of main components of the solution. The process happens in several steps, some of which are repeated at each run, some need to be done once only.
 
-\todo{finish}
+\begin{enumerate}
+	\item First, the data about locations used for micro-location purposes, that is held in human heads, needs to be digitized into computer-readable maps in OpenGIS format.
+	\item At approximately the same time, configuration file for the micro-located object/place has to be created. In it, there are changes of costs defined that add or subtract from the total cost of a generated question, based on various properties and types of objects included in the question1.
+	\item The data contained in the maps is automatically transformed (parsed) into a format understood by the mediation engine\ldots
+	\item \ldots{}namely the ontology.
+	\item An optional step that can be taken, is to export the ontology as a Prolog source code, that can be later used in some further research, as Prolog is particularly excelling at Artificial Intelligence prototyping.
+	\item An external physics-based module needs to provide the mediation module with some alternative pre-guessed locations for the latter to choose from.
+	\item Immediately after the alternatives are provided, the mediation starts. Using the knowledge of the surroundings (from the ontology) and rules concerning costs (from the configuration), several questions are presented to the user. Answers enable successful inference of their location.
+\end{enumerate}
 
 \begin{figure}
 	\centering
@@ -19,9 +25,19 @@
 
 \section{OpenGIS maps}
 
+Because for all examples evaluated in this work, parsing of their corresponding maps took less than a second, the parsing step is performed at each start time of the mediation engine. Thanks to that, the data is kept in its rawest form possible, just the maps.
+
+\todo{finish}
+
 \section{Ontology}
 
 Supports optional export to a Prolog-like format for further research.
+
+\todo{finish}
+
+\section{Configuration}
+
+\todo{finish}
 
 \section{Physics-based module for providing alternative possible user locations}
 \label{sec:physics-module}
@@ -37,7 +53,7 @@ The basic idea is to use two sources of data. If inferred locations occupy more 
 
 Dead-reckoning (also known as ``inertial measurements'') works by changing the model's idea of user's location, incrementally adding and subtracting small changes to it (steps in this case). Amounts of these changes are inferred based on data coming from motion sensors of a devices using a mathematical model. As Köping et al. state in \cite{Koeping2015indoor}, ``We model the indoor localization problem as a recursive density estimation problem, which can be estimated by employing the Bayesian framework, namely particle filters.''
 
-The idea for using beacons in the module is to make an assessment about distances to nearby transmitters based on signal strength and RSSI (one case of the law of inverse squares, see \cref{eq:inverse-sq} and \cref{sec:existing-uloc}). Arguably, this can be seen as somewhat of a misuse of the iBeacon technology. Manufacturers generally speak of only \emph{three} recognizable levels of ``interaction'' with the beacon (based on signal strength): \begin{itemize}
+The idea for using beacons in the module is to make an assessment about distances to nearby transmitters based on signal strength and RSSI (one case of the law of inverse squares, see \cref{eq:inverse-sq} and \cref{sec:existing-uloc}). Arguably, this could potentially be seen as somewhat of a misuse of the iBeacon technology. Manufacturers generally speak of \emph{three} recognizable levels of ``interaction'' with the beacon (based on signal strength): \begin{itemize}
  	\item receiver being in very close proximity to the transmitter,
  	\item receiver being in the same room,
  	\item no interaction at all.
@@ -49,7 +65,15 @@ Matyasik et al. claim that the RSSI-to-distance-based approach works, however, \
 
 The shortcomings of iBeacons and dead-reckoning (\cref{sec:physics-module}) encourage the use of some additional data source. In this work, mediation is proposed.
 
+\todo{entropy}
+
 \todo{how is intelligibility achieved?}
+
+\todo{alternatives can be provided in attr=val form; we can ask with high granularity}
+
+\todo{finish}
 
 \section{User Experience}
 \label{sec:user-experience}
+
+\todo{finish}
