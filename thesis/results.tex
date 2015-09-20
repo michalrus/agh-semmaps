@@ -25,7 +25,9 @@
 
 \section{OpenGIS maps}
 
-Because for all examples evaluated in this work, parsing of their corresponding maps took less than a second, the parsing step is performed at each start time of the mediation engine. Thanks to that, the data is kept in its rawest form possible, just the maps.
+Because of the fact that for all examples evaluated in this work (\cref{cha:evaluation}), parsing of their corresponding maps took less than a second, the parsing step is performed at each start time of the mediation engine. Thanks to that, the data is kept in its rawest form possible, i.e. just the maps. That makes it also easier for the administrative user, as no intermediate preparatory step is needed, when creating the data.
+
+OpenGIS maps created for the sake of examples/evaluation in this work were made using the OpenJUMP\footnote{\url{https://web.archive.org/web/20150804110932/http://www.openjump.org/} (visited on 08/04/2015).} editor. This program creates a structure of files and directories corresponding to \emph{layers} defined by the user. Layers don't play any role in mediation and thus are only added as a convenience for the user creating the maps. Any object added to a layer---apart from its position in space---is also characterized by a map of properties in form of key--value pairs. In \cref{fig:opengis-props-map} such properties can be seen in the editor, while \cref{fig:opengis-props-onto} has these properties translated into Prolog source code.
 
 \todo{finish}
 
