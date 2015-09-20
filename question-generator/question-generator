@@ -12,4 +12,4 @@ f="$d/target/universal/stage/bin/question-generator"
   exit 1
 }
 
-exec "$f" "$@"
+exec "$f" -- "$@"
