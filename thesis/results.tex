@@ -1,7 +1,7 @@
 \chapter{Results}
 \label{cha:results}
 
-In this chapter, the micro-location method proposed in this paper---mediation---will be discussed in greater detail.
+In this chapter, the micro-location method proposed in this paper---mediation---will be discussed in greater detail. A sample implementation of it is also provided along the paper. The whole method was implemented only in the Scala\footnote{\url{https://web.archive.org/web/20150817031402/http://scala-lang.org/} (visited on 08/17/2015).} language from the beginning to the very end. Scala is a compiled language and it compiles to JVM bytecode format, one that is widely used for server-side solutions, as well as for programming Android devices. Therefore, this choice allows for running the whole code completely off-line, in an Android application, or---equally easily---creating a web API accessible from any device. Functional--objective paradigm of the language (much like this of OCaml) allows for very concise and expressive notation of the ideas, as seen in some of the code listings in the following sections.
 
 \section{Architecture of the proposed solution}
 \label{sec:architecture}
@@ -39,10 +39,10 @@ OpenGIS maps created for the sake of examples/evaluation in this work were made 
 	\label{fig:opengis-props-map}
 \end{figure}
 
-\begin{lstlisting}[language=Prolog,caption={Ontology exported to Prolog source code for room ``317a'' containing the ``chair'' from \cref{fig:opengis-props-map} at line 10.},numbers=left,columns=flexible,basicstyle=\ttfamily,label=lst:opengis-props-onto]
+\begin{lstlisting}[language=Prolog,caption={Ontology exported to Prolog source code for room ``317a'' containing the ``chair'' from \cref{fig:opengis-props-map} at line 10.},label=lst:opengis-props-onto]
 room{number: "317a"} has [
   fridge{color: "white"} exists,
-  desk{color: "light brown"} has [
+  desk{color: "light brown"} has [1
     microwave{color: "gray"} exists,
     kettle{color: "white"} exists
   ],
@@ -50,15 +50,43 @@ room{number: "317a"} has [
     display{color: "gray"} exists * 2
   ],
   chair{color: "black", dynamic: "true"} exists,
-  wall{color: "white"} has [ door{} exists * 2 ]
+  wall{color: "white"} has [
+    door{} exists * 2
+  ]
 ].
 \end{lstlisting}
 
 \section{Ontology}
+\label{sec:ontology}
 
-As seen in \cref{lst:opengis-props-onto}, optional export of the ontology to a Prolog format is supported, e.g. for further research. Also, dumping it like that makes debugging significantly easier, as the ontology that is used directly for mediation has no textual representation.
+At the beginning of the parsing process, all layers defined by the user are read into the memory. Each object on a map encountered during this phase is added to one big set of all objects. Such an object is characterized by its layer of origin, name of its class (e.g. ``door'', ``desk'', ``computer''), its geometry (where on the map it lies), and remaining properties (after using one for the class name), cf. \cref{lst:JmlObject}.
 
-\todo{finish}
+As seen in \cref{lst:opengis-props-onto}, optional export of the ontology to a Prolog format is supported, e.g. for further research. Also, dumping it like that makes debugging significantly easier, as the ontology that is used directly for mediation has no textual representation (e.g. frequent mentions in this section will call for the format to explain the ontology better).
+
+\begin{lstlisting}[language=scala,caption={Definition of an object read from an OpenGIS map.},label=lst:JmlObject]
+final case class JmlObject(origin: File, className: String, geometry: Geometry, props: Map[String, String])
+\end{lstlisting}
+
+Only after all objects are read, the geographical hierarchy begins to be established. An object is said to be an ``ancestor'' of another object, when geometry of the first covers geometry of the latter (i.e. the latter is geometrically contained in the first). This ancestry relation is obviously transitive. A ``parent'' of a ``child'' is this ``child'''s ``ancestor,'' where no other object can be found between the two. This particular relation is represented with the \texttt{has} keyword in the optional Prolog output (see \cref{lst:opengis-props-onto} for an example) and with a tree structure (see \cref{lst:JmlTree}) in the ontology used directly by the mediation engine.
+
+\begin{lstlisting}[language=scala,caption={Definition of a (sub-)tree establishing the geometrical hierarchy and relations of OpenGIS objects.},label=lst:JmlTree]
+final case class JmlTree(node: JmlObject, children: Set[JmlTree])
+\end{lstlisting}
+
+Because on the maps, there may---and probably will---be several disjoint top-level objects (e.g. rooms)---i.e. there does not necessarily have to be one big object to contain all the others---not only \emph{one} tree might have to be created, but a \emph{list} of such trees. To create the trees based on inclusions of geometries of the objects from the flat set, a modified form of topological sorting algorithm is used and the trees are built in a layer-by-layer fashion.
+
+\begin{enumerate}
+	\item First, objects with no ancestors at all have to be found.
+	\item These objects are added to the next layer/level (``next'' being ``first'' in the first iteration) in appropriate subtrees in the list. Appropriateness is determined by ancestry (relative to the objects in a previous layer/level).
+	\item These objects are also removed from the set.
+	\item We go back to 1. until there are no objects left in the set.
+\end{enumerate}
+
+\todo{relations}
+
+\todo{combinatorial explosion}
+
+\todo{why concentrate on exists; identical contents or distinguishable by exists}
 
 \section{Configuration}
 
@@ -67,7 +95,7 @@ As seen in \cref{lst:opengis-props-onto}, optional export of the ontology to a P
 \section{Physics-based module for providing alternative possible user locations}
 \label{sec:physics-module}
 
-To get a few alternative location (an input to the mediation process, ``where the user might be''), an external physics-based module is used. The one used currently is the subject of work of Bobek and Grodzki among others, and more about it can be read in \cite{bobek2015indoor, Koeping2015indoor}. Therein, details of mathematical models used are presented.
+To get a few alternative locations (an input to the mediation process, ``where the user might be''), an external physics-based module is used. The one used currently is the subject of work of Bobek and Grodzki among others, and more about it can be read in \cite{bobek2015indoor, Koeping2015indoor}. Therein, details of mathematical models used are presented.
 
 The basic idea is to use two sources of data. If inferred locations occupy more than one room, mediation is triggered. The sources are:
 
@@ -90,9 +118,13 @@ Matyasik et al. claim that the RSSI-to-distance-based approach works, however, \
 
 The shortcomings of iBeacons and dead-reckoning (\cref{sec:physics-module}) encourage the use of some additional data source. In this work, mediation is proposed.
 
+Alternatives from the list of trees (cf. \cref{sec:ontology}) are selected by specifying\ldots
+
 \todo{entropy}
 
 \todo{how is intelligibility achieved?}
+
+\todo{Slażyński and Bobek propose alternative method but\ldots why ask 2+ questions when there are only 2 alternatives; either one suffices or they are indistinguishable; prolog impl cannot be run on Android}
 
 \todo{alternatives can be provided in attr=val form; we can ask with high granularity}
 
