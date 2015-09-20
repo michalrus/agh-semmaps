@@ -82,11 +82,21 @@ Because on the maps, there may---and probably will---be several disjoint top-lev
 	\item We go back to 1. until there are no objects left in the set.
 \end{enumerate}
 
-\todo{relations}
+Initial plan for this project envisioned introducing other relations than just inclusion (the \texttt{has}). Later, these relations could be used in generating questions, enriching the pool of types of questions that the system can ask. However, the few sensible relations that the author was able to come up with and other significant drawbacks (discussed below) of such introduction, caused the decision not to include them.
 
-\todo{combinatorial explosion}
+\begin{description}
+	\item[X exists] present in the ontology.
+	\item[X has (consists of) Y] present in the ontology.
+	\item[X is near Y] is symmetric, sometimes transitive (hard to tell when), needs context (hard to define), as nearness might mean completely different things depending on the room size (what if there is no room?).
+	\item[X to the left/right of Y] is sometimes transitive, asymmetric, implicates ``is near,'' distributes over ``consists of,'' demands that both X and Y stay right next to the wall, needs context (analogically to ``is near'').
+	\item[X is under/over/on Y] a slightly more detailed case of ``consists of'' that is not inferable just from the maps. (That one actually makes sense in generating a bit more naturally sounding questions: ``a computer on a desk'' vs. ``a desk with a computer.'')
+\end{description}
 
-\todo{why concentrate on exists; identical contents or distinguishable by exists}
+Ambiguity of the relations above would cause the need to calculate them separately for every pair of objects, resulting in combinatorial explosion.
+
+Another possibility for a question would be to ask for amount of things of certain type. That, however, would be highly inconvenient for the user (e.g. ``Do you see 7 or 9 computers?'' is much more difficult, demanding, time-consuming to answer than ``Do you see a black computer?'').
+
+On the other hand, concentrating on ``exists'' and ``consists of'' is only lacking in an improbable situation of having two \emph{exactly identical rooms} regarding contents, but in which the contents are arranged differently. If one room contains at least one object that the other does not, they are perfectly distinguishable using just ``exists'' and ``consists of.''
 
 \section{Configuration}
 
