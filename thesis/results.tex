@@ -1,6 +1,8 @@
 \chapter{Results}
 \label{cha:results}
 
+In this chapter, the micro-location method proposed in this paper---mediation---will be discussed in greater detail.
+
 \section{Architecture of the proposed solution}
 \label{sec:architecture}
 
@@ -10,30 +12,51 @@
 	\item First, the data about locations used for micro-location purposes, that is held in human heads, needs to be digitized into computer-readable maps in OpenGIS format.
 	\item At approximately the same time, configuration file for the micro-located object/place has to be created. In it, there are changes of costs defined that add or subtract from the total cost of a generated question, based on various properties and types of objects included in the question1.
 	\item The data contained in the maps is automatically transformed (parsed) into a format understood by the mediation engine\ldots
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth]{architecture}
+		\caption{Architecture of the proposed solution (own work).}
+		\label{fig:architecture}
+	\end{figure}
+	
 	\item \ldots{}namely the ontology.
 	\item An optional step that can be taken, is to export the ontology as a Prolog source code, that can be later used in some further research, as Prolog is particularly excelling at Artificial Intelligence prototyping.
 	\item An external physics-based module needs to provide the mediation module with some alternative pre-guessed locations for the latter to choose from.
 	\item Immediately after the alternatives are provided, the mediation starts. Using the knowledge of the surroundings (from the ontology) and rules concerning costs (from the configuration), several questions are presented to the user. Answers enable successful inference of their location.
 \end{enumerate}
 
-\begin{figure}
-	\centering
-	\includegraphics[width=\textwidth]{architecture}
-	\caption{Architecture of the proposed solution (own work).}
-	\label{fig:architecture}
-\end{figure}
-
 \section{OpenGIS maps}
 
-Because of the fact that for all examples evaluated in this work (\cref{cha:evaluation}), parsing of their corresponding maps took less than a second, the parsing step is performed at each start time of the mediation engine. Thanks to that, the data is kept in its rawest form possible, i.e. just the maps. That makes it also easier for the administrative user, as no intermediate preparatory step is needed, when creating the data.
+Because of the fact that for all examples evaluated in this work (\cref{cha:evaluation}), parsing of their corresponding maps took less than a second, the parsing step is performed at each start time of the mediation engine. Thanks to that, the data is kept in its rawest form possible, i.e. just the maps. That makes it also easier for the administrative user, as no manual intermediate preparatory step is needed, when creating the data.
 
-OpenGIS maps created for the sake of examples/evaluation in this work were made using the OpenJUMP\footnote{\url{https://web.archive.org/web/20150804110932/http://www.openjump.org/} (visited on 08/04/2015).} editor. This program creates a structure of files and directories corresponding to \emph{layers} defined by the user. Layers don't play any role in mediation and thus are only added as a convenience for the user creating the maps. Any object added to a layer---apart from its position in space---is also characterized by a map of properties in form of key--value pairs. In \cref{fig:opengis-props-map} such properties can be seen in the editor, while \cref{fig:opengis-props-onto} has these properties translated into Prolog source code.
+OpenGIS maps created for the sake of examples/evaluation in this work were made using the OpenJUMP\footnote{\url{https://web.archive.org/web/20150804110932/http://www.openjump.org/} (visited on 08/04/2015).} editor. This program creates a structure of files and directories corresponding to \emph{layers} defined by the user. A layer consists of several objects added to it at precisely defined position. The concept of layers doesn't play any role in mediation and thus they are only added as a convenience for the user creating the maps. Any object added to a layer---apart from its position in space---is also characterized by a map of properties in form of key--value pairs. In \cref{fig:opengis-props-map} such properties can be seen in the editor, while \cref{lst:opengis-props-onto} has these properties translated into Prolog source code. The properties are what has the greatest significance in the mediation process, as they enable discerning of objects; one of the properties takes a role of defining a class of an object (in ontological sense) and can be chosen at each parsing step.
 
-\todo{finish}
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{opengis-props-map}
+	\caption{Properties of a ``chair'' object in OpenJUMP map editor.}
+	\label{fig:opengis-props-map}
+\end{figure}
+
+\begin{lstlisting}[language=Prolog,caption={Ontology exported to Prolog source code for room ``317a'' containing the ``chair'' from \cref{fig:opengis-props-map} at line 10.},numbers=left,columns=flexible,basicstyle=\ttfamily,label=lst:opengis-props-onto]
+room{number: "317a"} has [
+  fridge{color: "white"} exists,
+  desk{color: "light brown"} has [
+    microwave{color: "gray"} exists,
+    kettle{color: "white"} exists
+  ],
+  wardrobe{color: "light brown"} has [
+    display{color: "gray"} exists * 2
+  ],
+  chair{color: "black", dynamic: "true"} exists,
+  wall{color: "white"} has [ door{} exists * 2 ]
+].
+\end{lstlisting}
 
 \section{Ontology}
 
-Supports optional export to a Prolog-like format for further research.
+As seen in \cref{lst:opengis-props-onto}, optional export of the ontology to a Prolog format is supported, e.g. for further research. Also, dumping it like that makes debugging significantly easier, as the ontology that is used directly for mediation has no textual representation.
 
 \todo{finish}
 
