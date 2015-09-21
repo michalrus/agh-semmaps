@@ -10,7 +10,7 @@ In this chapter, the micro-location method proposed in this paper---mediation---
 
 \begin{enumerate}
 	\item First, the data about locations used for micro-location purposes, that is held in human heads, needs to be digitized into computer-readable maps in OpenGIS format.
-	\item At approximately the same time, configuration file for the micro-located object/place has to be created. In it, there are changes of costs defined that add or subtract from the total cost of a generated question, based on various properties and types of objects included in the question1.
+	\item At approximately the same time, configuration file for the micro-located object/place has to be created. In it, there are changes of costs defined that add or subtract from the total cost of a generated question, based on various properties and types of objects included in the question.
 	\item The data contained in the maps is automatically transformed (parsed) into a format understood by the mediation engine\ldots
 	
 	\begin{figure}
@@ -100,7 +100,22 @@ On the other hand, concentrating on ``exists'' and ``consists of'' is only lacki
 
 \section{Configuration}
 
-\todo{finish}
+In order to define costs of asking about different objects and properties of these objects, each location, apart from maps, needs to have a configuration file created. This file is parsed along with the maps, at each starting of the mediation engine. Costs are taken into account when choosing the best question to ask (more about that in \cref{sec:mediation}).
+
+Such a file consists of 0 or more lines in the format of: \texttt{cost \underline{selector} $\pm$\underline{change}}. The \texttt{\underline{selector}} part is using lower-case property names and values as defined in OpenGIS maps (e.g. as in \cref{fig:opengis-props-map}). See \cref{lst:configuration} for an example of such file.
+
+\begin{lstlisting}[caption={Definition of costs in a sample configuration file.},label=lst:configuration]
+# a comment starts with a `#'
+cost [] +50
+cost [].color +10
+cost [kind=computer] -15
+cost [kind=mouse, color=black].model  +110
+cost [kind=desk].[kind=mouse, color=black].model +10
+\end{lstlisting}
+
+Second line of \cref{lst:configuration} increases the default cost of asking about anything by 50 (e.g. ``Do you see a projector?'' would cost 50). In line 3, mentioning color in a questions, increases its cost by 10 (``Do you see a red projector?'' would cost $50+10=60$). Because spotting a computer is fairly easy, line 4 makes that explicit by decreasing a question mentioning computers by 15. Because of the definition in line 5, asking about a model of a black mouse is 110 more costly than the default. Costs definitions can also include information about ancestry (not only \emph{direct} parents, but grandparents, great-grandparents etc.), e.g. line 6 means that asking about a model of a black mouse lying on a desk costs 10 more, resulting in total cost of $50+10+110+10=180$ (the first 10 comes from line 3). Notice that asking about a computer's color would have the cost of $50+10-15=45$.
+
+Such ``accumulating'' definitions allow for more consistency and compactness in the model, as it is harder for the defining user to forget about some corner case.
 
 \section{Physics-based module for providing alternative possible user locations}
 \label{sec:physics-module}
@@ -125,6 +140,7 @@ The idea for using beacons in the module is to make an assessment about distance
 Matyasik et al. claim that the RSSI-to-distance-based approach works, however, \emph{only under laboratory conditions} \cite{Matyasik:iBeacon, Matyasik:iBeacon:slides}. As iBeacons use extremely low energy to transmit the signal, even a single person walking across the room while taking the measurement---or even someone playing with the smartphone during the measurement---can influence it so negatively, that any information inferred about the distance to the signal's source cannot be reliably trusted.
 
 \section{The process of mediation}
+\label{sec:mediation}
 
 The shortcomings of iBeacons and dead-reckoning (\cref{sec:physics-module}) encourage the use of some additional data source. In this work, mediation is proposed.
 
