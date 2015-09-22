@@ -209,16 +209,8 @@ Overall cost of a question has to combine both the entropy (\cref{eq:question-en
 
 See \cref{sec:case-agh} and \cref{sec:case-cracow-square} for sample mediation sessions. At each point during such a session, the mediation engine strives for complete intelligibility by showing the user how their answers affected which alternatives remained in the set of their possible locations.
 
-It is worth noting, that Köping et al. in \cite{Koeping2015indoor} suggest a different method of generating questions.
+It is worth noting, that Köping et al. in \cite{Koeping2015indoor} suggest a different method of generating questions (still, compatible with \cref{lst:question}). Without getting into greater details, their model results in questions being asked in parts, e.g. ``Do you see a projector?'' followed (when answered ``yes'') by ``What color is the projector?'' as opposed to this model, that would just ask ``Do you see a red projector?'' It is also important to consider why ask more than one question if there are only 2 alternatives? Either one question would suffice or the rooms are indistinguishable.
 
+Also, their sample implementation\footnote{\url{https://web.archive.org/web/20150922010200/https://bitbucket.org/mslazynski/pronto} (visited on 9/22/2015).} is written in Prolog, making it impossible to run the engine directly on a mobile device.
 
-\todo{Slażyński and Bobek propose alternative method but\ldots why ask 2+ questions when there are only 2 alternatives; either one suffices or they are indistinguishable; prolog impl cannot be run on Android}
-
-
-
-\todo{finish}
-
-\section{User Experience}
-\label{sec:user-experience}
-
-\todo{finish}
+One side is that more questions are likely to generate more annoyance (more about bad User Experience in \cref{cha:summary}), the other being that their ``root'' questions are only created for objects on the first level of nesting in a room/alternative. A situation can be imagined when room 317 has a desk with a computer on top of it and room 318 has an identical desk standing on a carpet. Therefore, in the room 318, the desk in nested on level 2 (the carpet being on 1). Some generated question could ask, ``Do you see a computer on a desk?'' and user in 318 would answer ``yes,'' resulting in the engine incorrectly inferring their location to be 317.
