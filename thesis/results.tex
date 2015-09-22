@@ -99,6 +99,7 @@ Another possibility for a question would be to ask for amount of things of certa
 On the other hand, concentrating on ``exists'' and ``consists of'' is only lacking in an improbable situation of having two \emph{exactly identical rooms} regarding contents, but in which the contents are arranged differently. If one room contains at least one object that the other does not, they are perfectly distinguishable using just ``exists'' and ``consists of.''
 
 \section{Configuration}
+\label{sec:configuration}
 
 In order to define costs of asking about different objects and properties of these objects, each location, apart from maps, needs to have a configuration file created. This file is parsed along with the maps, at each starting of the mediation engine. Costs are taken into account when choosing the best question to ask (more about that in \cref{sec:mediation}).
 
@@ -142,17 +143,78 @@ Matyasik et al. claim that the RSSI-to-distance-based approach works, however, \
 \section{The process of mediation}
 \label{sec:mediation}
 
-The shortcomings of iBeacons and dead-reckoning (\cref{sec:physics-module}) encourage the use of some additional data source. In this work, mediation is proposed.
+The shortcomings of iBeacons and dead-reckoning (\cref{sec:physics-module}) on their own encourage the use of some additional data source. In this work, mediation is proposed.
 
-Alternatives from the list of trees (cf. \cref{sec:ontology}) are selected by specifying\ldots
+In the provided sample implementation, alternatives from the list of trees (cf. \cref{sec:ontology}) are selected by \todo{alternatives can be provided in attr=val form; we can ask with high granularity}a list of key--value pairs corresponding with property names and values of objects in OpenGIS maps; e.g. to select rooms 317 and 318 in \cref{sec:case-agh}, one would have to specify \texttt{number=317} and \texttt{number=318} as the two alternatives; to select all rooms, \texttt{kind=room} would suffice.
 
-\todo{entropy}
+In the implementation, mediation takes part in two modules.
 
-\todo{how is intelligibility achieved?}
+\begin{enumerate}
+	\item A sample and small (28 lines of code) \texttt{Mediator} that currently uses command line to present questions to the user and get their answers. 
+	\item The \texttt{QuestionGenerator} that is the heart of the whole process. Given a list of alternatives---a list of \texttt{JmlTree}s, cf. \cref{sec:ontology}---it generates the best question possible to discern the alternatives, taking costs, objects, properties etc. into account.
+\end{enumerate}
+
+There are several question types defined, a super-type of which can be found in \cref{lst:question}. Each question type has to implement a map/dictionary of answers, in which an answer points to a set of alternatives that satisfy this answer (line 3). Each question also comes with a numerical cost directly obtained from the configuration file (line 4), a textual representation to show to the user (line 5), and a function returning textual representations of each answer (e.g. to put on some buttons in a user interface) (line 6).
+
+\begin{lstlisting}[language=Scala,caption={Definition of a question super-type.},label=lst:question]
+sealed trait Question {
+  type Answer
+  val answers: Map[Answer, Set[JmlTree]]
+  val cost: Double
+  val asText: String
+  def asText(a: Answer): String
+  
+  final def entropy: Double = ...
+  final def overallCost: Double = cost * (1.0 + entropy)
+}
+\end{lstlisting}
+
+This very generic model of a question is sufficient to encode any question generated with any method. After all, it contains all information needed to choose the least expensive question from a set of questions, present it (with answers) to the user, and narrow down the set of possible user locations (which initially contains all the alternatives received from the physics module).
+
+It turns out, that from this representation, it is also possible to calculate the \emph{entropy} of each question. Entropy here is a measure of uncertainty in the dataset, i.e. the smaller the entropy of a question, the better it discerns locations. E.g. a ``yes/no'' question that points to 2 locations when answered with ``yes'' and 0 otherwise will have much \emph{higher} entropy than one with 1 location pointed to by ``yes'' and 1 by ``no''.
+
+\Cref{eq:entropy} is a classical definition of entropy $H$ for a dataset $S$, used in building decision trees (among others) \cite{quinlan1986induction}. Here, $X$ is a set of different classes in $S$. Also, $p(x)$ is a ratio of number of elements in class $x \in X$ to number of elements in the set $S$.
+
+\begin{equation}
+  \label{eq:entropy}
+  H(S)=-\sum_{x \in X} p(x) \log_2 p(x)
+\end{equation}
+
+In calculating entropy of a question, it is necessary to calculate entropies of each of its answers first. In \cref{eq:entropy}, $X$ would be a set of locations pointed to by a given answer. Because $\vert x \vert = 1$ always (an answer can point only \emph{once} to a given location), and $\vert S \vert$ is equal to the number of different locations pointed to by the answer, $p(x)=\frac{1}{\vert S \vert}$ for all $x$. Therefore, \cref{eq:entropy} simplifies to \cref{eq:my-entropy-tmp} and in turn \cref{eq:my-entropy}.
+
+\begin{equation}
+  \label{eq:my-entropy-tmp}
+  H(S) = -\vert S \vert \cdot \frac{1}{\vert S \vert} \log_2 \frac{1}{\vert S \vert}
+\end{equation}
+\begin{equation}
+  \label{eq:my-entropy}
+  H(S) = -\log_2 \frac{1}{\vert S \vert}
+\end{equation}
+
+In \cite{quinlan1986induction}, Quinlan provides a formula for calculating \emph{information gain} $IG(A)$ of splitting the dataset $S$ on an attribute $A$, see \cref{eq:information-gain}. I.e. this is the measure of uncertainty reduction in $S$ after it is split on $A$.
+
+\begin{equation}
+  \label{eq:information-gain}
+  IG(A,S) = H(S) - \sum_{t \in T} p(t)H(t)
+\end{equation}
+
+Here, $T$ represents all subsets created when splitting $S$ by $A$ such that $S = \bigcup_{t \in T} t$ and $p(t)$ is the ratio of the number of elements in $t$ to the number of elements in $S$. As $H(S)$ is always constant, it can be neglected when comparing questions. Entropy of the whole question is then defined as just $\sum_{t \in T} p(t)H(t)$. In this case, $t$ represents one answer of a question and $\vert t \vert$ is the number of locations pointed to by the answer. After some substitutions we arrive at \cref{eq:question-entropy}, a formula for the entropy of the whole question.
+
+\begin{equation}
+  \label{eq:question-entropy}
+  \sum_{t \in T} \frac{\vert t \vert}{\vert S \vert}\left(-\log_2 \frac{1}{\vert t \vert}\right)
+\end{equation}
+
+Overall cost of a question has to combine both the entropy (\cref{eq:question-entropy}) and costs inferred from the configuration file \cref{sec:configuration}. The formula in line 9 of \cref{lst:question}, namely $overallCost = configurationCost \cdot (1 + entropy)$, has been found to be particularly useful.
+
+See \cref{sec:case-agh} and \cref{sec:case-cracow-square} for sample mediation sessions. At each point during such a session, the mediation engine strives for complete intelligibility by showing the user how their answers affected which alternatives remained in the set of their possible locations.
+
+It is worth noting, that Köping et al. in \cite{Koeping2015indoor} suggest a different method of generating questions.
+
 
 \todo{Slażyński and Bobek propose alternative method but\ldots why ask 2+ questions when there are only 2 alternatives; either one suffices or they are indistinguishable; prolog impl cannot be run on Android}
 
-\todo{alternatives can be provided in attr=val form; we can ask with high granularity}
+
 
 \todo{finish}
 
