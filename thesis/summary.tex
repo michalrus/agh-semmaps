@@ -1,26 +1,22 @@
 \chapter{Summary}
 \label{cha:summary}
 
-\todo{it's working, it's working!}
+As the project is able to correctly infer user location, given correct answers to the questions generated using data encoded in OpenGIS maps of some area, the design criteria were met. There are, however, some issues that need to be mentioned. Also, suggestions for potential future work are presented.
 
-\todo{GeoJSON}
+One of the most glaring deficiency of this solution in its current state is lack of the concept of transparency. This is especially visible in the second evaluated case (\cref{sec:case-cracow-square}). While that case was clearly about location outdoors, and it was presented just to showcase that mediation is limited not only to indoor micro-location, it is still possible to encounter transparency indoors. Some objects might still be visible while really being located outside of a given alternative. Examples might include indoor windows, . User, when asked if they see that object, would answer positively, ruining the inference. It is here that the relations planned (see \cref{sec:ontology}) and the concept of closeness might come into play.
 
-\todo{dead-reckoning: what if the user was not on foot?}
+Also, if some kind of relations were implemented, it could be possible for the question generator to choose more \emph{interesting} questions from human perspective. E.g. a chair standing \emph{on} a desk is certainly interesting, rare, unusual for a human. However, encoding such human-centered (non-)weirdness might turn out too difficult to accomplish efficiently.
 
-\todo{concept of transparency}
+The current solution works under the assumption that users won't lie. When there are several alternative locations possible, the ``happy path'' flow of narrowing down to only one location is linear and there is no possible way for the user to introduce any contradiction. Thus, no need for detection of contradictions. However, when the user decides they have made a mistake, the can take a step back and re-answer the previous question (or second but last etc.).
 
-Nowadays, when creating a dedicated technical solution, its User Experience has to be thought over thoroughly, as\ldots
+Use of dead-reckoning based on pedometer implemented in the physics module may be disputable, as it will simply not work correctly, when the user is not moving on foot. However, that decision is not in the scope of this work.
 
-\todo{if relations were implementet, choosing more interesting questions: a chair on a bed is interesting, but costs definer cannot predict such cases}
+From a technical standpoint, there are also several issues that might be addressed in the future. Two most obvious optimizations come to mind. Matching costs (from the configuration file) to particular objects could be improved. Currently the whole maps provided by the user are read into memory before processing. It might be possible to stream-read them as needed. However, both of these optimizations were not necessary performance-wise for friction-less experience with the evaluated use cases. Also, the map parser could be enabled to read other, more up-to-date formats, like GeoJSON\footnote{\url{https://web.archive.org/web/20150801152712/http://geojson.org/}, visited on 08/01/2015.}.
 
-\todo{optimization: costs matching}
-
-\todo{assumption that user won't lie}
-
-\todo{stream-reading the maps would be better (RAM)}
+Finally, the User Experience needs to be brought up. Nowadays, when creating a dedicated technical solution, its UX has to be thought over thoroughly, as---simply put---users are spoiled by constant innovations in this area. \todo{finish}There seems to be no way to make the experience of this proposed solution tolerable---if not pleasurable---for them.
 
 \todo{unusable as a business solution; maybe as a game\ldots}
 
-\todo{finish} Some new, dedicated technology is needed. All existing smartphones need to be scraped ASAP. As costly, as it might seem, when looking at the available solutions (\cref{sec:existing-uloc}) and overwhelming inconvenience of this method (User Experience), this is the only real option. And by ``real'' I mean something that might turn out usable to the ordinary person in not-so-distant future.
+To sum up, I would risk a claim that some new, technology is needed, dedicated solely to micro-location. All existing smartphones need to be scrapped as soon as possible. As costly, as it might seem, when looking at the available solutions (\cref{sec:existing-uloc}) and overwhelming inconvenience of this method (User Experience), this is the only real option. And by ``real'' I mean something that might turn out usable to the ordinary person in not-so-distant future.
 
-It's worth mentioning, that the mediation in this case has little sense, as iBeacons themselves give \emph{exactly} the information we were after: ``which room am I in?'' Answering that question was the main design objective for the iBeacon technology. Thus, instead of having several beacons in one room (317 from the AGH-UST example, \cref{sec:case-agh}), one beacon could be placed in each room under observation. Anyway, this work can be thought of as a research exercise.
+It's also worth mentioning, that the mediation in this case has little sense, as iBeacons themselves give \emph{exactly} the information we were after: ``which room am I in?'' Answering that question was the main design objective for the iBeacon technology (and this project). Thus, instead of having several beacons in one room (317 from the AGH-UST example, \cref{sec:case-agh}), one beacon could be placed in each room under observation. Nevertheless, this work can be thought of as a research exercise.
