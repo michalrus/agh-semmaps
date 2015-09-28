@@ -145,7 +145,7 @@ Matyasik et al. claim that the RSSI-to-distance-based approach works, however, \
 
 The shortcomings of iBeacons and dead-reckoning (\cref{sec:physics-module}) on their own encourage the use of some additional data source. In this work, mediation is proposed.
 
-In the provided sample implementation, alternatives from the list of trees (cf. \cref{sec:ontology}) are selected by \todo{alternatives can be provided in attr=val form; we can ask with high granularity}a list of key--value pairs corresponding with property names and values of objects in OpenGIS maps; e.g. to select rooms 317 and 318 in \cref{sec:case-agh}, one would have to specify \texttt{number=317} and \texttt{number=318} as the two alternatives; to select all rooms, \texttt{kind=room} would suffice.
+In the provided sample implementation, alternatives from the list of trees (cf. \cref{sec:ontology}) are selected by a list of key--value pairs corresponding to property names and values of objects in OpenGIS maps; e.g. to select rooms 317 and 318 in \cref{sec:case-agh}, one would have to specify \texttt{number=317} and \texttt{number=318} as the two alternatives; to select all rooms, \texttt{kind=room} would suffice. As the alternatives are provided in \texttt{attribute=value} form, we can ask with high granularity, not limiting ourselves to whole rooms only (this approach is used in \cref{sec:case-cracow-square}).
 
 In the implementation, mediation takes part in two modules.
 
