@@ -6,7 +6,106 @@ As the method always succeeds, there's not much space to create artificial numer
 \section{Case 1: AGH UST building}
 \label{sec:case-agh}
 
-\todo{finish}
+\Cref{fig:case-agh-complete} shows the complete map used in this case. It consists of four layers: doors (cyan), points of interest (green), obstacles (orange) and areas (gray). The gray areas represent rooms (and the corridor in the middle), orange obstacles are mostly walls, drawers and desks. \begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{case-agh-complete}
+	\caption{The complete OpenGIS map used in the evaluated case of AGH UST C-3 building.}
+	\label{fig:case-agh-complete}
+\end{figure} POIs include computers, displays, mouse devices, chairs, etc. \Cref{lst:case-agh-costs} show cost definitions used in this case.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{case-agh-rooms}
+	\caption{Left-to-right, top-to-bottom: rooms 315, 316, 317, 317a, 318, and 319 of AGH UST C-3 building.}
+	\label{fig:case-agh-rooms}
+\end{figure}
+
+\begin{lstlisting}[caption={Costs definitions used in the evaluated case..},label=lst:case-agh-costs]
+cost [] +50
+cost [].color +10
+cost [].model +40
+cost [kind=mouse, color=black].model  +110
+cost [kind=mouse] +10
+cost [kind=computer] -15
+cost [kind=tv, color = black].model   +70
+cost [kind=desk].[] +10
+cost [kind=desk].[kind=mouse, color=black].model +10
+\end{lstlisting}
+
+For the sake of evaluation, only rooms 315--319 will be used (as in \cref{fig:case-agh-rooms}). Three sessions with the mediator engine are presented:
+
+\begin{itemize}
+	\item two alternatives being quite different rooms 315 and 316 (\cref{lst:case-agh-315-316}),
+	\item three seemingly similar rooms 317, 317a, and 318 (\cref{lst:case-agh-317-318}),
+	\item and all rooms 315--319 (\cref{lst:case-agh-all}).
+\end{itemize}
+
+\begin{lstlisting}[label={lst:case-agh-315-316},caption={Mediation between rooms 315 and 316.}]
+2 alternative(s) selected
+JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 373, 653 366.5, 659.4 366.5, 659.4 373, 653 373)),Map(kind -> room, number -> 315))
+JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 366.5, 653 359.7, 659.4 359.7, 659.4 366.5, 653 366.5)),Map(kind -> room, number -> 316))
+
+Do you see some pc?
+1: Yes
+2: No
+> 1
+Possible alternatives left:
+JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 366.5, 653 359.7, 659.4 359.7, 659.4 366.5, 653 366.5)),Map(kind -> room, number -> 316))
+
+Chosen alternative: Some(JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 366.5, 653 359.7, 659.4 359.7, 659.4 366.5, 653 366.5)),Map(kind -> room, number -> 316))).
+\end{lstlisting}
+
+However similar, rooms 315 and 316 in \cref{lst:case-agh-315-316} have one major difference instantly visible in line 5. 316 contains lots of PCs, while 315 has none, being equipped with Apple iMacs. It is however possible that the user might have mistaken an iMac for a PC, ruining the correctness of the inference. In this case, the user answers ``Yes'' in line 8, and therefore room 316 is chosen (line 12).
+
+\begin{lstlisting}[label={lst:case-agh-317-318},caption={Mediation between rooms 317, 317a, and 318.}]
+3 alternative(s) selected
+JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((654.67 359.7, 654.67 356.3, 659.4 356.3, 659.4 359.7, 654.67 359.7)),Map(kind -> room, number -> 317))
+JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 359.7, 653 356.3, 654.67 356.3, 654.67 359.7, 653 359.7)),Map(kind -> room, number -> 317a))
+JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 356.3, 653 353.2, 659.4 353.2, 659.4 356.3, 653 356.3)),Map(kind -> room, number -> 318))
+
+Do you see some cupboard?
+1: Yes
+2: No
+> 1
+Possible alternatives left:
+JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 356.3, 653 353.2, 659.4 353.2, 659.4 356.3, 653 356.3)),Map(kind -> room, number -> 318))
+
+Chosen alternative: Some(JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 356.3, 653 353.2, 659.4 353.2, 659.4 356.3, 653 356.3)),Map(kind -> room, number -> 318))).
+\end{lstlisting}
+
+Here, in \cref{lst:case-agh-317-318}, because a cupboard is only present in room 318 (third alternative, line 4) and the user answers ``Yes'' (line 9), room 318 is chosen (line 13).
+
+\begin{lstlisting}[label={lst:case-agh-all},caption={Mediation between all rooms 315--319.}]
+6 alternative(s) selected
+JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 353.2, 653 350.1, 659.4 350.1, 659.4 353.2, 653 353.2)),Map(kind -> room, number -> 319))
+JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((654.67 359.7, 654.67 356.3, 659.4 356.3, 659.4 359.7, 654.67 359.7)),Map(kind -> room, number -> 317))
+JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 356.3, 653 353.2, 659.4 353.2, 659.4 356.3, 653 356.3)),Map(kind -> room, number -> 318))
+JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 373, 653 366.5, 659.4 366.5, 659.4 373, 653 373)),Map(kind -> room, number -> 315))
+JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 366.5, 653 359.7, 659.4 359.7, 659.4 366.5, 653 366.5)),Map(kind -> room, number -> 316))
+JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 359.7, 653 356.3, 654.67 356.3, 654.67 359.7, 653 359.7)),Map(kind -> room, number -> 317a))
+
+Do you see some shelf unit?
+1: Yes
+2: No
+> 2
+Possible alternatives left:
+JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 373, 653 366.5, 659.4 366.5, 659.4 373, 653 373)),Map(kind -> room, number -> 315))
+JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 366.5, 653 359.7, 659.4 359.7, 659.4 366.5, 653 366.5)),Map(kind -> room, number -> 316))
+JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 359.7, 653 356.3, 654.67 356.3, 654.67 359.7, 653 359.7)),Map(kind -> room, number -> 317a))
+
+Do you see some fridge?
+1: Yes
+2: No
+> 1
+Possible alternatives left:
+JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 359.7, 653 356.3, 654.67 356.3, 654.67 359.7, 653 359.7)),Map(kind -> room, number -> 317a))
+
+Chosen alternative: Some(JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 359.7, 653 356.3, 654.67 356.3, 654.67 359.7, 653 359.7)),Map(kind -> room, number -> 317a))).
+\end{lstlisting}
+
+In the case of all six rooms (\cref{lst:case-agh-all}), two questions needed to be asked. In line 12, user said they saw no shelf unit, narrowing down possible alternatives' count to 3 (lines 13--16). Then, in line 21, they saw a fridge, resulting in room 317a being chosen as their position (line 25).
+
+As claimed at the beginning of this chapter, there's no formal way for the algorithm to fail. Possible problems might arise from not naming the objects unambiguously enough or user making a mistake (in which case they can go back to a previous state of inference).
 
 \section{Case 2: Main Square, Kraków}
 \label{sec:case-cracow-square}
