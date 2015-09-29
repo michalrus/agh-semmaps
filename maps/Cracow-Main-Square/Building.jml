@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JCSDataFile xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance">
+  <JCSGMLInputTemplate>
+    <CollectionElement>featureCollection</CollectionElement>
+    <FeatureElement>feature</FeatureElement>
+    <GeometryElement>geometry</GeometryElement>
+    <ColumnDefinitions>
+      <column>
+        <name>Name</name>
+        <type>STRING</type>
+        <valueElement elementName="property" attributeName="name" attributeValue="Name"/>
+        <valueLocation position="body"/>
+      </column>
+    </ColumnDefinitions>
+  </JCSGMLInputTemplate>
+  <featureCollection>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>493.0,344.0 
+                      493.0,637.0 
+                      582.0,637.0 
+                      582.0,344.0 
+                      493.0,344.0 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Name">Sukiennice</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>421.0198300346906,377.8333333333333 
+                      420.63697971369675,374.19075584798105 
+                      419.50516114686206,370.7073764777647 
+                      417.6738402366252,367.53543561627146 
+                      415.2230544944166,364.8135622998096 
+                      412.2599150173453,362.66071545330567 
+                      408.9139252192799,361.1709848144573 
+                      405.3313209102366,360.4094787607028 
+                      401.66867908976326,360.4094787607028 
+                      398.08607478071997,361.17098481445726 
+                      394.7400849826547,362.66071545330567 
+                      391.7769455055834,364.8135622998096 
+                      389.3261597633747,367.53543561627146 
+                      387.49483885313805,370.7073764777647 
+                      386.36302028630337,374.19075584798105 
+                      385.9801699653094,377.8333333333333 
+                      386.36302028630337,381.4759108186856 
+                      387.49483885313805,384.95929018890195 
+                      389.3261597633747,388.1312310503952 
+                      391.7769455055834,390.85310436685705 
+                      394.7400849826547,393.00595121336096 
+                      398.08607478071997,394.4956818522093 
+                      401.66867908976326,395.2571879059638 
+                      405.3313209102366,395.2571879059638 
+                      408.9139252192799,394.4956818522094 
+                      412.2599150173453,393.00595121336096 
+                      415.2230544944166,390.85310436685705 
+                      417.6738402366252,388.1312310503952 
+                      419.50516114686206,384.95929018890195 
+                      420.63697971369675,381.47591081868563 
+                      421.0198300346906,377.8333333333333 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Name">Ratusz</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>704.0,318.28807271368476 
+                      703.4209114194459,312.91281621990845 
+                      701.7089546275289,307.7724842282525 
+                      698.938950350936,303.0917339128018 
+                      695.2319610685097,299.07513652307375 
+                      690.75,295.89823663877195 
+                      685.6889503509359,293.6998800292974 
+                      680.2700042765927,292.5761454273695 
+                      674.7299957234071,292.5761454273695 
+                      669.3110496490639,293.6998800292973 
+                      664.25,295.89823663877195 
+                      659.7680389314903,299.07513652307375 
+                      656.0610496490639,303.0917339128018 
+                      653.2910453724711,307.7724842282525 
+                      651.5790885805541,312.91281621990845 
+                      651.0,318.28807271368476 
+                      651.5790885805541,323.66332920746106 
+                      653.2910453724711,328.8036611991169 
+                      656.0610496490639,333.48441151456774 
+                      659.7680389314903,337.50100890429576 
+                      664.25,340.6779087885976 
+                      669.3110496490639,342.8762653980721 
+                      674.7299957234071,344.0 
+                      680.2700042765927,344.0 
+                      685.6889503509359,342.87626539807235 
+                      690.75,340.6779087885976 
+                      695.2319610685097,337.50100890429576 
+                      698.938950350936,333.48441151456774 
+                      701.7089546275289,328.8036611991169 
+                      703.4209114194459,323.66332920746123 
+                      704.0,318.28807271368476 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Name">kościół św. Wojciecha</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>731.0,565.0 
+                      731.0,662.0 
+                      745.0,662.0 
+                      745.0,565.0 
+                      731.0,565.0 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Name">Kościół Mariacki</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>632.0,613.0 
+                      632.0,654.0 
+                      675.0,654.0 
+                      675.0,613.0 
+                      632.0,613.0 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Name">fontanna–piramida</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>673.3214285714286,489.32142857142856 
+                      672.9356602476298,486.39122723937504 
+                      671.8046447499881,483.6607142857143 
+                      670.0054589155762,481.3159696558523 
+                      667.6607142857143,479.51678382144047 
+                      664.9302013320536,478.38576832379874 
+                      662.0,478.0 
+                      659.0697986679464,478.38576832379874 
+                      656.3392857142858,479.51678382144047 
+                      653.9945410844238,481.3159696558523 
+                      652.1953552500119,483.6607142857143 
+                      651.0643397523702,486.39122723937504 
+                      650.6785714285714,489.32142857142856 
+                      651.0643397523702,492.25162990348207 
+                      652.1953552500119,494.98214285714283 
+                      653.9945410844238,497.3268874870048 
+                      656.3392857142857,499.12607332141664 
+                      659.0697986679464,500.25708881905837 
+                      662.0,500.6428571428571 
+                      664.9302013320536,500.25708881905837 
+                      667.6607142857143,499.12607332141664 
+                      670.0054589155762,497.3268874870048 
+                      671.8046447499881,494.98214285714283 
+                      672.9356602476298,492.25162990348207 
+                      673.3214285714286,489.32142857142856 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Name">pomnik Mickiewicza</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>388.0,630.0 
+                      388.0,643.0 
+                      400.0,643.0 
+                      400.0,630.0 
+                      388.0,630.0 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Name">studzienka Badyjaka</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>451.0,658.0 
+                      451.0,670.0 
+                      614.0,670.0 
+                      614.0,658.0 
+                      451.0,658.0 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Name">postój dorożek</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>392.0,486.0 
+                      392.0,497.0 
+                      405.0,497.0 
+                      405.0,486.0 
+                      392.0,486.0 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Name">płyta kościuszkowska</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>531.0,295.0 
+                      531.0,310.0 
+                      545.0,310.0 
+                      545.0,295.0 
+                      531.0,295.0 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Name">płyta z Hołdem Pruskim</property>
+    </feature>
+    <feature>
+      <geometry>
+        <gml:Polygon>
+          <gml:outerBoundaryIs>
+            <gml:LinearRing>
+              <gml:coordinates>500.0,338.0 
+                      500.0,349.0 
+                      513.0,349.0 
+                      513.0,338.0 
+                      500.0,338.0 </gml:coordinates>
+            </gml:LinearRing>
+          </gml:outerBoundaryIs>
+        </gml:Polygon>
+      </geometry>
+      <property name="Name">wróżka w Sukiennicach</property>
+    </feature>
+  </featureCollection>
+</JCSDataFile>
