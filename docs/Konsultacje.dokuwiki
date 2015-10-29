@@ -1,6 +1,208 @@
 ====== Semantyzacja map mikrolokalizacyjnych na potrzeby lokalizacji użytkowników aplikacji mobilnych w budynkach ======
 Michał Rus <m@michalrus.com>
 
+===== Prezentacja działania =====
+
+Plik z kodem generatora pytań i przykładami (C3, Rynek): {{:pl:dydaktyka:mgr:2015msc_semmaps:agh-semmaps.tar.gz|}}. Żeby zmieścić się w limicie 2 MB, musiałem usunąć z tego tekst pracy, pliki kontroli wersji, mindmapy itd.
+
+Żeby zbudować projekt, w katalogu ''./question-generator/'', należy uruchomić ''./build''. Zostanie ściągnięte ''sbt'', które zbuduje projekt, pobierając automatycznie odpowiednie wersje bibliotek.
+
+Po zbudowaniu, help (krótki opis wszystkich opcji) można wyświetlić, uruchamiając ''./question-generator -h'' albo ''./question-generator --help''. (W dalszej części będę używał krótkich opcji, ponieważ nie wiem, jak wyłączyć automatyczne zamienianie dwóch dywizów na półpauzę w foncie monospaced).
+
+Do generatora pytań dołączony jest niewielki interfejs, który pozwala
+na przeprowadzenie sesji mediacji „na sucho”. Normalnie jego rolę
+pełniłaby aplikacja mobilna, używająca generatora jako bibliotekę. Ten
+interfejs pozwala na interakcję z generatorem pytań i mediatorem w
+trybie tekstowym. Jednocześnie jego kod pokazuje jak w prosty sposób
+używać generatora i mediatora.
+
+Żeby włączyć przykładową sesję, proszę wydać komendę:
+
+<code>
+./question-generator \
+  -i ../maps/C2-3rd-floor \
+  -k kind \
+  -c ../maps/C2-3rd-floor.costs \
+  -a number=315 -a number=316 -a number=317
+</code>
+
+  * Opcja ''-i'' wybiera katalog z plikami ''*.jml'' zawierającymi warstwy mapy OpenGIS z OpenJUMP.
+
+  * W mapach każdy obiekt ma przyporządkowaną mapę/słownik KV (key-value) określającą dokładniej jego właściwości (na tyle pozwala OpenGIS). Opcja ''-k'' wybiera klucz, który zostanie użyty do określenia nazwy klasy danego obiektu w ontologii. W przykładowych mapach z archiwum ''kind'' przyjmuje wartości typu ''chair'', ''desk'', ''computer'' itd. Jeśli dany obiekt nie będzie posiadał wybranego opcją klucza, to jego klasa zostanie mu przypisana na podstawie nazwy pliku JML. I tak, przykładowo, obiekty z warstwy ''Door.jml'', jeśli nie będą miały zdefiniowanego klucza ''kind'', to ich klasą zostanie po prostu ''door''.
+
+  * Opcją ''-c'' wybiera się plik z definicjami kosztów dla poszczególnych typów obiektów.
+
+  * Każde wystąpienie opcji ''-a'' wybiera alternatywny obszar z mapy (albo więcej alternatyw), na których to obszarach będzie operował generator pytań i mediator. Alternatywy zadajemy w formie ''K=V'', gdzie ''K'' i ''V'' to klucze i wartości map w obiektach na mapach OpenGIS/GML. W przykładzie powyżej będziemy wybierali między pokojami 315, 316 i 317, ale nic nie stoi na przeszkodzie, żeby zaznaczyć wszystkie pokoje, używając ''-a kind=room''. Jeśli dane ''K=V'' pasuje do kilku obiektów, wybrane zostaną wszystkie.
+
+Jeszcze raz podkreślam, że te opcje sterują jedynie małą nakładką
+tekstową na projekt, używaną do testowania. Normalnie, te alternatywy
+byłyby zadawane przez aplikację.
+
+Przykładowy plik definiujący zasady przydzielania kosztów wygląda
+następująco:
+
+<code>
+# default cost, i.e. “Do you see a computer?”
+cost [] +50
+
+# by how much the cost increases when we incorporate .color information in the question?
+# (“Do you see a black computer?”)
+cost [].color +10
+
+# reading off the model is not so easy
+cost [].model +40
+
+# even more so if it’s a black mouse
+cost [kind=mouse, color=black].model  +110
+
+# how costly is it to spot a regular mouse relative to the default cost? Let’s make it 60.
+cost [kind=mouse] +10
+
+# how about a computer? Easy. “Do you see a computer?” should cost around 50-15=35
+cost [kind=computer] -15
+
+# reading a model of that black tv? Not so convenient… It’ll be 50+10(for color)+70(for model)
+cost [kind=tv, color = black].model   +70
+
+# how about asking about anything lying on a desk?
+cost [kind=desk].[] +10
+
+# how about the model of a black mouse that lies on a desk?
+cost [kind=desk].[kind=mouse, color=black].model +10
+
+# etc.
+</code>
+
+Jak widać koszty definiowane są przyrostowo. Na początku ustalamy
+domyślny („startowy”) koszt pytania na 50. Pytanie odnoszące się do
+jakiegokolwiek koloru ma od razu 10 więcej (czyli już 60, gdyby w
+pytaniu występował tylko kolor). Wspomnienie modelu w pytaniu zwiększa
+jego koszt o 40. Natomiast pytanie o model czarnej myszy to dodatkowe 110.
+
+Znów, każdy z tych selectorów korzysta z wartości ''K'' i ''V'' z map
+OpenGIS.
+
+Te selectory można również zagnieżdżać. Przykład w przedostatniej
+definicji powyżej. Znaczy ona, że pytanie o dowolny przedmiot (pusty
+selector) leżący na biurku zwiększa koszt o 10. (Bo np. trudniej coś
+dostrzec na biurku niż na ścianie/podłodze).
+
+Takie (przyrostowe) rozwiązanie jest bardziej naturalne przy
+definiowaniu kosztów. Wyklucza też omyłkowe pominięcie jakiegoś corner
+case’u, o który potem aplikacja ciągle by pytała (bo byłby najtańszy
+wedle definicji, a wcale nie w rzeczywistości).
+
+Nie wspomniałem jeszcze o dwóch opcjach (obie widoczne w
+''./question-generator -h''). Pierwszą są przełączniki ''-s'' i
+''-d'', odpowiednio ''--split-keys'' i
+''--split-delimiters''. Stanowią one pewne ułatwienie dla osoby
+tworzącej mapy. Opcją ''-s'' można zaznaczyć klucze z ''KV'', których
+wartości będą splitowane po znakach podanych w opcji ''-d'', a
+następnie te podciągi traktowane, jak gdyby były dodane do ''KV'' jako
+klucze, z wartościami ''true''. W przykładzie z C3 używamy tego do
+klucza ''features'', który może zawierać np. ''rotary,has_wheels'', co
+--- w momencie podania opcji ''-s features -d ,'' --- poskutkuje dodaniem
+odpowiednim obiektom właściwości ''rotary = true'' i ''has_wheels =
+true'' zamiast ''features = rotary,has_wheels''.
+
+Drugą opcją jest ''--prolog-ontology <file>'', która pozwala na dump
+ontologii do pliku w formacie Prologa do wykorzystania w równoległych
+badaniach.
+
+Zastanawiałem się, czy pokazywać tutaj przykłady, bo najlepiej
+zbudować projekt i zobaczyć działanie na własne oczy, ale pokażę
+chociaż jeden:
+
+<code>
+% ./question-generator \
+  -i ../maps/C2-3rd-floor \
+  -k kind \
+  -c ../maps/C2-3rd-floor.costs \
+  -a number=315 -a number=316 -a number=317 -a number=318
+parsing GML...
+parsing costs...
+done parsing
+4 alternative(s) selected
+  JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 373, 653 366.5, 659.4 366.5, 659.4 373, 653 373)),Map(kind -> room, number -> 315))
+  JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 366.5, 653 359.7, 659.4 359.7, 659.4 366.5, 653 366.5)),Map(kind -> room, number -> 316))
+  JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((654.67 359.7, 654.67 356.3, 659.4 356.3, 659.4 359.7, 654.67 359.7)),Map(kind -> room, number -> 317))
+  JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 356.3, 653 353.2, 659.4 353.2, 659.4 356.3, 653 356.3)),Map(kind -> room, number -> 318))
+
+Do you see some pc?
+  1: Yes
+  2: No
+> 2
+Possible alternatives left:
+  JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 373, 653 366.5, 659.4 366.5, 659.4 373, 653 373)),Map(kind -> room, number -> 315))
+  JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((654.67 359.7, 654.67 356.3, 659.4 356.3, 659.4 359.7, 654.67 359.7)),Map(kind -> room, number -> 317))
+
+Do you see some cabinet?
+  1: Yes
+  2: No
+> 1
+Possible alternatives left:
+  JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 373, 653 366.5, 659.4 366.5, 659.4 373, 653 373)),Map(kind -> room, number -> 315))
+
+Chosen alternative: Some(JmlObject(../maps/C2-3rd-floor/Area.jml,room,POLYGON ((653 373, 653 366.5, 659.4 366.5, 659.4 373, 653 373)),Map(kind -> room, number -> 315))).
+
+% 
+</code>
+
+Na początku, po parsowaniu plików, wyświetlane są alternatywy
+dopasowane do selectorów z opcji ''-a'' linii poleceń. Dany obiekt
+charakteryzuje się ścieżką pliku, z którego pochodzi, klasą, danymi
+geometrycznymi/geograficznymi i mapą KV.
+
+Zostaje wygenerowane najlepsze pytanie (najlepiej dzielące zbiór
+alternatyw). Użytkownik odpowiada, że nie widzi żadnego PC, pozostają
+już tylko dwie alternatywy, pokoje 315 i 317. (Komputery w
+laboratorium Apple nie funkcjonują w mapach jako PC --- możliwy
+problem dla osoby mniej obeznanej z popularnymi określeniami sprzętu w
+IT; ja np. poznałem to rozróżnienie nie wcześniej niż rok temu).
+
+W następnym najlepszym (na dany stan wiedzy mediatora) pytaniu
+odpowiada, że istotnie widzi szafę/gablotę. Mediator decyduje, że musi
+to być więc pokój 315.
+
+Warto zauważyć, że nawet w przypadku czterech podanych na wstępie
+alternatyw, został wykorzystany tylko pierwszy, najprymitywniejszy typ
+generacji pytań. A mianowicie, czy dany obiekt istnieje w polu
+widzenia. Mediator w ogóle nie musiał uciekać się do drugiego
+generatora, czyli pytania o porównania cech tych obiektów. (Generatory
+dostępne są do przeczytania w pliku
+''./question-generator/src/main/scala/agh/semmaps/QuestionGenerator.scala'').
+
+Tak jak napisałem w pracy, żeby relacje były wykorzystywalne (przy
+założeniu braku manipulacji kosztami, żeby je uatrakcyjnić),
+alternatywne pomieszczenia musiałyby zawierać dokładnie takie same
+obiekty, jedynie w różnych położeniach względem siebie.
+
+Całe rozwiązanie cechuje dość duża generyczność. Różne typy pytań
+implementują interfejs ''Question[+Answer]'', niezależnie od typu
+pytania i typu udzielanej odpowiedzi. Po przekazaniu generacji do
+generatora konkretnego typu pytania i uzyskania zbioru pytań, cały
+dalszy kod (liczenie entropii, wybieranie najlepszego) jest wspólny
+dla wszystkich typów. To rozdzielenie pozwala na dodawanie kolejnych
+typów i testowanie kolejnych pomysłów, koncentrując się jedynie na
+sposobie generacji.
+
+Generator zwraca najlepsze możliwe pytanie, wybierając je po entropii
+(szczegóły obliczania wraz z wzorami w PDF-ie z tekstem pracy), a ta
+jest całkowicie niezależna od sposobu generowania pytania, jego
+treści, typu, formy prezentacji. Liczy się jedynie to, na ile i jak
+różnych alternatyw wskazują poszczególne odpowiedzi (nieważne też
+jakie to konkretnie odpowiedzi, do obliczeń liczy się sam fakt
+wskazywania) oraz definicje kosztów. Sposób łączenia entropii i kosztu
+w celu wybrania najlepszego pytani również zaprezentowany jest w
+PDF-ie.
+
+Co może być ważne z praktycznego punktu widzenia: dzięki wykorzystaniu
+platformy JVM (choć nie jej flagowego języka), całość można prosto
+podłączyć do aplikacji androidowej. Ta może chodzić całkowicie
+offline, ponieważ jedynymi danymi, których potrzebuje mediator są mapy
+OpenGIS i plik z definicją kosztów. Oba te formaty są parsowane przez
+załączony kod w momencie uruchamiania generatora po raz pierwszy —
+szybkie i wygodne przy częstym zmienianiu i testowaniu map.
 ===== Spotkania =====
 
 ==== Apr 28, 2015 — @sbk ====
