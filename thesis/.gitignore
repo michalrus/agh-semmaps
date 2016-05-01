@@ -2,7 +2,9 @@
 /main-blx.bib
 !/main.tex
 
-/gitinfo.tex
+*.gen.tex
+
+*.ttf
 
 *.aux
 *.log

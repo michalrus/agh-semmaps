@@ -121,7 +121,7 @@ Supervisor: & {\itshape \@supervisor}\\
 \clearpage
 \thispagestyle{empty}
 
-\input{gitinfo}
+\input{gitinfo.gen}
 
 {\itshape O\'swiadczam, \'swiadomy odpowiedzialno\'sci karnej za po\'swiadczenie nieprawdy, \.ze \mbox{niniejsz\k{a}} prac\k{e} dyplomow\k{a} wykona\l{}em osobi\'scie i~samodzielnie, i~nie korzysta\l{}em ze \'zr\'ode\l{} innych ni\.z wymienione w~pracy.}
 
