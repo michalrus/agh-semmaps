@@ -12,14 +12,14 @@ In this chapter, the micro-location method proposed in this paper---mediation---
 	\item First, the data about locations used for micro-location purposes, that is held in human heads, needs to be digitized into computer-readable maps in OpenGIS format.
 	\item At approximately the same time, configuration file for the micro-located object/place has to be created. In it, there are changes of costs defined that add or subtract from the total cost of a generated question, based on various properties and types of objects included in the question.
 	\item The data contained in the maps is automatically transformed (parsed) into a format understood by the mediation engine\ldots
-	
+
 	\begin{figure}
 		\centering
 		\includegraphics[width=\textwidth]{architecture}
 		\caption{Architecture of the proposed solution (own work).}
 		\label{fig:architecture}
 	\end{figure}
-	
+
 	\item \ldots{}namely the ontology.
 	\item An optional step that can be taken, is to export the ontology as a Prolog source code, that can be later used in some further research, as Prolog is particularly excelling at Artificial Intelligence prototyping.
 	\item An external physics-based module needs to provide the mediation module with some alternative pre-guessed locations for the latter to choose from.
@@ -28,7 +28,7 @@ In this chapter, the micro-location method proposed in this paper---mediation---
 
 \section{OpenGIS maps}
 
-Because of the fact that for all examples evaluated in this work (\cref{cha:evaluation}), parsing of their corresponding maps took less than a second, the parsing step is performed at each start time of the mediation engine. Thanks to that, the data is kept in its rawest form possible, i.e. just the maps. That makes it also easier for the administrative user, as no manual intermediate preparatory step is needed, when creating the data.
+Because of the fact that for all examples evaluated in this work (\cref{cha:examples}), parsing of their corresponding maps took less than a second, the parsing step is performed at each start time of the mediation engine. Thanks to that, the data is kept in its rawest form possible, i.e. just the maps. That makes it also easier for the administrative user, as no manual intermediate preparatory step is needed, when creating the data.
 
 OpenGIS maps created for the sake of examples/evaluation in this work were made using the OpenJUMP\footnote{\url{https://web.archive.org/web/20150804110932/http://www.openjump.org/} (visited on 08/04/2015).} editor. This program creates a structure of files and directories corresponding to \emph{layers} defined by the user. A layer consists of several objects added to it at precisely defined position. The concept of layers doesn't play any role in mediation and thus they are only added as a convenience for the user creating the maps. Any object added to a layer---apart from its position in space---is also characterized by a map of properties in form of key--value pairs. In \cref{fig:opengis-props-map} such properties can be seen in the editor, while \cref{lst:opengis-props-onto} has these properties translated into Prolog source code. The properties are what has the greatest significance in the mediation process, as they enable discerning of objects; one of the properties takes a role of defining a class of an object (in ontological sense) and can be chosen at each parsing step.
 
@@ -137,7 +137,7 @@ The idea for using beacons in the module is to make an assessment about distance
  	\item receiver being in the same room,
  	\item no interaction at all.
  \end{itemize}
- 
+
 Matyasik et al. claim that the RSSI-to-distance-based approach works, however, \emph{only under laboratory conditions} \cite{Matyasik:iBeacon, Matyasik:iBeacon:slides}. As iBeacons use extremely low energy to transmit the signal, even a single person walking across the room while taking the measurement---or even someone playing with the smartphone during the measurement---can influence it so negatively, that any information inferred about the distance to the signal's source cannot be reliably trusted.
 
 \section{The process of mediation}
@@ -150,7 +150,7 @@ In the provided sample implementation, alternatives from the list of trees (cf. 
 In the implementation, mediation takes part in two modules.
 
 \begin{enumerate}
-	\item A sample and small (28 lines of code) \texttt{Mediator} that currently uses command line to present questions to the user and get their answers. 
+	\item A sample and small (28 lines of code) \texttt{Mediator} that currently uses command line to present questions to the user and get their answers.
 	\item The \texttt{QuestionGenerator} that is the heart of the whole process. Given a list of alternatives---a list of \texttt{JmlTree}s, cf. \cref{sec:ontology}---it generates the best question possible to discern the alternatives, taking costs, objects, properties etc. into account.
 \end{enumerate}
 
@@ -163,7 +163,7 @@ sealed trait Question {
   val cost: Double
   val asText: String
   def asText(a: Answer): String
-  
+
   final def entropy: Double = ...
   final def overallCost: Double = cost * (1.0 + entropy)
 }
