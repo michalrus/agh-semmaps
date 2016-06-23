@@ -1,0 +1,61 @@
+* Poprawki
+** jeśli chodzi o opis, to w pracy jest sporo luk.
+*** TODO Ewaluacja
+:LOGBOOK:
+- State "TODO"       from ""           [2016-06-23 Thu 01:07]
+:END:
+Np. Ewaluacja nie jest należycie opisana. nie wiadomo do końca o co
+tam chodzi. Niby jest budynek, jakieś obiekty i przykład użycia na
+dwóch pokojach.
+*** Archive                                                       :ARCHIVE:
+**** DONE Być może wypadaloby zmienić tytuł rozdziąłu na "Simple use-case scenarios".
+:LOGBOOK:
+- State "DONE"       from ""           [2016-06-23 Thu 01:03]
+:END:
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-06-23 Thu 01:03
+:END:
+**** CANCELED Sama treść tez miejscami nie jest kompletna.
+:LOGBOOK:
+- State "CANCELED"   from ""           [2016-06-23 Thu 01:04] \\
+  Lanie wody
+:END:
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-06-23 Thu 01:04
+:END:
+** tekst jes bardzo pomieszany Struktura tekstu wymaga na pewno reorganizacji.
+*** TODO state of the art w jakimś wcześniejszym rozdziale
+:LOGBOOK:
+- State "TODO"       from ""           [2016-06-23 Thu 01:07]
+:END:
+lepiej byłoby z całą pewnością wyodrębnić state of the art w jakimś wcześniejszym rozdziale
+*** TODO co jest oryginalnym wkładem
+:LOGBOOK:
+- State "TODO"       from ""           [2016-06-23 Thu 01:07]
+:END:
+wszystko się przeplata, co nie wpływa dobrze na przekaz tego co w
+pracy jest pana oryginalny wkładem (nawet jeśli gdzies na początku
+jest to zaznaczone).
+*** TODO rozdział "Mediation. The proposed method"
+:LOGBOOK:
+- State "TODO"       from ""           [2016-06-23 Thu 01:07]
+:END:
+ zajmuje półtorej storny a mało. To powinien byc opis całego
+ mechanizmu, natomiast on znalazł sie w results. / zrobić osobny jeden
+ dwa rozdziały, które opisują już stricte samo rozwiązanie.
+** Archive                                                         :ARCHIVE:
+*** CANCELED Myślę, że kwestie organizacji tekstu (struktury rozdziałów) i uzupełnienie luk to sprawa zasadnicza. Narzędzie jest OK.
+:LOGBOOK:
+- State "CANCELED"   from ""           [2016-06-23 Thu 01:01] \\
+  Lanie wody
+:END:
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-06-23 Thu 01:01
+:END:
+*** DONE Narzędzie wygląda OK.
+:LOGBOOK:
+- State "DONE"       from ""           [2016-06-23 Thu 01:01]
+:END:
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-06-23 Thu 01:01
+:END:
