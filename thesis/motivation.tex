@@ -1,5 +1,5 @@
-\chapter{Micro-location}
-\label{cha:microlocation}
+\chapter{Motivation. State of the art}
+\label{cha:state-of-the-art}
 
 % Motivation
 
@@ -119,18 +119,7 @@ Some of the other methods make extensive use of the triangulation technique know
 		\caption{Sample QR-code, version 10 \cite{wiki:qr-code}.}
 		\label{fig:qr-code}
 	\end{figure}
-	
+
 	\item[NFC] is an abbreviation for Near Field Communication. NFC allows enabled devices to establish a radio connection over a very close range (less than 10 cm). This necessary closeness can be used to locate a device with confidence, as the user has to almost touch a tag with their device (so they have to be near it), to read it. At the same time this requirement renders this method highly impractical and burdensome for the user. The NFC technology is only built into new smartphones by Apple and most premium Android phones, and because of that it is not compatible with most devices currently in use. These points don't stop some researchers from publishing a paper about their proposed framework for such a micro-location method \cite{nfc-ulocation}. As a tidbit, this is also the technology used in contactless payments using credit and debit cards.
-	
+
 \end{description}
-
-\section{Mediation. The proposed method}
-\label{sec:mediation}
-
-As previously stated, the proposed method is an addition to the micro-localization based on the physics module (\cref{sec:physics-module}). The module, using data from various physical sensors, is able to provide a few alternative locations of where the user may currently be. Most of the time, the module outputs just two of them. These alternatives are then input to a mediation module, the heart of this proposed method.
-
-By asking the user a few questions (often just one, if there are only two alternatives), the mediation module is able to discern between the alternatives and infer where the user really is. While this approach is moving a \emph{lot} of burden from the technology side onto the user (see \cref{cha:summary} with regard to User Experience), this method---given rich enough maps---is able to accomplish this task successfully.
-
-The questions are generated using a few algorithms (one for each question type) with the data coming from maps prepared beforehand.
-
-Motivation for this approach is that---again, given rich enough maps---it is able to \emph{guarantee} a $100\%$ success in distinguishing between the alternatives. ``Rich enough'' here means that there is at least one detail differentiating every selectable pair of rooms.

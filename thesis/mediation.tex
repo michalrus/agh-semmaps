@@ -1,7 +1,20 @@
-\chapter{Results}
-\label{cha:results}
+\chapter{Mediation. The proposed method}
+\label{cha:mediation}
 
-In this chapter, the micro-location method proposed in this paper---mediation---will be discussed in greater detail. A sample implementation of it is also provided along the paper. The whole method was implemented only in the Scala\footnote{\url{https://web.archive.org/web/20150817031402/http://scala-lang.org/} (visited on 08/17/2015).} language from the beginning to the very end. Scala is a compiled language and it compiles to JVM bytecode format, one that is widely used for server-side solutions, as well as for programming Android devices. Therefore, this choice allows for running the whole code completely off-line, in an Android application, or---equally easily---creating a web API accessible from any device. Functional--objective paradigm of the language (much like this of OCaml) allows for very concise and expressive notation of the ideas, as seen in some of the code listings in the following sections.
+In this chapter, the micro-location method proposed in this paper---mediation---will be discussed in greater detail.
+
+As previously stated, the proposed method is an addition to the micro-localization based on the physics module (\cref{sec:physics-module}). The module, using data from various physical sensors, is able to provide a few alternative locations of where the user may currently be. Most of the time, the module outputs just two of them. These alternatives are then input to a mediation module, the heart of this proposed method.
+
+By asking the user a few questions (often just one, if there are only two alternatives), the mediation module is able to discern between the alternatives and infer where the user really is. While this approach is moving a \emph{lot} of burden from the technology side onto the user (see \cref{cha:summary} with regard to User Experience), this method---given rich enough maps---is able to accomplish this task successfully.
+
+The questions are generated using a few algorithms (one for each question type) with the data coming from maps prepared beforehand.
+
+Motivation for this approach is that---again, given rich enough maps---it is able to \emph{guarantee} a $100\%$ success in distinguishing between the alternatives. ``Rich enough'' here means that there is at least one detail differentiating every selectable pair of rooms.
+
+\section{Sample implementation}
+\label{sec:sample-implementation}
+
+A sample implementation of it is also provided along with the paper. The whole method was implemented only in the Scala\footnote{\url{https://web.archive.org/web/20150817031402/http://scala-lang.org/} (visited on 08/17/2015).} language from the beginning to the very end. Scala is a compiled language and it compiles to JVM bytecode format, one that is widely used for server-side solutions, as well as for programming Android devices. Therefore, this choice allows for running the whole code completely off-line, in an Android application, or---equally easily---creating a web API accessible from any device. Functional--objective paradigm of the language (much like this of OCaml) allows for very concise and expressive notation of the ideas, as seen in some of the code listings in the following sections.
 
 \section{Architecture of the proposed solution}
 \label{sec:architecture}
