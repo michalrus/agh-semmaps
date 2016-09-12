@@ -79,28 +79,18 @@ pokój, w którym się jest. Więc nie bardzo jest jak to ewaluować.
 :ARCHIVE_TIME: 2016-06-23 Thu 01:04
 :END:
 * Składanie
-** sprawdź jeszcze raz wzór gł. oświadczenia u Szpyrki — ponoć się zmieniło
-** podanie kieruje się do KLUZY, a nie OPRZĘDKIEWICZA
-** TODO [#A] przejrzyj jeszcze raz MINDMAPĘ
+** DONE sprawdź jeszcze raz wzór gł. oświadczenia u Szpyrki — ponoć się zmieniło
 :LOGBOOK:
-- State "TODO"       from ""           [2016-09-02 Fri 13:18]
+- State "DONE"       from ""           [2016-09-12 Mon 17:55]
 :END:
-** XLS z ocenami — i skąd wziąć średnią https://www.forum.stosowana.pl/viewtopic.php?f=249&t=30380
-** okołoobronowe doświadczenia https://forum.stosowana.pl/viewtopic.php?f=249&t=29458
-** obrony — informacje 2011 — TERMIN DO 21 WRZEŚNIA — https://www.forum.stosowana.pl/viewtopic.php?f=393&t=30650
-** pytania na obronie 2011 https://www.forum.stosowana.pl/viewtopic.php?f=1823&t=30665
-** pytania na obronie 2010 https://www.forum.stosowana.pl/viewtopic.php?f=1656&t=29696
-** pytania na obronie — wszystkie roczniki https://www.forum.stosowana.pl/viewtopic.php?f=33&t=27495
-** „Czy wiecie może co trzeba zrobić aby zmienić nazwisko recenzenta w Wirtualnym Dziekanacie? Zmieniłem już w tym systemie prac dyplomowych u tego gościa w B1, ale w WD dalej jest błędne (oczywiście wpisane losowo).”
-https://www.facebook.com/n/?groups%2F178266465517351%2Fpermalink%2F1034470486563607%2F&aref=1442156195150215&medium=email&mid=51fb4b0d18641G5af3d2bb052dG51fa227b8f987G96G3aec&bcode=1.1442237044.Abm2ZRCG4AQ3fvGO&n_m=m%40michalrus.com
-** nowy system antyplagiatowy — OSA
-http://www.forum.stosowana.pl/viewtopic.php?f=33&t=30085
-raport_OSA.pdf w agh-semmaps.org/docs/
-** TODO mgr: prezentacja: żeby kolejne animacje nie przeskakiwały
-** TODO obrony: http://www.forum.stosowana.pl/viewtopic.php?f=249&t=29612
-** TODO wyciąg z indeksu: http://www.forum.stosowana.pl/viewtopic.php?f=249&t=29633
-** TODO błędny temat pracy, GJN nie wpisał w — http://pracedyplomowe.eaiib.agh.edu.pl/
-** składanie pracy — nowe zasady © kjanosz
+** DONE nowy wzór oświadczenia jest w tym doksie kjanosza — sprawdź jeszcze ze wzorem Szpyrki
+:LOGBOOK:
+- State "DONE"       from ""           [2016-09-12 Mon 17:58]
+:END:
+** DONE składanie pracy — nowe zasady © kjanosz
+:LOGBOOK:
+- State "DONE"       from ""           [2016-09-12 Mon 18:00]
+:END:
 *** TODO dodatkowo1.txt
 agh: https://michalrus.com/hidden/agh/nowe-papierki.txt
 
@@ -142,11 +132,97 @@ agh: https://michalrus.com/hidden/agh/nowe-papierki.txt
 11:07:30 < kjanosz-> [08:26:15] Pani Małgosia przyjęła mi pracę magisterską ze złą wersją oświadczenia
 11:07:30 < kjanosz-> [08:26:28] czyli miałem rację co do jego nowej wersji ^-^
 11:07:30 < kjanosz-> [08:26:35] https://www.eaiib.agh.edu.pl/files/1930/Zasady_dyplomowania_2015_za____czniki.pdf
-*** wypierdziel branch „skladanie” przed oddawaniem im kodu, bo kjanosz przeklina
-** nowy wzór oświadczenia jest w tym doksie kjanosza — sprawdź jeszcze ze wzorem Szpyrki
-** obiegówki: http://www.forum.stosowana.pl/viewtopic.php?f=249&t=29641
+** IN-PROGRESS przejrzyj zasady https://www.eaiib.agh.edu.pl/files/1930/Zasady_dyplomowania_2015_za____czniki.pdf
+:LOGBOOK:
+- State "IN-PROGRESS" from ""           [2016-09-12 Mon 18:00]
+:END:
+** IN-PROGRESS nowy system antyplagiatowy — OSA
+:LOGBOOK:
+- State "IN-PROGRESS" from "DONE"       [2016-09-12 Mon 17:57]
+- State "DONE"       from ""           [2016-09-12 Mon 17:55]
+:END:
+http://www.forum.stosowana.pl/viewtopic.php?f=33&t=30085
+raport_OSA.pdf w agh-semmaps.org/docs/
+** IN-PROGRESS błędny temat pracy, GJN nie wpisał w — http://pracedyplomowe.eaiib.agh.edu.pl/
+:LOGBOOK:
+- State "IN-PROGRESS" from "TODO"       [2016-09-12 Mon 17:57]
+:END:
+** TODO okołoobronowe doświadczenia https://forum.stosowana.pl/viewtopic.php?f=249&t=29458
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-12 Mon 17:55]
+:END:
+** TODO wydrukować pracę
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-12 Mon 18:12]
+:END:
+** TODO wniosek o odpis angielski Cztery kolorowe zdjęcia formatu 4,5 × 6,5 (w stroju oficjalnym), w tym jedno opisane
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-12 Mon 18:13]
+:END:
+z tyłu imieniem, nazwiskiem i nr PESEL. Przy zamawianiu odpisu w języku obcym
+dodatkowo 1 zdjęcie.
+** TODO [#A] przejrzyj jeszcze raz MINDMAPĘ
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-02 Fri 13:18]
+:END:
+** TODO podanie kieruje się do KLUZY, a nie OPRZĘDKIEWICZA
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-12 Mon 17:58]
+:END:
+** TODO XLS z ocenami — i skąd wziąć średnią https://www.forum.stosowana.pl/viewtopic.php?f=249&t=30380
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-12 Mon 17:58]
+:END:
+** TODO wyciąg z indeksu: http://www.forum.stosowana.pl/viewtopic.php?f=249&t=29633
+** TODO obiegówki: http://www.forum.stosowana.pl/viewtopic.php?f=249&t=29641
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-12 Mon 17:58]
+:END:
+** TODO „Czy wiecie może co trzeba zrobić aby zmienić nazwisko recenzenta w Wirtualnym Dziekanacie? Zmieniłem już w tym systemie prac dyplomowych u tego gościa w B1, ale w WD dalej jest błędne (oczywiście wpisane losowo).”
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-12 Mon 17:58]
+:END:
+https://www.facebook.com/n/?groups%2F178266465517351%2Fpermalink%2F1034470486563607%2F&aref=1442156195150215&medium=email&mid=51fb4b0d18641G5af3d2bb052dG51fa227b8f987G96G3aec&bcode=1.1442237044.Abm2ZRCG4AQ3fvGO&n_m=m%40michalrus.com
+** TODO wypierdziel branch „skladanie” przed oddawaniem im kodu, bo kjanosz przeklina
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-12 Mon 18:00]
+:END:
+** TODO podanie do Kluzy o dopuszczenie!
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-12 Mon 18:03]
+:END:
+** TODO podanie o reaktywację — do kogo?
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-12 Mon 18:05]
+:END:
+** TODO wniosek o odpis dyplomu w angielskim
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-12 Mon 18:05]
+:END:
+** TODO wpłata i dowód wpłaty 60+40 zł
+ h) Dowód wpłaty 60 zł, w przypadku zamawiania odpisu w języku obcym dodatkowo 40 zł. Wpłaty należy dokonać na konto Wydziału EAIiIB:
+Bank Pekao S.A. Kraków 87 1240 4722 1111 0000 4856 4654
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-12 Mon 18:04]
+:END:
+** TODO Cztery kolorowe zdjęcia formatu 4,5 × 6,5 (w stroju oficjalnym), w tym jedno opisane
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-12 Mon 18:12]
+:END:
+z tyłu imieniem, nazwiskiem i nr PESEL. Przy zamawianiu odpisu w języku obcym
+dodatkowo 1 zdjęcie.
 * Obrona
+** TODO mgr: prezentacja: żeby kolejne animacje nie przeskakiwały
+** TODO obrony — informacje 2011 — TERMIN DO 21 WRZEŚNIA — https://www.forum.stosowana.pl/viewtopic.php?f=393&t=30650
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-12 Mon 18:00]
+:END:
+** TODO obrony: http://www.forum.stosowana.pl/viewtopic.php?f=249&t=29612
+** pytania na obronie 2011 https://www.forum.stosowana.pl/viewtopic.php?f=1823&t=30665
+** pytania na obronie 2010 https://www.forum.stosowana.pl/viewtopic.php?f=1656&t=29696
+** pytania na obronie — wszystkie roczniki https://www.forum.stosowana.pl/viewtopic.php?f=33&t=27495
 * Odbieranie dyplomu
+** dopiero wtedy obiegówka?
 * Archive                                                           :ARCHIVE:
 ** DONE mgr: kiedy konsultacje
 :PROPERTIES:
