@@ -78,3 +78,456 @@ pokój, w którym się jest. Więc nie bardzo jest jak to ewaluować.
 :PROPERTIES:
 :ARCHIVE_TIME: 2016-06-23 Thu 01:04
 :END:
+* Składanie
+** sprawdź jeszcze raz wzór gł. oświadczenia u Szpyrki — ponoć się zmieniło
+** podanie kieruje się do KLUZY, a nie OPRZĘDKIEWICZA
+** TODO [#A] przejrzyj jeszcze raz MINDMAPĘ
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-02 Fri 13:18]
+:END:
+** XLS z ocenami — i skąd wziąć średnią https://www.forum.stosowana.pl/viewtopic.php?f=249&t=30380
+** okołoobronowe doświadczenia https://forum.stosowana.pl/viewtopic.php?f=249&t=29458
+** obrony — informacje 2011 — TERMIN DO 21 WRZEŚNIA — https://www.forum.stosowana.pl/viewtopic.php?f=393&t=30650
+** pytania na obronie 2011 https://www.forum.stosowana.pl/viewtopic.php?f=1823&t=30665
+** pytania na obronie 2010 https://www.forum.stosowana.pl/viewtopic.php?f=1656&t=29696
+** pytania na obronie — wszystkie roczniki https://www.forum.stosowana.pl/viewtopic.php?f=33&t=27495
+** „Czy wiecie może co trzeba zrobić aby zmienić nazwisko recenzenta w Wirtualnym Dziekanacie? Zmieniłem już w tym systemie prac dyplomowych u tego gościa w B1, ale w WD dalej jest błędne (oczywiście wpisane losowo).”
+https://www.facebook.com/n/?groups%2F178266465517351%2Fpermalink%2F1034470486563607%2F&aref=1442156195150215&medium=email&mid=51fb4b0d18641G5af3d2bb052dG51fa227b8f987G96G3aec&bcode=1.1442237044.Abm2ZRCG4AQ3fvGO&n_m=m%40michalrus.com
+** nowy system antyplagiatowy — OSA
+http://www.forum.stosowana.pl/viewtopic.php?f=33&t=30085
+raport_OSA.pdf w agh-semmaps.org/docs/
+** TODO mgr: prezentacja: żeby kolejne animacje nie przeskakiwały
+** TODO obrony: http://www.forum.stosowana.pl/viewtopic.php?f=249&t=29612
+** TODO wyciąg z indeksu: http://www.forum.stosowana.pl/viewtopic.php?f=249&t=29633
+** TODO błędny temat pracy, GJN nie wpisał w — http://pracedyplomowe.eaiib.agh.edu.pl/
+** składanie pracy — nowe zasady © kjanosz
+*** TODO dodatkowo1.txt
+agh: https://michalrus.com/hidden/agh/nowe-papierki.txt
+
+07:11:22 < kjanosz> kurwa mać
+07:11:47 < kjanosz> 30 września wszedł nowy papierek rektora - jest potrzebne oświadczenie ze strony promotora że praca została sprawdzona programem anty-plagiatowym
+07:11:56 < kjanosz> czemu kurwa nigdzie nie ma informacji o tym
+07:12:21 < kjanosz> jebana pizda się jeszcze obraziła na mnie jak jej powiedziałem, że "szkoda że promotorzy nie zostali o tym fakcie poinformowani"
+07:12:31 < kjanosz> pies jebał agh i jego administracje
+07:15:56 < kjanosz> jeszcze głupia pizda na wstępie się uśmiechała głupio bo pewnie wiedziała, że ni chuja nie będę mieć tego papierka bo nikt nie wie o tym rozporządzeniu
+07:16:18 < kjanosz> zaorać tę jebaną uczelnie to za mało
+07:25:02 < kjanosz> michalrus: http://dok.agh.edu.pl/doc.php?typ=11&nr=3&sort=datar                // https://michalrus.com/hidden/agh/6913.pdf
+07:25:06 < kjanosz> ważny dokument ;-)
+07:44:48 < kjanosz> kurwa, oczywiście nowa treść oświadczenia nie jest przyjazna do skopiowania
+07:44:56 < kjanosz> bo jakże by mogło być kurwa inaczej
+10:43:52 < kjanosz> btw, niezły syf tam mają
+10:44:21 < kjanosz> tzn ze strony ptma to dostałem jak najwiecej pomocy jak się dało - bo mi szybko (1h) odpisał że zaświadczenie gotowe i mogę odebrać z jego domu
+10:48:27 < kjanosz> no ale on mieszka na tyle daleko że nie dałbym rady obrócić w dwie strony i zdążyć na otwarty dziekanat
+10:48:27 < kjanosz> a teraz ciekawostka
+10:48:27 < kjanosz> w tym papiórku od rektora który zapodałem
+10:48:27 < kjanosz> jest, oprócz wymagania co do tego papierka, napisanego też oświadczenie które powinno znaleźć się na odwrocie pracy
+10:48:28 < kjanosz> jest bardziej rozbudowane od tego co było wcześniej
+10:48:30 < kjanosz> i teraz, myślałem, bo z papieru tak wynika, że oświadczenie też się zmieniło
+10:48:31 < kjanosz> a pani Gosia wyprowadziła mnie z błędu
+10:48:32 < kjanosz> generalnie
+10:48:35 < kjanosz> jeśli spoglądasz na zasady dyplomowania to patrzysz na wymagane dokumenty ktore są wypisane na stronie wydziału, ale musisz również spojrzeć na rozporządzenia rektora które wyszły od ostatniego updejtu na stronie
+10:48:37 < kjanosz> i jeśli została dodana nowa rzecz (jak ten wydruk z OSA) to musisz je dodać
+10:48:39 < kjanosz> ale jeśli została zmieniona jakaś rzecz (treść oświadczenia) to bierzesz to ze strony wydziału
+10:48:40 < kjanosz> logiczne, nie?
+10:48:51 < kjanosz> oczywiscie pani Gosia tego bezpośrednio mi nie powiedziała, ale taki był sens jej wypowiedzi
+
+10:34:58 < michalrus> kjanosz, ale ten dokument podlinkowany chce ode mnie hasła? :O
+10:37:05 < michalrus> Z sieci agh się da, okay.
+10:50:34 < kjanosz> michalrus: ? ten wydruk z OSA to promotor wypełnia
+10:50:49 < michalrus> A, to jeszcze lepiej.
+10:50:59 < kjanosz> ale powiadom gjna o tym
+10:51:02 < kjanosz> bo może nie wiedzieć
+*** TODO dodatkowo2.txt
+11:07:30 < kjanosz-> [08:25:52] michalrus: uahhahaha
+11:07:30 < kjanosz-> [08:26:15] Pani Małgosia przyjęła mi pracę magisterską ze złą wersją oświadczenia
+11:07:30 < kjanosz-> [08:26:28] czyli miałem rację co do jego nowej wersji ^-^
+11:07:30 < kjanosz-> [08:26:35] https://www.eaiib.agh.edu.pl/files/1930/Zasady_dyplomowania_2015_za____czniki.pdf
+*** wypierdziel branch „skladanie” przed oddawaniem im kodu, bo kjanosz przeklina
+** nowy wzór oświadczenia jest w tym doksie kjanosza — sprawdź jeszcze ze wzorem Szpyrki
+** obiegówki: http://www.forum.stosowana.pl/viewtopic.php?f=249&t=29641
+* Obrona
+* Odbieranie dyplomu
+* Archive                                                           :ARCHIVE:
+** DONE mgr: kiedy konsultacje
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Inbox
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-05-11 Mon 14:34]
+CLOSED: [2015-05-11 Mon 14:49]
+** DONE mgr: prezentacja: tekst — po polsku czy angielsku?
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Inbox
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-04-29 Wed 09:54]
+CLOSED: [2015-04-29 Wed 10:05]
+** DONE mgr: ogarnac notatki ze spotkania z bobo
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Daily
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-04-28 Tue 22:43]
+CLOSED: [2015-05-18 Mon 17:10]
+** DONE mgr: rozdział 2
+CLOSED: [2015-10-18 Sun 21:45]
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Weekly
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-05-18 Mon 17:16]
+** DONE mgr: generowanie drzewek pytań z OpenJUMP
+CLOSED: [2015-10-18 Sun 21:45]
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Weekly
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-04-28 Tue 14:07]
+** DONE mgr: rozdział 3
+CLOSED: [2015-10-18 Sun 21:45]
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Weekly
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-05-18 Mon 17:16]
+** DONE mgr: presentationzen.com
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-04-24 Fri 23:59]
+CLOSED: [2015-04-29 Wed 10:06]
+** DONE mgr: porządek w mindmapie + terminy
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-04-26 Sun 10:03]
+CLOSED: [2015-05-13 Wed 23:44]
+** DONE mgr: rozdział „systemy kontekstowe i rekomendacyjne”
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-04-26 Sun 20:23]
+CLOSED: [2015-09-29 Tue 21:51]
+** DONE mgr: ontologia, przykład działający, szansa zrobienia tego w HeaRTDroid
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-04-26 Sun 20:31]
+CLOSED: [2015-09-29 Tue 21:51]
+** DONE mgr: nowa mapa w OpenJUMP dla rynku (nie duże, ale reprezentacyjne)
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-04-26 Sun 20:32]
+CLOSED: [2015-09-29 Tue 21:51]
+** DONE mgr: plan dla GJN, zaakceptuje :)
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-04-28 Tue 22:44]
+CLOSED: [2015-06-20 Sat 22:30]
+** DONE mgr: prezentacja: <gjn> „po co? jaki benefit? do czego to się może przydać?” — dobre pytanie (przewodniczący komisji nie czyta prac…) / na czym polega »original contribution«?
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-04-29 Wed 09:35]
+CLOSED: [2015-04-29 Wed 10:02]
+** DONE mgr: Aktualnie CWA, ale pamiętać o słowie kluczowym "more" które oznacza, że dana relacja może mieć więcej elementów po lewej stronie (czyli taka furtka dla OWA).
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-05-01 Fri 17:10]
+CLOSED: [2015-05-11 Mon 14:50]
+** DONE mgr: prezentacja: <gjn> nie ma sensu robić planu prezentacji (bo to 10 min i każda obrona ma taki sam plan)
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-04-29 Wed 09:52]
+CLOSED: [2015-04-29 Wed 10:02]
+** DONE mgr: reintroduce count
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-05-01 Fri 21:06]
+CLOSED: [2015-05-01 Fri 21:20]
+** DONE mgr: wybor prologowego klucza
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-05-01 Fri 23:59]
+CLOSED: [2015-05-02 Sat 19:00]
+** DONE mgr: tzn. modufikowany iD3 ale tylko o wliczanie kosztu
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-05-04 Mon 04:22]
+CLOSED: [2015-05-11 Mon 14:51]
+** DONE mgr: \todo
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-05-13 Wed 08:21]
+CLOSED: [2015-05-13 Wed 23:44]
+** DONE mgr: wrzucac kolejne wersje na wiki i dawac znac Bobku i GJN, i wtedy 3 dni pozniej spotkac sie z GJN
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-05-13 Wed 10:41]
+CLOSED: [2015-09-29 Tue 21:51]
+** DONE mgr: porównaj stylówę MSc z https://github.com/JeffBezanson/phdthesis/blob/master/main.pdf
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-05-16 Sat 09:38]
+CLOSED: [2015-05-27 Wed 00:26]
+** DONE mgr: prezentacja: beamer theme: https://github.com/matze/mtheme
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-05-21 Thu 12:21]
+CLOSED: [2015-05-27 Wed 00:26]
+** DONE mgr: przejrzeć materiały od Bobka — http://ai.ia.agh.edu.pl/wiki/pl:dydaktyka:mgr:2015msc_semmaps:start
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-04-24 Fri 23:40]
+CLOSED: [2015-04-28 Tue 16:43]
+** DONE mgr: zacząć pisać tekst
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-04-26 Sun 19:58]
+CLOSED: [2015-05-13 Wed 23:44]
+** DONE temat po angielsku: http://www.forum.stosowana.pl/viewtopic.php?f=249&t=29655
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-06-28 Sun 13:30]
+CLOSED: [2015-07-14 Tue 13:50]
+** DONE mgr: generowanie HMR dla HeaRTDroid
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-04-26 Sun 20:32]
+CLOSED: [2015-09-29 Tue 21:51]
+** DONE mgr: get rid of JmlType
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-05-01 Fri 21:05]
+CLOSED: [2015-05-01 Fri 21:48]
+** DONE mgr: wczyścić prezentację
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-05-13 Wed 08:36]
+CLOSED: [2015-05-13 Wed 23:44]
+** DONE mgr: termin oddania: 15 września
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-05-21 Thu 12:47]
+CLOSED: [2015-09-29 Tue 21:51]
+** DONE mgr: wydrukowac prezentacje, zeby komisja mogla wrocic
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-04-24 Fri 23:59]
+CLOSED: [2015-04-29 Wed 10:01]
+** DONE mgr: prezentacja na seminarium dyplomowe — dokładnie jak na obronie
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-04-28 Tue 11:01]
+CLOSED: [2015-05-27 Wed 00:26]
+** DONE mgr: prezentacja: <gjn> zacząć „celem mojej pracy jest”
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-04-29 Wed 09:52]
+CLOSED: [2015-04-29 Wed 10:00]
+** DONE mgr: rozdział „systemy regułowe i heartdroid, reprezentacja wiedzy semantycznej”
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-04-26 Sun 20:24]
+CLOSED: [2015-09-29 Tue 21:51]
+** DONE mgr: \href
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-05-13 Wed 08:21]
+CLOSED: [2015-05-13 Wed 08:36]
+** DONE obiegówki: http://www.forum.stosowana.pl/viewtopic.php?f=249&t=29641
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-06-28 Sun 13:30]
+CLOSED: [2015-07-14 Tue 13:51]
+** DONE mgr: wybor alternatyw przez k=v z GML
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-05-01 Fri 23:58]
+CLOSED: [2015-05-04 Mon 14:08]
+** DONE mgr: koszty globalnie + override’owanie dla konkretniejszych przypadków
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-05-04 Mon 04:22]
+CLOSED: [2015-09-29 Tue 21:51]
+np.
+*-color: 10
+*-mouse-color: 50
+** DONE mgr: prezentacja: <gjn> handouty nie muszą być slajd/A4, nie muszą być kolorowe
+:PROPERTIES:
+:ARCHIVE_TIME: 2016-02-14 Sun 01:41
+:ARCHIVE_FILE: ~/.emacs.d/org/Main.org
+:ARCHIVE_OLPATH: Work/Education/AGH
+:ARCHIVE_CATEGORY: Main
+:ARCHIVE_TODO: DONE
+:END:
+CREATED: [2015-04-29 Wed 09:35]
+CLOSED: [2015-04-29 Wed 10:01]
