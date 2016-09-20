@@ -1,20 +1,7 @@
-* XMind
-** prezentacja
-*** <mszpyrka> presentationzen.com
-*** <gjn> do 10 min
-*** <gjn> zacząć „celem mojej pracy jest”
-*** <gjn> nie ma sensu robić planu prezentacji (bo to 10 min i każda obrona ma taki sam plan)
-*** <gjn> „po co? jaki benefit? do czego to się może przydać?” — dobre pytanie (przewodniczący komisji nie czyta prac…) / na czym polega »original contribution«?
-*** <gjn> wydrukowac prezentacje, zeby komisja mogla wrocic
-*** <gjn> handouty nie muszą być slajd/A4, nie muszą być kolorowe
-*** <gjn> nawet jeśli praca po angielsku, to prezentacja po polsku
-**** ukłon w stronę dziekana Oprzędkiewicza ☺
-*** <gjn> nie podobają mi się itemize, gdzie w każdym item jest skrót, który niczego nie mówi słuchaczowi
-**** aha, w sumie nic nie wiem z tego slajdu, nic mi ten skrót nie mówi
-*** <gjn> jak pan dziekan nie wie, co to jest Docker, to z Pana prezentacji się nie dowie
-**** ograniczać slang
-**** albo tłumaczyć slang
-**** inaczej: prezentacja kamikadze
+* DONE XMind
+:LOGBOOK:
+- State "DONE"       from ""           [2016-09-20 Tue 18:49]
+:END:
 ** moja rola nieoficjalnie © <sbk>
 *** dodanie relacji innych niż has
 *** openjump → ??? → pytania
@@ -166,7 +153,10 @@
 ***** musiałyby być pokoje z identyczną zawartością, żeby nie dało się ich odróżnić po Exists
 **** optimization
 ***** cost matching
-* Poprawki
+* DONE Poprawki
+:LOGBOOK:
+- State "DONE"       from ""           [2016-09-20 Tue 18:51]
+:END:
 ** Archive                                                         :ARCHIVE:
 *** CANCELED Myślę, że kwestie organizacji tekstu (struktury rozdziałów) i uzupełnienie luk to sprawa zasadnicza. Narzędzie jest OK.
 :LOGBOOK:
@@ -246,7 +236,10 @@ pokój, w którym się jest. Więc nie bardzo jest jak to ewaluować.
 :PROPERTIES:
 :ARCHIVE_TIME: 2016-06-23 Thu 01:04
 :END:
-* Składanie
+* IN-PROGRESS Składanie
+:LOGBOOK:
+- State "IN-PROGRESS" from ""           [2016-09-20 Tue 18:51]
+:END:
 ** DONE sprawdź jeszcze raz wzór gł. oświadczenia u Szpyrki — ponoć się zmieniło
 :LOGBOOK:
 - State "DONE"       from ""           [2016-09-12 Mon 17:55]
@@ -406,8 +399,10 @@ z tyłu imieniem, nazwiskiem i nr PESEL.
 - State "DONE"       from "TODO"       [2016-09-13 Tue 20:33]
 - State "TODO"       from ""           [2016-09-12 Mon 17:55]
 :END:
-** TODO [#A] przejrzyj jeszcze raz MINDMAPĘ
+** DONE [#A] przejrzyj jeszcze raz MINDMAPĘ
 :LOGBOOK:
+- State "DONE"       from "IN-PROGRESS" [2016-09-20 Tue 18:49]
+- State "IN-PROGRESS" from "TODO"       [2016-09-20 Tue 18:48]
 - State "TODO"       from ""           [2016-09-02 Fri 13:18]
 :END:
 ** TODO XLS z ocenami — i skąd wziąć średnią https://www.forum.stosowana.pl/viewtopic.php?f=249&t=30380
@@ -419,23 +414,47 @@ z tyłu imieniem, nazwiskiem i nr PESEL.
 :LOGBOOK:
 - State "TODO"       from ""           [2016-09-12 Mon 17:58]
 :END:
-** TODO „Czy wiecie może co trzeba zrobić aby zmienić nazwisko recenzenta w Wirtualnym Dziekanacie? Zmieniłem już w tym systemie prac dyplomowych u tego gościa w B1, ale w WD dalej jest błędne (oczywiście wpisane losowo).”
+** DONE „Czy wiecie może co trzeba zrobić aby zmienić nazwisko recenzenta w Wirtualnym Dziekanacie? Zmieniłem już w tym systemie prac dyplomowych u tego gościa w B1, ale w WD dalej jest błędne (oczywiście wpisane losowo).”
 :LOGBOOK:
+- State "DONE"       from "TODO"       [2016-09-20 Tue 18:50]
 - State "TODO"       from ""           [2016-09-12 Mon 17:58]
 :END:
 https://www.facebook.com/n/?groups%2F178266465517351%2Fpermalink%2F1034470486563607%2F&aref=1442156195150215&medium=email&mid=51fb4b0d18641G5af3d2bb052dG51fa227b8f987G96G3aec&bcode=1.1442237044.Abm2ZRCG4AQ3fvGO&n_m=m%40michalrus.com
-** TODO wypierdziel branch „skladanie” przed oddawaniem im kodu, bo kjanosz przeklina
+** CANCELED wypierdziel branch „skladanie” przed oddawaniem im kodu, bo kjanosz przeklina
 :LOGBOOK:
+- State "CANCELED"   from "TODO"       [2016-09-20 Tue 18:50] \\
+  Oddawania kodu, zdaje się, ponad już zrobione, nie będzie. ^.~
 - State "TODO"       from ""           [2016-09-12 Mon 18:00]
 :END:
-** TODO Cztery kolorowe zdjęcia formatu 4,5 × 6,5 (w stroju oficjalnym), w tym jedno opisane
+** CANCELED Cztery kolorowe zdjęcia formatu 4,5 × 6,5 (w stroju oficjalnym), w tym jedno opisane
 :LOGBOOK:
+- State "CANCELED"   from "TODO"       [2016-09-20 Tue 18:50] \\
+  Duplicate
 - State "TODO"       from ""           [2016-09-12 Mon 18:12]
 :END:
 z tyłu imieniem, nazwiskiem i nr PESEL. Przy zamawianiu odpisu w języku obcym
 dodatkowo 1 zdjęcie.
 * Obrona
-** TODO mgr: prezentacja: żeby kolejne animacje nie przeskakiwały
+** TODO prezentacja
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-20 Tue 18:48]
+:END:
+*** TODO mgr: prezentacja: żeby kolejne animacje nie przeskakiwały    :BUG:
+*** <mszpyrka> presentationzen.com
+*** <gjn> do 10 min
+*** <gjn> zacząć „celem mojej pracy jest”
+*** <gjn> nie ma sensu robić planu prezentacji (bo to 10 min i każda obrona ma taki sam plan)
+*** <gjn> „po co? jaki benefit? do czego to się może przydać?” — dobre pytanie (przewodniczący komisji nie czyta prac…) / na czym polega »original contribution«?
+*** <gjn> wydrukowac prezentacje, zeby komisja mogla wrocic
+*** <gjn> handouty nie muszą być slajd/A4, nie muszą być kolorowe
+*** <gjn> nawet jeśli praca po angielsku, to prezentacja po polsku
+**** ukłon w stronę dziekana Oprzędkiewicza ☺
+*** <gjn> nie podobają mi się itemize, gdzie w każdym item jest skrót, który niczego nie mówi słuchaczowi
+**** aha, w sumie nic nie wiem z tego slajdu, nic mi ten skrót nie mówi
+*** <gjn> jak pan dziekan nie wie, co to jest Docker, to z Pana prezentacji się nie dowie
+**** ograniczać slang
+**** albo tłumaczyć slang
+**** inaczej: prezentacja kamikadze
 ** TODO obrony — informacje 2011 — TERMIN DO 21 WRZEŚNIA — https://www.forum.stosowana.pl/viewtopic.php?f=393&t=30650
 :LOGBOOK:
 - State "TODO"       from ""           [2016-09-12 Mon 18:00]
@@ -456,8 +475,11 @@ dodatkowo 1 zdjęcie.
 * Odbieranie dyplomu
 ** zabierz świadectwo maturalne
 ** dopiero wtedy obiegówka?
-** podziękować Kluzie za popędzenie Nalepy
-** napisać do Nalepy o co naprawdę chodziło
+** TODO podziękować Kluzie za popędzenie Nalepy
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-20 Tue 18:51]
+:END:
+** napisać do Nalepy o co naprawdę chodziło⸮
 * Archive                                                           :ARCHIVE:
 ** DONE mgr: kiedy konsultacje
 :PROPERTIES:
