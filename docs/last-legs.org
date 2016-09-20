@@ -132,10 +132,24 @@ agh: https://michalrus.com/hidden/agh/nowe-papierki.txt
 11:07:30 < kjanosz-> [08:26:15] Pani Małgosia przyjęła mi pracę magisterską ze złą wersją oświadczenia
 11:07:30 < kjanosz-> [08:26:28] czyli miałem rację co do jego nowej wersji ^-^
 11:07:30 < kjanosz-> [08:26:35] https://www.eaiib.agh.edu.pl/files/1930/Zasady_dyplomowania_2015_za____czniki.pdf
-** IN-PROGRESS przejrzyj zasady https://www.eaiib.agh.edu.pl/files/1930/Zasady_dyplomowania_2015.pdf
+** DONE przejrzyj zasady https://www.eaiib.agh.edu.pl/files/1930/Zasady_dyplomowania_2015.pdf
+:LOGBOOK:
+- State "DONE"       from "IN-PROGRESS" [2016-09-12 Mon 20:48]
+:END:
 *** https://www.eaiib.agh.edu.pl/files/1930/Zasady_dyplomowania_2015_za____czniki.pdf
 :LOGBOOK:
 - State "IN-PROGRESS" from ""           [2016-09-12 Mon 18:00]
+:END:
+** CANCELED podanie do Kluzy o dopuszczenie!
+:LOGBOOK:
+- State "CANCELED"   from "TODO"       [2016-09-12 Mon 21:03] \\
+  duplicate
+- State "TODO"       from ""           [2016-09-12 Mon 18:03]
+:END:
+** CANCELED wniosek o odpis angielski
+:LOGBOOK:
+- State "CANCELED"   from "TODO"       [2016-09-12 Mon 21:03] \\
+  duplicate
 :END:
 ** IN-PROGRESS nowy system antyplagiatowy — OSA
 :LOGBOOK:
@@ -148,31 +162,85 @@ raport_OSA.pdf w agh-semmaps.org/docs/
 :LOGBOOK:
 - State "IN-PROGRESS" from "TODO"       [2016-09-12 Mon 17:57]
 :END:
-** TODO podanie o reaktywację — do KLUZY — zał. nr 9
+** —
+** DONE wydrukować pracę, twarda oprawa, nie bindowane, napis „praca magisterska”
 :LOGBOOK:
-- State "TODO"       from ""           [2016-09-12 Mon 18:05]
-:END:
-** TODO okołoobronowe doświadczenia https://forum.stosowana.pl/viewtopic.php?f=249&t=29458
-:LOGBOOK:
-- State "TODO"       from ""           [2016-09-12 Mon 17:55]
-:END:
-** TODO wydrukować pracę
-:LOGBOOK:
+- State "DONE"       from "IN-PROGRESS" [2016-09-13 Tue 19:33]
+- State "IN-PROGRESS" from "TODO"       [2016-09-12 Mon 21:01]
 - State "TODO"       from ""           [2016-09-12 Mon 18:12]
 :END:
-** TODO wniosek o odpis angielski Cztery kolorowe zdjęcia formatu 4,5 × 6,5 (w stroju oficjalnym), w tym jedno opisane
+** DONE wpłata i dowód wpłaty 60+40 zł
+ h) Dowód wpłaty 60 zł, w przypadku zamawiania odpisu w języku obcym dodatkowo 40 zł. Wpłaty należy dokonać na konto Wydziału EAIiIB:
+Bank Pekao S.A. Kraków 87 1240 4722 1111 0000 4856 4654
 :LOGBOOK:
+- State "DONE"       from "IN-PROGRESS" [2016-09-13 Tue 19:33]
+- State "IN-PROGRESS" from "TODO"       [2016-09-12 Mon 21:00]
+- State "TODO"       from ""           [2016-09-12 Mon 18:04]
+:END:
+** DONE podanie o reaktywację — do KLUZY — zał. nr 9
+:LOGBOOK:
+- State "DONE"       from "IN-PROGRESS" [2016-09-13 Tue 03:21]
+- State "IN-PROGRESS" from "TODO"       [2016-09-13 Tue 01:53]
+- State "TODO"       from ""           [2016-09-12 Mon 18:05]
+:END:
+** IN-PROGRESS 5 kolorowych zdjęć formatu 4,5 × 6,5 (w stroju oficjalnym), w tym jedno opisane
+:LOGBOOK:
+- State "IN-PROGRESS" from "TODO"       [2016-09-13 Tue 19:33]
+- State "TODO"       from ""           [2016-09-12 Mon 21:01]
 - State "TODO"       from ""           [2016-09-12 Mon 18:13]
 :END:
-z tyłu imieniem, nazwiskiem i nr PESEL. Przy zamawianiu odpisu w języku obcym
-dodatkowo 1 zdjęcie.
+z tyłu imieniem, nazwiskiem i nr PESEL.
+** IN-PROGRESS CD/DVD: koperta 127 mm i naklejka z zał. 3 — zawiera PDF z pracą i wykaz praktyk i kół naukowych
+:LOGBOOK:
+- State "IN-PROGRESS" from "TODO"       [2016-09-13 Tue 18:48]
+- State "TODO"       from ""           [2016-09-12 Mon 21:07]
+:END:
+*** burning
+% mkisofs -J -o CD.iso CD
+% cdrecord -v CD.iso
+** DONE wykaz praktyk i kół naukowych
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2016-09-13 Tue 04:20]
+- State "TODO"       from ""           [2016-09-12 Mon 21:09]
+:END:
+** DONE podanie o dopuszczenie — do KLUZY, a nie OPRZĘDKIEWICZA
+:LOGBOOK:
+- State "DONE"       from "IN-PROGRESS" [2016-09-13 Tue 03:22]
+- State "IN-PROGRESS" from "TODO"       [2016-09-13 Tue 01:54]
+- State "TODO"       from ""           [2016-09-12 Mon 17:58]
+:END:
+** DONE oświadczenie o prawach autorskich?
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2016-09-13 Tue 03:22]
+- State "TODO"       from ""           [2016-09-13 Tue 03:22]
+:END:
+** DONE wniosek o odpis dyplomu w angielskim zał. nr 10
+:LOGBOOK:
+- State "DONE"       from "IN-PROGRESS" [2016-09-13 Tue 03:27]
+- State "IN-PROGRESS" from "TODO"       [2016-09-13 Tue 03:22]
+- State "TODO"       from ""           [2016-09-12 Mon 18:05]
+:END:
+** TODO weź od Nalepy: formularz recenzji z podpisami promotora i recenzenta
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-12 Mon 21:07]
+:END:
+** TODO weź od Nalepy: raport z systemu OSA podpisany przez Nalepę
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-12 Mon 21:07]
+:END:
+** TODO weź od Nalepy: podpis na obiegówce
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-13 Tue 01:54]
+:END:
+** —
+** DONE okołoobronowe doświadczenia https://forum.stosowana.pl/viewtopic.php?f=249&t=29458
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2016-09-13 Tue 20:33]
+- State "TODO"       from ""           [2016-09-12 Mon 17:55]
+:END:
 ** TODO [#A] przejrzyj jeszcze raz MINDMAPĘ
 :LOGBOOK:
 - State "TODO"       from ""           [2016-09-02 Fri 13:18]
-:END:
-** TODO podanie kieruje się do KLUZY, a nie OPRZĘDKIEWICZA
-:LOGBOOK:
-- State "TODO"       from ""           [2016-09-12 Mon 17:58]
 :END:
 ** TODO XLS z ocenami — i skąd wziąć średnią https://www.forum.stosowana.pl/viewtopic.php?f=249&t=30380
 :LOGBOOK:
@@ -192,20 +260,6 @@ https://www.facebook.com/n/?groups%2F178266465517351%2Fpermalink%2F1034470486563
 :LOGBOOK:
 - State "TODO"       from ""           [2016-09-12 Mon 18:00]
 :END:
-** TODO podanie do Kluzy o dopuszczenie!
-:LOGBOOK:
-- State "TODO"       from ""           [2016-09-12 Mon 18:03]
-:END:
-** TODO wniosek o odpis dyplomu w angielskim
-:LOGBOOK:
-- State "TODO"       from ""           [2016-09-12 Mon 18:05]
-:END:
-** TODO wpłata i dowód wpłaty 60+40 zł
- h) Dowód wpłaty 60 zł, w przypadku zamawiania odpisu w języku obcym dodatkowo 40 zł. Wpłaty należy dokonać na konto Wydziału EAIiIB:
-Bank Pekao S.A. Kraków 87 1240 4722 1111 0000 4856 4654
-:LOGBOOK:
-- State "TODO"       from ""           [2016-09-12 Mon 18:04]
-:END:
 ** TODO Cztery kolorowe zdjęcia formatu 4,5 × 6,5 (w stroju oficjalnym), w tym jedno opisane
 :LOGBOOK:
 - State "TODO"       from ""           [2016-09-12 Mon 18:12]
@@ -219,11 +273,23 @@ dodatkowo 1 zdjęcie.
 - State "TODO"       from ""           [2016-09-12 Mon 18:00]
 :END:
 ** TODO obrony: http://www.forum.stosowana.pl/viewtopic.php?f=249&t=29612
-** pytania na obronie 2011 https://www.forum.stosowana.pl/viewtopic.php?f=1823&t=30665
-** pytania na obronie 2010 https://www.forum.stosowana.pl/viewtopic.php?f=1656&t=29696
-** pytania na obronie — wszystkie roczniki https://www.forum.stosowana.pl/viewtopic.php?f=33&t=27495
+** TODO pytania na obronie 2011 https://www.forum.stosowana.pl/viewtopic.php?f=1823&t=30665
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-12 Mon 21:03]
+:END:
+** TODO pytania na obronie 2010 https://www.forum.stosowana.pl/viewtopic.php?f=1656&t=29696
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-12 Mon 21:03]
+:END:
+** TODO pytania na obronie — wszystkie roczniki https://www.forum.stosowana.pl/viewtopic.php?f=33&t=27495
+:LOGBOOK:
+- State "TODO"       from ""           [2016-09-12 Mon 21:03]
+:END:
 * Odbieranie dyplomu
+** zabierz świadectwo maturalne
 ** dopiero wtedy obiegówka?
+** podziękować Kluzie za popędzenie Nalepy
+** napisać do Nalepy o co naprawdę chodziło
 * Archive                                                           :ARCHIVE:
 ** DONE mgr: kiedy konsultacje
 :PROPERTIES:
