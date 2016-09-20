@@ -1,3 +1,171 @@
+* XMind
+** prezentacja
+*** <mszpyrka> presentationzen.com
+*** <gjn> do 10 min
+*** <gjn> zacząć „celem mojej pracy jest”
+*** <gjn> nie ma sensu robić planu prezentacji (bo to 10 min i każda obrona ma taki sam plan)
+*** <gjn> „po co? jaki benefit? do czego to się może przydać?” — dobre pytanie (przewodniczący komisji nie czyta prac…) / na czym polega »original contribution«?
+*** <gjn> wydrukowac prezentacje, zeby komisja mogla wrocic
+*** <gjn> handouty nie muszą być slajd/A4, nie muszą być kolorowe
+*** <gjn> nawet jeśli praca po angielsku, to prezentacja po polsku
+**** ukłon w stronę dziekana Oprzędkiewicza ☺
+*** <gjn> nie podobają mi się itemize, gdzie w każdym item jest skrót, który niczego nie mówi słuchaczowi
+**** aha, w sumie nic nie wiem z tego slajdu, nic mi ten skrót nie mówi
+*** <gjn> jak pan dziekan nie wie, co to jest Docker, to z Pana prezentacji się nie dowie
+**** ograniczać slang
+**** albo tłumaczyć slang
+**** inaczej: prezentacja kamikadze
+** moja rola nieoficjalnie © <sbk>
+*** dodanie relacji innych niż has
+*** openjump → ??? → pytania
+**** system regułowy co to jest near itd.
+*** implementacja (na telefonie) nie aż taka ważna — można napisać, że PoC i da się dalej, ale akurat nie ma
+*** drzewka wystarczą z mojej perspektywy
+*** pokazać GJNowi solidny plan, i on się zgodzi — nie pytać, bo wymyśli 1000 rzeczy
+*** nawiązać do HD, że … że  ale że to ciężkie itd., więc drzewka są etapem końcowym
+** algorytm
+*** algo drzewkowe @mslaz i @sbk
+**** alternatives received from a Sensor Fusion Mechanism
+**** Every instance related (directly or indirectly) to an alternative becomes a new training feature. The same applies to their plain attributes.
+**** Training features are then grouped into entries
+***** there is one training entry with the all plain attributes of the alternative
+****** entry(data{classroom_color:yellow, classroom_color_intensity:unspecified, classroom_name:"Laboratorium 316", classroom_size:small, id:lab316, place:classroom}).
+***** other training entries contain a training feature representing an instance related directly to the alternative and its descendants
+****** entry(data{classroom_desk:true, classroom_desk_color:brown, classroom_desk_color_intensity:high, classroom_desk_model:regular, id:lab318}).
+**** training set T is generated based on
+***** Possible user positions P
+***** Semantic map M
+***** Set of facts F about the user location obtained in mediation
+***** question roots R which are defined as independent objects or features of every room from P
+**** question forest is generated from
+***** training set T
+***** question roots R
+***** algorithm takes every question root from R, and generate a decision tree for it.
+***** The decision tree algorithm is loosely based on ID3 algorithm.
+**** kontrprzykład do algorytmu @sbk @mslaz
+***** a 316 może być biurko z komputrem, z myszą
+***** a w 315 taki sam (albo b. podobny) układ, ale na dywanie
+***** pytamy usera: czy jest biurko z komputrem, z myszą, a on jest w pokoju z dywanem… odpowiada: TAK.
+*** algo moje
+**** jak najbardziej generyczny w stosunku do struktury z GML
+***** doprecyzowanie używające nazw «properties» z GML w module regułowym
+**** podajemy wybrane alternatywy — drzewa JmlTree
+***** np. pokoje
+***** np. obszary na Rynku
+**** węzłami w drzewie są JmlObject
+***** ma mapę K–V «properties» z GML-a
+**** dziecko znajduje się wewnątrz rodzica na mapie
+**** budujemy „set” możliwych/sensownych pytań
+***** pytania sprowadzają się do
+****** czy istnieje «coś» «jakieś»
+******* czy «coś» jest «jakieś» == czy istnieje «coś» «jakieś»
+******* przykłady
+******** [kind=wall].color
+******** [kind=computer].model
+******** [kind=tv].model
+******** [kind=tv].color
+******** exists([kind=computer])
+****** czy «coś» jest w «relacji» z «czymś»
+******* przykłady
+******** [kind=tv] —near— [kind=blackboard]
+******** [kind=computer] —on-top-of— [kind=desk]
+******* wymyślone relacje (?)
+******** has / consists_of
+********* czy nie to samo?
+********* mateuszowe „nie, bo distributes_over”?
+********** classroom has (work_place consists_of desk)
+********** (classroom has work_place) consists_of (classroom has desk)
+*********** ? ☺
+******** exists
+********* <sbk> hack, żeby generowana ontologia.pl narazie się wczytywała
+******** jest-na-lewo-od
+********* transitive
+********** chyba nie bardzo… czasem
+********* distributes_over consists_of
+********** ale po co?
+********* implikuje jest-blisko
+********* wymaga, żeby obie rzeczy były pod ścianą
+******** na-prawo-od
+********* analogicznie
+******** jest-na
+********* przykład niewnioskowalnego z GML przypadku has/consists-of
+********* ale można by np. regułowo
+********** jeśli biurko ma komputer ⇒ komputer jest-na biurko
+********* asymetryczna, jak has
+********* transitive…
+********* również implikuje jest-blisko?
+******** jest-pod?
+******** jest-blisko
+********* kontekst…
+********* symetryczna
+********* transitive?… zależy
+******** jest-nad
+********* niewnioskowalne z map w GML
+******** co daje distributes_over?
+******* relacje zeżarłyby za dużo czasu na coś tak prostego, jak praca mgr
+******** „Czy coś jest koło okna?”
+********* np. to jest dużo prostsze niż „Czy coś istnieje?”, ponieważ okno jest proste do znalezienia
+********* i 50k podobnych przypadków
+******** generować każdy z każdym do wyboru z Set?
+******** przecież to eksplozja kombinatoryczna…
+******** sensownie i generycznie w konfigu z rules da się zapisać jedynie:
+********* lies-on
+********* is-near
+********* inne, np. "po lewej" wymagają tego, żeby rozumiał je KOD
+********* p. plik maps/C2-3rd-floor.relations
+****** ile sztuk istnieje «czegoś» [«jakiegoś» ...]
+******* przykłady
+******** count([kind=desk])
+******** count([kind=computer])
+******** count([kind=chair, rotary=true])
+******* na razie olewamy, za trudne do oceny skomplikowania pytania
+******** #future
+***** CWA — jeśli «coś» nie występuje w JmlTree, to zakładamy, że tego nie ma w danej alternatywie
+***** więc tak:
+****** 1) spłaszczyć wszystko
+****** 2) na podstawie samego atrybutu `class`
+****** id
+****** 9999) pamiętać relacje osobno
+******* wtedy może tłumaczyć mapowe zawieranie na konkretnie “has”, …
+***** wątpliwości
+****** jak automatycznie wybierać ciekawsze możliwe QuestionParam?
+******* nietypowe, „dziwne”, rzucające się w oczy
+******** „krzesło na łóżku”
+******* też definiować to w systemie regułowym
+****** jak porównywać ze sobą dwa JmlObject?
+******* mogą się różnić nieco
+******* może jakieś Double similarity
+**** w set’cie sprawdzamy entropię, koszt każdego, wybieramy najlepsze
+***** zwykła pierwsza iteracja ID3
+***** uwzględniające koszty z regułowego
+***** wybieramy najmniejszy koszt
+****** a jeśli kilka ma najmniejszy koszt, to najprostszą strukturę
+**** co z subklasami?
+***** krzesło jest subklasą mebel
+***** krzesło obrotowe jest subklasą krzesło
+****** no ale to załatwił @kjanosz chair{rotary:true}
+***** niepotrzebne, nie widzę kontrprzykładu dla samych cech
+**** uwzględniamy odpowiedź na najlepsze, budując następny set
+***** pomijamy odpadające alternatywy
+*** loose thoughts
+**** why would you ask more than one question if there are only 2 alternatives? :)
+***** either you have a discerning question and one is sufficient
+***** or you don’t (rooms are identical ⇒ undistinguishable)
+**** in the future, find the domain of a property (only between alternatives) and if the sizeof(domain) ≤ 3, ask about that property, too (answers being property values)
+** tekst pracy
+*** http://home.agh.edu.pl/~wojnicki/wiki/pl:jak_pisac_prace_dyplomowa
+*** ciekawe rzeczy do poruszenia
+**** zakładamy, że user zawsze mówi prawdę, a może to błąd
+***** nawet niecelowo może zaznaczyć fałsz
+****** z niewiedzy / omsknie się palec
+**** dlaczego odrzucam metodę Bobka i Ślażyńskiego
+***** kontrprzykład
+***** prolog → nie da się uruchomić na telefonie
+**** dlaczego koncentracja na Exists
+***** zwykle dwie alternatywy z modułu fizycznego
+***** musiałyby być pokoje z identyczną zawartością, żeby nie dało się ich odróżnić po Exists
+**** optimization
+***** cost matching
 * Poprawki
 ** Archive                                                         :ARCHIVE:
 *** CANCELED Myślę, że kwestie organizacji tekstu (struktury rozdziałów) i uzupełnienie luk to sprawa zasadnicza. Narzędzie jest OK.
