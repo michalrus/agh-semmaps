@@ -474,6 +474,7 @@ dodatkowo 1 zdjęcie.
 :END:
 * Odbieranie dyplomu
 ** zabierz świadectwo maturalne
+** czekoladowe pianki
 ** dopiero wtedy obiegówka?
 ** TODO podziękować Kluzie za popędzenie Nalepy
 :LOGBOOK:
